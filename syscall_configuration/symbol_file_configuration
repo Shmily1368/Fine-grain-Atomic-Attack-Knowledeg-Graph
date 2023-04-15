@@ -1,0 +1,2 @@
+win32k.sys|C:\Windows\System32\win32k.sys|win32k.pdb
+ntoskrnl.exe|C:\Windows\System32\ntoskrnl.exe|ntkrnlmp.pdb

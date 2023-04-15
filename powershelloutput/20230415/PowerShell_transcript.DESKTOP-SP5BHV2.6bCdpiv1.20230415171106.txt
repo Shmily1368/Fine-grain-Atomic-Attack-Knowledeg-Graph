@@ -1,0 +1,71 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415171106
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command Invoke-AtomicTest T1218.004-7
+进程 ID: 10600
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS>Invoke-AtomicTest T1218.004-7
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1218.004-7 InstallUtil HelpText method call
+
+Microsoft (R) .NET Framework 安装实用工具版本 4.8.4084.0
+版权所有 (C) Microsoft Corporation。保留所有权利。
+用法: InstallUtil [/u | /uninstall] [option [...]] assembly [[[option [...]] assembly] [...]]
+InstallUtil 执行每个给定程序集中的安装程序。
+选项不同，/u 应用于所有的程序集，而不管它出现在命令行上
+如果指定 /u 或 /uninstall 开关，则它卸载
+安装程序以事务处理的方式完成: 如果其中的一个
+程序集；反之，则安装它们。与其他
+的位置。
+程序集安装失败，则其他的所有安装程序集的安装
+都会被回滚。卸载不是按事务处理的。
+选项的格式为 /switch=[value]。出现在程序集名称之前的
+选项是累积的但可以重写 - 为一个程序集指定的选项
+任何选项都将应用到该程序集的安装。
+除非另行指定。
+将应用到下一个程序集，
+除非为该选项指定一个新值。所有选项的默认设置是空的或为 False，
+识别的选项:
+用于安装任何程序集的选项:
+ 程序集参数将被解释为程序集名称(Name,
+/AssemblyName
+ Locale, PublicKeyToken, Version)。
+ 默认情况下，将程序集参数解释为磁盘上的程序集的文件名。
+  向其中写入进度的文件。如果为空，则不写入日志。默认为
+/LogFile=[filename]
+ <assemblyname>.InstallLog
+/LogToConsole={true|false}
+ 如果为 false，则不向控制台输出。
+/ShowCallStack
+ 如果在安装过程中的任何时候发生异常，则将
+调用堆栈输出到日志。
+ 要在其中存储 .InstallState 文件的目录。默认为
+ 程序集的目录。
+/InstallStateDir=[directoryname]
+Executed: HelpText property
+在程序集中使用的各个安装程序可以识别其他
+选项。若要了解这些选项，请在命令行上运行 InstallUtil，并在该命令后面带上
+程序集的路径和 /? 或 /help 选项。
+Done executing test:
+T1218.004-7 InstallUtil HelpText method call
+
+PS>$global:?
+True
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20230415171113
+**********************

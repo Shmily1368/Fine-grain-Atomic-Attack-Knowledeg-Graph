@@ -1,0 +1,90 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20211208163253
+用户名: DESKTOP-VME8FRS\lab
+RunAs 用户: DESKTOP-VME8FRS\lab
+配置名称: 
+计算机: DESKTOP-VME8FRS (Microsoft Windows NT 10.0.19043.0)
+主机应用程序: powershell
+进程 ID: 46872
+PSVersion: 5.1.19041.1320
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1320
+BuildVersion: 10.0.19041.1320
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20211208163256
+用户名: DESKTOP-VME8FRS\lab
+RunAs 用户: DESKTOP-VME8FRS\lab
+配置名称: 
+计算机: DESKTOP-VME8FRS (Microsoft Windows NT 10.0.19043.0)
+主机应用程序: powershell
+进程 ID: 46872
+PSVersion: 5.1.19041.1320
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1320
+BuildVersion: 10.0.19041.1320
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“使用“2”个参数调用“ReadLine”时发生异常:“不支持所指定的方法。””
+使用“2”个参数调用“ReadLine”时发生异常:“不支持所指定的方法。”
+所在位置 C:\Program Files\WindowsPowerShell\Modules\PSReadline\2.0.0\PSReadLine.psm1:4 字符: 5
++     [Microsoft.PowerShell.PSConsoleReadLine]::ReadLine($host.Runspace ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : NotSupportedException
+使用“2”个参数调用“ReadLine”时发生异常:“不支持所指定的方法。”
+所在位置 C:\Program Files\WindowsPowerShell\Modules\PSReadline\2.0.0\PSReadLine.psm1:4 字符: 5
++     [Microsoft.PowerShell.PSConsoleReadLine]::ReadLine($host.Runspace ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : NotSupportedException
+PS C:\Users\lab\wangjian_data\Alibaba-Cloud-Guard-RATs\Rat\VanToM RAT 1.4> c,d
+所在位置 行:1 字符: 2
++ c,d
++  ~
+参数列表中缺少参量。
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingArgument
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20211208163256
+用户名: DESKTOP-VME8FRS\lab
+RunAs 用户: DESKTOP-VME8FRS\lab
+配置名称: 
+计算机: DESKTOP-VME8FRS (Microsoft Windows NT 10.0.19043.0)
+主机应用程序: powershell
+进程 ID: 46872
+PSVersion: 5.1.19041.1320
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1320
+BuildVersion: 10.0.19041.1320
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“使用“2”个参数调用“ReadLine”时发生异常:“不支持所指定的方法。””
+使用“2”个参数调用“ReadLine”时发生异常:“不支持所指定的方法。”
+所在位置 C:\Program Files\WindowsPowerShell\Modules\PSReadline\2.0.0\PSReadLine.psm1:4 字符: 5
++     [Microsoft.PowerShell.PSConsoleReadLine]::ReadLine($host.Runspace ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : NotSupportedException
+使用“2”个参数调用“ReadLine”时发生异常:“不支持所指定的方法。”
+所在位置 C:\Program Files\WindowsPowerShell\Modules\PSReadline\2.0.0\PSReadLine.psm1:4 字符: 5
++     [Microsoft.PowerShell.PSConsoleReadLine]::ReadLine($host.Runspace ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : NotSupportedException

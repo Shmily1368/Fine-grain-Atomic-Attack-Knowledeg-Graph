@@ -1,0 +1,71 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411160856
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {C:\Windows\System32\inetsrv\appcmd.exe set config "Default Web Site" /section:httplogging /dontLog:true}
+进程 ID: 10636
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS>& {C:\Windows\System32\inetsrv\appcmd.exe set config "Default Web Site" /section:httplogging /dontLog:true}
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411160856
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {C:\Windows\System32\inetsrv\appcmd.exe set config "Default Web Site" /section:httplogging /dontLog:true}
+进程 ID: 10636
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“无法将“C:\Windows\System32\inetsrv\appcmd.exe”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。”
+C:\Windows\System32\inetsrv\appcmd.exe : 无法将“C:\Windows\System32\inetsrv\appcmd.exe”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼
+写，如果包括路径，请确保路径正确，然后再试一次。
+所在位置 行:1 字符: 4
++ & {C:\Windows\System32\inetsrv\appcmd.exe set config "Default Web Sit ...
++    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Windows\System32\inetsrv\appcmd.exe:String) [], CommandNotFoundExcepti
+on
+    + FullyQualifiedErrorId : CommandNotFoundException
+C:\Windows\System32\inetsrv\appcmd.exe : 无法将“C:\Windows\System32\inetsrv\appcmd.exe”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼
+写，如果包括路径，请确保路径正确，然后再试一次。
+所在位置 行:1 字符: 4
++ & {C:\Windows\System32\inetsrv\appcmd.exe set config "Default Web Sit ...
++    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Windows\System32\inetsrv\appcmd.exe:String) [], CommandNotFoundExcepti
+on
+    + FullyQualifiedErrorId : CommandNotFoundException
+C:\Windows\System32\inetsrv\appcmd.exe : 无法将“C:\Windows\System32\inetsrv\appcmd.exe”项识别为 cmdlet、函数、脚本文件或
+可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。
+所在位置 行:1 字符: 4
++ & {C:\Windows\System32\inetsrv\appcmd.exe set config "Default Web Sit ...
++    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Windows\System32\inetsrv\appcmd.exe:String) [], CommandNotFoundExcep
+   tion
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS>$global:?
+True
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20230411160857
+**********************

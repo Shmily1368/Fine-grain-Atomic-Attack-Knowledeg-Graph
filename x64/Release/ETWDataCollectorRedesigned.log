@@ -1,0 +1,573 @@
+﻿  CJsonObject.cpp
+  Main.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  RansomeDetector.cpp
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event.h(166): warning C4244: “=”: 从“ULONG64”转换到“int32”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\unit.h(14): warning C4005: “DELETE”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\um\winnt.h(8894): note: 参见“DELETE”的前一个定义
+  SignatureDetector.cpp
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\signaturedetector.cpp(371): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“DWORD (__cdecl *)(void)”
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\signaturedetector.cpp(371): warning C4313: “printf”: 格式字符串中的“%d”与“DWORD (__cdecl *)(void)”类型的参数 1 冲突
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\signaturedetector.cpp(380): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“DWORD (__cdecl *)(void)”
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\signaturedetector.cpp(380): warning C4313: “printf”: 格式字符串中的“%d”与“DWORD (__cdecl *)(void)”类型的参数 1 冲突
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\signaturedetector.cpp(390): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“DWORD (__cdecl *)(void)”
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\signaturedetector.cpp(390): warning C4313: “printf”: 格式字符串中的“%d”与“DWORD (__cdecl *)(void)”类型的参数 1 冲突
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\signaturedetector.cpp(398): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“DWORD (__cdecl *)(void)”
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\signaturedetector.cpp(398): warning C4313: “printf”: 格式字符串中的“%d”与“DWORD (__cdecl *)(void)”类型的参数 1 冲突
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\signaturedetector.cpp(416): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“DWORD (__cdecl *)(void)”
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\signaturedetector.cpp(416): warning C4313: “printf”: 格式字符串中的“%d”与“DWORD (__cdecl *)(void)”类型的参数 1 冲突
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\signaturedetector.cpp(440): warning C4018: “<”: 有符号/无符号不匹配
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\signaturedetector.cpp(490): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“DWORD (__cdecl *)(void)”
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\signaturedetector.cpp(490): warning C4313: “printf”: 格式字符串中的“%d”与“DWORD (__cdecl *)(void)”类型的参数 1 冲突
+  auto_lock.cpp
+  btree.cpp
+  cJSON.cpp
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\cjson.cpp(596): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\cjson.cpp(737): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+  cal_MD5.cpp
+  callstack_pruning.cpp
+  cert_analyzer.cpp
+  certificate_tool.cpp
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\certificate_tool.cpp(434): warning C4018: “<”: 有符号/无符号不匹配
+  etw_configuration.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  event_identifier.cpp
+  event_parameter.cpp
+  event_record.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  event_record_callstack.cpp
+  Unknown compiler version - please run the configure tests and report the results
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(162): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(180): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(198): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event_record_callstack.cpp(552): warning C4244: “参数”: 从“const ULONG64”转换到“const unsigned long”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event_record_callstack.cpp(1208): warning C4244: “参数”: 从“const ULONG64”转换到“const unsigned long”，可能丢失数据
+  event_record_extra.cpp
+  event_record_manager.cpp
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(162): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(180): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(198): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  Unknown compiler version - please run the configure tests and report the results
+  event_record_pruner.cpp
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(162): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(180): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(198): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  event_record_subclass.cpp
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(162): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(180): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(198): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  Unknown compiler version - please run the configure tests and report the results
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event_record_subclass.cpp(174): warning C4244: “=”: 从“ULONG64”转换到“DWORD”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event_record_subclass.cpp(216): warning C4244: “初始化”: 从“ULONG64”转换到“DWORD”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event_record_subclass.cpp(231): warning C4244: “=”: 从“ULONG64”转换到“_Ty”，可能丢失数据
+          with
+          [
+              _Ty=DWORD
+          ]
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event_record_subclass.cpp(254): warning C4244: “=”: 从“ULONG64”转换到“DWORD”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event_record_subclass.cpp(274): warning C4244: “初始化”: 从“ULONG64”转换到“DWORD”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event_record_subclass.cpp(384): warning C4244: “参数”: 从“ULONG64”转换到“DWORD”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event_record_subclass.cpp(404): warning C4244: “参数”: 从“ULONG64”转换到“DWORD”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event_record_subclass.cpp(603): warning C4244: “初始化”: 从“ULONG64”转换到“DWORD”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event_record_subclass.cpp(689): warning C4244: “初始化”: 从“ULONG64”转换到“DWORD”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event_record_subclass.cpp(770): warning C4244: “初始化”: 从“ULONG64”转换到“DWORD”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event_record_subclass.cpp(903): warning C4244: “=”: 从“ULONG64”转换到“DWORD”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event_record_subclass.cpp(1463): warning C4244: “=”: 从“ULONG64”转换到“DWORD”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event_record_subclass.cpp(1542): warning C4244: “=”: 从“ULONG64”转换到“DWORD”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event_record_subclass.cpp(1617): warning C4244: “=”: 从“ULONG64”转换到“DWORD”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event_record_subclass.cpp(1693): warning C4244: “初始化”: 从“ULONG64”转换到“DWORD”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event_record_subclass.cpp(1777): warning C4244: “=”: 从“ULONG64”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event_record_subclass.cpp(1789): warning C4244: “参数”: 从“ULONG64”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event_record_subclass.cpp(1841): warning C4244: “=”: 从“ULONG64”转换到“DWORD”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event_record_subclass.cpp(2236): warning C4244: “初始化”: 从“ULONG64”转换到“DWORD”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event_record_subclass.cpp(2237): warning C4244: “初始化”: 从“ULONG64”转换到“DWORD”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event_record_subclass.cpp(2238): warning C4244: “初始化”: 从“ULONG64”转换到“DWORD”，可能丢失数据
+d:\mysoft\visualstudio2017\community\vc\tools\msvc\14.16.27023\include\utility(172): warning C4244: “初始化”: 从“_Ty”转换到“_Ty1”，可能丢失数据
+          with
+          [
+              _Ty=ULONG64
+          ]
+          and
+          [
+              _Ty1=DWORD
+          ]
+  d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event_record_subclass.cpp(208): note: 参见对正在编译的函数 模板 实例化“std::pair<DWORD,DWORD>::pair<ULONG64,ULONG64,0>(_Other1 &&,_Other2 &&) noexcept”的引用
+          with
+          [
+              _Other1=ULONG64,
+              _Other2=ULONG64
+          ]
+  d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event_record_subclass.cpp(208): note: 参见对正在编译的函数 模板 实例化“std::pair<DWORD,DWORD>::pair<ULONG64,ULONG64,0>(_Other1 &&,_Other2 &&) noexcept”的引用
+          with
+          [
+              _Other1=ULONG64,
+              _Other2=ULONG64
+          ]
+  d:\mysoft\visualstudio2017\community\vc\tools\msvc\14.16.27023\include\xtree(1792): note: 参见对正在编译的函数 模板 实例化“std::pair<std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool>::pair<std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>&,bool,0>(_Other1,_Other2 &&) noexcept”的引用
+          with
+          [
+              _Ty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Other1=std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::basic_string<char,std::char_traits<char>,std::allocator<char>>>>> &,
+              _Other2=bool
+          ]
+  d:\mysoft\visualstudio2017\community\vc\tools\msvc\14.16.27023\include\xtree(1792): note: 参见对正在编译的函数 模板 实例化“std::pair<std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool>::pair<std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>&,bool,0>(_Other1,_Other2 &&) noexcept”的引用
+          with
+          [
+              _Ty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Other1=std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::basic_string<char,std::char_traits<char>,std::allocator<char>>>>> &,
+              _Other2=bool
+          ]
+  d:\mysoft\visualstudio2017\community\vc\tools\msvc\14.16.27023\include\xtree(1726): note: 参见对正在编译的函数 模板 实例化“std::pair<std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool> std::_Tree<std::_Tset_traits<_Kty,_Pr,_Alloc,false>>::_Insert_nohint<_Value_type&,_Nodety>(bool,_Valty,_Nodety)”的引用
+          with
+          [
+              _Ty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Kty=String,
+              _Pr=std::less<String>,
+              _Alloc=std::allocator<std::string>,
+              _Value_type=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Nodety=std::_Tree_node<std::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::_Default_allocator_traits<std::allocator<std::string>>::void_pointer> *,
+              _Valty=std::basic_string<char,std::char_traits<char>,std::allocator<char>> &
+          ]
+  d:\mysoft\visualstudio2017\community\vc\tools\msvc\14.16.27023\include\xtree(1725): note: 参见对正在编译的函数 模板 实例化“std::pair<std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool> std::_Tree<std::_Tset_traits<_Kty,_Pr,_Alloc,false>>::_Insert_nohint<_Value_type&,_Nodety>(bool,_Valty,_Nodety)”的引用
+          with
+          [
+              _Ty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Kty=String,
+              _Pr=std::less<String>,
+              _Alloc=std::allocator<std::string>,
+              _Value_type=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Nodety=std::_Tree_node<std::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::_Default_allocator_traits<std::allocator<std::string>>::void_pointer> *,
+              _Valty=std::basic_string<char,std::char_traits<char>,std::allocator<char>> &
+          ]
+  d:\mysoft\visualstudio2017\community\vc\tools\msvc\14.16.27023\include\xtree(1163): note: 参见对正在编译的函数 模板 实例化“std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>> std::_Tree<std::_Tset_traits<_Kty,_Pr,_Alloc,false>>::_Insert_hint<_Value_type&,std::_Tree_node<_Value_type,std::_Default_allocator_traits<_Alloc>::void_pointer>*>(std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,_Valty,_Nodety)”的引用
+          with
+          [
+              _Ty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Kty=String,
+              _Pr=std::less<String>,
+              _Alloc=std::allocator<std::string>,
+              _Value_type=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Valty=std::basic_string<char,std::char_traits<char>,std::allocator<char>> &,
+              _Nodety=std::_Tree_node<std::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::_Default_allocator_traits<std::allocator<std::string>>::void_pointer> *
+          ]
+  d:\mysoft\visualstudio2017\community\vc\tools\msvc\14.16.27023\include\xtree(1163): note: 参见对正在编译的函数 模板 实例化“std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>> std::_Tree<std::_Tset_traits<_Kty,_Pr,_Alloc,false>>::_Insert_hint<_Value_type&,std::_Tree_node<_Value_type,std::_Default_allocator_traits<_Alloc>::void_pointer>*>(std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,_Valty,_Nodety)”的引用
+          with
+          [
+              _Ty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Kty=String,
+              _Pr=std::less<String>,
+              _Alloc=std::allocator<std::string>,
+              _Value_type=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Valty=std::basic_string<char,std::char_traits<char>,std::allocator<char>> &,
+              _Nodety=std::_Tree_node<std::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::_Default_allocator_traits<std::allocator<std::string>>::void_pointer> *
+          ]
+  d:\mysoft\visualstudio2017\community\vc\tools\msvc\14.16.27023\include\xtree(1345): note: 参见对正在编译的函数 模板 实例化“std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>> std::_Tree<std::_Tset_traits<_Kty,_Pr,_Alloc,false>>::emplace_hint<_Ty&>(std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,_Ty &)”的引用
+          with
+          [
+              _Ty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Kty=String,
+              _Pr=std::less<String>,
+              _Alloc=std::allocator<std::string>
+          ]
+  d:\mysoft\visualstudio2017\community\vc\tools\msvc\14.16.27023\include\xtree(1345): note: 参见对正在编译的函数 模板 实例化“std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>> std::_Tree<std::_Tset_traits<_Kty,_Pr,_Alloc,false>>::emplace_hint<_Ty&>(std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,_Ty &)”的引用
+          with
+          [
+              _Ty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Kty=String,
+              _Pr=std::less<String>,
+              _Alloc=std::allocator<std::string>
+          ]
+  d:\mysoft\visualstudio2017\community\vc\tools\msvc\14.16.27023\include\xtree(1351): note: 参见对正在编译的函数 模板 实例化“void std::_Tree<std::_Tset_traits<_Kty,_Pr,_Alloc,false>>::insert<const _Elem*>(_Iter,_Iter)”的引用
+          with
+          [
+              _Kty=String,
+              _Pr=std::less<String>,
+              _Alloc=std::allocator<std::string>,
+              _Elem=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Iter=const std::basic_string<char,std::char_traits<char>,std::allocator<char>> *
+          ]
+  d:\mysoft\visualstudio2017\community\vc\tools\msvc\14.16.27023\include\xtree(1351): note: 参见对正在编译的函数 模板 实例化“void std::_Tree<std::_Tset_traits<_Kty,_Pr,_Alloc,false>>::insert<const _Elem*>(_Iter,_Iter)”的引用
+          with
+          [
+              _Kty=String,
+              _Pr=std::less<String>,
+              _Alloc=std::allocator<std::string>,
+              _Elem=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Iter=const std::basic_string<char,std::char_traits<char>,std::allocator<char>> *
+          ]
+  d:\mysoft\visualstudio2017\community\vc\tools\msvc\14.16.27023\include\xtree(1350): note: 编译 类 模板 成员函数 "void std::_Tree<std::_Tset_traits<_Kty,_Pr,_Alloc,false>>::insert(std::initializer_list<std::basic_string<char,std::char_traits<char>,std::allocator<char>>>)" 时
+          with
+          [
+              _Kty=String,
+              _Pr=std::less<String>,
+              _Alloc=std::allocator<std::string>
+          ]
+  d:\mysoft\visualstudio2017\community\vc\tools\msvc\14.16.27023\include\set(178): note: 参见对正在编译的函数 模板 实例化“void std::_Tree<std::_Tset_traits<_Kty,_Pr,_Alloc,false>>::insert(std::initializer_list<std::basic_string<char,std::char_traits<char>,std::allocator<char>>>)”的引用
+          with
+          [
+              _Kty=String,
+              _Pr=std::less<String>,
+              _Alloc=std::allocator<std::string>
+          ]
+  d:\mysoft\visualstudio2017\community\vc\tools\msvc\14.16.27023\include\set(55): note: 参见对正在编译的 类 模板 实例化 "std::_Tree<std::_Tset_traits<_Kty,_Pr,_Alloc,false>>" 的引用
+          with
+          [
+              _Kty=String,
+              _Pr=std::less<String>,
+              _Alloc=std::allocator<std::string>
+          ]
+  d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\common.h(101): note: 参见对正在编译的 类 模板 实例化 "std::set<String,std::less<_Kty>,std::allocator<_Ty>>" 的引用
+          with
+          [
+              _Kty=String,
+              _Ty=std::string
+          ]
+d:\mysoft\visualstudio2017\community\vc\tools\msvc\14.16.27023\include\utility(173): warning C4244: “初始化”: 从“_Ty”转换到“_Ty2”，可能丢失数据
+          with
+          [
+              _Ty=ULONG64
+          ]
+          and
+          [
+              _Ty2=DWORD
+          ]
+  extra_trace_session.cpp
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(162): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(180): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(198): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  Unknown compiler version - please run the configure tests and report the results
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\extra_trace_session.cpp(307): warning C4267: “参数”: 从“size_t”转换到“DWORD”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\extra_trace_session.cpp(351): warning C4267: “参数”: 从“size_t”转换到“DWORD”，可能丢失数据
+  feature.cpp
+d:\windows kits\10\include\10.0.17763.0\um\winnt.h(8894): warning C4005: “DELETE”: 宏重定义
+  d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\unit.h(14): note: 参见“DELETE”的前一个定义
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event.h(166): warning C4244: “=”: 从“ULONG64”转换到“int32”，可能丢失数据
+  Unknown compiler version - please run the configure tests and report the results
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(162): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(180): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(198): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  filter.cpp
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(162): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(180): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(198): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  Unknown compiler version - please run the configure tests and report the results
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.cpp(75): warning C4244: “=”: 从“ULONG_PTR”转换到“DWORD”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.cpp(315): warning C4244: “参数”: 从“uint_64”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.cpp(318): warning C4244: “参数”: 从“uint_64”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.cpp(557): warning C4244: “参数”: 从“ULONG64”转换到“const unsigned long”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.cpp(559): warning C4244: “参数”: 从“ULONG64”转换到“const unsigned long”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.cpp(560): warning C4244: “参数”: 从“ULONG64”转换到“const unsigned long”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.cpp(565): warning C4244: “参数”: 从“ULONG64”转换到“DWORD”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.cpp(567): warning C4244: “参数”: 从“ULONG64”转换到“DWORD”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.cpp(607): warning C4244: “参数”: 从“ULONG64”转换到“DWORD”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.cpp(618): warning C4244: “参数”: 从“ULONG64”转换到“DWORD”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.cpp(625): warning C4244: “参数”: 从“ULONG64”转换到“const unsigned long”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.cpp(1094): warning C4244: “参数”: 从“ULONG64”转换到“DWORD”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.cpp(1102): warning C4244: “参数”: 从“ULONG64”转换到“DWORD”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.cpp(1104): warning C4244: “参数”: 从“ULONG64”转换到“DWORD”，可能丢失数据
+  get_device_drive_map.cpp
+  get_signature_info.cpp
+  get_systemcontext.cpp
+  init_collector.cpp
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event.h(166): warning C4244: “=”: 从“ULONG64”转换到“int32”，可能丢失数据
+  Unknown compiler version - please run the configure tests and report the results
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(162): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(180): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(198): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\init_collector.cpp(135): warning C4244: “=”: 从“_Ty2”转换到“uint_32”，可能丢失数据
+          with
+          [
+              _Ty2=ULONG64
+          ]
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\init_collector.cpp(343): warning C4244: “=”: 从“ULONG64”转换到“int”，可能丢失数据
+  init_collector_factory.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  init_collector_local_collect.cpp
+  init_collector_local_parse.cpp
+  Unknown compiler version - please run the configure tests and report the results
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(162): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(180): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(198): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  init_collector_online_parse.cpp
+  Unknown compiler version - please run the configure tests and report the results
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(162): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(180): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(198): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  kafka_producer.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  logger_record.cpp
+  macro_detector.cpp
+  mutex.cpp
+  named_pipe_client.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  object_pool.cpp
+  obtain_entry_address.cpp
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(162): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(180): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(198): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\obtain_entry_address.cpp(166): warning C4311: “类型强制转换”: 从“PBYTE”到“DWORD”的指针截断
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\obtain_entry_address.cpp(166): warning C4302: “类型强制转换”: 从“PBYTE”到“DWORD”截断
+  on_leave_section_callback.cpp
+  output.cpp
+  output_json.cpp
+  output_kafka.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  output_ransom.cpp
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event.h(166): warning C4244: “=”: 从“ULONG64”转换到“int32”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(162): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(180): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(198): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  parameter_index.cpp
+  phf_detector.cpp
+  Unknown compiler version - please run the configure tests and report the results
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(162): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(180): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(198): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  process_info.cpp
+  public_json_interface.cpp
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\public_json_interface.cpp(39): warning C4018: “<”: 有符号/无符号不匹配
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\public_json_interface.cpp(61): warning C4018: “<”: 有符号/无符号不匹配
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\public_json_interface.cpp(102): warning C4018: “<”: 有符号/无符号不匹配
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\public_json_interface.cpp(127): warning C4018: “<”: 有符号/无符号不匹配
+  public_xml_interface.cpp
+  record_queue.cpp
+  record_queue_per_process.cpp
+  rule_matcher.cpp
+  rwlock.cpp
+  security_audit.cpp
+  security_trace_session.cpp
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\security_trace_session.cpp(144): warning C4311: “类型强制转换”: 从“EVT_HANDLE”到“DWORD”的指针截断
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\security_trace_session.cpp(144): warning C4302: “类型强制转换”: 从“EVT_HANDLE”到“DWORD”截断
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\security_trace_session.cpp(151): warning C4311: “类型强制转换”: 从“EVT_HANDLE”到“DWORD”的指针截断
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\security_trace_session.cpp(151): warning C4302: “类型强制转换”: 从“EVT_HANDLE”到“DWORD”截断
+  semaphore.cpp
+  setting.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  signature_verification.cpp
+  spin_lock.cpp
+  stdafx.cpp
+  string_util.cpp
+  svm-predict.cpp
+  svm-scale.cpp
+  svm-train.cpp
+  svm.cpp
+  sysmon_pruning.cpp
+  sysmon_trace_session.cpp
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\sysmon_trace_session.cpp(138): warning C4311: “类型强制转换”: 从“EVT_HANDLE”到“DWORD”的指针截断
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\sysmon_trace_session.cpp(138): warning C4302: “类型强制转换”: 从“EVT_HANDLE”到“DWORD”截断
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\sysmon_trace_session.cpp(145): warning C4311: “类型强制转换”: 从“EVT_HANDLE”到“DWORD”的指针截断
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\sysmon_trace_session.cpp(145): warning C4302: “类型强制转换”: 从“EVT_HANDLE”到“DWORD”截断
+  system_call_detector.cpp
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\system_call_detector.cpp(146): warning C4311: “类型强制转换”: 从“PVOID”到“DWORD”的指针截断
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\system_call_detector.cpp(146): warning C4302: “类型强制转换”: 从“PVOID”到“DWORD”截断
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\system_call_detector.cpp(148): warning C4311: “类型强制转换”: 从“PVOID”到“DWORD”的指针截断
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\system_call_detector.cpp(148): warning C4302: “类型强制转换”: 从“PVOID”到“DWORD”截断
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\system_call_detector.cpp(167): warning C4244: “参数”: 从“ULONG64”转换到“const unsigned long”，可能丢失数据
+  task_queue_service.cpp
+  thread_task_base.cpp
+  thread_task_cerficate_image.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  thread_task_count_timer.cpp
+  thread_task_get_devicearrival.cpp
+  Unknown compiler version - please run the configure tests and report the results
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(162): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(180): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(198): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\thread_task_get_devicearrival.cpp(132): warning C4244: “参数”: 从“wchar_t”转换到“char”，可能丢失数据
+  thread_task_get_hash.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  thread_task_get_ipconfig.cpp
+  thread_task_get_threadend_event.cpp
+  thread_task_get_visiblewindow.cpp
+  Unknown compiler version - please run the configure tests and report the results
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(162): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(180): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(198): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  thread_task_hook_keyandmouse.cpp
+  thread_task_manager.cpp
+  thread_task_monitor.cpp
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(162): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(180): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(198): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\thread_task_monitor.cpp(156): warning C4244: “=”: 从“float”转换到“int_32”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\thread_task_monitor.cpp(169): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\thread_task_monitor.cpp(185): warning C4244: “=”: 从“INT64”转换到“int_32”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\thread_task_monitor.cpp(147): warning C4996: 'GetVersionExW': 被声明为已否决
+  d:\windows kits\10\include\10.0.17763.0\um\sysinfoapi.h(387): note: 参见“GetVersionExW”的声明
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\map_auto_cleanup.h(39): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\map_auto_cleanup.h(39): note: 编译 类 模板 成员函数 "int MapAutoCleanup<std::wstring,std::wstring>::size(void)" 时
+  d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\thread_task_monitor.cpp(230): note: 参见对正在编译的函数 模板 实例化“int MapAutoCleanup<std::wstring,std::wstring>::size(void)”的引用
+  d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\thread_task_monitor.cpp(230): note: 参见对正在编译的 类 模板 实例化 "MapAutoCleanup<std::wstring,std::wstring>" 的引用
+  d:\mysoft\visualstudio2017\community\vc\tools\msvc\14.16.27023\include\xtree(1792): note: 参见对正在编译的函数 模板 实例化“std::pair<std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool>::pair<std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>&,bool,0>(_Other1,_Other2 &&) noexcept”的引用
+          with
+          [
+              _Ty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Other1=std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::basic_string<char,std::char_traits<char>,std::allocator<char>>>>> &,
+              _Other2=bool
+          ]
+  d:\mysoft\visualstudio2017\community\vc\tools\msvc\14.16.27023\include\xtree(1792): note: 参见对正在编译的函数 模板 实例化“std::pair<std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool>::pair<std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>&,bool,0>(_Other1,_Other2 &&) noexcept”的引用
+          with
+          [
+              _Ty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Other1=std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::basic_string<char,std::char_traits<char>,std::allocator<char>>>>> &,
+              _Other2=bool
+          ]
+  d:\mysoft\visualstudio2017\community\vc\tools\msvc\14.16.27023\include\xtree(1726): note: 参见对正在编译的函数 模板 实例化“std::pair<std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool> std::_Tree<std::_Tset_traits<_Kty,_Pr,_Alloc,false>>::_Insert_nohint<_Value_type&,_Nodety>(bool,_Valty,_Nodety)”的引用
+          with
+          [
+              _Ty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Kty=String,
+              _Pr=std::less<String>,
+              _Alloc=std::allocator<std::string>,
+              _Value_type=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Nodety=std::_Tree_node<std::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::_Default_allocator_traits<std::allocator<std::string>>::void_pointer> *,
+              _Valty=std::basic_string<char,std::char_traits<char>,std::allocator<char>> &
+          ]
+  d:\mysoft\visualstudio2017\community\vc\tools\msvc\14.16.27023\include\xtree(1725): note: 参见对正在编译的函数 模板 实例化“std::pair<std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,bool> std::_Tree<std::_Tset_traits<_Kty,_Pr,_Alloc,false>>::_Insert_nohint<_Value_type&,_Nodety>(bool,_Valty,_Nodety)”的引用
+          with
+          [
+              _Ty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Kty=String,
+              _Pr=std::less<String>,
+              _Alloc=std::allocator<std::string>,
+              _Value_type=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Nodety=std::_Tree_node<std::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::_Default_allocator_traits<std::allocator<std::string>>::void_pointer> *,
+              _Valty=std::basic_string<char,std::char_traits<char>,std::allocator<char>> &
+          ]
+  d:\mysoft\visualstudio2017\community\vc\tools\msvc\14.16.27023\include\xtree(1163): note: 参见对正在编译的函数 模板 实例化“std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>> std::_Tree<std::_Tset_traits<_Kty,_Pr,_Alloc,false>>::_Insert_hint<_Value_type&,std::_Tree_node<_Value_type,std::_Default_allocator_traits<_Alloc>::void_pointer>*>(std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,_Valty,_Nodety)”的引用
+          with
+          [
+              _Ty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Kty=String,
+              _Pr=std::less<String>,
+              _Alloc=std::allocator<std::string>,
+              _Value_type=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Valty=std::basic_string<char,std::char_traits<char>,std::allocator<char>> &,
+              _Nodety=std::_Tree_node<std::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::_Default_allocator_traits<std::allocator<std::string>>::void_pointer> *
+          ]
+  d:\mysoft\visualstudio2017\community\vc\tools\msvc\14.16.27023\include\xtree(1163): note: 参见对正在编译的函数 模板 实例化“std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>> std::_Tree<std::_Tset_traits<_Kty,_Pr,_Alloc,false>>::_Insert_hint<_Value_type&,std::_Tree_node<_Value_type,std::_Default_allocator_traits<_Alloc>::void_pointer>*>(std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,_Valty,_Nodety)”的引用
+          with
+          [
+              _Ty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Kty=String,
+              _Pr=std::less<String>,
+              _Alloc=std::allocator<std::string>,
+              _Value_type=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Valty=std::basic_string<char,std::char_traits<char>,std::allocator<char>> &,
+              _Nodety=std::_Tree_node<std::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::_Default_allocator_traits<std::allocator<std::string>>::void_pointer> *
+          ]
+  d:\mysoft\visualstudio2017\community\vc\tools\msvc\14.16.27023\include\xtree(1345): note: 参见对正在编译的函数 模板 实例化“std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>> std::_Tree<std::_Tset_traits<_Kty,_Pr,_Alloc,false>>::emplace_hint<_Ty&>(std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,_Ty &)”的引用
+          with
+          [
+              _Ty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Kty=String,
+              _Pr=std::less<String>,
+              _Alloc=std::allocator<std::string>
+          ]
+  d:\mysoft\visualstudio2017\community\vc\tools\msvc\14.16.27023\include\xtree(1345): note: 参见对正在编译的函数 模板 实例化“std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>> std::_Tree<std::_Tset_traits<_Kty,_Pr,_Alloc,false>>::emplace_hint<_Ty&>(std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<_Ty>>>,_Ty &)”的引用
+          with
+          [
+              _Ty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Kty=String,
+              _Pr=std::less<String>,
+              _Alloc=std::allocator<std::string>
+          ]
+  d:\mysoft\visualstudio2017\community\vc\tools\msvc\14.16.27023\include\xtree(1351): note: 参见对正在编译的函数 模板 实例化“void std::_Tree<std::_Tset_traits<_Kty,_Pr,_Alloc,false>>::insert<const _Elem*>(_Iter,_Iter)”的引用
+          with
+          [
+              _Kty=String,
+              _Pr=std::less<String>,
+              _Alloc=std::allocator<std::string>,
+              _Elem=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Iter=const std::basic_string<char,std::char_traits<char>,std::allocator<char>> *
+          ]
+  d:\mysoft\visualstudio2017\community\vc\tools\msvc\14.16.27023\include\xtree(1351): note: 参见对正在编译的函数 模板 实例化“void std::_Tree<std::_Tset_traits<_Kty,_Pr,_Alloc,false>>::insert<const _Elem*>(_Iter,_Iter)”的引用
+          with
+          [
+              _Kty=String,
+              _Pr=std::less<String>,
+              _Alloc=std::allocator<std::string>,
+              _Elem=std::basic_string<char,std::char_traits<char>,std::allocator<char>>,
+              _Iter=const std::basic_string<char,std::char_traits<char>,std::allocator<char>> *
+          ]
+  d:\mysoft\visualstudio2017\community\vc\tools\msvc\14.16.27023\include\xtree(1350): note: 编译 类 模板 成员函数 "void std::_Tree<std::_Tset_traits<_Kty,_Pr,_Alloc,false>>::insert(std::initializer_list<std::basic_string<char,std::char_traits<char>,std::allocator<char>>>)" 时
+          with
+          [
+              _Kty=String,
+              _Pr=std::less<String>,
+              _Alloc=std::allocator<std::string>
+          ]
+  d:\mysoft\visualstudio2017\community\vc\tools\msvc\14.16.27023\include\set(178): note: 参见对正在编译的函数 模板 实例化“void std::_Tree<std::_Tset_traits<_Kty,_Pr,_Alloc,false>>::insert(std::initializer_list<std::basic_string<char,std::char_traits<char>,std::allocator<char>>>)”的引用
+          with
+          [
+              _Kty=String,
+              _Pr=std::less<String>,
+              _Alloc=std::allocator<std::string>
+          ]
+  d:\mysoft\visualstudio2017\community\vc\tools\msvc\14.16.27023\include\set(55): note: 参见对正在编译的 类 模板 实例化 "std::_Tree<std::_Tset_traits<_Kty,_Pr,_Alloc,false>>" 的引用
+          with
+          [
+              _Kty=String,
+              _Pr=std::less<String>,
+              _Alloc=std::allocator<std::string>
+          ]
+  d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\common.h(101): note: 参见对正在编译的 类 模板 实例化 "std::set<String,std::less<_Kty>,std::allocator<_Ty>>" 的引用
+          with
+          [
+              _Kty=String,
+              _Ty=std::string
+          ]
+  thread_task_output_record.cpp
+  thread_task_parse_event.cpp
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(162): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(180): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(198): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  thread_task_pipe_read.cpp
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(162): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(180): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\filter.h(198): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\thread_task_pipe_read.cpp(302): warning C4018: “<”: 有符号/无符号不匹配
+  thread_task_rule_matcher.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  time_util.cpp
+  tool_functions.cpp
+  Unknown compiler version - please run the configure tests and report the results
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\tool_functions.cpp(453): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\tool_functions.cpp(549): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\tool_functions.cpp(608): warning C4018: “<”: 有符号/无符号不匹配
+  unit.cpp
+d:\windows kits\10\include\10.0.17763.0\um\winnt.h(8894): warning C4005: “DELETE”: 宏重定义
+  d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\unit.h(14): note: 参见“DELETE”的前一个定义
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\event.h(166): warning C4244: “=”: 从“ULONG64”转换到“int32”，可能丢失数据
+  Unknown compiler version - please run the configure tests and report the results
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\unit.cpp(47): warning C4244: “参数”: 从“int64”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\unit.cpp(99): warning C4244: “参数”: 从“int64”转换到“const int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\unit.cpp(101): warning C4244: “参数”: 从“int64”转换到“const int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\unit.cpp(125): warning C4244: “+=”: 从“int64”转换到“int32”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\unit.cpp(128): warning C4244: “+=”: 从“int64”转换到“int32”，可能丢失数据
+  win_getopt.cpp
+  zone_identifier.cpp
+  tool_functions_macro.cpp
+  vbaParser.cpp
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\macro_detector\vbaparser.cpp(197): warning C4129: “w”: 不可识别的字符转义序列
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\macro_detector\vbaparser.cpp(198): warning C4129: “.”: 不可识别的字符转义序列
+  powershell_detector.cpp
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\powershell_detector\powershell_detector.cpp(19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\powershell_detector\powershell_detector.cpp(22): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\powershell_detector\powershell_detector.cpp(23): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\powershell_detector\powershell_detector.cpp(24): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\powershell_detector\powershell_detector.cpp(32): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\powershell_detector\powershell_detector.cpp(33): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\powershell_detector\powershell_detector.cpp(34): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\powershell_detector\powershell_detector.cpp(516): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\powershell_detector\powershell_detector.cpp(605): warning C4129: “_”: 不可识别的字符转义序列
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\powershell_detector\powershell_detector.cpp(664): warning C4129: “.”: 不可识别的字符转义序列
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\powershell_detector\powershell_detector.cpp(664): warning C4129: “|”: 不可识别的字符转义序列
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\powershell_detector\powershell_detector.cpp(665): warning C4129: “*”: 不可识别的字符转义序列
+d:\mylab\collector\aptetwcollector0823-1213\aptetwcollector0823\powershell_detector\powershell_detector.cpp(808): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  正在生成代码
+  2 of 24421 functions (<0.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    17 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  ETWDataCollectorRedesigned.vcxproj -> D:\MyLab\collector\APTETWCollector0823-1213\APTETWCollector0823\ETWDataCollectorRedesigned.exe

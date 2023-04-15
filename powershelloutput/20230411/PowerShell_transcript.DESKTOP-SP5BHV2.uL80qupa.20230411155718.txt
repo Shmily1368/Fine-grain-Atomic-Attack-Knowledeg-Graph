@@ -1,0 +1,41 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411155718
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command Invoke-AtomicTest T1036-2
+进程 ID: 18108
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS>Invoke-AtomicTest T1036-2
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1036-2 Malware Masquerading and Execution from Zip File
+
+Expand-Archive : 路径“C:\Users\wangjian\Downloads\T1036.zip”不存在，或者不是有效的文件系统路径。
+所在位置 行:1 字符: 4
++    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
++ & {Expand-Archive -Path $env:userprofile\Downloads\T1036.zip -Destina ...
+    + CategoryInfo          : InvalidArgument: (C:\Users\wangjian\Downloads\T1036.zip:String) [Expand-Archive]，Invalid
+    OperationException
+ 
+    + FullyQualifiedErrorId : ArchiveCmdletPathNotFound,Expand-Archive
+Done executing test:
+T1036-2 Malware Masquerading and Execution from Zip File
+
+PS>$global:?
+True
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20230411155722
+**********************

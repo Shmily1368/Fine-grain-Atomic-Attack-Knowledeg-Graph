@@ -1,0 +1,36 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411152219
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command Invoke-AtomicTest T1006-1
+进程 ID: 19452
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS>Invoke-AtomicTest T1006-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1006-1 Read volume boot sector via DOS device path (PowerShell)
+
+11
+           00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+00000000   EB 52 90 4E 54 46 53 20 20 20 20                 ?R?NTFS
+Done executing test:
+T1006-1 Read volume boot sector via DOS device path (PowerShell)
+
+PS>$global:?
+True
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20230411152222
+**********************

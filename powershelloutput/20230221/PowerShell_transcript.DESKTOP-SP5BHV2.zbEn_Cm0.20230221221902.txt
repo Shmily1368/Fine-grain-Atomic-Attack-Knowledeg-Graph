@@ -1,0 +1,148 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230221221903
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 14744
+PSVersion: 5.1.19041.2364
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2364
+BuildVersion: 10.0.19041.2364
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS C:\Windows\system32> Invoke-AtomicTest T1547.001-3
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-3 PowerShell Registry RunOnce
+
+Done executing test:
+T1547.001-3 PowerShell Registry RunOnce
+
+PS C:\Windows\system32> PathToAtomicsFolder
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230227163652
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 14744
+PSVersion: 5.1.19041.2364
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2364
+BuildVersion: 10.0.19041.2364
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“无法将“PathToAtomicsFolder”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。”
+PathToAtomicsFolder : 无法将“PathToAtomicsFolder”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。
+所在位置 行:1 字符: 1
++ PathToAtomicsFolder
++ ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (PathToAtomicsFolder:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+PathToAtomicsFolder : 无法将“PathToAtomicsFolder”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。
+所在位置 行:1 字符: 1
++ PathToAtomicsFolder
++ ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (PathToAtomicsFolder:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+PathToAtomicsFolder : 无法将“PathToAtomicsFolder”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写
+，如果包括路径，请确保路径正确，然后再试一次。
+所在位置 行:1 字符: 1
++ PathToAtomicsFolder
++ ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (PathToAtomicsFolder:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Windows\system32> print(PathToAtomicsFolder)
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230227163658
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 14744
+PSVersion: 5.1.19041.2364
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2364
+BuildVersion: 10.0.19041.2364
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“无法将“PathToAtomicsFolder”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。”
+PathToAtomicsFolder : 无法将“PathToAtomicsFolder”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。
+所在位置 行:1 字符: 7
++ print(PathToAtomicsFolder)
++       ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (PathToAtomicsFolder:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+PathToAtomicsFolder : 无法将“PathToAtomicsFolder”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。
+所在位置 行:1 字符: 7
++ print(PathToAtomicsFolder)
++       ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (PathToAtomicsFolder:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+PathToAtomicsFolder : 无法将“PathToAtomicsFolder”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写
+，如果包括路径，请确保路径正确，然后再试一次。
+所在位置 行:1 字符: 7
++ print(PathToAtomicsFolder)
++       ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (PathToAtomicsFolder:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Windows\system32> Invoke-AtomicTest T1547.001-3 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-3 PowerShell Registry RunOnce
+
+Done executing cleanup for test:
+T1547.001-3 PowerShell Registry RunOnce
+
+PS C:\Windows\system32> Invoke-AtomicTest T1547.001-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-1 Reg Key Run
+
+操作成功完成。
+Done executing test:
+T1547.001-1 Reg Key Run
+
+PS C:\Windows\system32> Invoke-AtomicTest T1547.001-1 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+PS C:\Windows\system32> Invoke-AtomicTest T1547.001-4
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-4 Suspicious vbs file run from startup Folder
+
+Microsoft (R) Windows Script Host Version 5.812
+版权所有(C) Microsoft Corporation。保留所有权利。
+T1547.001 Hello, World VBS!
+Microsoft (R) Windows Script Host Version 5.812
+版权所有(C) Microsoft Corporation。保留所有权利。
+T1547.001 Hello, World VBS!
+Done executing test:
+T1547.001-4 Suspicious vbs file run from startup Folder
+

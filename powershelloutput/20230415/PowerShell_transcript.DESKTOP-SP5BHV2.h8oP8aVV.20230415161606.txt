@@ -1,0 +1,79 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415161606
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 10872
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS C:\Users\wangjian> Invoke-AtomicTest T1003 -CheckPrereqs
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+CheckPrereq's for:
+T1003-1 Gsecdump
+
+Prerequisites not met: T1003-1 Gsecdump
+	[*] Elevation required but not provided
+	[*] Gsecdump must exist on disk at specified location (C:\AtomicRedTeam\atomics\T1003\bin\gsecdump.exe)
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1003-2 Credential Dumping with NPPSpy
+
+Prerequisites not met: T1003-2 Credential Dumping with NPPSpy
+	[*] Elevation required but not provided
+	[*] NPPSpy.dll must be available in local temp directory
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1003-3 Dump svchost.exe to gather RDP credentials
+
+Prerequisites not met: T1003-3 Dump svchost.exe to gather RDP credentials
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+PS C:\Users\wangjian> Invoke-AtomicTest T1003-1 -CheckPrereqs
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+CheckPrereq's for:
+T1003-1 Gsecdump
+
+Prerequisites not met: T1003-1 Gsecdump
+	[*] Elevation required but not provided
+	[*] Gsecdump must exist on disk at specified location (C:\AtomicRedTeam\atomics\T1003\bin\gsecdump.exe)
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+PS C:\Users\wangjian> Invoke-AtomicTest T1003-1 -GetPrereqs
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+GetPrereq's for:
+T1003-1 Gsecdump
+
+Elevation required but not provided
+Attempting to satisfy prereq:
+Gsecdump must exist on disk at specified location (C:\AtomicRedTeam\atomics\T1003\bin\gsecdump.exe)
+
+File hash mismatch, expected: 94CAE63DCBABB71C5DD43F55FD09CAEFFDCD7628A02A112FB3CBA36698EF72BC, actual: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855
+使用“1”个参数调用“OpenRead”时发生异常:“无法连接到远程服务器”
+所在位置 行:7 字符: 9
++         (New-Object System.Net.WebClient).OpenRead($url).copyto($ms)
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : WebException
+Failed to meet prereq: Gsecdump must exist on disk at specified location (C:\AtomicRedTeam\atomics\T1003\bin\gsecdump.exe)

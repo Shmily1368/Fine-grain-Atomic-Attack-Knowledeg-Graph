@@ -1,0 +1,231 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415191615
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 4708
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS C:\Users\wangjian> %windir%\system32
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415191619
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 4708
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“无法加载模块“%windir%”。有关详细信息，请运行“Import-Module %windir%”。”
+%windir%\system32 : 无法加载模块“%windir%”。有关详细信息，请运行“Import-Module %windir%”。
+所在位置 行:1 字符: 1
++ %windir%\system32
++ ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (%windir%\system32:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CouldNotAutoLoadModule
+%windir%\system32 : 无法加载模块“%windir%”。有关详细信息，请运行“Import-Module %windir%”。
+所在位置 行:1 字符: 1
++ %windir%\system32
++ ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (%windir%\system32:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CouldNotAutoLoadModule
+%windir%\system32 : 无法加载模块“%windir%”。有关详细信息，请运行“Import-Module %windir%”。
+所在位置 行:1 字符: 1
++ %windir%\system32
++ ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (%windir%\system32:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CouldNotAutoLoadModule
+
+PS C:\Users\wangjian> %windir%\
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415191624
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 4708
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“无法将“%windir%\”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。”
+%windir%\ : 无法将“%windir%\”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。
+所在位置 行:1 字符: 1
++ %windir%\
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (%windir%\:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+%windir%\ : 无法将“%windir%\”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。
+所在位置 行:1 字符: 1
++ %windir%\
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (%windir%\:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+%windir%\ : 无法将“%windir%\”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确
+保路径正确，然后再试一次。
+所在位置 行:1 字符: 1
++ %windir%\
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (%windir%\:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\wangjian> "%windir%\system32"
+%windir%\system32
+PS C:\Users\wangjian> cd %windir%\system32
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415191630
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 4708
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到路径“C:\Users\wangjian\%windir%\system32”，因为该路径不存在。”
+cd : 找不到路径“C:\Users\wangjian\%windir%\system32”，因为该路径不存在。
+所在位置 行:1 字符: 1
++ cd %windir%\system32
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\wangjian\%windir%\system32:String) [Set-Location], ItemNotFoundE
+xception
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+cd : 找不到路径“C:\Users\wangjian\%windir%\system32”，因为该路径不存在。
+所在位置 行:1 字符: 1
++ cd %windir%\system32
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\wangjian\%windir%\system32:String) [Set-Location], ItemNotFoundE
+xception
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+cd : 找不到路径“C:\Users\wangjian\%windir%\system32”，因为该路径不存在。
+所在位置 行:1 字符: 1
++ cd %windir%\system32
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\wangjian\%windir%\system32:String) [Set-Location], ItemNotFoun
+   dException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\wangjian> cd "%windir%\system32"
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415191635
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 4708
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到路径“C:\Users\wangjian\%windir%\system32”，因为该路径不存在。”
+cd : 找不到路径“C:\Users\wangjian\%windir%\system32”，因为该路径不存在。
+所在位置 行:1 字符: 1
++ cd "%windir%\system32"
++ ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\wangjian\%windir%\system32:String) [Set-Location], ItemNotFoundE
+xception
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+cd : 找不到路径“C:\Users\wangjian\%windir%\system32”，因为该路径不存在。
+所在位置 行:1 字符: 1
++ cd "%windir%\system32"
++ ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\wangjian\%windir%\system32:String) [Set-Location], ItemNotFoundE
+xception
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+cd : 找不到路径“C:\Users\wangjian\%windir%\system32”，因为该路径不存在。
+所在位置 行:1 字符: 1
++ cd "%windir%\system32"
++ ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\wangjian\%windir%\system32:String) [Set-Location], ItemNotFoun
+   dException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\wangjian> cd %windir%\system32
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415191647
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 4708
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到路径“C:\Users\wangjian\%windir%\system32”，因为该路径不存在。”
+cd : 找不到路径“C:\Users\wangjian\%windir%\system32”，因为该路径不存在。
+所在位置 行:1 字符: 1
++ cd %windir%\system32
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\wangjian\%windir%\system32:String) [Set-Location], ItemNotFoundE
+xception
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+cd : 找不到路径“C:\Users\wangjian\%windir%\system32”，因为该路径不存在。
+所在位置 行:1 字符: 1
++ cd %windir%\system32
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\wangjian\%windir%\system32:String) [Set-Location], ItemNotFoundE
+xception
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+cd : 找不到路径“C:\Users\wangjian\%windir%\system32”，因为该路径不存在。
+所在位置 行:1 字符: 1
++ cd %windir%\system32
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\wangjian\%windir%\system32:String) [Set-Location], ItemNotFoun
+   dException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+

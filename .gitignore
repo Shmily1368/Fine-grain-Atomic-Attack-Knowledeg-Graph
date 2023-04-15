@@ -1,0 +1,10 @@
+/.vs/*
+/x64/*.zip
+/lib/Release x64/boost_wave-vc140-mt-gd-1_61.lib
+/lib/Release x64/libboost_wave-vc140-mt-gd-1_61.lib
+*.out
+/*.out
+*.iobj
+*.pdb
+*.ipdb
+*.vspx

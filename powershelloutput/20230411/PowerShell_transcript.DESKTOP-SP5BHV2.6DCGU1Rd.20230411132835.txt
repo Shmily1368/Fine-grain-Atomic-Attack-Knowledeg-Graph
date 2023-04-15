@@ -1,0 +1,131 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411132835
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 7424
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS C:\Windows\system32> cd C:\KGraph\AtomicRun
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1547.001-1 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1547.001-1 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1547.001-1 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1547.001-1 
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-1 Reg Key Run
+
+操作成功完成。
+Done executing test:
+T1547.001-1 Reg Key Run
+
+PS C:\KGraph\AtomicRun> .\AtomicRunALL-2.ps1
+T1547.001-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-1 Reg Key Run
+
+操作成功完成。
+Done executing test:
+T1547.001-1 Reg Key Run
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411134635
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 7424
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“There is not exactly one .txt file in the source folder.”
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL-2.ps1:34 字符: 6
++      RenameAndMoveFile -sourceFolder "D:\MyLab\collector\APTETWCollec ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL-2.ps1:34 字符: 6
++      RenameAndMoveFile -sourceFolder "D:\MyLab\collector\APTETWCollec ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL-2.ps1:34 字符: 6
++      RenameAndMoveFile -sourceFolder "D:\MyLab\collector\APTETWCollec ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+
+PS C:\KGraph\AtomicRun> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1547.001-1 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+PS C:\KGraph\AtomicRun> .\AtomicRunALL-2.ps1
+T1547.001-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-1 Reg Key Run
+
+操作成功完成。
+Done executing test:
+T1547.001-1 Reg Key Run
+

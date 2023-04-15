@@ -1,0 +1,110 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410120904
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 16900
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS C:\Windows\system32> cd C:\KGraph\AtomicRun
+PS C:\KGraph\AtomicRun> .\AtomicRun.ps1
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410120912
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 16900
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到路径“C:\KGraph\AtomicRunTEWTest.csv”，因为该路径不存在。”
+Get-Content : 找不到路径“C:\KGraph\AtomicRunTEWTest.csv”，因为该路径不存在。
+所在位置 C:\KGraph\AtomicRun\AtomicRun.ps1:20 字符: 1
++ Get-Content -Path "C:\KGraph\AtomicRunTEWTest.csv" | ForEach-Object {
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\KGraph\AtomicRunTEWTest.csv:String) [Get-Content], ItemNotFoundExcepti
+on
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : 找不到路径“C:\KGraph\AtomicRunTEWTest.csv”，因为该路径不存在。
+所在位置 C:\KGraph\AtomicRun\AtomicRun.ps1:20 字符: 1
++ Get-Content -Path "C:\KGraph\AtomicRunTEWTest.csv" | ForEach-Object {
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\KGraph\AtomicRunTEWTest.csv:String) [Get-Content], ItemNotFoundExcepti
+on
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : 找不到路径“C:\KGraph\AtomicRunTEWTest.csv”，因为该路径不存在。
+所在位置 C:\KGraph\AtomicRun\AtomicRun.ps1:20 字符: 1
++ Get-Content -Path "C:\KGraph\AtomicRunTEWTest.csv" | ForEach-Object {
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\KGraph\AtomicRunTEWTest.csv:String) [Get-Content], ItemNotFoundExcep
+   tion
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+
+PS C:\KGraph\AtomicRun> .\AtomicRun.ps1
+  T1547.001-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1547.001\  T1547.001.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1547.001\  T1547.001.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410120954
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 16900
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“There is not exactly one .txt file in the source folder.”
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRun.ps1:30 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRun.ps1:30 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRun.ps1:30 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+

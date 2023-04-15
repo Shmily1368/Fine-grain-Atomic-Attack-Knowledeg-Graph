@@ -1,0 +1,35 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411100250
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 18512
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS C:\Windows\system32> cd C:\KGraph\AtomicRun
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1218.011-1 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+错误: 没有找到进程 "notepad.exe"。
+Done executing cleanup for test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+PS C:\KGraph\AtomicRun> .\AtomicRunALL.ps1
+T1218.011-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+

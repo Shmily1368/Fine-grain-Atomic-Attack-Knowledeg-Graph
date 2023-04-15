@@ -1,0 +1,52 @@
+GetKeyState
+GetKeyboardState
+GetAsyncKeyState
+#Win10 API
+NtUserGetKeyState
+NtUserGetAsyncKeyState
+#Win10 API
+NtUserGetKeyboardState
+GetDC
+#Win10 API
+NtUserGetDC
+#Win10 API
+NtGdiCreateDIBSection
+CreateCompatibleDC
+CreateCompatibleBitmap
+#Win10 API
+CreateDIBSection
+#Win10 API
+NtGdiCreateCompatibleDC
+#Win10 API
+NtGdiCreateCompatibleBitmap
+BitBlt
+#Win10 API
+NtGdiBitBlt
+StretchBlt
+#Win10 API
+NtGdiStretchBlt
+SetBkColor
+#Win10 API
+NtGdiSelectBitmap
+SelectObject
+#Win10 API
+SelectObjectImpl
+#Win10 API
+NtGdiSelectBitmap
+ZwCreateNamedPipeFile
+CreatePipe
+ZwOpenProcess
+OpenProcess
+ZwAllocateVirtualMemory
+VirtualAllocEx
+VirtualAllocExNuma
+#VirtualAlloc
+ZwWriteVirtualMemory
+WriteProcessMemory
+K32GetProcessImageFileName
+CryptImportKey
+VirtualAlloc
+VirtualLock
+ZwFlushInstructionCache
+VirtualProtect
+RtlAllocateHeap

@@ -1,0 +1,733 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="btree.cpp">
+      <Filter>CallStack</Filter>
+    </ClCompile>
+    <ClCompile Include="callstack_pruning.cpp">
+      <Filter>CallStack</Filter>
+    </ClCompile>
+    <ClCompile Include="event_record_callstack.cpp">
+      <Filter>CallStack</Filter>
+    </ClCompile>
+    <ClCompile Include="get_device_drive_map.cpp">
+      <Filter>CallStack</Filter>
+    </ClCompile>
+    <ClCompile Include="obtain_entry_address.cpp">
+      <Filter>CallStack</Filter>
+    </ClCompile>
+    <ClCompile Include="record_queue.cpp">
+      <Filter>CallStack</Filter>
+    </ClCompile>
+    <ClCompile Include="record_queue_per_process.cpp">
+      <Filter>CallStack</Filter>
+    </ClCompile>
+    <ClCompile Include="extra_trace_session.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="setting.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="task_queue_service.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_functions.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="etw_configuration.cpp">
+      <Filter>InitCollector</Filter>
+    </ClCompile>
+    <ClCompile Include="init_collector.cpp">
+      <Filter>InitCollector</Filter>
+    </ClCompile>
+    <ClCompile Include="init_collector_factory.cpp">
+      <Filter>InitCollector</Filter>
+    </ClCompile>
+    <ClCompile Include="init_collector_local_collect.cpp">
+      <Filter>InitCollector</Filter>
+    </ClCompile>
+    <ClCompile Include="init_collector_local_parse.cpp">
+      <Filter>InitCollector</Filter>
+    </ClCompile>
+    <ClCompile Include="init_collector_online_parse.cpp">
+      <Filter>InitCollector</Filter>
+    </ClCompile>
+    <ClCompile Include="auto_lock.cpp">
+      <Filter>Lib\Lock</Filter>
+    </ClCompile>
+    <ClCompile Include="mutex.cpp">
+      <Filter>Lib\Lock</Filter>
+    </ClCompile>
+    <ClCompile Include="rwlock.cpp">
+      <Filter>Lib\Lock</Filter>
+    </ClCompile>
+    <ClCompile Include="semaphore.cpp">
+      <Filter>Lib\Lock</Filter>
+    </ClCompile>
+    <ClCompile Include="spin_lock.cpp">
+      <Filter>Lib\Lock</Filter>
+    </ClCompile>
+    <ClCompile Include="filter.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="logger_record.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="object_pool.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="on_leave_section_callback.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="string_util.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="time_util.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="win_getopt.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="macro_detector.cpp">
+      <Filter>MarcoDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="macro_detector\OleParser.cpp">
+      <Filter>MarcoDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="macro_detector\tool_functions_macro.cpp">
+      <Filter>MarcoDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="macro_detector\vbaParser.cpp">
+      <Filter>MarcoDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="event_identifier.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="event_parameter.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="event_record.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="event_record_extra.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="event_record_manager.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="event_record_pruner.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="event_record_subclass.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="parameter_index.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="certificate_tool.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="get_systemcontext.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+    <ClCompile Include="etwdata.pb.cc">
+      <Filter>Output</Filter>
+    </ClCompile>
+    <ClCompile Include="kafka_producer.cpp">
+      <Filter>Output</Filter>
+    </ClCompile>
+    <ClCompile Include="output.cpp">
+      <Filter>Output</Filter>
+    </ClCompile>
+    <ClCompile Include="output_json.cpp">
+      <Filter>Output</Filter>
+    </ClCompile>
+    <ClCompile Include="output_kafka.cpp">
+      <Filter>Output</Filter>
+    </ClCompile>
+    <ClCompile Include="cert_analyzer.cpp">
+      <Filter>Output\Verification</Filter>
+    </ClCompile>
+    <ClCompile Include="get_signature_info.cpp">
+      <Filter>Output\Verification</Filter>
+    </ClCompile>
+    <ClCompile Include="signature_verification.cpp">
+      <Filter>Output\Verification</Filter>
+    </ClCompile>
+    <ClCompile Include="phf_detector.cpp">
+      <Filter>PhfDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="system_call_detector.cpp">
+      <Filter>SystemCallDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="thread_task_base.cpp">
+      <Filter>ThreadTask</Filter>
+    </ClCompile>
+    <ClCompile Include="thread_task_cerficate_image.cpp">
+      <Filter>ThreadTask</Filter>
+    </ClCompile>
+    <ClCompile Include="thread_task_count_timer.cpp">
+      <Filter>ThreadTask</Filter>
+    </ClCompile>
+    <ClCompile Include="thread_task_get_ipconfig.cpp">
+      <Filter>ThreadTask</Filter>
+    </ClCompile>
+    <ClCompile Include="thread_task_get_threadend_event.cpp">
+      <Filter>ThreadTask</Filter>
+    </ClCompile>
+    <ClCompile Include="thread_task_get_visiblewindow.cpp">
+      <Filter>ThreadTask</Filter>
+    </ClCompile>
+    <ClCompile Include="thread_task_hook_keyandmouse.cpp">
+      <Filter>ThreadTask</Filter>
+    </ClCompile>
+    <ClCompile Include="thread_task_manager.cpp">
+      <Filter>ThreadTask</Filter>
+    </ClCompile>
+    <ClCompile Include="thread_task_monitor.cpp">
+      <Filter>ThreadTask</Filter>
+    </ClCompile>
+    <ClCompile Include="thread_task_output_record.cpp">
+      <Filter>ThreadTask</Filter>
+    </ClCompile>
+    <ClCompile Include="thread_task_parse_event.cpp">
+      <Filter>ThreadTask</Filter>
+    </ClCompile>
+    <ClCompile Include="thread_task_pipe_read.cpp">
+      <Filter>ThreadTask</Filter>
+    </ClCompile>
+    <ClCompile Include="macro_detector\pugixml\pugixml.cpp">
+      <Filter>ThirdParty\pugixml</Filter>
+    </ClCompile>
+    <ClCompile Include="macro_detector\zip\unzip.cpp">
+      <Filter>ThirdParty\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="macro_detector\zip\zip.cpp">
+      <Filter>ThirdParty\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="cJSON.cpp">
+      <Filter>RansomDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="CJsonObject.cpp">
+      <Filter>RansomDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="feature.cpp">
+      <Filter>RansomDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="RansomeDetector.cpp">
+      <Filter>RansomDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="svm.cpp">
+      <Filter>RansomDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="svm-predict.cpp">
+      <Filter>RansomDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="svm-scale.cpp">
+      <Filter>RansomDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="svm-train.cpp">
+      <Filter>RansomDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="unit.cpp">
+      <Filter>RansomDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="output_ransom.cpp">
+      <Filter>Output</Filter>
+    </ClCompile>
+    <ClCompile Include="public_xml_interface.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="security_audit.cpp">
+      <Filter>SecurityAudit</Filter>
+    </ClCompile>
+    <ClCompile Include="security_trace_session.cpp">
+      <Filter>SecurityAudit</Filter>
+    </ClCompile>
+    <ClCompile Include="named_pipe_client.cpp">
+      <Filter>Pipe</Filter>
+    </ClCompile>
+    <ClCompile Include="process_info.cpp">
+      <Filter>Pipe</Filter>
+    </ClCompile>
+    <ClCompile Include="thread_task_get_devicearrival.cpp">
+      <Filter>ThreadTask</Filter>
+    </ClCompile>
+    <ClCompile Include="thread_task_rule_matcher.cpp">
+      <Filter>ThreadTask</Filter>
+    </ClCompile>
+    <ClCompile Include="public_json_interface.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="rule_matcher.cpp">
+      <Filter>Detector</Filter>
+    </ClCompile>
+    <ClCompile Include="zone_identifier.cpp">
+      <Filter>Detector</Filter>
+    </ClCompile>
+    <ClCompile Include="thread_task_get_hash.cpp">
+      <Filter>ThreadTask</Filter>
+    </ClCompile>
+    <ClCompile Include="sysmon_trace_session.cpp">
+      <Filter>Sysmon</Filter>
+    </ClCompile>
+    <ClCompile Include="cal_MD5.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="sysmon_pruning.cpp">
+      <Filter>Sysmon</Filter>
+    </ClCompile>
+    <ClCompile Include="powershell_detector\file_deal.cpp">
+      <Filter>powershell_detector</Filter>
+    </ClCompile>
+    <ClCompile Include="powershell_detector\powershell_detector.cpp">
+      <Filter>powershell_detector</Filter>
+    </ClCompile>
+    <ClCompile Include="SignatureDetector.cpp">
+      <Filter>Other</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="btree.h">
+      <Filter>CallStack</Filter>
+    </ClInclude>
+    <ClInclude Include="callstack_pruning.h">
+      <Filter>CallStack</Filter>
+    </ClInclude>
+    <ClInclude Include="event_record_callstack.h">
+      <Filter>CallStack</Filter>
+    </ClInclude>
+    <ClInclude Include="get_device_drive_map.h">
+      <Filter>CallStack</Filter>
+    </ClInclude>
+    <ClInclude Include="obtain_entry_address.h">
+      <Filter>CallStack</Filter>
+    </ClInclude>
+    <ClInclude Include="record_queue.h">
+      <Filter>CallStack</Filter>
+    </ClInclude>
+    <ClInclude Include="record_queue_per_process.h">
+      <Filter>CallStack</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="extra_trace_session.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="global_enum_def.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="setting.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="task_queue_service.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_functions.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="etw_configuration.h">
+      <Filter>InitCollector</Filter>
+    </ClInclude>
+    <ClInclude Include="init_collector.h">
+      <Filter>InitCollector</Filter>
+    </ClInclude>
+    <ClInclude Include="init_collector_factory.h">
+      <Filter>InitCollector</Filter>
+    </ClInclude>
+    <ClInclude Include="init_collector_local_collect.h">
+      <Filter>InitCollector</Filter>
+    </ClInclude>
+    <ClInclude Include="init_collector_local_parse.h">
+      <Filter>InitCollector</Filter>
+    </ClInclude>
+    <ClInclude Include="init_collector_online_parse.h">
+      <Filter>InitCollector</Filter>
+    </ClInclude>
+    <ClInclude Include="assist_macro.h">
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="auto_lock.h">
+      <Filter>Lib\Lock</Filter>
+    </ClInclude>
+    <ClInclude Include="lock_base.h">
+      <Filter>Lib\Lock</Filter>
+    </ClInclude>
+    <ClInclude Include="mutex.h">
+      <Filter>Lib\Lock</Filter>
+    </ClInclude>
+    <ClInclude Include="rwlock.h">
+      <Filter>Lib\Lock</Filter>
+    </ClInclude>
+    <ClInclude Include="semaphore.h">
+      <Filter>Lib\Lock</Filter>
+    </ClInclude>
+    <ClInclude Include="spin_lock.h">
+      <Filter>Lib\Lock</Filter>
+    </ClInclude>
+    <ClInclude Include="concurrent_queue.h">
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="filter.h">
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="logger_record.h">
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="map_auto_cleanup.h">
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="object_pool.h">
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="on_leave_section_callback.h">
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="platform.h">
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="string_util.h">
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="time_util.h">
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="uuid_generator.h">
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="win_getopt.h">
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="macro_detector.h">
+      <Filter>MarcoDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="macro_detector\mime2.h">
+      <Filter>MarcoDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="macro_detector\OleParser.h">
+      <Filter>MarcoDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="macro_detector\tool_functions_macro.h">
+      <Filter>MarcoDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="macro_detector\vbaParser.h">
+      <Filter>MarcoDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="event_identifier.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="event_parameter.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="event_record.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="event_record_extra.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="event_record_manager.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="event_record_pruner.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="event_record_subclass.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="ntkernel_provider_guid.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="parameter_index.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="certificate_tool.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="get_systemcontext.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="systemstruct.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+    <ClInclude Include="etwdata.pb.h">
+      <Filter>Output</Filter>
+    </ClInclude>
+    <ClInclude Include="kafka_producer.h">
+      <Filter>Output</Filter>
+    </ClInclude>
+    <ClInclude Include="output.h">
+      <Filter>Output</Filter>
+    </ClInclude>
+    <ClInclude Include="output_json.h">
+      <Filter>Output</Filter>
+    </ClInclude>
+    <ClInclude Include="output_kafka.h">
+      <Filter>Output</Filter>
+    </ClInclude>
+    <ClInclude Include="rdkafka.h">
+      <Filter>Output</Filter>
+    </ClInclude>
+    <ClInclude Include="rdkafkacpp.h">
+      <Filter>Output</Filter>
+    </ClInclude>
+    <ClInclude Include="cert_analyzer.h">
+      <Filter>Output\Verification</Filter>
+    </ClInclude>
+    <ClInclude Include="get_signature_info.h">
+      <Filter>Output\Verification</Filter>
+    </ClInclude>
+    <ClInclude Include="signature_verification.h">
+      <Filter>Output\Verification</Filter>
+    </ClInclude>
+    <ClInclude Include="phf_detector.h">
+      <Filter>PhfDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="signature.h">
+      <Filter>PhfDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="system_call_detector.h">
+      <Filter>SystemCallDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="thread_task_base.h">
+      <Filter>ThreadTask</Filter>
+    </ClInclude>
+    <ClInclude Include="thread_task_cerficate_image.h">
+      <Filter>ThreadTask</Filter>
+    </ClInclude>
+    <ClInclude Include="thread_task_count_timer.h">
+      <Filter>ThreadTask</Filter>
+    </ClInclude>
+    <ClInclude Include="thread_task_get_ipconfig.h">
+      <Filter>ThreadTask</Filter>
+    </ClInclude>
+    <ClInclude Include="thread_task_get_threadend_event.h">
+      <Filter>ThreadTask</Filter>
+    </ClInclude>
+    <ClInclude Include="thread_task_get_visiblewindow.h">
+      <Filter>ThreadTask</Filter>
+    </ClInclude>
+    <ClInclude Include="thread_task_hook_keyandmouse.h">
+      <Filter>ThreadTask</Filter>
+    </ClInclude>
+    <ClInclude Include="thread_task_manager.h">
+      <Filter>ThreadTask</Filter>
+    </ClInclude>
+    <ClInclude Include="thread_task_monitor.h">
+      <Filter>ThreadTask</Filter>
+    </ClInclude>
+    <ClInclude Include="thread_task_output_record.h">
+      <Filter>ThreadTask</Filter>
+    </ClInclude>
+    <ClInclude Include="thread_task_parse_event.h">
+      <Filter>ThreadTask</Filter>
+    </ClInclude>
+    <ClInclude Include="thread_task_pipe_read.h">
+      <Filter>ThreadTask</Filter>
+    </ClInclude>
+    <ClInclude Include="concurrentqueue.h">
+      <Filter>ThirdParty</Filter>
+    </ClInclude>
+    <ClInclude Include="macro_detector\pugixml\pugiconfig.hpp">
+      <Filter>ThirdParty\pugixml</Filter>
+    </ClInclude>
+    <ClInclude Include="macro_detector\pugixml\pugixml.hpp">
+      <Filter>ThirdParty\pugixml</Filter>
+    </ClInclude>
+    <ClInclude Include="macro_detector\zip\unzip.h">
+      <Filter>ThirdParty\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="macro_detector\zip\zip.h">
+      <Filter>ThirdParty\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="macro_detector\zlib\zconf.h">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="macro_detector\zlib\zlib.h">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="cJSON.h">
+      <Filter>RansomDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="CJsonObject.hpp">
+      <Filter>RansomDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="event.h">
+      <Filter>RansomDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="feature.h">
+      <Filter>RansomDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="processTree.h">
+      <Filter>RansomDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="RansomDetector.h">
+      <Filter>RansomDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="svm.h">
+      <Filter>RansomDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="unit.h">
+      <Filter>RansomDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="output_ransom.h">
+      <Filter>Output</Filter>
+    </ClInclude>
+    <ClInclude Include="public_xml_interface.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="security_audit.h">
+      <Filter>SecurityAudit</Filter>
+    </ClInclude>
+    <ClInclude Include="security_trace_session.h">
+      <Filter>SecurityAudit</Filter>
+    </ClInclude>
+    <ClInclude Include="named_pipe_client.h">
+      <Filter>Pipe</Filter>
+    </ClInclude>
+    <ClInclude Include="process_info.h">
+      <Filter>Pipe</Filter>
+    </ClInclude>
+    <ClInclude Include="thread_task_get_devicearrival.h">
+      <Filter>ThreadTask</Filter>
+    </ClInclude>
+    <ClInclude Include="thread_task_rule_matcher.h">
+      <Filter>ThreadTask</Filter>
+    </ClInclude>
+    <ClInclude Include="publicstruct.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="public_json_interface.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="rule_matcher.h">
+      <Filter>Detector</Filter>
+    </ClInclude>
+    <ClInclude Include="zone_identifier.h">
+      <Filter>Detector</Filter>
+    </ClInclude>
+    <ClInclude Include="thread_task_get_hash.h">
+      <Filter>ThreadTask</Filter>
+    </ClInclude>
+    <ClInclude Include="sysmon_trace_session.h">
+      <Filter>Sysmon</Filter>
+    </ClInclude>
+    <ClInclude Include="cal_MD5.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="sysmon_pruning.h">
+      <Filter>Sysmon</Filter>
+    </ClInclude>
+    <ClInclude Include="powershell_detector\cmdExec.h">
+      <Filter>powershell_detector</Filter>
+    </ClInclude>
+    <ClInclude Include="powershell_detector\file_deal.h">
+      <Filter>powershell_detector</Filter>
+    </ClInclude>
+    <ClInclude Include="powershell_detector\powershell_detector.h">
+      <Filter>powershell_detector</Filter>
+    </ClInclude>
+    <ClInclude Include="powershell_detector\powershellStruct.h">
+      <Filter>powershell_detector</Filter>
+    </ClInclude>
+    <ClInclude Include="SignatureDetector.h">
+      <Filter>Other</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CallStack">
+      <UniqueIdentifier>{4e025ce0-599c-4610-b62a-c2276262f811}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{ca931993-cb78-4386-a5d5-86515c6dc1de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InitCollector">
+      <UniqueIdentifier>{66fb93e8-2823-4750-8db8-9e197a8a6815}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib">
+      <UniqueIdentifier>{7d06fb54-4880-4a41-b442-4b99f4d45dc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MarcoDetector">
+      <UniqueIdentifier>{de50f7da-eee4-4571-b2bf-884d85ab397b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Output">
+      <UniqueIdentifier>{420fa350-d471-42b8-b6d2-967b4614ac72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Other">
+      <UniqueIdentifier>{cc4b7b5c-0ce4-4de8-9d73-c5390952314a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PhfDetector">
+      <UniqueIdentifier>{c59911eb-4afd-4c1b-9853-399835f340b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RansomDetector">
+      <UniqueIdentifier>{bd46aaa1-4982-4785-a701-29c8785c85d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemCallDetector">
+      <UniqueIdentifier>{dd5ca9c6-6b26-4fa6-a9e4-e544118d125b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty">
+      <UniqueIdentifier>{52dc3f98-012c-4ed7-bbeb-cc42422858cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadTask">
+      <UniqueIdentifier>{0f32875e-96c5-4765-8f41-02f65c135710}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib\Lock">
+      <UniqueIdentifier>{0e0b5cb1-dc00-42e1-8dfa-af9817fe074c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model">
+      <UniqueIdentifier>{a8bc361a-523f-4438-92a7-7627e10c96a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Output\Verification">
+      <UniqueIdentifier>{21b33b9b-984a-4156-9936-4c3e73e01c21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\pugixml">
+      <UniqueIdentifier>{6c4a61d3-bc9b-42d7-b1b9-49f2b3c307bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\zip">
+      <UniqueIdentifier>{6f99dee6-c678-47c4-b900-be7cb0aaa1f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\zlib">
+      <UniqueIdentifier>{174d1055-463a-4730-9713-f124a3860d95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{41937252-a699-45ae-b9eb-8dad7bff02ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SecurityAudit">
+      <UniqueIdentifier>{aef40915-2c64-493f-831a-07e563a038b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pipe">
+      <UniqueIdentifier>{1ff6fdb9-0b3e-426b-81e6-1202edd7bf9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Detector">
+      <UniqueIdentifier>{80125bba-dedf-4983-8458-efe602d62b52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sysmon">
+      <UniqueIdentifier>{0cc07d69-29f9-4c78-8388-2865ec944963}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="powershell_detector">
+      <UniqueIdentifier>{1ebace58-1bda-4faf-986b-3435d9e228f3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ETWDataCollectorRedesigned.rc">
+      <Filter>Main</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="svm.def">
+      <Filter>RansomDetector</Filter>
+    </None>
+  </ItemGroup>
+</Project>

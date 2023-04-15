@@ -1,0 +1,26 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20221121035555
+用户名: WORKGROUP\SYSTEM
+RunAs 用户: WORKGROUP\SYSTEM
+配置名称: 
+计算机: DESKTOP-VME8FRS (Microsoft Windows NT 10.0.19045.0)
+主机应用程序: powershell.exe -ExecutionPolicy Restricted -Command Write-Host 'Final result: 1';
+进程 ID: 4992
+PSVersion: 5.1.19041.1682
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1682
+BuildVersion: 10.0.19041.1682
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>Write-Host 'Final result: 1';
+Final result: 1
+PS>$global:?
+True
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20221121035555
+**********************

@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package ETWproto;
+
+message datad
+{
+repeated bytes s = 1;
+repeated int64 d = 2;
+}
+
+message EventRecords
+{
+    repeated datad data = 1;
+    repeated int64 providerID = 4;
+    repeated uint32 opcode = 5;
+    repeated int32 processID = 6;
+    repeated int32 threadID = 7;
+    repeated bytes eventName = 8;
+    repeated int64 timestamp = 9;
+    repeated bytes callstack = 10;
+}

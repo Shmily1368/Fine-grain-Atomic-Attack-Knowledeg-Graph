@@ -1,0 +1,61 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415173424
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {taskkill /IM Calculator.exe /f >$null 2>$null
+Remove-Item $env:userprofile\Downloads\T1036 -recurse -ErrorAction Ignore}
+进程 ID: 2072
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS>& {taskkill /IM Calculator.exe /f >$null 2>$null
+Remove-Item $env:userprofile\Downloads\T1036 -recurse -ErrorAction Ignore}
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415173426
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {taskkill /IM Calculator.exe /f >$null 2>$null
+Remove-Item $env:userprofile\Downloads\T1036 -recurse -ErrorAction Ignore}
+进程 ID: 2072
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“错误: 没有找到进程 "Calculator.exe"。”
+taskkill : 错误: 没有找到进程 "Calculator.exe"。
+所在位置 行:1 字符: 4
++ & {taskkill /IM Calculator.exe /f >$null 2>$null
++    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (错误: 没有找到进程 "Calculator.exe"。:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+taskkill : 错误: 没有找到进程 "Calculator.exe"。
+所在位置 行:1 字符: 4
++ & {taskkill /IM Calculator.exe /f >$null 2>$null
++    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (错误: 没有找到进程 "Calculator.exe"。:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+PS>$global:?
+True
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20230415173426
+**********************

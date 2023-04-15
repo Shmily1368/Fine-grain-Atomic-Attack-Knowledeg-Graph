@@ -1,0 +1,104 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411184257
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command Invoke-AtomicTest T1547.004-3
+进程 ID: 16104
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411184257
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command Invoke-AtomicTest T1547.004-3
+进程 ID: 16104
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“无法加载文件 C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1，因为在此系统上禁止运行脚本。有关详细信息，请参阅 https:/go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies。”
+. : 无法加载文件 C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1，因为在此系统上禁止运行脚本。有关详细信息，请参阅 https
+:/go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies。
+所在位置 行:1 字符: 3
++ . 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell ...
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : SecurityError: (:) []，PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+. : 无法加载文件 C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1，因为在此系统上禁止运行脚本。有关详细信息，请参阅 https
+:/go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies。
+所在位置 行:1 字符: 3
++ . 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell ...
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : SecurityError: (:) []，PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+. : 无法加载文件 C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1，因为在此系统上禁止运行
+脚本。有关详细信息，请参阅 https:/go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies。
+所在位置 行:1 字符: 3
++ . 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell ...
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : SecurityError: (:) []，PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+PS>Invoke-AtomicTest T1547.004-3
+PS>TerminatingError(Import-Module):“无法加载文件 C:\Users\wangjian\Documents\WindowsPowerShell\Modules\powershell-yaml\0.4.3\Load-Assemblies.ps1，因为在此系统上禁止运行脚本。有关详细信息，请参阅 https:/go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies。”
+>> TerminatingError(Import-Module):“无法加载文件 C:\Users\wangjian\Documents\WindowsPowerShell\Modules\powershell-yaml\0.4.3\Load-Assemblies.ps1，因为在此系统上禁止运行脚本。有关详细信息，请参阅 https:/go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies。”
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411184257
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command Invoke-AtomicTest T1547.004-3
+进程 ID: 16104
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“在模块“Invoke-AtomicRedTeam”中找到“Invoke-AtomicTest”命令，但无法加载该模块。有关详细信息，请运行“Import-Module Invoke-AtomicRedTeam”。”
+Invoke-AtomicTest : 在模块“Invoke-AtomicRedTeam”中找到“Invoke-AtomicTest”命令，但无法加载该模块。有关详细信息，请运行“Import-Module Invoke-AtomicRed
+Team”。
+所在位置 行:1 字符: 1
++ Invoke-AtomicTest T1547.004-3
++ ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Invoke-AtomicTest:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CouldNotAutoloadMatchingModule
+Invoke-AtomicTest : 在模块“Invoke-AtomicRedTeam”中找到“Invoke-AtomicTest”命令，但无法加载该模块。有关详细信息，请运
+行“Import-Module Invoke-AtomicRedTeam”。
+所在位置 行:1 字符: 1
++ Invoke-AtomicTest T1547.004-3
++ ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Invoke-AtomicTest:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CouldNotAutoloadMatchingModule
+
+PS>$global:?
+False
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20230411184258
+**********************

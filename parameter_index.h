@@ -1,0 +1,198 @@
+#pragma once
+
+#include <stdio.h>
+#include <string>
+#include <vector>
+#include "parameter_index.h"
+
+const int KParametesStringListSize = 163;
+
+#define GENERATE_PARAMETER_INDEX					\
+	_GENERATE_PARAMETER_INDEX(Affinity),			\
+	_GENERATE_PARAMETER_INDEX(BaseAddress),			\
+	_GENERATE_PARAMETER_INDEX(BasePriority),		\
+	_GENERATE_PARAMETER_INDEX(ByteCount),			\
+	_GENERATE_PARAMETER_INDEX(ByteOffset),			\
+	_GENERATE_PARAMETER_INDEX(Certificate),			\
+	_GENERATE_PARAMETER_INDEX(ChildIrp),			\
+	_GENERATE_PARAMETER_INDEX(CommandLine),			\
+	_GENERATE_PARAMETER_INDEX(connid),				\
+	_GENERATE_PARAMETER_INDEX(CreateOptions),		\
+	_GENERATE_PARAMETER_INDEX(daddr),				\
+	_GENERATE_PARAMETER_INDEX(DefaultBase),			\
+	_GENERATE_PARAMETER_INDEX(DirectoryTableBase),	\
+	_GENERATE_PARAMETER_INDEX(DiskNumber),			\
+	_GENERATE_PARAMETER_INDEX(dport),				\
+	_GENERATE_PARAMETER_INDEX(endtime),				\
+	_GENERATE_PARAMETER_INDEX(ExitStatus),			\
+	_GENERATE_PARAMETER_INDEX(ExtraInfo),			\
+	_GENERATE_PARAMETER_INDEX(FileAttributes),		\
+	_GENERATE_PARAMETER_INDEX(FileIndex),			\
+	_GENERATE_PARAMETER_INDEX(FileKey),				\
+	_GENERATE_PARAMETER_INDEX(FileName),			\
+	_GENERATE_PARAMETER_INDEX(FileObject),			\
+	_GENERATE_PARAMETER_INDEX(Flags),				\
+	_GENERATE_PARAMETER_INDEX(HandleCount),			\
+	_GENERATE_PARAMETER_INDEX(HighResResponseTime),	\
+	_GENERATE_PARAMETER_INDEX(ImageBase),			\
+	_GENERATE_PARAMETER_INDEX(ImageChecksum),		\
+	_GENERATE_PARAMETER_INDEX(ImageFileName),		\
+	_GENERATE_PARAMETER_INDEX(ImageSize),			\
+	_GENERATE_PARAMETER_INDEX(Index),				\
+	_GENERATE_PARAMETER_INDEX(InfoClass),			\
+	_GENERATE_PARAMETER_INDEX(InitialTime),			\
+	_GENERATE_PARAMETER_INDEX(IoFlags),				\
+	_GENERATE_PARAMETER_INDEX(IoPriority),			\
+	_GENERATE_PARAMETER_INDEX(IoSize),				\
+	_GENERATE_PARAMETER_INDEX(Irp),					\
+	_GENERATE_PARAMETER_INDEX(IrpFlags),			\
+	_GENERATE_PARAMETER_INDEX(IrpPtr),				\
+	_GENERATE_PARAMETER_INDEX(IsServerPort),		\
+	_GENERATE_PARAMETER_INDEX(KeyHandle),			\
+	_GENERATE_PARAMETER_INDEX(KeyName),				\
+	_GENERATE_PARAMETER_INDEX(Length),				\
+	_GENERATE_PARAMETER_INDEX(MajorFunction),		\
+	_GENERATE_PARAMETER_INDEX(MessageID),			\
+	_GENERATE_PARAMETER_INDEX(MessageNumber),		\
+	_GENERATE_PARAMETER_INDEX(MinorFunction),		\
+	_GENERATE_PARAMETER_INDEX(mss),					\
+	_GENERATE_PARAMETER_INDEX(NewThreadId),			\
+	_GENERATE_PARAMETER_INDEX(NewThreadPriority),	\
+	_GENERATE_PARAMETER_INDEX(NewThreadWaitTime),	\
+	_GENERATE_PARAMETER_INDEX(NtStatus),			\
+	_GENERATE_PARAMETER_INDEX(Offset),				\
+	_GENERATE_PARAMETER_INDEX(OldThreadId),			\
+	_GENERATE_PARAMETER_INDEX(OldThreadPriority),	\
+	_GENERATE_PARAMETER_INDEX(OldThreadState),		\
+	_GENERATE_PARAMETER_INDEX(OldThreadWaitIdealProcessor),	\
+	_GENERATE_PARAMETER_INDEX(OldThreadWaitMode),	\
+	_GENERATE_PARAMETER_INDEX(OldThreadWaitReason),	\
+	_GENERATE_PARAMETER_INDEX(OpenPath),			\
+	_GENERATE_PARAMETER_INDEX(PageFaultCount),		\
+	_GENERATE_PARAMETER_INDEX(PagefileUsage),		\
+	_GENERATE_PARAMETER_INDEX(PagePriority),		\
+	_GENERATE_PARAMETER_INDEX(ParentId),			\
+	_GENERATE_PARAMETER_INDEX(ParentIrp),			\
+	_GENERATE_PARAMETER_INDEX(PeakPagefileUsage),	\
+	_GENERATE_PARAMETER_INDEX(PeakVirtualSize),		\
+	_GENERATE_PARAMETER_INDEX(PeakWorkingSetSize),	\
+	_GENERATE_PARAMETER_INDEX(PID),					\
+	_GENERATE_PARAMETER_INDEX(PortName),			\
+	_GENERATE_PARAMETER_INDEX(PreviousCState),		\
+	_GENERATE_PARAMETER_INDEX(PrivatePageCount),	\
+	_GENERATE_PARAMETER_INDEX(ProcessId),			\
+	_GENERATE_PARAMETER_INDEX(ProgramCounter),		\
+	_GENERATE_PARAMETER_INDEX(QuotaNonPagedPoolUsage),	\
+	_GENERATE_PARAMETER_INDEX(QuotaPagedPoolUsage),		\
+	_GENERATE_PARAMETER_INDEX(QuotaPeakNonPagedPoolUsage),	\
+	_GENERATE_PARAMETER_INDEX(QuotaPeakPagedPoolUsage),	\
+	_GENERATE_PARAMETER_INDEX(rcvwin),				\
+	_GENERATE_PARAMETER_INDEX(rcvwinscale),			\
+	_GENERATE_PARAMETER_INDEX(ReadOffset),			\
+	_GENERATE_PARAMETER_INDEX(RegionSize),			\
+	_GENERATE_PARAMETER_INDEX(Reserved),			\
+	_GENERATE_PARAMETER_INDEX(Reserved0),			\
+	_GENERATE_PARAMETER_INDEX(Reserved1),			\
+	_GENERATE_PARAMETER_INDEX(Reserved2),			\
+	_GENERATE_PARAMETER_INDEX(Reserved3),			\
+	_GENERATE_PARAMETER_INDEX(Reserved4),			\
+	_GENERATE_PARAMETER_INDEX(ReturnValue),			\
+	_GENERATE_PARAMETER_INDEX(Routine),				\
+	_GENERATE_PARAMETER_INDEX(RoutineAddr),			\
+	_GENERATE_PARAMETER_INDEX(sackopt),				\
+	_GENERATE_PARAMETER_INDEX(saddr),				\
+	_GENERATE_PARAMETER_INDEX(seqnum),				\
+	_GENERATE_PARAMETER_INDEX(SessionId),			\
+	_GENERATE_PARAMETER_INDEX(ShareAccess),			\
+	_GENERATE_PARAMETER_INDEX(size),				\
+	_GENERATE_PARAMETER_INDEX(sndwinscale),			\
+	_GENERATE_PARAMETER_INDEX(SpareByte),			\
+	_GENERATE_PARAMETER_INDEX(sport),				\
+	_GENERATE_PARAMETER_INDEX(StackBase),			\
+	_GENERATE_PARAMETER_INDEX(StackLimit),			\
+	_GENERATE_PARAMETER_INDEX(startime),			\
+	_GENERATE_PARAMETER_INDEX(Status),				\
+	_GENERATE_PARAMETER_INDEX(SubProcessTag),		\
+	_GENERATE_PARAMETER_INDEX(SysCallAddress),		\
+	_GENERATE_PARAMETER_INDEX(SysCallNtStatus),		\
+	_GENERATE_PARAMETER_INDEX(TebBase),				\
+	_GENERATE_PARAMETER_INDEX(ThreadFlags),			\
+	_GENERATE_PARAMETER_INDEX(TimeDateStamp),		\
+	_GENERATE_PARAMETER_INDEX(TransferSize),		\
+	_GENERATE_PARAMETER_INDEX(tsopt),				\
+	_GENERATE_PARAMETER_INDEX(TThreadId),			\
+	_GENERATE_PARAMETER_INDEX(TTID),				\
+	_GENERATE_PARAMETER_INDEX(UniqMatchId),			\
+	_GENERATE_PARAMETER_INDEX(UniqueProcessKey),	\
+	_GENERATE_PARAMETER_INDEX(UserSID),				\
+	_GENERATE_PARAMETER_INDEX(UserStackBase),		\
+	_GENERATE_PARAMETER_INDEX(UserStackLimit),		\
+	_GENERATE_PARAMETER_INDEX(Vector),				\
+	_GENERATE_PARAMETER_INDEX(VirtualAddress),		\
+	_GENERATE_PARAMETER_INDEX(VirtualSize),			\
+	_GENERATE_PARAMETER_INDEX(Win32StartAddr),		\
+	_GENERATE_PARAMETER_INDEX(WorkingSetSize),		\
+	_GENERATE_PARAMETER_INDEX(wsopt),				\
+	_GENERATE_PARAMETER_INDEX(SystemCall),			\
+	_GENERATE_PARAMETER_INDEX(ProcessName),			\
+	_GENERATE_PARAMETER_INDEX(uName),				\
+	_GENERATE_PARAMETER_INDEX(uMachine),			\
+	_GENERATE_PARAMETER_INDEX(SignatureLevel),		\
+	_GENERATE_PARAMETER_INDEX(SignatureType),		\
+    _GENERATE_PARAMETER_INDEX(SignatureStatus),		\
+	_GENERATE_PARAMETER_INDEX(HasMacro),			\
+	_GENERATE_PARAMETER_INDEX(Visible),				\
+	_GENERATE_PARAMETER_INDEX(Toolbar),				\
+	_GENERATE_PARAMETER_INDEX(Handle),				\
+	_GENERATE_PARAMETER_INDEX(Left),				\
+	_GENERATE_PARAMETER_INDEX(Top),					\
+	_GENERATE_PARAMETER_INDEX(Right),				\
+	_GENERATE_PARAMETER_INDEX(Bottom),				\
+	_GENERATE_PARAMETER_INDEX(Mousetype),			\
+	_GENERATE_PARAMETER_INDEX(PosX),				\
+	_GENERATE_PARAMETER_INDEX(PosY),				\
+	_GENERATE_PARAMETER_INDEX(NewFileName),			\
+	_GENERATE_PARAMETER_INDEX(MacroResult),			\
+	_GENERATE_PARAMETER_INDEX(CheckID),				\
+	_GENERATE_PARAMETER_INDEX(DeviceBootTime),		\
+	_GENERATE_PARAMETER_INDEX(MacroContent),		\
+	_GENERATE_PARAMETER_INDEX(IsMainModule),		\
+	_GENERATE_PARAMETER_INDEX(SerialNumber),		\
+	_GENERATE_PARAMETER_INDEX(RootPath),		    \
+	_GENERATE_PARAMETER_INDEX(VolumeName),		    \
+	_GENERATE_PARAMETER_INDEX(FileSystem),		    \
+	_GENERATE_PARAMETER_INDEX(QueryDomainName),     \
+	_GENERATE_PARAMETER_INDEX(ParentProcessName),   \
+	_GENERATE_PARAMETER_INDEX(ZoneId),              \
+	_GENERATE_PARAMETER_INDEX(ReferrerUrl),         \
+    _GENERATE_PARAMETER_INDEX(HostUrl),             \
+	_GENERATE_PARAMETER_INDEX(RuleId),              \
+	_GENERATE_PARAMETER_INDEX(EventName),           \
+	_GENERATE_PARAMETER_INDEX(MD5),                 \
+    _GENERATE_PARAMETER_INDEX(IsDownload),          \
+	_GENERATE_PARAMETER_INDEX(PUUID),
+
+#undef _GENERATE_PARAMETER_INDEX
+#define _GENERATE_PARAMETER_INDEX(param)	param
+enum parameter_index_enum
+{
+	GENERATE_PARAMETER_INDEX
+	None = -1
+};
+
+const char* parameter_string_list[];
+const char* json_parameter_name_list[];
+
+class ParameterIndex
+{
+public:
+	ParameterIndex();
+	~ParameterIndex();
+	parameter_index_enum get_parameter_string_vector(std::string);
+	static std::string parameter_index_enum_to_string(parameter_index_enum);
+
+private:
+	const int not_find = -1;
+	std::vector<std::string> parameter_string_vector;
+};
+

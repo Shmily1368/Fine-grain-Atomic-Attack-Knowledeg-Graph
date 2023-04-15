@@ -1,0 +1,32 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20210915225343
+用户名: PC-20200612JNVI\Administrator
+RunAs 用户: PC-20200612JNVI\Administrator
+配置名称: 
+计算机: PC-20200612JNVI (Microsoft Windows NT 10.0.19041.0)
+主机应用程序: C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe
+进程 ID: 18828
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>Get-ExecutionPolicy
+Restricted
+PS>Get-ExecutionPolicy -Scope MachinePolicy
+Undefined
+PS>Get-ExecutionPolicy -Scope UserPolicy
+Undefined
+PS>Set-ExecutionPolicy RemoteSigned -Scope Process -Force
+PS>Import-Module 'C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2017\COMMUNITY\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\NUGET\Modules\NuGet\NuGet.psd1'
+PS>CommandInvocation(Set-Variable):“Set-Variable”
+>> ParameterBinding(Set-Variable): 名称 =“Name”；值 =“profile”
+>> ParameterBinding(Set-Variable): 名称 =“Value”；值 =“d:\Documents\WindowsPowerShell\NuGet_profile.ps1”
+>> ParameterBinding(Set-Variable): 名称 =“Option”；值 =“None”
+PS>Set-Location 'F:\phd_one\RATOnline\collector\APTETWCollector-dev_syscall'
+PM>Set-Location 'C:\Users\Administrator'

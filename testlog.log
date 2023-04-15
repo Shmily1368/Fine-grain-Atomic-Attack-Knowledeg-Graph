@@ -1,0 +1,565 @@
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Windows\System32\ntoskrnl.exe0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\msrpc.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\ksecdd.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\werkernel.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\CLFS.SYS
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\tm.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\FLTMGR.SYS
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\clipsp.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\cmimcext.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\ntosext.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\cng.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\Wdf01000.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\WDFLDR.SYS
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\WppRecorder.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\SleepStudyHelper.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\Drivers\acpiex.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\mssecflt.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\SgrmAgent.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\lxss.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\LXCORE.SYS
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\ACPI.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\WMILIB.SYS
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\intelpep.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\WindowsTrustedRT.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\WindowsTrustedRTProxy.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\pcw.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\Drivers\klupd_klif_arkmon.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\msisadrv.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\pci.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\vdrvroot.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\cm_km.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\pdc.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\CEA.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\partmgr.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\spaceport.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\volmgr.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\volmgrx.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\klbackupdisk.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\vsock.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\vmci.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\mountmgr.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\storahci.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\storport.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\stornvme.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\fileinfo.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\Drivers\Wof.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\msrpc.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\ksecdd.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\werkernel.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\CLFS.SYS
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\tm.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\FLTMGR.SYS
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\clipsp.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\cmimcext.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\ntosext.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\cng.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\Wdf01000.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\WDFLDR.SYS
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\WppRecorder.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\SleepStudyHelper.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\Drivers\acpiex.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\mssecflt.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\SgrmAgent.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\lxss.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\LXCORE.SYS
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\ACPI.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\WMILIB.SYS
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\intelpep.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\WindowsTrustedRT.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\WindowsTrustedRTProxy.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\pcw.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\Drivers\klupd_klif_arkmon.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\msisadrv.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\pci.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\vdrvroot.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\cm_km.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\pdc.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\CEA.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\partmgr.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\spaceport.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\volmgr.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\volmgrx.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\klbackupdisk.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\vsock.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\vmci.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\mountmgr.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\storahci.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\storport.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\stornvme.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\fileinfo.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\Drivers\Wof.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\Drivers\Ntfs.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\Drivers\Fs_Rec.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\ndis.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\NETIO.SYS
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\Drivers\ksecpkg.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\tcpip.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\fwpkclnt.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\wfplwfs.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\VmsProxy.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\vmbkmclr.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\VmsProxyHNic.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\DRIVERS\fvevol.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\amdkmpfd.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\volume.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\volsnap.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\storufs.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\rdyboost.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\Drivers\mup.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\Drivers\klupd_klif_klbg.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\iorate.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\disk.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\CLASSPNP.SYS
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\Drivers\crashdmp.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\cdrom.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\klbackupflt.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\klflt.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\filecrypt.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\tbs.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\klhk.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\klif.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\ks.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\klpd.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\klgse.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\Drivers\Null.SYS
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\Drivers\Beep.SYS
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\dxgkrnl.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\watchdog.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\DriverStore\FileRepository\basicdisplay.inf_amd64_307898c750ba9e44\BasicDisplay.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\DriverStore\FileRepository\basicrender.inf_amd64_ba2a8de08ea0d469\BasicRender.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\Drivers\Npfs.SYS
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\Drivers\Msfs.SYS
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\tdx.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\TDI.SYS
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\ws2ifsl.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\DRIVERS\netbt.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\afunix.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\afd.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\klwtp.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\klim6.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\vwififlt.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\pacer.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\netbios.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\rdbss.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\csc.sys
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168\??\C:\Program Files (x86)\Common Files\microsoft shared\TigerKin\xmsec64.sys
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0\??\C:\Program Files (x86)\Common Files\microsoft shared\TigerKin\xmsec64.sys0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\nsiproxy.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\npsvctrig.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\mssmbios.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\kneps.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\kldisk.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\gpuenergydrv.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\Drivers\dfsc.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\Drivers\fastfat.SYS
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\bam.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\ahcache.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\vmswitch.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\winhvr.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\vmnetadapter.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\VMNET.SYS
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\Vid.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\DriverStore\FileRepository\compositebus.inf_amd64_43ac632006e874bb\CompositeBus.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\kdnic.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\DriverStore\FileRepository\umbus.inf_amd64_e566af5dd9858a0e\umbus.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_38bfcb542ef4272e\igdkmd64.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\USBXHCI.SYS
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\ucx01000.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\TeeDriverW8x64.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\rt640x64.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\HDAudBus.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\portcls.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\drmk.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\wmiacpi.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\intelppm.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\acpipagr.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\DriverStore\FileRepository\uefi.inf_amd64_4fcaf0fc6eaf7533\UEFI.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\NdisVirtualBus.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\DriverStore\FileRepository\swenum.inf_amd64_1c567926e5b29133\swenum.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\rdpbus.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\UsbHub3.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\USBD.SYS
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\RTKVHD64.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\ksthunk.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\DriverStore\FileRepository\intcdaud.inf_amd64_4cd2f01cfbce3160\IntcDAud.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\hidusb.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\HIDCLASS.SYS
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\HIDPARSE.SYS
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\mouhid.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\klmouflt.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\mouclass.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\usbccgp.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\kbdhid.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\klkbdflt.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\kbdclass.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\win32k.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\win32kfull.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\win32kbase.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\Drivers\dump_diskdump.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\dump_storahci.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\Drivers\dump_dumpfve.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\dxgmms2.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\monitor.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\luafv.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\wcifs.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\rdpvideominiport.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\cldflt.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\storqosflt.sys
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168\??\C:\WINDOWS\system32\drivers\TsQBDrv.sys
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0\??\C:\WINDOWS\system32\drivers\TsQBDrv.sys0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\rdpdr.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\tsusbhub.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\mslldp.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\bowser.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\winquic.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\mrxsmb.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\mrxsmb20.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\HTTP.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\vmnetbridge.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\lltdio.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\rspndr.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\vmnetuserif.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\DRIVERS\wanarp.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\ndisuio.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\nwifi.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\mpsdrv.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\vmx86.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\DRIVERS\hcmon.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\DRIVERS\srvnet.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\mmcss.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\Ndu.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\npf.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\tcpipreg.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\peauth.sys
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168\??\C:\Program Files (x86)\Common Files\microsoft shared\TigerKin\PPHelper64.sys
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0\??\C:\Program Files (x86)\Common Files\microsoft shared\TigerKin\PPHelper64.sys0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\SysWOW64\drivers\vstor2-x64.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\DRIVERS\srv2.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\rassstp.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\DRIVERS\NDProxy.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\AgileVpn.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\rasl2tp.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\raspptp.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\DRIVERS\raspppoe.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\DRIVERS\ndistapi.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\ndiswan.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\condrv.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\Drivers\klupd_klif_kimul.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\Drivers\klupd_klif_mark.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\bindflt.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\Drivers\klupd_klif_klark.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\system32\drivers\qwavedrv.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\SystemRoot\System32\drivers\p9rdr.sys
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Config.Msi\485aaa09.rbf
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Config.Msi\485aaa09.rbf
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\winspool.drv
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\VMware\VMware Workstation\vmware-authd.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\VMware\VMware Workstation\vmware-authd.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\Common Files\Tencent\QQProtect\Bin\QQProtect.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\Common Files\Tencent\QQProtect\Bin\QQProtect.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\Common Files\Microsoft Shared\Phone Tools\CoreCon\11.0\bin\IpOverUsbSvc.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\Common Files\Microsoft Shared\Phone Tools\CoreCon\11.0\bin\IpOverUsbSvc.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\Program Files\DebugDiag\DbgSvc.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\Program Files\DebugDiag\DbgSvc.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\IQIYI Video\LStyle\7.2.102.1343\QiyiService.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\IQIYI Video\LStyle\7.2.102.1343\QiyiService.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\Common Files\Macrovision Shared\FlexNet Publisher\FNPLicensingService.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\Common Files\Macrovision Shared\FlexNet Publisher\FNPLicensingService.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Windows\SysWOW64\vmnetdhcp.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Windows\SysWOW64\vmnetdhcp.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files\Microsoft SQL Server\90\Shared\sqlwriter.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files\Microsoft SQL Server\90\Shared\sqlwriter.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\Common Files\VMware\USB\vmware-usbarbitrator64.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\Common Files\VMware\USB\vmware-usbarbitrator64.exe0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\bthprops.cpl
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\bthprops.cpl
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\bthprops.cpl
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Windows\SysWOW64\vmnat.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Windows\SysWOW64\vmnat.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\TP-LINK\TL-WDN5200H 免驱版 2.0\AutoInstSvc\WifiAutoInstallSrv.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\TP-LINK\TL-WDN5200H 免驱版 2.0\AutoInstSvc\WifiAutoInstallSrv.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\Tencent\QQBrowser\TsService.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\Tencent\QQBrowser\TsService.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\TeamViewer\TeamViewer_Service.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\TeamViewer\TeamViewer_Service.exe0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\winspool.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\hidphone.tsp
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\unimdm.tsp
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\kmddsp.tsp
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\VMware\VMware Workstation\vmware-hostd.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\VMware\VMware Workstation\vmware-hostd.exe0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\msacm32.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\msacm32.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\msacm32.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\msacm32.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\msacm32.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\msacm32.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\msacm32.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\msacm32.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\msacm32.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\msacm32.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\wdmaud.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\wdmaud.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\wdmaud.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\wdmaud.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\wdmaud.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\wdmaud.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\wdmaud.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\wdmaud.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\wdmaud.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\wdmaud.drv
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\Program Files\DebugDiag\DbgHost.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\Program Files\DebugDiag\DbgHost.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\TeamViewer\TeamViewer.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\TeamViewer\TeamViewer.exe0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\wdmaud.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\wdmaud.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\wdmaud.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\msacm32.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\msacm32.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\msacm32.drv
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\WinMetadata\Windows.UI.winmd
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\WinMetadata\Windows.UI.winmd
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\WinMetadata\Windows.UI.winmd
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\WinMetadata\Windows.UI.winmd
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\WinMetadata\Windows.UI.winmd
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\WinMetadata\Windows.UI.winmd
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\WinMetadata\Windows.UI.winmd
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\WinMetadata\Windows.UI.winmd
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\appwiz.cpl
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\appwiz.cpl
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\appwiz.cpl
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume5\baidu\BaiduNetdisk\yunshellext64.dll.old
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Users\mayn\AppData\Local\Temp\CrashReport_64
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Users\mayn\AppData\Local\Temp\QyShlExt_64
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\wscui.cpl
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\TeamViewer\tv_w32.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\TeamViewer\tv_w32.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\TeamViewer\tv_x64.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\TeamViewer\tv_x64.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\Common Files\Microsoft Shared\TigerKin\tigerkin.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\Common Files\Microsoft Shared\TigerKin\tigerkin.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\Tencent\QQBrowser\10.6.4163.400\QQBrowser.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\Tencent\QQBrowser\10.6.4163.400\QQBrowser.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\Everything\Everything.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\Everything\Everything.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\Youdao\YoudaoDict.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\Youdao\YoudaoDict.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\Youdao\8.9.3.0\YoudaoDictHelper.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\Youdao\8.9.3.0\YoudaoDictHelper.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\Tencent\QQBrowser\QQBrowser.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\Tencent\QQBrowser\QQBrowser.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\Youdao\8.9.3.0\YoudaoWSH.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\Youdao\8.9.3.0\YoudaoWSH.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\Program Files (x86)\DingDing\main\current_new\DingTalk.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\Program Files (x86)\DingDing\main\current_new\DingTalk.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Users\mayn\AppData\Local\Programs\EmEditor\emedtray.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Users\mayn\AppData\Local\Programs\EmEditor\emedtray.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\Kaspersky Lab\Kaspersky Password Manager 9.0.2\kpm_tray.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\Kaspersky Lab\Kaspersky Password Manager 9.0.2\kpm_tray.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\VMware\VMware Workstation\vmware-tray.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\VMware\VMware Workstation\vmware-tray.exe0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\WinMetadata\Windows.Foundation.winmd
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\WinMetadata\Windows.Foundation.winmd
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\WinMetadata\Windows.Foundation.winmd
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\WinMetadata\Windows.Foundation.winmd
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\WinMetadata\Windows.Foundation.winmd
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\WinMetadata\Windows.Foundation.winmd
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\WinMetadata\Windows.Foundation.winmd
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files\WindowsApps\Microsoft.Windows.Photos_2020.20090.1002.0_x64__8wekyb3d8bbwe\Microsoft.Photos.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 2148204800C:\Program Files\WindowsApps\Microsoft.Windows.Photos_2020.20090.1002.0_x64__8wekyb3d8bbwe\Microsoft.Photos.exe-2146762496
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\Kaspersky Lab\Kaspersky Free 20.0\avp.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\Kaspersky Lab\Kaspersky Free 20.0\avp.exe0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\ProgramData\Kaspersky Lab\AVP20.0\Bases\Cache\saas_forms.dll.b0182eea8a95e30b6815ed3e6478bdbc_0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\ProgramData\Kaspersky Lab\AVP20.0\Bases\Cache\kavsys.kdl.935d150097831c3eb873da0e7d598ee3_0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\ProgramData\Kaspersky Lab\AVP20.0\Bases\Cache\qscan.kdl.bdcef0d505f284d7257affbb5999aad6_0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\ProgramData\Kaspersky Lab\AVP20.0\Bases\Cache\arkmon.kdl.2980a8d641dc73a678fd227f0a254141_0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\ProgramData\Kaspersky Lab\AVP20.0\Bases\Cache\mark.kdl.be2842cf3e382e864acfeeb3b9e58bdb_0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\ProgramData\Kaspersky Lab\AVP20.0\Bases\Cache\klavemu.kdl.4aac68874039e29b00594ac26432faa8_0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\ProgramData\Kaspersky Lab\AVP20.0\Bases\Cache\sys_critical_obj.dll.dfc5f69e9651d6738c03b143749621b9_0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\ProgramData\Kaspersky Lab\AVP20.0\Bases\Cache\kjim.kdl.84c08935d74aa2980f75d1a5ee6daf3b_0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\ProgramData\Kaspersky Lab\AVP20.0\Bases\Cache\kavbase.kdl.774d582353129b15291a379fbca5cee4_0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\ProgramData\Kaspersky Lab\AVP20.0\Bases\Cache\vlns.kdl.342d2c338e39149c9ef52d87c5cf3862_0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\ProgramData\Kaspersky Lab\AVP20.0\Bases\Cache\intctrl.kdl.c7b0d35aaf39d0c5c68c75b68d9ba9d2_0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\ProgramData\Kaspersky Lab\AVP20.0\Bases\Cache\avengine.dll.7de7a26e77a7e9780a93927e35b5d83c_0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\ProgramData\Kaspersky Lab\AVP20.0\Bases\Cache\perfmon.dll.2470652b0dcf2f6d6f0daa5e207c5193_0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\ProgramData\Kaspersky Lab\AVP20.0\Bases\Cache\interprecz.dll.fea2352d477f803225667b6c6750d5ea_0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\Kaspersky Lab\Kaspersky Free 20.0\avpui.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\Kaspersky Lab\Kaspersky Free 20.0\avpui.exe0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\WinMetadata\Windows.Data.winmd
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\WinMetadata\Windows.Networking.winmd
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\PerfWatson2.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\PerfWatson2.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\ServiceHub\Hosts\ServiceHub.Host.Node.x86\ServiceHub.Host.Node.x86.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\ServiceHub\Hosts\ServiceHub.Host.Node.x86\ServiceHub.Host.Node.x86.exe0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\ServiceHub\node_modules\wer-api-windows\build\Release\WerAPIWin.node
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.x86\ServiceHub.IdentityHost.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.x86\ServiceHub.IdentityHost.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Windows\assembly\NativeImages_v4.0.30319_32\ServiceHub.d6c1bc22#\90d9db6b3048f68b0c96ba610f0b2e3a\ServiceHub.Host.CLR.x86.ni.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 2148204800C:\Windows\assembly\NativeImages_v4.0.30319_32\ServiceHub.d6c1bc22#\90d9db6b3048f68b0c96ba610f0b2e3a\ServiceHub.Host.CLR.x86.ni.exe-2146762496
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Windows\assembly\NativeImages_v4.0.30319_32\ServiceHub.d6c1bc22#\90d9db6b3048f68b0c96ba610f0b2e3a\ServiceHub.Host.CLR.x86.ni.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 2148204800C:\Windows\assembly\NativeImages_v4.0.30319_32\ServiceHub.d6c1bc22#\90d9db6b3048f68b0c96ba610f0b2e3a\ServiceHub.Host.CLR.x86.ni.exe-2146762496
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Windows\assembly\NativeImages_v4.0.30319_32\ServiceHub.d6c1bc22#\90d9db6b3048f68b0c96ba610f0b2e3a\ServiceHub.Host.CLR.x86.ni.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 2148204800C:\Windows\assembly\NativeImages_v4.0.30319_32\ServiceHub.d6c1bc22#\90d9db6b3048f68b0c96ba610f0b2e3a\ServiceHub.Host.CLR.x86.ni.exe-2146762496
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Windows\assembly\NativeImages_v4.0.30319_32\ServiceHub.d6c1bc22#\90d9db6b3048f68b0c96ba610f0b2e3a\ServiceHub.Host.CLR.x86.ni.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 2148204800C:\Windows\assembly\NativeImages_v4.0.30319_32\ServiceHub.d6c1bc22#\90d9db6b3048f68b0c96ba610f0b2e3a\ServiceHub.Host.CLR.x86.ni.exe-2146762496
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.x86\ServiceHub.VSDetouredHost.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.x86\ServiceHub.VSDetouredHost.exe0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.VisualC\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualC.Dll
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.x86\ServiceHub.SettingsHost.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.x86\ServiceHub.SettingsHost.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.x86\ServiceHub.Host.CLR.x86.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.x86\ServiceHub.Host.CLR.x86.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\Google\Chrome\Application\chrome.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\Tencent\QQ\Bin\QQ.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\Tencent\QQ\Bin\QQ.exe0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Users\mayn\AppData\Roaming\Tencent\QQ\SafeBase\TSSafeEdit.dat
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Users\mayn\AppData\Roaming\Tencent\QQ\QQMW\NFEjtK.bxE
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\Tencent\QQ\Bin\TXPlatform.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\Tencent\QQ\Bin\TXPlatform.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\Notepad++\notepad++.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\Notepad++\notepad++.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.x64\ServiceHub.DataWarehouseHost.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.x64\ServiceHub.DataWarehouseHost.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Windows\assembly\NativeImages_v4.0.30319_64\ServiceHub.d6c1bcee#\d398c9d8ec6f608dd8e20b85c7a74bb1\ServiceHub.Host.CLR.x64.ni.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 2148204800C:\Windows\assembly\NativeImages_v4.0.30319_64\ServiceHub.d6c1bcee#\d398c9d8ec6f608dd8e20b85c7a74bb1\ServiceHub.Host.CLR.x64.ni.exe-2146762496
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\Tencent\QQ\Bin\QQExternal.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\Tencent\QQ\Bin\QQExternal.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\windbg.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\windbg.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\vcpackages\vcpkgsrv.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\vcpackages\vcpkgsrv.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\VMware\VMware Workstation\vmware.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\VMware\VMware Workstation\vmware.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\VMware\VMware Workstation\vmware-unity-helper.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\VMware\VMware Workstation\vmware-unity-helper.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\VMware\VMware Workstation\x64\vmware-vmx.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\VMware\VMware Workstation\x64\vmware-vmx.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\NetSarang\Xshell 6\Xshell.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\NetSarang\Xshell 6\Xshell.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\NetSarang\Xshell 6\XshellCore.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\NetSarang\Xshell 6\XshellCore.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\Google\Update\1.3.36.32\GoogleCrashHandler.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\Google\Update\1.3.36.32\GoogleCrashHandler.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\Google\Update\1.3.36.32\GoogleCrashHandler64.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\Google\Update\1.3.36.32\GoogleCrashHandler64.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files\WindowsApps\Microsoft.MicrosoftOfficeHub_18.2008.12711.0_x64__8wekyb3d8bbwe\LocalBridge.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files\WindowsApps\Microsoft.MicrosoftOfficeHub_18.2008.12711.0_x64__8wekyb3d8bbwe\LocalBridge.exe0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\WinMetadata\Windows.System.winmd
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\WinMetadata\Windows.System.winmd
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\WinMetadata\Windows.System.winmd
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\WinMetadata\Windows.Storage.winmd
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\WinMetadata\Windows.Storage.winmd
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\WinMetadata\Windows.ApplicationModel.winmd
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\WinMetadata\Windows.ApplicationModel.winmd
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files\WindowsApps\Microsoft.YourPhone_1.20092.123.0_x64__8wekyb3d8bbwe\YourPhone.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 2148204800C:\Program Files\WindowsApps\Microsoft.YourPhone_1.20092.123.0_x64__8wekyb3d8bbwe\YourPhone.exe-2146762496
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\Navicat Premium 12\navicat.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 2148204801E:\Navicat Premium 12\navicat.exe-2146762495
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\sysmon.ocx
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168G:\Ksoftware\Netease\CloudMusic\cloudmusic.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0G:\Ksoftware\Netease\CloudMusic\cloudmusic.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\Tencent\WeChat\WeChat\WeChat.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\Tencent\WeChat\WeChat\WeChat.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\Tencent\WeChat\WeChat\WeChatWeb.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\Tencent\WeChat\WeChat\WeChatWeb.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\baidu\BaiduNetdisk\yundetectservice.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\baidu\BaiduNetdisk\yundetectservice.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\baidu\BaiduNetdisk\baidunetdisk.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\baidu\BaiduNetdisk\baidunetdisk.exe0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\Macromed\Flash\Flash.ocx
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\baidu\BaiduNetdisk\baidunetdiskhost.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\baidu\BaiduNetdisk\baidunetdiskhost.exe0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume5\baidu\BaiduNetdisk\kernel.dll.o
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\baidu\BaiduNetdisk\baidunetdiskrender.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\baidu\BaiduNetdisk\baidunetdiskrender.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\PrivateAssemblies\ScriptedSandbox64.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\PrivateAssemblies\ScriptedSandbox64.exe0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\Cortana.Internal.Search.winmd
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\Cortana.Search.winmd
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\Cortana.Tips.winmd
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\Cortana.SPA.winmd
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\WinMetadata\Windows.Security.winmd
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\System32\WinMetadata\Windows.Web.winmd
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\Tencent\WeChat\WeChat\WeChatApp.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\Tencent\WeChat\WeChat\WeChatApp.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\MSBuild.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\MSBuild.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Windows\assembly\NativeImages_v4.0.30319_32\MSBuild\e02059edde019386cfdb0b937e09a905\MSBuild.ni.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 2148204800C:\Windows\assembly\NativeImages_v4.0.30319_32\MSBuild\e02059edde019386cfdb0b937e09a905\MSBuild.ni.exe-2146762496
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\mspdbsrv.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\mspdbsrv.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\Microsoft Visual Studio\Shared\Common\DiagnosticsHub.Collection.Service\StandardCollector.Service.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\Microsoft Visual Studio\Shared\Common\DiagnosticsHub.Collection.Service\StandardCollector.Service.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\Common Files\Microsoft Shared\VS7Debug\VsImmersiveActivateHelper.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\Common Files\Microsoft Shared\VS7Debug\VsImmersiveActivateHelper.exe0
+VerifyEmbeddedSignature: CreateFileW failed,errcode: 3\Device\HarddiskVolume3\Windows\SysWOW64\wshom.ocx
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\Git\mingw32\bin\git.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\Git\mingw32\bin\git.exe0
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168G:\DylanZhu\code\ClientScheduler\ClientScheduler\x64\Release\test\Auto.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 2148204800G:\DylanZhu\code\ClientScheduler\ClientScheduler\x64\Release\test\Auto.exe-2146762496
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168G:\DylanZhu\code\ClientScheduler\ClientScheduler\x64\Release\test\ClientScheduler.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 2148204800G:\DylanZhu\code\ClientScheduler\ClientScheduler\x64\Release\test\ClientScheduler.exe-2146762496
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168G:\DylanZhu\code\ClientScheduler\ClientScheduler\x64\Release\test\ClientScheduler.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 2148204800G:\DylanZhu\code\ClientScheduler\ClientScheduler\x64\Release\test\ClientScheduler.exe-2146762496
+VerifyEmbeddedSignature: CryptCATAdminEnumCatalogFromHash failed,errcode: 1168E:\Program Files\DebugDiag\x86Support\Dbghost.exe
+VerifyEmbeddedSignature: WinVerifyTrust failed,errcode: 0E:\Program Files\DebugDiag\x86Support\Dbghost.exe0

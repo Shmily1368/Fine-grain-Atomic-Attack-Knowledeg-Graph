@@ -1,0 +1,64 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20211225093751
+用户名: DESKTOP-VME8FRS\lab
+RunAs 用户: DESKTOP-VME8FRS\lab
+配置名称: 
+计算机: DESKTOP-VME8FRS (Microsoft Windows NT 10.0.19043.0)
+主机应用程序: C:\Windows\System32\sdiagnhost.exe -Embedding
+进程 ID: 9144
+PSVersion: 5.1.19041.1320
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1320
+BuildVersion: 10.0.19041.1320
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Set-Location):“Set-Location”
+>> ParameterBinding(Set-Location): 名称 =“Path”；值 =“C:\Windows\TEMP\SDIAG_6346d0b6-de34-45c3-96dc-a75132fd13f1”
+PS>& "C:\Windows\TEMP\SDIAG_6346d0b6-de34-45c3-96dc-a75132fd13f1\TS_WERQueue.ps1"
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20211225093752
+用户名: DESKTOP-VME8FRS\lab
+RunAs 用户: DESKTOP-VME8FRS\lab
+配置名称: 
+计算机: DESKTOP-VME8FRS (Microsoft Windows NT 10.0.19043.0)
+主机应用程序: C:\Windows\System32\sdiagnhost.exe -Embedding
+进程 ID: 9144
+PSVersion: 5.1.19041.1320
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1320
+BuildVersion: 10.0.19041.1320
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“路径 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting 处不存在属性 MaxQueueSizePercentage。”
+Get-ItemProperty : 路径 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting 处不存在属性 MaxQueueSizePercentag
+e。
+所在位置 C:\Windows\TEMP\SDIAG_6346d0b6-de34-45c3-96dc-a75132fd13f1\CL_Utility.ps1:87 字符: 22
++ ... stryEntry = Get-ItemProperty -Path $registryEntryPath -Name $registry ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (MaxQueueSizePercentage:String) [Get-ItemProperty]，PSArgumentException
+    + FullyQualifiedErrorId : System.Management.Automation.PSArgumentException,Microsoft.PowerShell.Commands.GetItemProp
+ertyCommand
+Get-ItemProperty : 路径 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting 处不存在属性 MaxQueueSizePercentag
+e。
+所在位置 C:\Windows\TEMP\SDIAG_6346d0b6-de34-45c3-96dc-a75132fd13f1\CL_Utility.ps1:87 字符: 22
++ ... stryEntry = Get-ItemProperty -Path $registryEntryPath -Name $registry ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (MaxQueueSizePercentage:String) [Get-ItemProperty]，PSArgumentException
+    + FullyQualifiedErrorId : System.Management.Automation.PSArgumentException,Microsoft.PowerShell.Commands.GetItemProp
+ertyCommand
+PS>CommandInvocation(Set-Location):“Set-Location”
+>> ParameterBinding(Set-Location): 名称 =“Path”；值 =“\”
+PS>CommandInvocation(Set-Location):“Set-Location”
+>> ParameterBinding(Set-Location): 名称 =“Path”；值 =“C:\Windows\TEMP\SDIAG_6346d0b6-de34-45c3-96dc-a75132fd13f1”
+PS>& "C:\Windows\TEMP\SDIAG_6346d0b6-de34-45c3-96dc-a75132fd13f1\TS_DiagnosticHistory.ps1"
+PS>CommandInvocation(Set-Location):“Set-Location”
+>> ParameterBinding(Set-Location): 名称 =“Path”；值 =“\”

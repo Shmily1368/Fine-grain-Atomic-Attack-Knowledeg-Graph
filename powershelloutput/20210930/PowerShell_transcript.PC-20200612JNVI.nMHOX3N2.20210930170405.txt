@@ -1,0 +1,44 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20210930170408
+用户名: PC-20200612JNVI\Administrator
+RunAs 用户: PC-20200612JNVI\Administrator
+配置名称: 
+计算机: PC-20200612JNVI (Microsoft Windows NT 10.0.19041.0)
+主机应用程序: C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe
+进程 ID: 7712
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Get-AppxPackage):“Get-AppxPackage”
+>> ParameterBinding(Get-AppxPackage): 名称 =“Name”；值 =“Microsoft.MicrosoftEdge”
+
+
+Name              : Microsoft.MicrosoftEdge
+Publisher         : CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmon
+                    d, S=Washington, C=US
+Architecture      : Neutral
+ResourceId        :
+Version           : 44.19041.423.0
+PackageFullName   : Microsoft.MicrosoftEdge_44.19041.423.0_neutral__8wekyb3d8bb
+                    we
+InstallLocation   : C:\Windows\SystemApps\Microsoft.MicrosoftEdge_8wekyb3d8bbwe
+IsFramework       : False
+PackageFamilyName : Microsoft.MicrosoftEdge_8wekyb3d8bbwe
+PublisherId       : 8wekyb3d8bbwe
+IsResourcePackage : False
+IsBundle          : False
+IsDevelopmentMode : False
+NonRemovable      : True
+IsPartiallyStaged : False
+SignatureKind     : System
+Status            : Ok
+
+
+

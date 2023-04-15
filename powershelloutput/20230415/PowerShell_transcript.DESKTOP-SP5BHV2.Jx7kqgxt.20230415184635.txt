@@ -1,0 +1,52 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415184636
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 2416
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS C:\Windows\system32> Invoke-AtomicTest  T1112-15 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1112-15 Disable Windows Change Password Feature
+
+Done executing cleanup for test:
+T1112-15 Disable Windows Change Password Feature
+
+PS C:\Windows\system32> Invoke-AtomicTest  T1112-16 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1112-16 Disable Windows Lock Workstation Feature
+
+Done executing cleanup for test:
+T1112-16 Disable Windows Lock Workstation Feature
+
+PS C:\Windows\system32> Invoke-AtomicTest  T1112-17 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1112-17 Activate Windows NoDesktop Group Policy Feature
+
+Done executing cleanup for test:
+T1112-17 Activate Windows NoDesktop Group Policy Feature
+
+PS C:\Windows\system32> Invoke-AtomicTest  T1112-18 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1112-18 Activate Windows NoRun Group Policy Feature
+
+错误: 系统找不到指定的注册表项或值。
+Done executing cleanup for test:
+T1112-18 Activate Windows NoRun Group Policy Feature
+

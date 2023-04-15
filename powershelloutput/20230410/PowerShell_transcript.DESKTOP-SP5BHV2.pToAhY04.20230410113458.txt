@@ -1,0 +1,149 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410113458
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 10212
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS C:\Users\wangjian> Start-Process -FilePath "D:\MyLab\collector\APTETWCollector0823-1213\APTETWCollector0823\ETWDataCollectorRedesigned.exe" -ArgumentList "--kafka_data_tunnel_topic=client_log_17 --mode=f --kafka_address=192:9092 --init_gear=1 --enable_gear_adjustment=true --enable_hardware_adjustment=false --local_detector_mode=callstack --enable_ransom_detector=true --enable_honey_pot=false --kafka_user_name=client_17 --kafka_password=35982e7cdabc95f5257266a --enable_rule_match=true"
+PS C:\Users\wangjian> Get-Process -Name "ETWDataCollectorRedesigned.exe" | Stop-Process
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410113537
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 10212
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到名为“ETWDataCollectorRedesigned.exe”的进程。请验证该进程名称，然后再次调用 cmdlet。”
+Get-Process : 找不到名为“ETWDataCollectorRedesigned.exe”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 行:1 字符: 1
++ Get-Process -Name "ETWDataCollectorRedesigned.exe" | Stop-Process
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ETWDataCollectorRedesigned.exe:String) [Get-Process], ProcessCommandExcep
+tion
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+Get-Process : 找不到名为“ETWDataCollectorRedesigned.exe”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 行:1 字符: 1
++ Get-Process -Name "ETWDataCollectorRedesigned.exe" | Stop-Process
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ETWDataCollectorRedesigned.exe:String) [Get-Process], ProcessCommandExcep
+tion
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+Get-Process : 找不到名为“ETWDataCollectorRedesigned.exe”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 行:1 字符: 1
++ Get-Process -Name "ETWDataCollectorRedesigned.exe" | Stop-Process
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ETWDataCollectorRedesigned.exe:String) [Get-Process], ProcessCommandExc
+   eption
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+
+PS C:\Users\wangjian> Get-Process -Name "ETWDataCollectorRedesigned" | Stop-Process
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410113541
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 10212
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“由于以下错误而无法停止进程“ETWDataCollectorRedesigned (16148)”: 拒绝访问。”
+Stop-Process : 由于以下错误而无法停止进程“ETWDataCollectorRedesigned (16148)”: 拒绝访问。
+所在位置 行:1 字符: 50
++ Get-Process -Name "ETWDataCollectorRedesigned" | Stop-Process
++                                                  ~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (System.Diagnost...ctorRedesigned):Process) [Stop-Process]，ProcessCommandExcep
+tion
+    + FullyQualifiedErrorId : CouldNotStopProcess,Microsoft.PowerShell.Commands.StopProcessCommand
+Stop-Process : 由于以下错误而无法停止进程“ETWDataCollectorRedesigned (16148)”: 拒绝访问。
+所在位置 行:1 字符: 50
++ Get-Process -Name "ETWDataCollectorRedesigned" | Stop-Process
++                                                  ~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (System.Diagnost...ctorRedesigned):Process) [Stop-Process]，ProcessCommandExcep
+tion
+    + FullyQualifiedErrorId : CouldNotStopProcess,Microsoft.PowerShell.Commands.StopProcessCommand
+Stop-Process : 由于以下错误而无法停止进程“ETWDataCollectorRedesigned (16148)”: 拒绝访问。
+所在位置 行:1 字符: 50
++ Get-Process -Name "ETWDataCollectorRedesigned" | Stop-Process
++                                                  ~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (System.Diagnost...ctorRedesigned):Process) [Stop-Process]，ProcessCommandExc
+    eption
+    + FullyQualifiedErrorId : CouldNotStopProcess,Microsoft.PowerShell.Commands.StopProcessCommand
+
+PS C:\Users\wangjian> Get-Process -Name "ETWDataCollectorRedesigned" | Stop-Process
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410113547
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 10212
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“由于以下错误而无法停止进程“ETWDataCollectorRedesigned (16148)”: 拒绝访问。”
+Stop-Process : 由于以下错误而无法停止进程“ETWDataCollectorRedesigned (16148)”: 拒绝访问。
+所在位置 行:1 字符: 50
++ Get-Process -Name "ETWDataCollectorRedesigned" | Stop-Process
++                                                  ~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (System.Diagnost...ctorRedesigned):Process) [Stop-Process]，ProcessCommandExcep
+tion
+    + FullyQualifiedErrorId : CouldNotStopProcess,Microsoft.PowerShell.Commands.StopProcessCommand
+Stop-Process : 由于以下错误而无法停止进程“ETWDataCollectorRedesigned (16148)”: 拒绝访问。
+所在位置 行:1 字符: 50
++ Get-Process -Name "ETWDataCollectorRedesigned" | Stop-Process
++                                                  ~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (System.Diagnost...ctorRedesigned):Process) [Stop-Process]，ProcessCommandExcep
+tion
+    + FullyQualifiedErrorId : CouldNotStopProcess,Microsoft.PowerShell.Commands.StopProcessCommand
+Stop-Process : 由于以下错误而无法停止进程“ETWDataCollectorRedesigned (16148)”: 拒绝访问。
+所在位置 行:1 字符: 50
++ Get-Process -Name "ETWDataCollectorRedesigned" | Stop-Process
++                                                  ~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (System.Diagnost...ctorRedesigned):Process) [Stop-Process]，ProcessCommandExc
+    eption
+    + FullyQualifiedErrorId : CouldNotStopProcess,Microsoft.PowerShell.Commands.StopProcessCommand
+

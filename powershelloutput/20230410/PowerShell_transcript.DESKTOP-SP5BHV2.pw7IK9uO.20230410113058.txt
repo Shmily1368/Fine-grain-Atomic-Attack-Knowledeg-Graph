@@ -1,0 +1,103 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410113058
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 13348
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS C:\Users\wangjian> Start-Process -FilePath "D:\MyLab\collector\APTETWCollector0823-1213\APTETWCollector0823\ETWDataCollectorRedesigned.exe"
+PS C:\Users\wangjian> Start-Process -FilePath "D:\MyLab\collector\APTETWCollector0823-1213\APTETWCollector0823\ETWDataCollectorRedesigned.exe" -ArgumentList --kafka_data_tunnel_topic=client_log_17 --mode=f --kafka_address=192:9092 --init_gear=1 --enable_gear_adjustment=true --enable_hardware_adjustment=false --local_detector_mode=callstack --enable_ransom_detector=true --enable_honey_pot=false --kafka_user_name=client_17 --kafka_password=35982e7cdabc95f5257266a --enable_rule_match=true
+>> TerminatingError(Start-Process):“找不到接受实际参数“--mode=f”的位置形式参数。”
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410113205
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 13348
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到接受实际参数“--mode=f”的位置形式参数。”
+Start-Process : 找不到接受实际参数“--mode=f”的位置形式参数。
+所在位置 行:1 字符: 1
++ Start-Process -FilePath "D:\MyLab\collector\APTETWCollector0823-1213\ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Start-Process]，ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.StartProcessCommand
+Start-Process : 找不到接受实际参数“--mode=f”的位置形式参数。
+所在位置 行:1 字符: 1
++ Start-Process -FilePath "D:\MyLab\collector\APTETWCollector0823-1213\ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Start-Process]，ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.StartProcessCommand
+Start-Process : 找不到接受实际参数“--mode=f”的位置形式参数。
+所在位置 行:1 字符: 1
++ Start-Process -FilePath "D:\MyLab\collector\APTETWCollector0823-1213\ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Start-Process]，ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.StartProcessCommand
+
+PS C:\Users\wangjian> Start-Process -FilePath "D:\MyLab\collector\APTETWCollector0823-1213\APTETWCollector0823\ETWDataCollectorRedesigned.exe" -ArgumentList "--kafka_data_tunnel_topic=client_log_17 --mode=f --kafka_address=192:9092 --init_gear=1 --enable_gear_adjustment=true --enable_hardware_adjustment=false --local_detector_mode=callstack --enable_ransom_detector=true --enable_honey_pot=false --kafka_user_name=client_17 --kafka_password=35982e7cdabc95f5257266a --enable_rule_match=true"
+PS C:\Users\wangjian> Start-Process -FilePath "D:\MyLab\collector\APTETWCollector0823-1213\APTETWCollector0823\ETWDataCollectorRedesigned.exe" -ArgumentList "--kafka_data_tunnel_topic=client_log_17 --mode=f --kafka_address=192:9092 --init_gear=1 --enable_gear_adjustment=true --enable_hardware_adjustment=false --local_detector_mode=callstack --enable_ransom_detector=true --enable_honey_pot=false --kafka_user_name=client_17 --kafka_password=35982e7cdabc95f5257266a --enable_rule_match=true" -NoNewWindow
+>> TerminatingError(Start-Process):“由于出现以下错误，无法运行此命令: 请求的操作需要提升。。”
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410113332
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 13348
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“由于出现以下错误，无法运行此命令: 请求的操作需要提升。。”
+Start-Process : 由于出现以下错误，无法运行此命令: 请求的操作需要提升。。
+所在位置 行:1 字符: 1
++ Start-Process -FilePath "D:\MyLab\collector\APTETWCollector0823-1213\ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process]，InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+Start-Process : 由于出现以下错误，无法运行此命令: 请求的操作需要提升。。
+所在位置 行:1 字符: 1
++ Start-Process -FilePath "D:\MyLab\collector\APTETWCollector0823-1213\ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process]，InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+Start-Process : 由于出现以下错误，无法运行此命令: 请求的操作需要提升。。
+所在位置 行:1 字符: 1
++ Start-Process -FilePath "D:\MyLab\collector\APTETWCollector0823-1213\ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process]，InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+

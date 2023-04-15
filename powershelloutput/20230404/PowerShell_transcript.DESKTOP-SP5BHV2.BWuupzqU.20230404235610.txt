@@ -1,0 +1,61 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230404235611
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 17932
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS C:\Users\wangjian> Invoke-AtomicTest
+>> TerminatingError(Invoke-AtomicTest):“无法对参数“AtomicTechnique”执行参数验证。该参数为 Null、为空或参数集合的某个元素包含 Null 值。请提供一个不包含任何 Null 值的集合，然后重试此命令。”
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230404235616
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 17932
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“无法对参数“AtomicTechnique”执行参数验证。该参数为 Null、为空或参数集合的某个元素包含 Null 值。请提供一个不包含任何 Null 值的集合，然后重试此命令。”
+Invoke-AtomicTest : 无法对参数“AtomicTechnique”执行参数验证。该参数为 Null、为空或参数集合的某个元素包含 Null 值。请提供一个不包含任何 Null 值的集合，然后重试此命令。
+所在位置 行:1 字符: 1
++ Invoke-AtomicTest
++ ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Invoke-AtomicTest]，ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationError,Invoke-AtomicTest
+Invoke-AtomicTest : 无法对参数“AtomicTechnique”执行参数验证。该参数为 Null、为空或参数集合的某个元素包含 Null 值。请提供一个不包含任何 Null 值的集合，然后重试此命令。
+所在位置 行:1 字符: 1
++ Invoke-AtomicTest
++ ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Invoke-AtomicTest]，ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationError,Invoke-AtomicTest
+Invoke-AtomicTest : 无法对参数“AtomicTechnique”执行参数验证。该参数为 Null、为空或参数集合的某个元素包含 Null 值。请
+提供一个不包含任何 Null 值的集合，然后重试此命令。
+所在位置 行:1 字符: 1
++ Invoke-AtomicTest
++ ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Invoke-AtomicTest]，ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationError,Invoke-AtomicTest
+

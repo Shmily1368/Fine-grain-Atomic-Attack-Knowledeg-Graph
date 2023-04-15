@@ -1,0 +1,816 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411211727
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 14860
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411211727
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 14860
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“无法加载文件 C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1，因为在此系统上禁止运行脚本。有关详细信息，请参阅 https:/go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies。”
+. : 无法加载文件 C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1，因为在此系统上禁止运行脚本。有关详细信息，请参阅 https
+:/go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies。
+所在位置 行:1 字符: 3
++ . 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell ...
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : SecurityError: (:) []，PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+. : 无法加载文件 C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1，因为在此系统上禁止运行脚本。有关详细信息，请参阅 https
+:/go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies。
+所在位置 行:1 字符: 3
++ . 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell ...
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : SecurityError: (:) []，PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+. : 无法加载文件 C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1，因为在此系统上禁止运行
+脚本。有关详细信息，请参阅 https:/go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies。
+所在位置 行:1 字符: 3
++ . 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell ...
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : SecurityError: (:) []，PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+PS C:\Windows\system32> set-executionpolicy remotesigned
+执行策略更改
+执行策略可帮助你防止执行不信任的脚本。更改执行策略可能会产生安全风险，如 https:/go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies 帮助主题所述。是否要更改执行策略?
+是(&Y)  全是(&A)  否(&N)  全否(&L)  暂停(&S)
+Y
+>> TerminatingError(Set-ExecutionPolicy):“Windows PowerShell 已成功更新你的执行策略，但在更具体的作业域中定义的策略覆盖了该设置。由于发生覆盖，你的外壳程序将保留其当前的有效执行策略 Restricted。请键入“Get-ExecutionPolicy -List”以查看你的执行策略设置。有关详细信息，请参阅“Get-Help Set-ExecutionPolicy”。”
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411211731
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 14860
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“Windows PowerShell 已成功更新你的执行策略，但在更具体的作业域中定义的策略覆盖了该设置。由于发生覆盖，你的外壳程序将保留其当前的有效执行策略 Restricted。请键入“Get-ExecutionPolicy -List”以查看你的执行策略设置。有关详细信息，请参阅“Get-Help Set-ExecutionPolicy”。”
+set-executionpolicy : Windows PowerShell 已成功更新你的执行策略，但在更具体的作业域中定义的策略覆盖了该设置。由于发生覆盖，你的外壳程序将保留其当前的有效执行策略 Restricted。请键入“Get
+-ExecutionPolicy -List”以查看你的执行策略设置。有关详细信息，请参阅“Get-Help Set-ExecutionPolicy”。
+所在位置 行:1 字符: 1
++ set-executionpolicy remotesigned
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (:) [Set-ExecutionPolicy], SecurityException
+    + FullyQualifiedErrorId : ExecutionPolicyOverride,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+set-executionpolicy : Windows PowerShell 已成功更新你的执行策略，但在更具体的作业域中定义的策略覆盖了该设置。由于发生覆盖，你的外壳程序将保留其当前的有效执行策略 Restricted。请键入“Get
+-ExecutionPolicy -List”以查看你的执行策略设置。有关详细信息，请参阅“Get-Help Set-ExecutionPolicy”。
+所在位置 行:1 字符: 1
++ set-executionpolicy remotesigned
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (:) [Set-ExecutionPolicy], SecurityException
+    + FullyQualifiedErrorId : ExecutionPolicyOverride,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+set-executionpolicy : Windows PowerShell 已成功更新你的执行策略，但在更具体的作业域中定义的策略覆盖了该设置。由于发生覆
+盖，你的外壳程序将保留其当前的有效执行策略 Restricted。请键入“Get-ExecutionPolicy -List”以查看你的执行策略设置。有关
+详细信息，请参阅“Get-Help Set-ExecutionPolicy”。
+所在位置 行:1 字符: 1
++ set-executionpolicy remotesigned
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (:) [Set-ExecutionPolicy], SecurityException
+    + FullyQualifiedErrorId : ExecutionPolicyOverride,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+PS C:\Windows\system32> Get-ExecutionPolicy -List
+
+        Scope ExecutionPolicy
+        ----- ---------------
+MachinePolicy       Undefined
+   UserPolicy      Restricted
+      Process       Undefined
+  CurrentUser    RemoteSigned
+ LocalMachine    RemoteSigned
+
+
+PS C:\Windows\system32> Get-ExecutionPolicy 
+Restricted
+PS C:\Windows\system32> set-executionpolicy remotesigned
+执行策略更改
+执行策略可帮助你防止执行不信任的脚本。更改执行策略可能会产生安全风险，如 https:/go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies 帮助主题所述。是否要更改执行策略?
+是(&Y)  全是(&A)  否(&N)  全否(&L)  暂停(&S)
+Y
+>> TerminatingError(Set-ExecutionPolicy):“Windows PowerShell 已成功更新你的执行策略，但在更具体的作业域中定义的策略覆盖了该设置。由于发生覆盖，你的外壳程序将保留其当前的有效执行策略 Restricted。请键入“Get-ExecutionPolicy -List”以查看你的执行策略设置。有关详细信息，请参阅“Get-Help Set-ExecutionPolicy”。”
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411212951
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 14860
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“Windows PowerShell 已成功更新你的执行策略，但在更具体的作业域中定义的策略覆盖了该设置。由于发生覆盖，你的外壳程序将保留其当前的有效执行策略 Restricted。请键入“Get-ExecutionPolicy -List”以查看你的执行策略设置。有关详细信息，请参阅“Get-Help Set-ExecutionPolicy”。”
+set-executionpolicy : Windows PowerShell 已成功更新你的执行策略，但在更具体的作业域中定义的策略覆盖了该设置。由于发生覆盖，你的外壳程序将保留其当前的有效执行策略 Restricted。请键入“Get
+-ExecutionPolicy -List”以查看你的执行策略设置。有关详细信息，请参阅“Get-Help Set-ExecutionPolicy”。
+所在位置 行:1 字符: 1
++ set-executionpolicy remotesigned
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (:) [Set-ExecutionPolicy], SecurityException
+    + FullyQualifiedErrorId : ExecutionPolicyOverride,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+set-executionpolicy : Windows PowerShell 已成功更新你的执行策略，但在更具体的作业域中定义的策略覆盖了该设置。由于发生覆盖，你的外壳程序将保留其当前的有效执行策略 Restricted。请键入“Get
+-ExecutionPolicy -List”以查看你的执行策略设置。有关详细信息，请参阅“Get-Help Set-ExecutionPolicy”。
+所在位置 行:1 字符: 1
++ set-executionpolicy remotesigned
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (:) [Set-ExecutionPolicy], SecurityException
+    + FullyQualifiedErrorId : ExecutionPolicyOverride,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+set-executionpolicy : Windows PowerShell 已成功更新你的执行策略，但在更具体的作业域中定义的策略覆盖了该设置。由于发生覆
+盖，你的外壳程序将保留其当前的有效执行策略 Restricted。请键入“Get-ExecutionPolicy -List”以查看你的执行策略设置。有关
+详细信息，请参阅“Get-Help Set-ExecutionPolicy”。
+所在位置 行:1 字符: 1
++ set-executionpolicy remotesigned
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (:) [Set-ExecutionPolicy], SecurityException
+    + FullyQualifiedErrorId : ExecutionPolicyOverride,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+PS C:\Windows\system32> Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+执行策略更改
+执行策略可帮助你防止执行不信任的脚本。更改执行策略可能会产生安全风险，如 https:/go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies 帮助主题所述。是否要更改执行策略?
+是(&Y)  全是(&A)  否(&N)  全否(&L)  暂停(&S)
+Y
+>> TerminatingError(Set-ExecutionPolicy):“Windows PowerShell 已成功更新你的执行策略，但在更具体的作业域中定义的策略覆盖了该设置。由于发生覆盖，你的外壳程序将保留其当前的有效执行策略 Restricted。请键入“Get-ExecutionPolicy -List”以查看你的执行策略设置。有关详细信息，请参阅“Get-Help Set-ExecutionPolicy”。”
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411213053
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 14860
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“Windows PowerShell 已成功更新你的执行策略，但在更具体的作业域中定义的策略覆盖了该设置。由于发生覆盖，你的外壳程序将保留其当前的有效执行策略 Restricted。请键入“Get-ExecutionPolicy -List”以查看你的执行策略设置。有关详细信息，请参阅“Get-Help Set-ExecutionPolicy”。”
+Set-ExecutionPolicy : Windows PowerShell 已成功更新你的执行策略，但在更具体的作业域中定义的策略覆盖了该设置。由于发生覆盖，你的外壳程序将保留其当前的有效执行策略 Restricted。请键入“Get
+-ExecutionPolicy -List”以查看你的执行策略设置。有关详细信息，请参阅“Get-Help Set-ExecutionPolicy”。
+所在位置 行:1 字符: 1
++ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (:) [Set-ExecutionPolicy], SecurityException
+    + FullyQualifiedErrorId : ExecutionPolicyOverride,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+Set-ExecutionPolicy : Windows PowerShell 已成功更新你的执行策略，但在更具体的作业域中定义的策略覆盖了该设置。由于发生覆盖，你的外壳程序将保留其当前的有效执行策略 Restricted。请键入“Get
+-ExecutionPolicy -List”以查看你的执行策略设置。有关详细信息，请参阅“Get-Help Set-ExecutionPolicy”。
+所在位置 行:1 字符: 1
++ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (:) [Set-ExecutionPolicy], SecurityException
+    + FullyQualifiedErrorId : ExecutionPolicyOverride,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+Set-ExecutionPolicy : Windows PowerShell 已成功更新你的执行策略，但在更具体的作业域中定义的策略覆盖了该设置。由于发生覆
+盖，你的外壳程序将保留其当前的有效执行策略 Restricted。请键入“Get-ExecutionPolicy -List”以查看你的执行策略设置。有关
+详细信息，请参阅“Get-Help Set-ExecutionPolicy”。
+所在位置 行:1 字符: 1
++ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (:) [Set-ExecutionPolicy], SecurityException
+    + FullyQualifiedErrorId : ExecutionPolicyOverride,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+PS C:\Windows\system32> Set-ExecutionPolicy RemoteSigned -Scope UserPolicy
+>> TerminatingError(Set-ExecutionPolicy):“无法设置执行策略。MachinePolicy 或 UserPolicy 范围内的执行策略必须通过组策略设置。”
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411213112
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 14860
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“无法设置执行策略。MachinePolicy 或 UserPolicy 范围内的执行策略必须通过组策略设置。”
+Set-ExecutionPolicy : 无法设置执行策略。MachinePolicy 或 UserPolicy 范围内的执行策略必须通过组策略设置。
+所在位置 行:1 字符: 1
++ Set-ExecutionPolicy RemoteSigned -Scope UserPolicy
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Set-ExecutionPolicy]，InvalidOperationException
+    + FullyQualifiedErrorId : CantSetGroupPolicy,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+Set-ExecutionPolicy : 无法设置执行策略。MachinePolicy 或 UserPolicy 范围内的执行策略必须通过组策略设置。
+所在位置 行:1 字符: 1
++ Set-ExecutionPolicy RemoteSigned -Scope UserPolicy
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Set-ExecutionPolicy]，InvalidOperationException
+    + FullyQualifiedErrorId : CantSetGroupPolicy,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+Set-ExecutionPolicy : 无法设置执行策略。MachinePolicy 或 UserPolicy 范围内的执行策略必须通过组策略设置。
+所在位置 行:1 字符: 1
++ Set-ExecutionPolicy RemoteSigned -Scope UserPolicy
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Set-ExecutionPolicy]，InvalidOperationException
+    + FullyQualifiedErrorId : CantSetGroupPolicy,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+PS C:\Windows\system32> Set-ExecutionPolicy -h
+>> TerminatingError(Set-ExecutionPolicy):“找不到与参数名称“h”匹配的参数。”
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411213205
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 14860
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到与参数名称“h”匹配的参数。”
+Set-ExecutionPolicy : 找不到与参数名称“h”匹配的参数。
+所在位置 行:1 字符: 21
++ Set-ExecutionPolicy -h
++                     ~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-ExecutionPolicy]，ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+Set-ExecutionPolicy : 找不到与参数名称“h”匹配的参数。
+所在位置 行:1 字符: 21
++ Set-ExecutionPolicy -h
++                     ~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-ExecutionPolicy]，ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+Set-ExecutionPolicy : 找不到与参数名称“h”匹配的参数。
+所在位置 行:1 字符: 21
++ Set-ExecutionPolicy -h
++                     ~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-ExecutionPolicy]，ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+
+PS C:\Windows\system32> Set-ExecutionPolicy -help
+>> TerminatingError(Set-ExecutionPolicy):“找不到与参数名称“help”匹配的参数。”
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411213207
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 14860
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到与参数名称“help”匹配的参数。”
+Set-ExecutionPolicy : 找不到与参数名称“help”匹配的参数。
+所在位置 行:1 字符: 21
++ Set-ExecutionPolicy -help
++                     ~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-ExecutionPolicy]，ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+Set-ExecutionPolicy : 找不到与参数名称“help”匹配的参数。
+所在位置 行:1 字符: 21
++ Set-ExecutionPolicy -help
++                     ~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-ExecutionPolicy]，ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+Set-ExecutionPolicy : 找不到与参数名称“help”匹配的参数。
+所在位置 行:1 字符: 21
++ Set-ExecutionPolicy -help
++                     ~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-ExecutionPolicy]，ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+
+PS C:\Windows\system32> Set-ExecutionPolicy --help
+>> TerminatingError(Set-ExecutionPolicy):“无法绑定参数“ExecutionPolicy”。无法将值“--help”转换为类型“Microsoft.PowerShell.ExecutionPolicy”。错误:“无法将标识符名称 --help 与有效的枚举器名称相匹配。请指定以下枚举器名称之一，然后重试:
+Unrestricted, RemoteSigned, AllSigned, Restricted, Default, Bypass, Undefined””
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411213210
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 14860
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“无法绑定参数“ExecutionPolicy”。无法将值“--help”转换为类型“Microsoft.PowerShell.ExecutionPolicy”。错误:“无法将标识符名称 --help 与有效的枚举器名称相匹配。请指定以下枚举器名称之一，然后重试:
+Unrestricted, RemoteSigned, AllSigned, Restricted, Default, Bypass, Undefined””
+Set-ExecutionPolicy : 无法绑定参数“ExecutionPolicy”。无法将值“--help”转换为类型“Microsoft.PowerShell.ExecutionPolicy”。错误:“无法将标识符名称 --hel
+p 与有效的枚举器名称相匹配。请指定以下枚举器名称之一，然后重试:
+Unrestricted, RemoteSigned, AllSigned, Restricted, Default, Bypass, Undefined”
+所在位置 行:1 字符: 21
++ Set-ExecutionPolicy --help
++                     ~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-ExecutionPolicy]，ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+Set-ExecutionPolicy : 无法绑定参数“ExecutionPolicy”。无法将值“--help”转换为类型“Microsoft.PowerShell.ExecutionPolicy”。错误:“无法将标识符名称 --hel
+p 与有效的枚举器名称相匹配。请指定以下枚举器名称之一，然后重试:
+Unrestricted, RemoteSigned, AllSigned, Restricted, Default, Bypass, Undefined”
+所在位置 行:1 字符: 21
++ Set-ExecutionPolicy --help
++                     ~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-ExecutionPolicy]，ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+Set-ExecutionPolicy : 无法绑定参数“ExecutionPolicy”。无法将值“--help”转换为类型“Microsoft.PowerShell.ExecutionPoli
+cy”。错误:“无法将标识符名称 --help 与有效的枚举器名称相匹配。请指定以下枚举器名称之一，然后重试:
+Unrestricted, RemoteSigned, AllSigned, Restricted, Default, Bypass, Undefined”
+所在位置 行:1 字符: 21
++ Set-ExecutionPolicy --help
++                     ~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-ExecutionPolicy]，ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+
+PS C:\Windows\system32> Set-ExecutionPolicy RemoteSigned -Scope UserPolicy
+>> TerminatingError(Set-ExecutionPolicy):“无法设置执行策略。MachinePolicy 或 UserPolicy 范围内的执行策略必须通过组策略设置。”
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411213422
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 14860
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“无法设置执行策略。MachinePolicy 或 UserPolicy 范围内的执行策略必须通过组策略设置。”
+Set-ExecutionPolicy : 无法设置执行策略。MachinePolicy 或 UserPolicy 范围内的执行策略必须通过组策略设置。
+所在位置 行:1 字符: 1
++ Set-ExecutionPolicy RemoteSigned -Scope UserPolicy
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Set-ExecutionPolicy]，InvalidOperationException
+    + FullyQualifiedErrorId : CantSetGroupPolicy,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+Set-ExecutionPolicy : 无法设置执行策略。MachinePolicy 或 UserPolicy 范围内的执行策略必须通过组策略设置。
+所在位置 行:1 字符: 1
++ Set-ExecutionPolicy RemoteSigned -Scope UserPolicy
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Set-ExecutionPolicy]，InvalidOperationException
+    + FullyQualifiedErrorId : CantSetGroupPolicy,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+Set-ExecutionPolicy : 无法设置执行策略。MachinePolicy 或 UserPolicy 范围内的执行策略必须通过组策略设置。
+所在位置 行:1 字符: 1
++ Set-ExecutionPolicy RemoteSigned -Scope UserPolicy
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Set-ExecutionPolicy]，InvalidOperationException
+    + FullyQualifiedErrorId : CantSetGroupPolicy,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+PS C:\Windows\system32> Get-ExecutionPolicy -List
+
+        Scope ExecutionPolicy
+        ----- ---------------
+MachinePolicy       Undefined
+   UserPolicy      Restricted
+      Process       Undefined
+  CurrentUser    Unrestricted
+ LocalMachine    Unrestricted
+
+
+PS C:\Windows\system32> Set-ExecutionPolicy RemoteSigned -Scope UserPolicy
+>> TerminatingError(Set-ExecutionPolicy):“无法设置执行策略。MachinePolicy 或 UserPolicy 范围内的执行策略必须通过组策略设置。”
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411214354
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 14860
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“无法设置执行策略。MachinePolicy 或 UserPolicy 范围内的执行策略必须通过组策略设置。”
+Set-ExecutionPolicy : 无法设置执行策略。MachinePolicy 或 UserPolicy 范围内的执行策略必须通过组策略设置。
+所在位置 行:1 字符: 1
++ Set-ExecutionPolicy RemoteSigned -Scope UserPolicy
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Set-ExecutionPolicy]，InvalidOperationException
+    + FullyQualifiedErrorId : CantSetGroupPolicy,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+Set-ExecutionPolicy : 无法设置执行策略。MachinePolicy 或 UserPolicy 范围内的执行策略必须通过组策略设置。
+所在位置 行:1 字符: 1
++ Set-ExecutionPolicy RemoteSigned -Scope UserPolicy
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Set-ExecutionPolicy]，InvalidOperationException
+    + FullyQualifiedErrorId : CantSetGroupPolicy,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+Set-ExecutionPolicy : 无法设置执行策略。MachinePolicy 或 UserPolicy 范围内的执行策略必须通过组策略设置。
+所在位置 行:1 字符: 1
++ Set-ExecutionPolicy RemoteSigned -Scope UserPolicy
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Set-ExecutionPolicy]，InvalidOperationException
+    + FullyQualifiedErrorId : CantSetGroupPolicy,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+PS C:\Windows\system32> Set-ExecutionPolicy Undefined -Scope UserPolicy
+>> TerminatingError(Set-ExecutionPolicy):“无法设置执行策略。MachinePolicy 或 UserPolicy 范围内的执行策略必须通过组策略设置。”
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411214406
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 14860
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“无法设置执行策略。MachinePolicy 或 UserPolicy 范围内的执行策略必须通过组策略设置。”
+Set-ExecutionPolicy : 无法设置执行策略。MachinePolicy 或 UserPolicy 范围内的执行策略必须通过组策略设置。
+所在位置 行:1 字符: 1
++ Set-ExecutionPolicy Undefined -Scope UserPolicy
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Set-ExecutionPolicy]，InvalidOperationException
+    + FullyQualifiedErrorId : CantSetGroupPolicy,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+Set-ExecutionPolicy : 无法设置执行策略。MachinePolicy 或 UserPolicy 范围内的执行策略必须通过组策略设置。
+所在位置 行:1 字符: 1
++ Set-ExecutionPolicy Undefined -Scope UserPolicy
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Set-ExecutionPolicy]，InvalidOperationException
+    + FullyQualifiedErrorId : CantSetGroupPolicy,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+Set-ExecutionPolicy : 无法设置执行策略。MachinePolicy 或 UserPolicy 范围内的执行策略必须通过组策略设置。
+所在位置 行:1 字符: 1
++ Set-ExecutionPolicy Undefined -Scope UserPolicy
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Set-ExecutionPolicy]，InvalidOperationException
+    + FullyQualifiedErrorId : CantSetGroupPolicy,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+PS C:\Windows\system32> Get-ExecutionPolicy -List
+
+        Scope ExecutionPolicy
+        ----- ---------------
+MachinePolicy       Undefined
+   UserPolicy      Restricted
+      Process       Undefined
+  CurrentUser    Unrestricted
+ LocalMachine    Unrestricted
+
+
+PS C:\Windows\system32> HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411215028
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 14860
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“无法将“HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。”
+HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System : 无法将“HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Po
+licies\System”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。
+所在位置 行:1 字符: 1
++ HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (HKLM:\SOFTWARE\...Policies\System:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System : 无法将“HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Po
+licies\System”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。
+所在位置 行:1 字符: 1
++ HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (HKLM:\SOFTWARE\...Policies\System:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System : 无法将“HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersi
+on\Policies\System”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，
+然后再试一次。
+所在位置 行:1 字符: 1
++ HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (HKLM:\SOFTWARE\...Policies\System:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Windows\system32> Get-ExecutionPolicy -List
+
+        Scope ExecutionPolicy
+        ----- ---------------
+MachinePolicy       Undefined
+   UserPolicy      Restricted
+      Process       Undefined
+  CurrentUser    Unrestricted
+ LocalMachine    Unrestricted
+
+
+PS C:\Windows\system32> Get-ExecutionPolicy -List
+
+        Scope ExecutionPolicy
+        ----- ---------------
+MachinePolicy       Undefined
+   UserPolicy      Restricted
+      Process       Undefined
+  CurrentUser    Unrestricted
+ LocalMachine    Unrestricted
+
+
+PS C:\Windows\system32> Set-ExecutionPolicy RemoteSigned -Scope UserPolicy
+>> TerminatingError(Set-ExecutionPolicy):“无法设置执行策略。MachinePolicy 或 UserPolicy 范围内的执行策略必须通过组策略设置。”
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411215516
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 14860
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“无法设置执行策略。MachinePolicy 或 UserPolicy 范围内的执行策略必须通过组策略设置。”
+Set-ExecutionPolicy : 无法设置执行策略。MachinePolicy 或 UserPolicy 范围内的执行策略必须通过组策略设置。
+所在位置 行:1 字符: 1
++ Set-ExecutionPolicy RemoteSigned -Scope UserPolicy
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Set-ExecutionPolicy]，InvalidOperationException
+    + FullyQualifiedErrorId : CantSetGroupPolicy,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+Set-ExecutionPolicy : 无法设置执行策略。MachinePolicy 或 UserPolicy 范围内的执行策略必须通过组策略设置。
+所在位置 行:1 字符: 1
++ Set-ExecutionPolicy RemoteSigned -Scope UserPolicy
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Set-ExecutionPolicy]，InvalidOperationException
+    + FullyQualifiedErrorId : CantSetGroupPolicy,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+Set-ExecutionPolicy : 无法设置执行策略。MachinePolicy 或 UserPolicy 范围内的执行策略必须通过组策略设置。
+所在位置 行:1 字符: 1
++ Set-ExecutionPolicy RemoteSigned -Scope UserPolicy
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Set-ExecutionPolicy]，InvalidOperationException
+    + FullyQualifiedErrorId : CantSetGroupPolicy,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+PS C:\Windows\system32> Set-ExecutionPolicy Unrestricted -Scope CurrentUser
+执行策略更改
+执行策略可帮助你防止执行不信任的脚本。更改执行策略可能会产生安全风险，如 https:/go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies 帮助主题所述。是否要更改执行策略?
+是(&Y)  全是(&A)  否(&N)  全否(&L)  暂停(&S)
+Y
+>> TerminatingError(Set-ExecutionPolicy):“Windows PowerShell 已成功更新你的执行策略，但在更具体的作业域中定义的策略覆盖了该设置。由于发生覆盖，你的外壳程序将保留其当前的有效执行策略 Restricted。请键入“Get-ExecutionPolicy -List”以查看你的执行策略设置。有关详细信息，请参阅“Get-Help Set-ExecutionPolicy”。”
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411215533
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 14860
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“Windows PowerShell 已成功更新你的执行策略，但在更具体的作业域中定义的策略覆盖了该设置。由于发生覆盖，你的外壳程序将保留其当前的有效执行策略 Restricted。请键入“Get-ExecutionPolicy -List”以查看你的执行策略设置。有关详细信息，请参阅“Get-Help Set-ExecutionPolicy”。”
+Set-ExecutionPolicy : Windows PowerShell 已成功更新你的执行策略，但在更具体的作业域中定义的策略覆盖了该设置。由于发生覆盖，你的外壳程序将保留其当前的有效执行策略 Restricted。请键入“Get
+-ExecutionPolicy -List”以查看你的执行策略设置。有关详细信息，请参阅“Get-Help Set-ExecutionPolicy”。
+所在位置 行:1 字符: 1
++ Set-ExecutionPolicy Unrestricted -Scope CurrentUser
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (:) [Set-ExecutionPolicy], SecurityException
+    + FullyQualifiedErrorId : ExecutionPolicyOverride,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+Set-ExecutionPolicy : Windows PowerShell 已成功更新你的执行策略，但在更具体的作业域中定义的策略覆盖了该设置。由于发生覆盖，你的外壳程序将保留其当前的有效执行策略 Restricted。请键入“Get
+-ExecutionPolicy -List”以查看你的执行策略设置。有关详细信息，请参阅“Get-Help Set-ExecutionPolicy”。
+所在位置 行:1 字符: 1
++ Set-ExecutionPolicy Unrestricted -Scope CurrentUser
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (:) [Set-ExecutionPolicy], SecurityException
+    + FullyQualifiedErrorId : ExecutionPolicyOverride,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+Set-ExecutionPolicy : Windows PowerShell 已成功更新你的执行策略，但在更具体的作业域中定义的策略覆盖了该设置。由于发生覆
+盖，你的外壳程序将保留其当前的有效执行策略 Restricted。请键入“Get-ExecutionPolicy -List”以查看你的执行策略设置。有关
+详细信息，请参阅“Get-Help Set-ExecutionPolicy”。
+所在位置 行:1 字符: 1
++ Set-ExecutionPolicy Unrestricted -Scope CurrentUser
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (:) [Set-ExecutionPolicy], SecurityException
+    + FullyQualifiedErrorId : ExecutionPolicyOverride,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+PS C:\Windows\system32> Get-Help Set-ExecutionPolicy
+是否要运行 Update-Help?
+Update-Help cmdlet 下载 Windows PowerShell 模块的最新帮助文件，并将其安装在你的计算机上。有关 Update-Help cmdlet 的详细信息，请参阅 https:/go.microsoft.com/fwlink/?LinkId=210614。
+是(&Y)  否(&N)  暂停(&S)
+Y
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411220003
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 14860
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“无法更新带有 UI 区域性 {zh-CN} 的模块“ConfigDefender, ConfigDefenderPerformance, PSReadline”帮助: 在 HelpInfo XML 文件中检索不到 UI 区域性 zh-CN。确保模块清单中的 HelpInfoUri 属性有效或检查网络连接是否正常，然后重试该命令。”
+Update-Help : 无法更新带有 UI 区域性 {zh-CN} 的模块“ConfigDefender, ConfigDefenderPerformance, PSReadline”帮助: 在 HelpInfo XML 文件中检索不到
+ UI 区域性 zh-CN。确保模块清单中的 HelpInfoUri 属性有效或检查网络连接是否正常，然后重试该命令。
+    + CategoryInfo          : ResourceUnavailable: (:) [Update-Help], Exception
+    + FullyQualifiedErrorId : UnableToRetrieveHelpInfoXml,Microsoft.PowerShell.Commands.UpdateHelpCommand
+Update-Help : 无法更新带有 UI 区域性 {zh-CN} 的模块“ConfigDefender, ConfigDefenderPerformance, PSReadline”帮助: 在 HelpInfo XML 文件中检索不到
+ UI 区域性 zh-CN。确保模块清单中的 HelpInfoUri 属性有效或检查网络连接是否正常，然后重试该命令。
+    + CategoryInfo          : ResourceUnavailable: (:) [Update-Help], Exception
+    + FullyQualifiedErrorId : UnableToRetrieveHelpInfoXml,Microsoft.PowerShell.Commands.UpdateHelpCommand
+
+名称
+    Set-ExecutionPolicy
+
+摘要
+    Sets the PowerShell execution policies for Windows computers.
+
+
+语法
+    Set-ExecutionPolicy [-ExecutionPolicy] {AllSigned | Bypass | Default | RemoteSigned | Restricted | Undefined | Unre
+    stricted} [[-Scope] {CurrentUser | LocalMachine | MachinePolicy | Process | UserPolicy}] [-Force] [-Confirm] [-What
+    If] [<CommonParameters>]
+
+
+说明
+    The `Set-ExecutionPolicy` cmdlet changes PowerShell execution policies for Windows computers. For more information,
+     see about_Execution_Policies (../Microsoft.PowerShell.Core/about/about_Execution_Policies.md).
+
+    An execution policy is part of the PowerShell security strategy. Execution policies determine whether you can load
+    configuration files, such as your PowerShell profile, or run scripts. And, whether scripts must be digitally signed
+     before they are run.
+
+    The `Set-ExecutionPolicy` cmdlet's default scope is LocalMachine , which affects everyone who uses the computer. To
+     change the execution policy for LocalMachine , start PowerShell with **Run as Administrator**.
+
+    To display the execution policies for each scope in the order of precedence, use `Get-ExecutionPolicy -List`. To se
+    e the effective execution policy for your PowerShell session use `Get-ExecutionPolicy` with no parameters.
+
+
+相关链接
+    Online Version: https://learn.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy?vie
+    w=powershell-5.1&WT.mc_id=ps-gethelp
+    about_Execution_Policies
+    about_Group_Policy_Settings
+    about_Providers
+    Get-AuthenticodeSignature
+    Get-ChildItem
+    Get-ExecutionPolicy
+    Invoke-Command
+    Set-AuthenticodeSignature
+    Unblock-File
+
+备注
+    若要查看示例，请键入: "get-help Set-ExecutionPolicy -examples".
+    有关详细信息，请键入: "get-help Set-ExecutionPolicy -detailed".
+    若要获取技术信息，请键入: "get-help Set-ExecutionPolicy -full".
+    有关在线帮助，请键入: "get-help Set-ExecutionPolicy -online"
+
+
+PS C:\Windows\system32> Get-Help Set-ExecutionPolicy
+
+名称
+    Set-ExecutionPolicy
+
+摘要
+    Sets the PowerShell execution policies for Windows computers.
+
+
+语法
+    Set-ExecutionPolicy [-ExecutionPolicy] {AllSigned | Bypass | Default | RemoteSigned | Restricted | Undefined | Unre
+    stricted} [[-Scope] {CurrentUser | LocalMachine | MachinePolicy | Process | UserPolicy}] [-Force] [-Confirm] [-What
+    If] [<CommonParameters>]
+
+
+说明
+    The `Set-ExecutionPolicy` cmdlet changes PowerShell execution policies for Windows computers. For more information,
+     see about_Execution_Policies (../Microsoft.PowerShell.Core/about/about_Execution_Policies.md).
+
+    An execution policy is part of the PowerShell security strategy. Execution policies determine whether you can load
+    configuration files, such as your PowerShell profile, or run scripts. And, whether scripts must be digitally signed
+     before they are run.
+
+    The `Set-ExecutionPolicy` cmdlet's default scope is LocalMachine , which affects everyone who uses the computer. To
+     change the execution policy for LocalMachine , start PowerShell with **Run as Administrator**.
+
+    To display the execution policies for each scope in the order of precedence, use `Get-ExecutionPolicy -List`. To se
+    e the effective execution policy for your PowerShell session use `Get-ExecutionPolicy` with no parameters.
+
+
+相关链接
+    Online Version: https://learn.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy?vie
+    w=powershell-5.1&WT.mc_id=ps-gethelp
+    about_Execution_Policies
+    about_Group_Policy_Settings
+    about_Providers
+    Get-AuthenticodeSignature
+    Get-ChildItem
+    Get-ExecutionPolicy
+    Invoke-Command
+    Set-AuthenticodeSignature
+    Unblock-File
+
+备注
+    若要查看示例，请键入: "get-help Set-ExecutionPolicy -examples".
+    有关详细信息，请键入: "get-help Set-ExecutionPolicy -detailed".
+    若要获取技术信息，请键入: "get-help Set-ExecutionPolicy -full".
+    有关在线帮助，请键入: "get-help Set-ExecutionPolicy -online"
+
+

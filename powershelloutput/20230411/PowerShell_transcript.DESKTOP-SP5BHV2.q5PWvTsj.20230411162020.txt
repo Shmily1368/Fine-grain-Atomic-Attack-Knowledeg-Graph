@@ -1,0 +1,27 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411162020
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {try { Set-ExecutionPolicy -ExecutionPolicy Default -Scope LocalMachine -Force } catch {}}
+进程 ID: 8696
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS>& {try { Set-ExecutionPolicy -ExecutionPolicy Default -Scope LocalMachine -Force } catch {}}
+PS>TerminatingError(Set-ExecutionPolicy):“Windows PowerShell 已成功更新你的执行策略，但在更具体的作业域中定义的策略覆盖了该设置。由于发生覆盖，你的外壳程序将保留其当前的有效执行策略 RemoteSigned。请键入“Get-ExecutionPolicy -List”以查看你的执行策略设置。有关详细信息，请参阅“Get-Help Set-ExecutionPolicy”。”
+PS>$global:?
+True
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20230411162020
+**********************

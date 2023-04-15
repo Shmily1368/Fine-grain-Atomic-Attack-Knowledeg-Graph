@@ -1,0 +1,118 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230221221337
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {$oldvalue = $(Get-ItemPropertyValue -Path "HKLM:\Software\Microsoft\Windows NT\CurrentVersion\Winlogon" -Name 'Shell-backup');
+Set-ItemProperty -Path "HKLM:\Software\Microsoft\Windows NT\CurrentVersion\Winlogon" -Name "Shell" -Value "$oldvalue";
+Remove-ItemProperty -Path "HKLM:\Software\Microsoft\Windows NT\CurrentVersion\Winlogon" -Name 'Shell-backup'}
+进程 ID: 14900
+PSVersion: 5.1.19041.2364
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2364
+BuildVersion: 10.0.19041.2364
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS>& {$oldvalue = $(Get-ItemPropertyValue -Path "HKLM:\Software\Microsoft\Windows NT\CurrentVersion\Winlogon" -Name 'Shell-backup');
+Set-ItemProperty -Path "HKLM:\Software\Microsoft\Windows NT\CurrentVersion\Winlogon" -Name "Shell" -Value "$oldvalue";
+Remove-ItemProperty -Path "HKLM:\Software\Microsoft\Windows NT\CurrentVersion\Winlogon" -Name 'Shell-backup'}
+>> TerminatingError(Get-ItemPropertyValue):“路径 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon 处不存在属性 Shell-backup。”
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230221221337
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {$oldvalue = $(Get-ItemPropertyValue -Path "HKLM:\Software\Microsoft\Windows NT\CurrentVersion\Winlogon" -Name 'Shell-backup');
+Set-ItemProperty -Path "HKLM:\Software\Microsoft\Windows NT\CurrentVersion\Winlogon" -Name "Shell" -Value "$oldvalue";
+Remove-ItemProperty -Path "HKLM:\Software\Microsoft\Windows NT\CurrentVersion\Winlogon" -Name 'Shell-backup'}
+进程 ID: 14900
+PSVersion: 5.1.19041.2364
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2364
+BuildVersion: 10.0.19041.2364
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“路径 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon 处不存在属性 Shell-backup。”
+Get-ItemPropertyValue : 路径 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon 处不存在属性 Shell-backup。
+所在位置 行:1 字符: 18
++ ... ldvalue = $(Get-ItemPropertyValue -Path "HKLM:\Software\Microsoft\Win ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ItemPropertyValue]，PSArgumentException
+    + FullyQualifiedErrorId : Argument,Microsoft.PowerShell.Commands.GetItemPropertyValueCommand
+Get-ItemPropertyValue : 路径 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon 处不存在属性 Shell-backup。
+所在位置 行:1 字符: 18
++ ... ldvalue = $(Get-ItemPropertyValue -Path "HKLM:\Software\Microsoft\Win ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ItemPropertyValue]，PSArgumentException
+    + FullyQualifiedErrorId : Argument,Microsoft.PowerShell.Commands.GetItemPropertyValueCommand
+Get-ItemPropertyValue : 路径 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon 处不存在属性 Shel
+l-backup。
+所在位置 行:1 字符: 18
++ ... ldvalue = $(Get-ItemPropertyValue -Path "HKLM:\Software\Microsoft\Win ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ItemPropertyValue]，PSArgumentException
+    + FullyQualifiedErrorId : Argument,Microsoft.PowerShell.Commands.GetItemPropertyValueCommand
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230221221337
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {$oldvalue = $(Get-ItemPropertyValue -Path "HKLM:\Software\Microsoft\Windows NT\CurrentVersion\Winlogon" -Name 'Shell-backup');
+Set-ItemProperty -Path "HKLM:\Software\Microsoft\Windows NT\CurrentVersion\Winlogon" -Name "Shell" -Value "$oldvalue";
+Remove-ItemProperty -Path "HKLM:\Software\Microsoft\Windows NT\CurrentVersion\Winlogon" -Name 'Shell-backup'}
+进程 ID: 14900
+PSVersion: 5.1.19041.2364
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2364
+BuildVersion: 10.0.19041.2364
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“路径 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon 处不存在属性 Shell-backup。”
+Remove-ItemProperty : 路径 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon 处不存在属性 Shell-backup。
+所在位置 行:3 字符: 1
++ Remove-ItemProperty -Path "HKLM:\Software\Microsoft\Windows NT\Curren ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (Shell-backup:String) [Remove-ItemProperty]，PSArgumentException
+    + FullyQualifiedErrorId : System.Management.Automation.PSArgumentException,Microsoft.PowerShell.Commands.RemoveItemP
+ropertyCommand
+Remove-ItemProperty : 路径 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon 处不存在属性 Shell-backup。
+所在位置 行:3 字符: 1
++ Remove-ItemProperty -Path "HKLM:\Software\Microsoft\Windows NT\Curren ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (Shell-backup:String) [Remove-ItemProperty]，PSArgumentException
+    + FullyQualifiedErrorId : System.Management.Automation.PSArgumentException,Microsoft.PowerShell.Commands.RemoveItemP
+ropertyCommand
+Remove-ItemProperty : 路径 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon 处不存在属性 Shell-
+backup。
+所在位置 行:3 字符: 1
++ Remove-ItemProperty -Path "HKLM:\Software\Microsoft\Windows NT\Curren ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (Shell-backup:String) [Remove-ItemProperty]，PSArgumentException
+    + FullyQualifiedErrorId : System.Management.Automation.PSArgumentException,Microsoft.PowerShell.Commands.RemoveIte
+   mPropertyCommand
+
+PS>$global:?
+True
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20230221221337
+**********************

@@ -1,0 +1,154 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411135120
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 7360
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS C:\Windows\system32> cd C:\KGraph\AtomicRun
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1547.001-1 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+PS C:\KGraph\AtomicRun> .\AtomicRunALL-2.ps1
+T1547.001-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-1 Reg Key Run
+
+操作成功完成。
+Done executing test:
+T1547.001-1 Reg Key Run
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+T1547.001-2
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-1 Reg Key Run
+
+操作成功完成。
+Done executing test:
+T1547.001-1 Reg Key Run
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411135246
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 7360
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到名为“ETWDataCollectorRedesigned”的进程。请验证该进程名称，然后再次调用 cmdlet。”
+Get-Process : 找不到名为“ETWDataCollectorRedesigned”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL-2.ps1:30 字符: 6
++      Get-Process -Name "ETWDataCollectorRedesigned" | Stop-Process
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ETWDataCollectorRedesigned:String) [Get-Process], ProcessCommandException
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+Get-Process : 找不到名为“ETWDataCollectorRedesigned”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL-2.ps1:30 字符: 6
++      Get-Process -Name "ETWDataCollectorRedesigned" | Stop-Process
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ETWDataCollectorRedesigned:String) [Get-Process], ProcessCommandException
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+Get-Process : 找不到名为“ETWDataCollectorRedesigned”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL-2.ps1:30 字符: 6
++      Get-Process -Name "ETWDataCollectorRedesigned" | Stop-Process
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ETWDataCollectorRedesigned:String) [Get-Process], ProcessCommandExcepti
+   on
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+Done executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+PS C:\KGraph\AtomicRun> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+PS C:\KGraph\AtomicRun> .\AtomicRunALL-2.ps1
+T1547.001-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-1 Reg Key Run
+
+操作成功完成。
+Done executing test:
+T1547.001-1 Reg Key Run
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+T1547.001-2
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-1 Reg Key Run
+
+操作成功完成。
+Done executing test:
+T1547.001-1 Reg Key Run
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+Done executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+T1547.001-3
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-1 Reg Key Run
+
+操作成功完成。
+Done executing test:
+T1547.001-1 Reg Key Run
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-3 PowerShell Registry RunOnce
+
+Done executing cleanup for test:
+T1547.001-3 PowerShell Registry RunOnce
+

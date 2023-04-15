@@ -1,0 +1,32 @@
+#1102(S): The audit log was cleared.
+1102
+#4624(S): An account was successfully logged on.
+4624
+#4625(F): An account failed to log on.
+4625
+#4634(S): An account was logged off.
+4634
+#4657(S): A registry value was modified.
+4657
+#4697(S): A service was installed in the system.
+4697
+#4698(S): A scheduled task was created.
+4698
+#4720(S): A user account was created.
+4720
+#4723(S, F): An attempt was made to change an account's password.
+4723
+#4724(S, F): An attempt was made to reset an account's password.
+4724
+#4725(S): A user account was disabled.
+4725
+#4726(S): A user account was deleted.
+4726
+#4738(S): A user account was changed.
+4738
+#4740(S): A user account was locked out.
+4740
+#4794(S, F): An attempt was made to set the Directory Services Restore Mode administrator password.
+4794
+#5025(S): The Windows Firewall Service has been stopped.
+5025

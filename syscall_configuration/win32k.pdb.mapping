@@ -1,0 +1,10 @@
+NtGdiBitBlt:570240
+NtGdiCreateCompatibleBitmap:571856
+NtGdiCreateCompatibleDC:762496
+NtGdiCreateDIBSection:885432
+NtGdiSelectBitmap:762916
+NtGdiStretchBlt:2145616
+NtUserGetAsyncKeyState:910276
+NtUserGetDC:796228
+NtUserGetKeyState:941564
+NtUserGetKeyboardState:941176

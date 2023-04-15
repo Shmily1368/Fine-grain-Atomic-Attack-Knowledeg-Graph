@@ -1,0 +1,38 @@
+﻿  auto_lock.cpp
+  btree.cpp
+F:\phd_one\RATOnline\collector\APTETWCollector0823\event_record_subclass.h(124,42): error C4596: “parse_num”: 成员声明中的非法限定名
+  callstack_pruning.cpp
+F:\phd_one\RATOnline\collector\APTETWCollector0823\event_record_callstack.h(46,14): error C2039: "function": 不是 "std" 的成员
+F:\phd_one\RATOnline\collector\APTETWCollector0823\event_identifier.h(43): message : 参见“std”的声明
+F:\phd_one\RATOnline\collector\APTETWCollector0823\event_record_callstack.h(46,22): error C2143: 语法错误: 缺少“;”(在“<”的前面)
+F:\phd_one\RATOnline\collector\APTETWCollector0823\event_record_callstack.h(46,22): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+F:\phd_one\RATOnline\collector\APTETWCollector0823\event_record_callstack.h(46,63): error C2238: 意外的标记位于“;”之前
+F:\phd_one\RATOnline\collector\APTETWCollector0823\event_record_subclass.h(124,42): error C4596: “parse_num”: 成员声明中的非法限定名
+  cal_MD5.cpp
+F:\phd_one\RATOnline\collector\APTETWCollector0823\cal_MD5.cpp(139,19): warning C4244: “参数”: 从“std::streamsize”转换到“size_t”，可能丢失数据
+F:\phd_one\RATOnline\collector\APTETWCollector0823\cal_MD5.cpp(348,110): error C2872: “LogLevel”: 不明确的符号
+F:\phd_one\RATOnline\collector\APTETWCollector0823\logger_record.h(14,6): message : 可能是“LogLevel”
+F:\phd_one\RATOnline\collector\APTETWCollector0823\include\log4cplus\loglevel.h(48,17): message : 或    “log4cplus::LogLevel”
+F:\phd_one\RATOnline\collector\APTETWCollector0823\cal_MD5.cpp(360,23): warning C4244: “参数”: 从“std::streamsize”转换到“size_t”，可能丢失数据
+  certificate_tool.cpp
+F:\phd_one\RATOnline\collector\APTETWCollector0823\publicstruct.h(54,29): error C4596: “{ctor}”: 成员声明中的非法限定名
+F:\phd_one\RATOnline\collector\APTETWCollector0823\publicstruct.h(58,18): error C4596: “{ctor}”: 成员声明中的非法限定名
+F:\phd_one\RATOnline\collector\APTETWCollector0823\publicstruct.h(58,50): error C2059: 语法错误:“{”
+F:\phd_one\RATOnline\collector\APTETWCollector0823\publicstruct.h(58,50): error C2334: “{”的前面有意外标记；跳过明显的函数体
+F:\phd_one\RATOnline\collector\APTETWCollector0823\certificate_tool.cpp(166,168): error C2872: “LogLevel”: 不明确的符号
+F:\phd_one\RATOnline\collector\APTETWCollector0823\logger_record.h(14,6): message : 可能是“LogLevel”
+F:\phd_one\RATOnline\collector\APTETWCollector0823\include\log4cplus\loglevel.h(48,17): message : 或    “log4cplus::LogLevel”
+F:\phd_one\RATOnline\collector\APTETWCollector0823\certificate_tool.cpp(188,155): error C2872: “LogLevel”: 不明确的符号
+F:\phd_one\RATOnline\collector\APTETWCollector0823\logger_record.h(14,6): message : 可能是“LogLevel”
+F:\phd_one\RATOnline\collector\APTETWCollector0823\include\log4cplus\loglevel.h(48,17): message : 或    “log4cplus::LogLevel”
+F:\phd_one\RATOnline\collector\APTETWCollector0823\certificate_tool.cpp(261,138): error C2872: “LogLevel”: 不明确的符号
+F:\phd_one\RATOnline\collector\APTETWCollector0823\logger_record.h(14,6): message : 可能是“LogLevel”
+F:\phd_one\RATOnline\collector\APTETWCollector0823\include\log4cplus\loglevel.h(48,17): message : 或    “log4cplus::LogLevel”
+F:\phd_one\RATOnline\collector\APTETWCollector0823\certificate_tool.cpp(309,90): error C2872: “LogLevel”: 不明确的符号
+F:\phd_one\RATOnline\collector\APTETWCollector0823\logger_record.h(14,6): message : 可能是“LogLevel”
+F:\phd_one\RATOnline\collector\APTETWCollector0823\include\log4cplus\loglevel.h(48,17): message : 或    “log4cplus::LogLevel”
+F:\phd_one\RATOnline\collector\APTETWCollector0823\certificate_tool.cpp(316,88): error C2872: “LogLevel”: 不明确的符号
+F:\phd_one\RATOnline\collector\APTETWCollector0823\logger_record.h(14,6): message : 可能是“LogLevel”
+F:\phd_one\RATOnline\collector\APTETWCollector0823\include\log4cplus\loglevel.h(48,17): message : 或    “log4cplus::LogLevel”
+F:\phd_one\RATOnline\collector\APTETWCollector0823\certificate_tool.cpp(434,31): warning C4018: “<”: 有符号/无符号不匹配
+  cert_analyzer.cpp

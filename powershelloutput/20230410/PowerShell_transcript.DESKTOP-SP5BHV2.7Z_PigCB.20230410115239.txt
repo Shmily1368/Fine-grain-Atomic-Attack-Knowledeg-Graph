@@ -1,0 +1,459 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410115239
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell
+进程 ID: 6412
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS C:\KGraph\AtomicRun> .\GetGraphFile.ps1
+PS C:\KGraph\AtomicRun> .\GetGraphFile.ps1
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410115330
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell
+进程 ID: 6412
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到路径“C:\Users\wangjian\Desktop\test”，因为该路径不存在。”
+Get-ChildItem : 找不到路径“C:\Users\wangjian\Desktop\test”，因为该路径不存在。
+所在位置 C:\KGraph\AtomicRun\GetGraphFile.ps1:7 字符: 10
++ $files = Get-ChildItem -Path $sourceFolder -Filter *.txt
++          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\wangjian\Desktop\test:String) [Get-ChildItem], ItemNotFoundExcep
+tion
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+Get-ChildItem : 找不到路径“C:\Users\wangjian\Desktop\test”，因为该路径不存在。
+所在位置 C:\KGraph\AtomicRun\GetGraphFile.ps1:7 字符: 10
++ $files = Get-ChildItem -Path $sourceFolder -Filter *.txt
++          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\wangjian\Desktop\test:String) [Get-ChildItem], ItemNotFoundExcep
+tion
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+Get-ChildItem : 找不到路径“C:\Users\wangjian\Desktop\test”，因为该路径不存在。
+所在位置 C:\KGraph\AtomicRun\GetGraphFile.ps1:7 字符: 10
++ $files = Get-ChildItem -Path $sourceFolder -Filter *.txt
++          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\wangjian\Desktop\test:String) [Get-ChildItem], ItemNotFoundExc
+   eption
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410115330
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell
+进程 ID: 6412
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“There is not exactly one .txt file in the source folder.”
+C:\KGraph\AtomicRun\GetGraphFile.ps1 : There is not exactly one .txt file in the source folder.
+所在位置 行:1 字符: 1
++ .\GetGraphFile.ps1
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,GetGraphFile.ps1
+C:\KGraph\AtomicRun\GetGraphFile.ps1 : There is not exactly one .txt file in the source folder.
+所在位置 行:1 字符: 1
++ .\GetGraphFile.ps1
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,GetGraphFile.ps1
+C:\KGraph\AtomicRun\GetGraphFile.ps1 : There is not exactly one .txt file in the source folder.
+所在位置 行:1 字符: 1
++ .\GetGraphFile.ps1
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,GetGraphFile.ps1
+
+PS C:\KGraph\AtomicRun> .\GetGraphFile.ps1
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410115349
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell
+进程 ID: 6412
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“There is not exactly one .txt file in the source folder.”
+C:\KGraph\AtomicRun\GetGraphFile.ps1 : There is not exactly one .txt file in the source folder.
+所在位置 行:1 字符: 1
++ .\GetGraphFile.ps1
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,GetGraphFile.ps1
+C:\KGraph\AtomicRun\GetGraphFile.ps1 : There is not exactly one .txt file in the source folder.
+所在位置 行:1 字符: 1
++ .\GetGraphFile.ps1
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,GetGraphFile.ps1
+C:\KGraph\AtomicRun\GetGraphFile.ps1 : There is not exactly one .txt file in the source folder.
+所在位置 行:1 字符: 1
++ .\GetGraphFile.ps1
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,GetGraphFile.ps1
+
+PS C:\KGraph\AtomicRun> .\GetGraphFile.ps1
+PS C:\KGraph\AtomicRun> function RenameAndMoveFile {
+  param(
+    [string]$sourceFolder,
+    [string]$destinationFolder,
+    [string]$newName
+  )
+
+  # 获取唯一的.txt文件
+  $files = Get-ChildItem -Path $sourceFolder -Filter *.txt
+  if ($files.Count -ne 1) {
+    Write-Error "There is not exactly one .txt file in the source folder."
+    return
+  }
+
+  # 将文件重命名并移动到目标文件夹
+  $newPath = Join-Path $destinationFolder $newName
+  Move-Item $files.FullName $newPath -Force
+}
+
+PS C:\KGraph\AtomicRun> function RenameAndMoveFile {
+  param(
+    [string]$sourceFolder,
+    [string]$destinationFolder,
+    [string]$newName
+  )
+
+  # 获取唯一的.txt文件
+  $files = Get-ChildItem -Path $sourceFolder -Filter *.txt
+  if ($files.Count -ne 1) {
+    Write-Error "There is not exactly one .txt file in the source folder."
+    return
+  }
+
+  # 将文件重命名并移动到目标文件夹
+  $newPath = Join-Path $destinationFolder $newName
+  Move-Item $files.FullName $newPath -Force
+}
+RenameAndMoveFile -sourceFolder "C:\SourceFolder" -destinationFolder "C:\DestinationFolder" -newName "NewFileName.txt"
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410115707
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell
+进程 ID: 6412
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到路径“C:\SourceFolder”，因为该路径不存在。”
+Get-ChildItem : 找不到路径“C:\SourceFolder”，因为该路径不存在。
+所在位置 行:9 字符: 12
++   $files = Get-ChildItem -Path $sourceFolder -Filter *.txt
++            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\SourceFolder:String) [Get-ChildItem], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+Get-ChildItem : 找不到路径“C:\SourceFolder”，因为该路径不存在。
+所在位置 行:9 字符: 12
++   $files = Get-ChildItem -Path $sourceFolder -Filter *.txt
++            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\SourceFolder:String) [Get-ChildItem], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+Get-ChildItem : 找不到路径“C:\SourceFolder”，因为该路径不存在。
+所在位置 行:9 字符: 12
++   $files = Get-ChildItem -Path $sourceFolder -Filter *.txt
++            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\SourceFolder:String) [Get-ChildItem], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410115707
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell
+进程 ID: 6412
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“There is not exactly one .txt file in the source folder.”
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 行:19 字符: 1
++ RenameAndMoveFile -sourceFolder "C:\SourceFolder" -destinationFolder  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 行:19 字符: 1
++ RenameAndMoveFile -sourceFolder "C:\SourceFolder" -destinationFolder  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 行:19 字符: 1
++ RenameAndMoveFile -sourceFolder "C:\SourceFolder" -destinationFolder  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+
+PS C:\KGraph\AtomicRun> function RenameAndMoveFile {
+  param(
+    [string]$sourceFolder,
+    [string]$destinationFolder,
+    [string]$newName
+  )
+
+  # 获取唯一的.txt文件
+  $files = Get-ChildItem -Path $sourceFolder -Filter *.txt
+  if ($files.Count -ne 1) {
+    Write-Error "There is not exactly one .txt file in the source folder."
+    return
+  }
+
+  # 将文件重命名并移动到目标文件夹
+  $newPath = Join-Path $destinationFolder $newName
+  Move-Item $files.FullName $newPath -Force
+}
+RenameAndMoveFile -sourceFolder "C:\SourceFolder" -destinationFolder "C:\DestinationFolder" -newName "NewFileName.txt"
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410115715
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell
+进程 ID: 6412
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到路径“C:\SourceFolder”，因为该路径不存在。”
+Get-ChildItem : 找不到路径“C:\SourceFolder”，因为该路径不存在。
+所在位置 行:9 字符: 12
++   $files = Get-ChildItem -Path $sourceFolder -Filter *.txt
++            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\SourceFolder:String) [Get-ChildItem], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+Get-ChildItem : 找不到路径“C:\SourceFolder”，因为该路径不存在。
+所在位置 行:9 字符: 12
++   $files = Get-ChildItem -Path $sourceFolder -Filter *.txt
++            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\SourceFolder:String) [Get-ChildItem], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+Get-ChildItem : 找不到路径“C:\SourceFolder”，因为该路径不存在。
+所在位置 行:9 字符: 12
++   $files = Get-ChildItem -Path $sourceFolder -Filter *.txt
++            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\SourceFolder:String) [Get-ChildItem], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410115715
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell
+进程 ID: 6412
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“There is not exactly one .txt file in the source folder.”
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 行:19 字符: 1
++ RenameAndMoveFile -sourceFolder "C:\SourceFolder" -destinationFolder  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 行:19 字符: 1
++ RenameAndMoveFile -sourceFolder "C:\SourceFolder" -destinationFolder  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 行:19 字符: 1
++ RenameAndMoveFile -sourceFolder "C:\SourceFolder" -destinationFolder  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+
+PS C:\KGraph\AtomicRun> function RenameAndMoveFile {
+  param(
+    [string]$sourceFolder,
+    [string]$destinationFolder,
+    [string]$newName
+  )
+
+  # 获取唯一的.txt文件
+  $files = Get-ChildItem -Path $sourceFolder -Filter *.txt
+  if ($files.Count -ne 1) {
+    Write-Error "There is not exactly one .txt file in the source folder."
+    return
+  }
+
+  # 将文件重命名并移动到目标文件夹
+  $newPath = Join-Path $destinationFolder $newName
+  Move-Item $files.FullName $newPath -Force
+}
+
+PS C:\KGraph\AtomicRun> RenameAndMoveFile -sourceFolder "C:\SourceFolder" -destinationFolder "C:\DestinationFolder" -newName "NewFileName.txt"
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410115746
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell
+进程 ID: 6412
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到路径“C:\SourceFolder”，因为该路径不存在。”
+Get-ChildItem : 找不到路径“C:\SourceFolder”，因为该路径不存在。
+所在位置 行:9 字符: 12
++   $files = Get-ChildItem -Path $sourceFolder -Filter *.txt
++            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\SourceFolder:String) [Get-ChildItem], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+Get-ChildItem : 找不到路径“C:\SourceFolder”，因为该路径不存在。
+所在位置 行:9 字符: 12
++   $files = Get-ChildItem -Path $sourceFolder -Filter *.txt
++            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\SourceFolder:String) [Get-ChildItem], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+Get-ChildItem : 找不到路径“C:\SourceFolder”，因为该路径不存在。
+所在位置 行:9 字符: 12
++   $files = Get-ChildItem -Path $sourceFolder -Filter *.txt
++            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\SourceFolder:String) [Get-ChildItem], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410115747
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell
+进程 ID: 6412
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“There is not exactly one .txt file in the source folder.”
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 行:1 字符: 1
++ RenameAndMoveFile -sourceFolder "C:\SourceFolder" -destinationFolder  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 行:1 字符: 1
++ RenameAndMoveFile -sourceFolder "C:\SourceFolder" -destinationFolder  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 行:1 字符: 1
++ RenameAndMoveFile -sourceFolder "C:\SourceFolder" -destinationFolder  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+
+PS C:\KGraph\AtomicRun> RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest" -destinationFolder "C:\KGraph\AtomicRun\GraphFile" -newName "T1547.txt"
+

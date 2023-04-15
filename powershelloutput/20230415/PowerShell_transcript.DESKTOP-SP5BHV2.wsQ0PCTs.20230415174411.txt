@@ -1,0 +1,41 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415174411
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command Invoke-AtomicTest T1218-7
+进程 ID: 13776
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS>Invoke-AtomicTest T1218-7
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1218-7 Invoke-ATHRemoteFXvGPUDisablementCommand base test
+
+Resolve-Path : 找不到路径“C:\Windows\System32\RemoteFXvGPUDisablement.exe”，因为该路径不存在。
++ ... tFullPath = Resolve-Path -Path $RemoteFXvGPUDisablementFilePath -Erro ...
+_SignedBinaryProxyExecution\InvokeRemoteFXvGPUDisablementCommand.ps1:120 字符: 40
+所在位置 C:\Users\wangjian\Documents\WindowsPowerShell\Modules\AtomicTestHarnesses\1.12.0.0\Windows\TestHarnesses\T1218
+    + CategoryInfo          : ObjectNotFound: (C:\Windows\Syst...Disablement.exe:String) [Resolve-Path], ItemNotFoundE 
+   xception
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.ResolvePathCommand
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Done executing test:
+T1218-7 Invoke-ATHRemoteFXvGPUDisablementCommand base test
+
+PS>$global:?
+True
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20230415174421
+**********************

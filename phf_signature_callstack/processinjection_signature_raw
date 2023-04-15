@@ -1,0 +1,2 @@
+VirtualAllocEx|WriteProcessMemory
+OpenProcess|VirtualAllocEx|WriteProcessMemory

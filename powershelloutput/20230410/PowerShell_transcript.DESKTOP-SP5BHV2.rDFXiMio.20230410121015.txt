@@ -1,0 +1,633 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410121015
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 13556
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS C:\Windows\system32> cd C:\KGraph\AtomicRun
+PS C:\KGraph\AtomicRun> .\AtomicRun.ps1
+  T1547.001-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1547.001\  T1547.001.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1547.001\  T1547.001.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410121040
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 13556
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“There is not exactly one .txt file in the source folder.”
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRun.ps1:30 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRun.ps1:30 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRun.ps1:30 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+
+  T1547.001-2
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1547.001\  T1547.001.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1547.001\  T1547.001.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+PS C:\KGraph\AtomicRun> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+PS C:\KGraph\AtomicRun> .\AtomicRun.ps1
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410121308
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 13556
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到驱动器。名为“E”的驱动器不存在。”
+Get-Content : 找不到驱动器。名为“E”的驱动器不存在。
+所在位置 C:\KGraph\AtomicRun\AtomicRun.ps1:1 字符: 1
++ Get-Content -Path "E:\MyData\AttackGraph\fine-grain\ARTDate\AtomicGra ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (E:String) [Get-Content], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : 找不到驱动器。名为“E”的驱动器不存在。
+所在位置 C:\KGraph\AtomicRun\AtomicRun.ps1:1 字符: 1
++ Get-Content -Path "E:\MyData\AttackGraph\fine-grain\ARTDate\AtomicGra ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (E:String) [Get-Content], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : 找不到驱动器。名为“E”的驱动器不存在。
+所在位置 C:\KGraph\AtomicRun\AtomicRun.ps1:1 字符: 1
++ Get-Content -Path "E:\MyData\AttackGraph\fine-grain\ARTDate\AtomicGra ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (E:String) [Get-Content], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+
+PS C:\KGraph\AtomicRun> .\AtomicRun.ps1
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410121424
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 13556
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到路径“C:\KGraph\AtomicRun\TEWTese.csv”，因为该路径不存在。”
+Get-Content : 找不到路径“C:\KGraph\AtomicRun\TEWTese.csv”，因为该路径不存在。
+所在位置 C:\KGraph\AtomicRun\AtomicRun.ps1:1 字符: 1
++ Get-Content -Path "C:\KGraph\AtomicRun\TEWTese.csv" | ForEach-Object  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\KGraph\AtomicRun\TEWTese.csv:String) [Get-Content], ItemNotFoundExcept
+ion
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : 找不到路径“C:\KGraph\AtomicRun\TEWTese.csv”，因为该路径不存在。
+所在位置 C:\KGraph\AtomicRun\AtomicRun.ps1:1 字符: 1
++ Get-Content -Path "C:\KGraph\AtomicRun\TEWTese.csv" | ForEach-Object  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\KGraph\AtomicRun\TEWTese.csv:String) [Get-Content], ItemNotFoundExcept
+ion
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : 找不到路径“C:\KGraph\AtomicRun\TEWTese.csv”，因为该路径不存在。
+所在位置 C:\KGraph\AtomicRun\AtomicRun.ps1:1 字符: 1
++ Get-Content -Path "C:\KGraph\AtomicRun\TEWTese.csv" | ForEach-Object  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\KGraph\AtomicRun\TEWTese.csv:String) [Get-Content], ItemNotFoundExce
+   ption
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+
+PS C:\KGraph\AtomicRun> .\AtomicRun.ps1
+  T1547.001-1
+  T1547.001-2
+PS C:\KGraph\AtomicRun> .\AtomicRun.ps1
+T1547.001-1
+T1547.001-2
+PS C:\KGraph\AtomicRun> .\AtomicRun.ps1
+T1547.001-1
+T1547.001-2
+PS C:\KGraph\AtomicRun> .\AtomicRunALL.ps1
+T1547.001-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-1 Reg Key Run
+
+操作成功完成。
+Done executing test:
+T1547.001-1 Reg Key Run
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410121642
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 13556
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“There is not exactly one .txt file in the source folder.”
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:31 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:31 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:31 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+
+T1547.001-2
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-2 Reg Key RunOnce
+
+操作成功完成。
+Done executing test:
+T1547.001-2 Reg Key RunOnce
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+Done executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410121704
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 13556
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“There is not exactly one .txt file in the source folder.”
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:31 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:31 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:31 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+
+PS C:\KGraph\AtomicRun> .\AtomicRunALL.ps1
+T1547.001-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-1 Reg Key Run
+
+操作成功完成。
+Done executing test:
+T1547.001-1 Reg Key Run
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410121800
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 13556
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“There is not exactly one .txt file in the source folder.”
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:31 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:31 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:31 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+
+T1547.001-2
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-2 Reg Key RunOnce
+
+操作成功完成。
+Done executing test:
+T1547.001-2 Reg Key RunOnce
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+Done executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410121822
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 13556
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“There is not exactly one .txt file in the source folder.”
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:31 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:31 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:31 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+
+PS C:\KGraph\AtomicRun> .\AtomicRunALL.ps1
+T1547.001-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-1 Reg Key Run
+
+操作成功完成。
+Done executing test:
+T1547.001-1 Reg Key Run
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410121927
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 13556
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“There is not exactly one .txt file in the source folder.”
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:31 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:31 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:31 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+
+T1547.001-2
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-2 Reg Key RunOnce
+
+操作成功完成。
+Done executing test:
+T1547.001-2 Reg Key RunOnce
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+Done executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410121949
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 13556
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“There is not exactly one .txt file in the source folder.”
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:31 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:31 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:31 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+
+PS C:\KGraph\AtomicRun> .\AtomicRunALL.ps1
+T1547.001-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-1 Reg Key Run
+
+操作成功完成。
+Done executing test:
+T1547.001-1 Reg Key Run
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410122133
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 13556
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“There is not exactly one .txt file in the source folder.”
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:31 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:31 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:31 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+
+T1547.001-2
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-2 Reg Key RunOnce
+
+操作成功完成。
+Done executing test:
+T1547.001-2 Reg Key RunOnce
+
+PS C:\KGraph\AtomicRun> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+PS C:\KGraph\AtomicRun> .\AtomicRunALL.ps1
+T1547.001-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-1 Reg Key Run
+
+操作成功完成。
+Done executing test:
+T1547.001-1 Reg Key Run
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410122250
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 13556
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“There is not exactly one .txt file in the source folder.”
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:31 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:31 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:31 字符: 6
++      RenameAndMoveFile -sourceFolder "C:\Users\wangjian\Desktop\Atest ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+
+T1547.001-2
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-2 Reg Key RunOnce
+

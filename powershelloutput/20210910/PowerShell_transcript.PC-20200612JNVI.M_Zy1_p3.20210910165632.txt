@@ -1,0 +1,24 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20210910165632
+用户名: WORKGROUP\SYSTEM
+RunAs 用户: WORKGROUP\SYSTEM
+配置名称: 
+计算机: PC-20200612JNVI (Microsoft Windows NT 6.2.9200.0)
+主机应用程序: C:\WINDOWS\System32\RemoteFXvGPUDisablement.exe Disable
+进程 ID: 1996
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>Get-VMRemoteFXPhysicalVideoAdapter
+无法将“Get-VMRemoteFXPhysicalVideoAdapter”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20210910165643
+**********************

@@ -1,0 +1,41 @@
+GetKeyState:user32.dll
+GetKeyboardState:user32.dll
+GetAsyncKeyState:user32.dll
+#Win10 API
+NtUserGetKeyState:win32u.dll
+NtUserGetAsyncKeyState:win32u.dll
+#Win10 API
+NtUserGetKeyboardState:win32u.dll
+GetDC:user32.dll
+NtUserGetDC:win32u.dll
+BitBlt:gdi32.dll
+StretchBlt:gdi32.dll
+#Win10 API
+CreateDIBSection:gdi32.dll
+CreateCompatibleDC:gdi32.dll
+CreateCompatibleBitmap:gdi32.dll
+SetBkColor:gdi32.dll
+SelectObject:gdi32.dll
+#Win10 API
+SelectObjectImpl:gdi32full.dll
+#Win10 API
+NtGdiSelectBitmap:win32u.dll
+ZwCreateNamedPipeFile:ntdll.dll
+CreatePipe:KernelBase.dll
+ZwOpenProcess:ntdll.dll
+OpenProcess:KernelBase.dll
+ZwAllocateVirtualMemory:ntdll.dll
+VirtualAllocEx:kernel32.dll
+VirtualAllocExNuma:KernelBase.dll
+#VirtualAlloc:KernelBase.dll
+ZwWriteVirtualMemory:ntdll.dll
+WriteProcessMemory:KernelBase.dll
+ZwQueryInformationProcess:ntdll.dll
+K32GetProcessImageFileName:kernel32.dll
+ZwDeviceIoControlFile:ntdll.dll
+CryptImportKey:cryptsp.dll
+VirtualAlloc:KernelBase.dll
+VirtualLock:kernel32.dll
+VirtualProtect:KernelBase.dll
+RtlAllocateHeap:ntdll.dll
+ZwFlushInstructionCache:ntdll.dll

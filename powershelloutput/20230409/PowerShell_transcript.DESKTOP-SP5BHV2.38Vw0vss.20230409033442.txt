@@ -1,0 +1,26 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230409033442
+用户名: WORKGROUP\SYSTEM
+RunAs 用户: WORKGROUP\SYSTEM
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe -ExecutionPolicy Restricted -Command $Res = 0; $Infs = Get-Item -Path ($env:WinDir + '\inf\*.inf'); foreach ($Inf in $Infs) { $Data = Get-Content $Inf.FullName; if ($Data -match '\[defaultinstall.nt(amd64|arm|arm64|x86)\]') { $Res = 1; break; } } Write-Host 'Final result:', $Res;
+进程 ID: 16720
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>$Res = 0; $Infs = Get-Item -Path ($env:WinDir + '\inf\*.inf'); foreach ($Inf in $Infs) { $Data = Get-Content $Inf.FullName; if ($Data -match '\[defaultinstall.nt(amd64|arm|arm64|x86)\]') { $Res = 1; break; } } Write-Host 'Final result:', $Res;
+Final result: 0
+PS>$global:?
+True
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20230409033447
+**********************

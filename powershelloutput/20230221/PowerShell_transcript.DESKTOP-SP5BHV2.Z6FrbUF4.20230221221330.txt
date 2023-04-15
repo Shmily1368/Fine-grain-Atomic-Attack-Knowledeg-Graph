@@ -1,0 +1,71 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230221221330
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders" -Name "Common Startup" -Value "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup"
+Remove-Item "$env:TMP\atomictest\" -Recurse -Force}
+进程 ID: 14140
+PSVersion: 5.1.19041.2364
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2364
+BuildVersion: 10.0.19041.2364
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS>& {Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders" -Name "Common Startup" -Value "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup"
+Remove-Item "$env:TMP\atomictest\" -Recurse -Force}
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230221221330
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders" -Name "Common Startup" -Value "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup"
+Remove-Item "$env:TMP\atomictest\" -Recurse -Force}
+进程 ID: 14140
+PSVersion: 5.1.19041.2364
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2364
+BuildVersion: 10.0.19041.2364
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到路径“C:\Users\wangjian\AppData\Local\Temp\atomictest\”，因为该路径不存在。”
+Remove-Item : 找不到路径“C:\Users\wangjian\AppData\Local\Temp\atomictest\”，因为该路径不存在。
+所在位置 行:2 字符: 1
++ Remove-Item "$env:TMP\atomictest\" -Recurse -Force}
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\wangji...emp\atomictest\:String) [Remove-Item], ItemNotFoundExce
+ption
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : 找不到路径“C:\Users\wangjian\AppData\Local\Temp\atomictest\”，因为该路径不存在。
+所在位置 行:2 字符: 1
++ Remove-Item "$env:TMP\atomictest\" -Recurse -Force}
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\wangji...emp\atomictest\:String) [Remove-Item], ItemNotFoundExce
+ption
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : 找不到路径“C:\Users\wangjian\AppData\Local\Temp\atomictest\”，因为该路径不存在。
+所在位置 行:2 字符: 1
++ Remove-Item "$env:TMP\atomictest\" -Recurse -Force}
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\wangji...emp\atomictest\:String) [Remove-Item], ItemNotFoundEx
+   ception
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+
+PS>$global:?
+True
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20230221221331
+**********************

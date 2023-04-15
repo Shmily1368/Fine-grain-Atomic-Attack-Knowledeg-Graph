@@ -1,0 +1,1034 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411100758
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 7368
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS C:\Windows\system32> cd C:\KGraph\AtomicRun
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1218.011-1 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+成功: 已终止进程 "notepad.exe"，其 PID 为 13332。
+Done executing cleanup for test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+PS C:\KGraph\AtomicRun> .\AtomicRunALL.ps1
+T1218.011-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+Process Timed out after 120 seconds, use '-TimeoutSeconds' to specify a different timeout
+Done executing test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+成功: 已终止进程 "notepad.exe"，其 PID 为 1784。
+Done executing cleanup for test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+PS C:\KGraph\AtomicRun> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1218.011-1 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+错误: 没有找到进程 "notepad.exe"。
+Done executing cleanup for test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+PS C:\KGraph\AtomicRun> cls
+PS C:\KGraph\AtomicRun> .\AtomicRunALL.ps1
+T1218.011-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+Done executing test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+成功: 已终止进程 "notepad.exe"，其 PID 为 16736。
+Done executing cleanup for test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411101231
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 7368
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“There is not exactly one .txt file in the source folder.”
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:44 字符: 6
++      RenameAndMoveFile -sourceFolder "D:\MyLab\collector\APTETWCollec ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:44 字符: 6
++      RenameAndMoveFile -sourceFolder "D:\MyLab\collector\APTETWCollec ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+RenameAndMoveFile : There is not exactly one .txt file in the source folder.
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:44 字符: 6
++      RenameAndMoveFile -sourceFolder "D:\MyLab\collector\APTETWCollec ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,RenameAndMoveFile
+
+T1218.011-2
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1218.011-2 Rundll32 execute VBscript command
+
+Done executing test:
+T1218.011-2 Rundll32 execute VBscript command
+
+PS C:\KGraph\AtomicRun> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1218.011-1 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+错误: 没有找到进程 "notepad.exe"。
+Done executing cleanup for test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1218.011-2 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1218.011-2 Rundll32 execute VBscript command
+
+Done executing cleanup for test:
+T1218.011-2 Rundll32 execute VBscript command
+
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1218.011-3 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1218.011-3 Rundll32 execute VBscript command using Ordinal number
+
+Done executing cleanup for test:
+T1218.011-3 Rundll32 execute VBscript command using Ordinal number
+
+PS C:\KGraph\AtomicRun> .\AtomicRunALL.ps1
+T1218.011-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+Done executing test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+成功: 已终止进程 "notepad.exe"，其 PID 为 16616。
+Done executing cleanup for test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+T1218.011-2
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1218.011-2 Rundll32 execute VBscript command
+
+PS C:\KGraph\AtomicRun> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1218.011-3 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1218.011-3 Rundll32 execute VBscript command using Ordinal number
+
+Done executing cleanup for test:
+T1218.011-3 Rundll32 execute VBscript command using Ordinal number
+
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1218.011-2 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1218.011-2 Rundll32 execute VBscript command
+
+Done executing cleanup for test:
+T1218.011-2 Rundll32 execute VBscript command
+
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1218.011-1 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+错误: 没有找到进程 "notepad.exe"。
+Done executing cleanup for test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1218.011-2
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1218.011-2 Rundll32 execute VBscript command
+
+Done executing test:
+T1218.011-2 Rundll32 execute VBscript command
+
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1218.011-2 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1218.011-2 Rundll32 execute VBscript command
+
+Done executing cleanup for test:
+T1218.011-2 Rundll32 execute VBscript command
+
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1218.001-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1218.001-1 Compiled HTML Help Local Payload
+
+Done executing test:
+T1218.001-1 Compiled HTML Help Local Payload
+
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1218.011-1 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+成功: 已终止进程 "notepad.exe"，其 PID 为 8832。
+Done executing cleanup for test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1218.011-2 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1218.011-2 Rundll32 execute VBscript command
+
+Done executing cleanup for test:
+T1218.011-2 Rundll32 execute VBscript command
+
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1218.011-1 -GetPrereqs
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+GetPrereq's for:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+No Preqs Defined
+
+
+PS C:\KGraph\AtomicRun> if(Invoke-AtomicTest T1218.011-1 -GetPrereqs
+{Write-Host "WJ：An error occurred: $_"})
+所在位置 行:2 字符: 1
++ {Write-Host "WJ：An error occurred: $_"})
++ ~
+“if”语句中的表达式后面缺少右“)”。
+
+所在位置 行:2 字符: 40
++ {Write-Host "WJ：An error occurred: $_"})
++                                        ~
+表达式或语句中包含意外的标记“)”。
+所在位置 行:2 字符: 1
++ {Write-Host "WJ：An error occurred: $_"})
++ ~
+“if”语句中的表达式后面缺少右“)”。
+
+所在位置 行:2 字符: 40
++ {Write-Host "WJ：An error occurred: $_"})
++                                        ~
+表达式或语句中包含意外的标记“)”。
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingEndParenthesisAfterStatement
+
+PS C:\KGraph\AtomicRun> if(Invoke-AtomicTest T1218.011-1 -GetPrereqs
+)Write-Host "WJ：An error occurred: $_"
+所在位置 行:2 字符: 1
++ )Write-Host "WJ：An error occurred: $_"
++ ~
+if(条件)后面缺少语句块。
+所在位置 行:2 字符: 1
++ )Write-Host "WJ：An error occurred: $_"
++ ~
+if(条件)后面缺少语句块。
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingStatementBlock
+
+PS C:\KGraph\AtomicRun> if(Invoke-AtomicTest T1218.011-1 -GetPrereqs
+)
+{Write-Host "WJ：An error occurred: $_"}
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+GetPrereq's for:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+No Preqs Defined
+
+
+PS C:\KGraph\AtomicRun> .\test.ps1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+GetPrereq's for:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+No Preqs Defined
+
+
+error
+PS C:\KGraph\AtomicRun> .\test.ps1
+>> TerminatingError(Invoke-AtomicTest):“找不到接受实际参数“==”的位置形式参数。”
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411102502
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 7368
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到接受实际参数“==”的位置形式参数。”
+Invoke-AtomicTest : 找不到接受实际参数“==”的位置形式参数。
+所在位置 C:\KGraph\AtomicRun\test.ps1:1 字符: 5
++ if (Invoke-AtomicTest T1218.011-1 -GetPrereqs == "No Preqs Defined")  ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Invoke-AtomicTest]，ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Invoke-AtomicTest
+Invoke-AtomicTest : 找不到接受实际参数“==”的位置形式参数。
+所在位置 C:\KGraph\AtomicRun\test.ps1:1 字符: 5
++ if (Invoke-AtomicTest T1218.011-1 -GetPrereqs == "No Preqs Defined")  ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Invoke-AtomicTest]，ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Invoke-AtomicTest
+Invoke-AtomicTest : 找不到接受实际参数“==”的位置形式参数。
+所在位置 C:\KGraph\AtomicRun\test.ps1:1 字符: 5
++ if (Invoke-AtomicTest T1218.011-1 -GetPrereqs == "No Preqs Defined")  ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Invoke-AtomicTest]，ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Invoke-AtomicTest
+
+PS C:\KGraph\AtomicRun> .\test.ps1
+>> TerminatingError(Invoke-AtomicTest):“找不到接受实际参数“=”的位置形式参数。”
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411102508
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 7368
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到接受实际参数“=”的位置形式参数。”
+Invoke-AtomicTest : 找不到接受实际参数“=”的位置形式参数。
+所在位置 C:\KGraph\AtomicRun\test.ps1:1 字符: 5
++ if (Invoke-AtomicTest T1218.011-1 -GetPrereqs = "No Preqs Defined") {
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Invoke-AtomicTest]，ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Invoke-AtomicTest
+Invoke-AtomicTest : 找不到接受实际参数“=”的位置形式参数。
+所在位置 C:\KGraph\AtomicRun\test.ps1:1 字符: 5
++ if (Invoke-AtomicTest T1218.011-1 -GetPrereqs = "No Preqs Defined") {
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Invoke-AtomicTest]，ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Invoke-AtomicTest
+Invoke-AtomicTest : 找不到接受实际参数“=”的位置形式参数。
+所在位置 C:\KGraph\AtomicRun\test.ps1:1 字符: 5
++ if (Invoke-AtomicTest T1218.011-1 -GetPrereqs = "No Preqs Defined") {
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Invoke-AtomicTest]，ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Invoke-AtomicTest
+
+PS C:\KGraph\AtomicRun> .\test.ps1
+Invoke-AtomicTest T1218.011-1 -GetPrereqs
+PS C:\KGraph\AtomicRun> TerminatingError(Invoke-AtomicTest):“找不到接受实际参数“=”的位置形式参数。”
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411102720
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 7368
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到接受实际参数“=”的位置形式参数。”
+Invoke-AtomicTest : 找不到接受实际参数“=”的位置形式参数。
+所在位置 C:\KGraph\AtomicRun\test.ps1:3 字符: 5
++ if (Invoke-AtomicTest T1218.011-1 -GetPrereqs = "No Preqs Defined") {
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Invoke-AtomicTest]，ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Invoke-AtomicTest
+Invoke-AtomicTest : 找不到接受实际参数“=”的位置形式参数。
+所在位置 C:\KGraph\AtomicRun\test.ps1:3 字符: 5
++ if (Invoke-AtomicTest T1218.011-1 -GetPrereqs = "No Preqs Defined") {
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Invoke-AtomicTest]，ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Invoke-AtomicTest
+Invoke-AtomicTest : 找不到接受实际参数“=”的位置形式参数。
+所在位置 C:\KGraph\AtomicRun\test.ps1:3 字符: 5
++ if (Invoke-AtomicTest T1218.011-1 -GetPrereqs = "No Preqs Defined") {
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Invoke-AtomicTest]，ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Invoke-AtomicTest
+
+PS C:\KGraph\AtomicRun> .\test.ps1
+Invoke-AtomicTest T1218.011-1 -GetPrereqs
+PS C:\KGraph\AtomicRun> .\test.ps1
+Invoke-AtomicTest T1218.011-1 -GetPrereqs
+PS C:\KGraph\AtomicRun> .\test.ps1
+Invoke-AtomicTest T1218.011-1 -GetPrereqs
+PS C:\KGraph\AtomicRun> .\test.ps1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+GetPrereq's for:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+No Preqs Defined
+
+
+PS C:\KGraph\AtomicRun> .\AtomicRunALL-2.ps1
+T1547.001-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-1 Reg Key Run
+
+操作成功完成。
+Done executing test:
+T1547.001-1 Reg Key Run
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+T1547.001-2
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-2 Reg Key RunOnce
+
+操作成功完成。
+Done executing test:
+T1547.001-2 Reg Key RunOnce
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+Done executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+PS C:\KGraph\AtomicRun> .\AtomicRunALL-2.ps1
+T1218.011-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+Process Timed out after 120 seconds, use '-TimeoutSeconds' to specify a different timeout
+Done executing test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+成功: 已终止进程 "notepad.exe"，其 PID 为 16460。
+成功: 已终止进程 "notepad.exe"，其 PID 为 7108。
+Done executing cleanup for test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+T1218.011-2
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1218.011-2 Rundll32 execute VBscript command
+
+Done executing test:
+T1218.011-2 Rundll32 execute VBscript command
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1218.011-2 Rundll32 execute VBscript command
+
+Done executing cleanup for test:
+T1218.011-2 Rundll32 execute VBscript command
+
+T1218.011-3
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1218.011-3 Rundll32 execute VBscript command using Ordinal number
+
+Done executing test:
+T1218.011-3 Rundll32 execute VBscript command using Ordinal number
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1218.011-3 Rundll32 execute VBscript command using Ordinal number
+
+Done executing cleanup for test:
+T1218.011-3 Rundll32 execute VBscript command using Ordinal number
+
+T1218.011-4
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1218.011-4 Rundll32 advpack.dll Execution
+
+Done executing test:
+T1218.011-4 Rundll32 advpack.dll Execution
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1218.011-4 Rundll32 advpack.dll Execution
+
+Done executing cleanup for test:
+T1218.011-4 Rundll32 advpack.dll Execution
+
+T1218.011-5
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1218.011-5 Rundll32 ieadvpack.dll Execution
+
+Done executing test:
+T1218.011-5 Rundll32 ieadvpack.dll Execution
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1218.011-5 Rundll32 ieadvpack.dll Execution
+
+Done executing cleanup for test:
+T1218.011-5 Rundll32 ieadvpack.dll Execution
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411104042
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 7368
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到名为“ETWDataCollectorRedesigned”的进程。请验证该进程名称，然后再次调用 cmdlet。”
+Get-Process : 找不到名为“ETWDataCollectorRedesigned”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL-2.ps1:30 字符: 6
++      Get-Process -Name "ETWDataCollectorRedesigned" | Stop-Process
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ETWDataCollectorRedesigned:String) [Get-Process], ProcessCommandException
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+Get-Process : 找不到名为“ETWDataCollectorRedesigned”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL-2.ps1:30 字符: 6
++      Get-Process -Name "ETWDataCollectorRedesigned" | Stop-Process
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ETWDataCollectorRedesigned:String) [Get-Process], ProcessCommandException
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+Get-Process : 找不到名为“ETWDataCollectorRedesigned”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL-2.ps1:30 字符: 6
++      Get-Process -Name "ETWDataCollectorRedesigned" | Stop-Process
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ETWDataCollectorRedesigned:String) [Get-Process], ProcessCommandExcepti
+   on
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+
+PS C:\KGraph\AtomicRun> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+PS C:\KGraph\AtomicRun> .\AtomicRunALL-2.ps1
+PS C:\KGraph\AtomicRun> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+PS C:\KGraph\AtomicRun> In
+PS C:\KGraph\AtomicRun> TerminatingError():“The In command may only be used inside a Describe block.”
+>> TerminatingError():“The In command may only be used inside a Describe block.”
+>> TerminatingError():“The In command may only be used inside a Describe block.”
+The In command may only be used inside a Describe block.
+The In command may only be used inside a Describe block.
+所在位置 C:\Program Files\WindowsPowerShell\Modules\Pester\3.4.0\Functions\Describe.ps1:125 字符: 9
++         throw "The $CommandName command may only be used inside a Des ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (The In command ...Describe block.:String) [], RuntimeException
+    + FullyQualifiedErrorId : The In command may only be used inside a Describe block.
+
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest  T1218.011-1 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+成功: 已终止进程 "notepad.exe"，其 PID 为 632。
+成功: 已终止进程 "notepad.exe"，其 PID 为 19416。
+Done executing cleanup for test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest  T1218.011-2 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1218.011-2 Rundll32 execute VBscript command
+
+Done executing cleanup for test:
+T1218.011-2 Rundll32 execute VBscript command
+
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1547.001-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-1 Reg Key Run
+
+操作成功完成。
+Done executing test:
+T1547.001-1 Reg Key Run
+
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1547.001-1 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1547.001-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-1 Reg Key Run
+
+操作成功完成。
+Done executing test:
+T1547.001-1 Reg Key Run
+
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1547.001-1 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1547.001-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-1 Reg Key Run
+
+操作成功完成。
+Done executing test:
+T1547.001-1 Reg Key Run
+
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1547.001-1 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1547.001-2 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+Done executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+PS C:\KGraph\AtomicRun> .\AtomicRunALL-2.ps1
+T1547.001-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-1 Reg Key Run
+
+操作成功完成。
+Done executing test:
+T1547.001-1 Reg Key Run
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+T1547.001-2
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-2 Reg Key RunOnce
+
+操作成功完成。
+Done executing test:
+T1547.001-2 Reg Key RunOnce
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+Done executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+T1547.001-3
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-3 PowerShell Registry RunOnce
+
+Done executing test:
+T1547.001-3 PowerShell Registry RunOnce
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-3 PowerShell Registry RunOnce
+
+Done executing cleanup for test:
+T1547.001-3 PowerShell Registry RunOnce
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411111958
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 7368
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到名为“ETWDataCollectorRedesigned”的进程。请验证该进程名称，然后再次调用 cmdlet。”
+Get-Process : 找不到名为“ETWDataCollectorRedesigned”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL-2.ps1:30 字符: 6
++      Get-Process -Name "ETWDataCollectorRedesigned" | Stop-Process
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ETWDataCollectorRedesigned:String) [Get-Process], ProcessCommandException
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+Get-Process : 找不到名为“ETWDataCollectorRedesigned”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL-2.ps1:30 字符: 6
++      Get-Process -Name "ETWDataCollectorRedesigned" | Stop-Process
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ETWDataCollectorRedesigned:String) [Get-Process], ProcessCommandException
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+Get-Process : 找不到名为“ETWDataCollectorRedesigned”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL-2.ps1:30 字符: 6
++      Get-Process -Name "ETWDataCollectorRedesigned" | Stop-Process
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ETWDataCollectorRedesigned:String) [Get-Process], ProcessCommandExcepti
+   on
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+
+T1547.001-4
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-4 Suspicious vbs file run from startup Folder
+
+Microsoft (R) Windows Script Host Version 5.812
+版权所有(C) Microsoft Corporation。保留所有权利。
+T1547.001 Hello, World VBS!
+Microsoft (R) Windows Script Host Version 5.812
+版权所有(C) Microsoft Corporation。保留所有权利。
+T1547.001 Hello, World VBS!
+Done executing test:
+T1547.001-4 Suspicious vbs file run from startup Folder
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-4 Suspicious vbs file run from startup Folder
+
+Done executing cleanup for test:
+T1547.001-4 Suspicious vbs file run from startup Folder
+
+T1547.001-5
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-5 Suspicious jse file run from startup Folder
+
+Microsoft (R) Windows Script Host Version 5.812
+版权所有(C) Microsoft Corporation。保留所有权利。
+T1547.001 Hello, World JSE!
+Microsoft (R) Windows Script Host Version 5.812
+版权所有(C) Microsoft Corporation。保留所有权利。
+T1547.001 Hello, World JSE!
+Done executing test:
+T1547.001-5 Suspicious jse file run from startup Folder
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-5 Suspicious jse file run from startup Folder
+
+Done executing cleanup for test:
+T1547.001-5 Suspicious jse file run from startup Folder
+
+PS C:\KGraph\AtomicRun> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1547.001-4 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-4 Suspicious vbs file run from startup Folder
+
+Done executing cleanup for test:
+T1547.001-4 Suspicious vbs file run from startup Folder
+
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1547.001-5 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-5 Suspicious jse file run from startup Folder
+
+Done executing cleanup for test:
+T1547.001-5 Suspicious jse file run from startup Folder
+
+PS C:\KGraph\AtomicRun> .\AtomicRunALL-2.ps1
+T1547.001-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-1 Reg Key Run
+
+操作成功完成。
+Done executing test:
+T1547.001-1 Reg Key Run
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+T1547.001-2
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-2 Reg Key RunOnce
+
+操作成功完成。
+Done executing test:
+T1547.001-2 Reg Key RunOnce
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+Done executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+T1547.001-3
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-3 PowerShell Registry RunOnce
+
+Done executing test:
+T1547.001-3 PowerShell Registry RunOnce
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-3 PowerShell Registry RunOnce
+
+Done executing cleanup for test:
+T1547.001-3 PowerShell Registry RunOnce
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411112543
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 7368
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到名为“ETWDataCollectorRedesigned”的进程。请验证该进程名称，然后再次调用 cmdlet。”
+Get-Process : 找不到名为“ETWDataCollectorRedesigned”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL-2.ps1:30 字符: 6
++      Get-Process -Name "ETWDataCollectorRedesigned" | Stop-Process
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ETWDataCollectorRedesigned:String) [Get-Process], ProcessCommandException
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+Get-Process : 找不到名为“ETWDataCollectorRedesigned”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL-2.ps1:30 字符: 6
++      Get-Process -Name "ETWDataCollectorRedesigned" | Stop-Process
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ETWDataCollectorRedesigned:String) [Get-Process], ProcessCommandException
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+Get-Process : 找不到名为“ETWDataCollectorRedesigned”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL-2.ps1:30 字符: 6
++      Get-Process -Name "ETWDataCollectorRedesigned" | Stop-Process
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ETWDataCollectorRedesigned:String) [Get-Process], ProcessCommandExcepti
+   on
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+
+PS C:\KGraph\AtomicRun> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1547.001-1 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+PS C:\KGraph\AtomicRun> .\AtomicRunALL-2.ps1
+T1218.011-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+PS C:\KGraph\AtomicRun> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1218.011-1 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+错误: 没有找到进程 "notepad.exe"。
+Done executing cleanup for test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1547.001-1 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+PS C:\KGraph\AtomicRun> .\AtomicRunALL-2.ps1
+T1218.011-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+Process Timed out after 120 seconds, use '-TimeoutSeconds' to specify a different timeout
+Done executing test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+PS C:\KGraph\AtomicRun> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+>> TerminatingError():“管道已被停止。”
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1218.011-1 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+错误: 没有找到进程 "notepad.exe"。
+Done executing cleanup for test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1547.001-1 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1547.001-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-1 Reg Key Run
+
+操作成功完成。
+Done executing test:
+T1547.001-1 Reg Key Run
+
+PS C:\KGraph\AtomicRun> Invoke-AtomicTest T1547.001-1 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+PS C:\KGraph\AtomicRun> .\AtomicRunALL-2.ps1
+T1218.011-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1218.011-1 Rundll32 execute JavaScript Remote Payload With GetObject
+

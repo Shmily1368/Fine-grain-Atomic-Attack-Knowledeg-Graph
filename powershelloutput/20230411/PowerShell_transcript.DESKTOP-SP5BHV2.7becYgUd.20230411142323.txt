@@ -1,0 +1,170 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411142323
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 18980
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS C:\Users\wangjian> $process = Start-Process powershell -PassThru -WindowStyle Hidden -ArgumentList '-Command "Get-ChildItem C:\Windows\System32"'
+PS C:\Users\wangjian> $processId = $process.Id
+PS C:\Users\wangjian> $processId
+9928
+PS C:\Users\wangjian> $process = Start-Process powershell -PassThru -WindowStyle Hidden -ArgumentList '-Command "Get-ChildItem C:\Windows\System32"'
+
+PS C:\Users\wangjian> $process = Start-Process powershell -PassThru -WindowStyle Hidden -ArgumentList '-Command "Get-ChildItem C:\Windows\System32"'
+$processId = $process.Id
+PS C:\Users\wangjian> $processId
+15516
+PS C:\Users\wangjian> $process = Start-Process powershell -PassThru -WindowStyle Hidden -ArgumentList '-Command "Get-ChildItem C:\Windows\System32"'
+$processId = $process.Id
+PS C:\Users\wangjian> Start-Process powershell -PassThru -WindowStyle Hidden -ArgumentList "-Command Get-ChildItem C:\Windows\System32"
+
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
+-------  ------    -----      -----     ------     --  -- -----------
+     18       5      432       2084       0.02  12548   1 powershell
+
+
+PS C:\Users\wangjian> $process
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
+-------  ------    -----      -----     ------     --  -- -----------
+              0        0          0       6.30  18468
+
+
+PS C:\Users\wangjian> $processID
+18468
+PS C:\Users\wangjian> Start-Process powershell -PassThru -WindowStyle Hidden -ArgumentList "-Command Get-ChildItem C:\Windows\System32"
+
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
+-------  ------    -----      -----     ------     --  -- -----------
+     18       5      432       2084       0.00  18144   1 powershell
+
+
+PS C:\Users\wangjian> Start-Process powershell -PassThru -WindowStyle Hidden -ArgumentList "-Command Get-ChildItem C:\Windows\System32"
+
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
+-------  ------    -----      -----     ------     --  -- -----------
+     18       5      428       2084       0.00   8552   1 powershell
+
+
+PS C:\Users\wangjian> Start-Process powershell -PassThru -WindowStyle Hidden -ArgumentList "-Command Invoke-AtomicTest T1547.001-1 -Cleanup"
+
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
+-------  ------    -----      -----     ------     --  -- -----------
+     19       3      432       2080       0.00  19372   1 powershell
+
+
+PS C:\Users\wangjian> Start-Process powershell -PassThru -WindowStyle Hidden -ArgumentList "-Command Invoke-AtomicTest T1547.001-1 -Cleanup"
+
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
+-------  ------    -----      -----     ------     --  -- -----------
+     18       5      432       2084       0.00  14884   1 powershell
+
+
+PS C:\Users\wangjian> $process = Start-Process powershell -PassThru -WindowStyle Hidden -ArgumentList '"-Command Invoke-AtomicTest T1547.001-1 -Cleanup"'
+
+PS C:\Users\wangjian> $process = Start-Process powershell -PassThru -WindowStyle Hidden -ArgumentList '"-Command Invoke-AtomicTest T1547.001-1"'
+
+PS C:\Users\wangjian> $process = Start-Process powershell -PassThru -WindowStyle Hidden -ArgumentList "-Command Invoke-AtomicTest T1547.001-1"
+
+PS C:\Users\wangjian> $command = "Get-ChildItem C:\Windows\System32"
+PS C:\Users\wangjian> Start-Process powershell -ArgumentList "-Command", $command
+PS C:\Users\wangjian> $process = Start-Process powershell -PassThru -WindowStyle Hidden -ArgumentList "-Command Invoke-AtomicTest T1547.001-1"
+
+PS C:\Users\wangjian> $command = "-Command Invoke-AtomicTest T1547.001-1"
+PS C:\Users\wangjian> $process = Start-Process powershell -ArgumentList "-Command", $command
+PS C:\Users\wangjian> $process = Start-Process powershell -ArgumentList "-Command", $command
+PS C:\Users\wangjian> "-Command", $command
+-Command
+-Command Invoke-AtomicTest T1547.001-1
+PS C:\Users\wangjian> $command = "Invoke-AtomicTest T1547.001-1"
+PS C:\Users\wangjian> $process = Start-Process powershell -ArgumentList "-Command", $command
+PS C:\Users\wangjian> $processId = $process.Id
+PS C:\Users\wangjian> $processId
+PS C:\Users\wangjian> $processId
+PS C:\Users\wangjian> write $processId
+PS C:\Users\wangjian> Write-Host $processId
+
+PS C:\Users\wangjian> cd C:\KGraph\AtomicRun
+PS C:\KGraph\AtomicRun> .\test.ps1
+PS C:\KGraph\AtomicRun> $process = Start-Process powershell -PassThru -WindowStyle Hidden -ArgumentList '-Command "Invoke-AtomicTest T1547.001-1"'
+$processId = $process.Id
+PS C:\KGraph\AtomicRun> $processId
+16252
+PS C:\KGraph\AtomicRun> $process
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
+-------  ------    -----      -----     ------     --  -- -----------
+              0        0          0       3.02  16252
+
+
+PS C:\KGraph\AtomicRun> $process = Start-Process powershell -PassThru -WindowStyle Hidden -ArgumentList '-Command "Invoke-AtomicTest T1547.001-1"'
+$processId = $process.Id
+PS C:\KGraph\AtomicRun> $process = Start-Process powershell -PassThru  -ArgumentList '-Command "Invoke-AtomicTest T1547.001-1"'
+$processId = $process.Id
+PS C:\KGraph\AtomicRun> .\AtomicRunALL-3.ps1
+T1547.001-1
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411143628
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 18980
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到名为“ETWDataCollectorRedesigned”的进程。请验证该进程名称，然后再次调用 cmdlet。”
+Get-Process : 找不到名为“ETWDataCollectorRedesigned”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL-3.ps1:32 字符: 6
++      Get-Process -Name "ETWDataCollectorRedesigned" | Stop-Process
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ETWDataCollectorRedesigned:String) [Get-Process], ProcessCommandException
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+Get-Process : 找不到名为“ETWDataCollectorRedesigned”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL-3.ps1:32 字符: 6
++      Get-Process -Name "ETWDataCollectorRedesigned" | Stop-Process
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ETWDataCollectorRedesigned:String) [Get-Process], ProcessCommandException
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+Get-Process : 找不到名为“ETWDataCollectorRedesigned”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL-3.ps1:32 字符: 6
++      Get-Process -Name "ETWDataCollectorRedesigned" | Stop-Process
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ETWDataCollectorRedesigned:String) [Get-Process], ProcessCommandExcepti
+   on
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+

@@ -1,0 +1,59 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415180728
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command Invoke-AtomicTest T1207-1
+进程 ID: 7500
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS>Invoke-AtomicTest T1207-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1207-1 DCShadow (Active Directory)
+
+Waiting for fake DC server to return
+Output from fake DC server:
+End of DCShadow
+& : 无法将“C:\Users\wangjian\AppData\Local\Temp\mimikatz\x64\mimikatz.exe”项识别为 cmdlet、函数、脚本文件或可运行程序的名
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+所在位置 行:11 字符: 3
+称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
++ & $env:TEMP\mimikatz\x64\mimikatz.exe "lsadump::dcshadow /push" "exit ...
+    + CategoryInfo          : ObjectNotFound: (C:\Users\wangji...64\mimikatz.exe:String) [], CommandNotFoundException
+Wait-Process : 无法将参数绑定到参数“Name”，因为该参数是空值。
+所在位置 行:14 字符: 14
++ Wait-Process $dc
++              ~~~
+    + CategoryInfo          : InvalidData: (:) [Wait-Process]，ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.WaitProcess 
+   Command
+ 
+Get-Content : 找不到路径“C:\Users\wangjian\AppData\Local\Temp\art-T1207-mimikatz-DC.log”，因为该路径不存在。
+所在位置 行:17 字符: 1
++ Get-Content $dc_output_file
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\wangji...mimikatz-DC.log:String) [Get-Content], ItemNotFoundEx 
+   ception
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Done executing test:
+T1207-1 DCShadow (Active Directory)
+
+PS>$global:?
+True
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20230415180739
+**********************

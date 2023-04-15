@@ -1,0 +1,166 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415164824
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {Invoke-WebRequest "https://github.com/redcanaryco/atomic-red-team/raw/master/atomics/T1548.002/bin/uacme.zip" -OutFile "$env:TEMP\uacme.zip"
+Expand-Archive $env:TEMP\uacme.zip $env:TEMP\uacme -Force
+Remove-Item $env:TEMP\uacme.zip -Force}
+进程 ID: 5964
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS>& {Invoke-WebRequest "https://github.com/redcanaryco/atomic-red-team/raw/master/atomics/T1548.002/bin/uacme.zip" -OutFile "$env:TEMP\uacme.zip"
+Expand-Archive $env:TEMP\uacme.zip $env:TEMP\uacme -Force
+Remove-Item $env:TEMP\uacme.zip -Force}
+>> TerminatingError(Invoke-WebRequest):“无法连接到远程服务器”
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415164847
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {Invoke-WebRequest "https://github.com/redcanaryco/atomic-red-team/raw/master/atomics/T1548.002/bin/uacme.zip" -OutFile "$env:TEMP\uacme.zip"
+Expand-Archive $env:TEMP\uacme.zip $env:TEMP\uacme -Force
+Remove-Item $env:TEMP\uacme.zip -Force}
+进程 ID: 5964
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“无法连接到远程服务器”
+Invoke-WebRequest : 无法连接到远程服务器
+所在位置 行:1 字符: 4
++ & {Invoke-WebRequest "https://github.com/redcanaryco/atomic-red-team/ ...
++    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (System.Net.HttpWebRequest:HttpWebRequest) [Invoke-WebRequest]，WebExcept
+ion
+    + FullyQualifiedErrorId : WebCmdletWebResponseException,Microsoft.PowerShell.Commands.InvokeWebRequestCommand
+Invoke-WebRequest : 无法连接到远程服务器
+所在位置 行:1 字符: 4
++ & {Invoke-WebRequest "https://github.com/redcanaryco/atomic-red-team/ ...
++    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (System.Net.HttpWebRequest:HttpWebRequest) [Invoke-WebRequest]，WebExcept
+ion
+    + FullyQualifiedErrorId : WebCmdletWebResponseException,Microsoft.PowerShell.Commands.InvokeWebRequestCommand
+Invoke-WebRequest : 无法连接到远程服务器
+所在位置 行:1 字符: 4
++ & {Invoke-WebRequest "https://github.com/redcanaryco/atomic-red-team/ ...
++    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (System.Net.HttpWebRequest:HttpWebRequest) [Invoke-WebRequest]，WebExce
+    ption
+    + FullyQualifiedErrorId : WebCmdletWebResponseException,Microsoft.PowerShell.Commands.InvokeWebRequestCommand
+
+PS>TerminatingError(Resolve-Path):“已停止该运行的命令，因为首选项变量“ErrorActionPreference”或通用参数设置为 Stop: 找不到路径“C:\Users\wangjian\AppData\Local\Temp\uacme.zip”，因为该路径不存在。”
+PS>TerminatingError():“管道已被停止。”
+>> TerminatingError(Expand-Archive):“路径“C:\Users\wangjian\AppData\Local\Temp\uacme.zip”不存在，或者不是有效的文件系统路径。”
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415164847
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {Invoke-WebRequest "https://github.com/redcanaryco/atomic-red-team/raw/master/atomics/T1548.002/bin/uacme.zip" -OutFile "$env:TEMP\uacme.zip"
+Expand-Archive $env:TEMP\uacme.zip $env:TEMP\uacme -Force
+Remove-Item $env:TEMP\uacme.zip -Force}
+进程 ID: 5964
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“路径“C:\Users\wangjian\AppData\Local\Temp\uacme.zip”不存在，或者不是有效的文件系统路径。”
+Expand-Archive : 路径“C:\Users\wangjian\AppData\Local\Temp\uacme.zip”不存在，或者不是有效的文件系统路径。
+所在位置 行:2 字符: 1
++ Expand-Archive $env:TEMP\uacme.zip $env:TEMP\uacme -Force
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (C:\Users\wangji...\Temp\uacme.zip:String) [Expand-Archive]，InvalidOperat
+ionException
+    + FullyQualifiedErrorId : ArchiveCmdletPathNotFound,Expand-Archive
+Expand-Archive : 路径“C:\Users\wangjian\AppData\Local\Temp\uacme.zip”不存在，或者不是有效的文件系统路径。
+所在位置 行:2 字符: 1
++ Expand-Archive $env:TEMP\uacme.zip $env:TEMP\uacme -Force
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (C:\Users\wangji...\Temp\uacme.zip:String) [Expand-Archive]，InvalidOperat
+ionException
+    + FullyQualifiedErrorId : ArchiveCmdletPathNotFound,Expand-Archive
+Expand-Archive : 路径“C:\Users\wangjian\AppData\Local\Temp\uacme.zip”不存在，或者不是有效的文件系统路径。
+所在位置 行:2 字符: 1
++ Expand-Archive $env:TEMP\uacme.zip $env:TEMP\uacme -Force
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (C:\Users\wangji...\Temp\uacme.zip:String) [Expand-Archive]，InvalidOper
+    ationException
+    + FullyQualifiedErrorId : ArchiveCmdletPathNotFound,Expand-Archive
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415164847
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {Invoke-WebRequest "https://github.com/redcanaryco/atomic-red-team/raw/master/atomics/T1548.002/bin/uacme.zip" -OutFile "$env:TEMP\uacme.zip"
+Expand-Archive $env:TEMP\uacme.zip $env:TEMP\uacme -Force
+Remove-Item $env:TEMP\uacme.zip -Force}
+进程 ID: 5964
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到路径“C:\Users\wangjian\AppData\Local\Temp\uacme.zip”，因为该路径不存在。”
+Remove-Item : 找不到路径“C:\Users\wangjian\AppData\Local\Temp\uacme.zip”，因为该路径不存在。
+所在位置 行:3 字符: 1
++ Remove-Item $env:TEMP\uacme.zip -Force}
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\wangji...\Temp\uacme.zip:String) [Remove-Item], ItemNotFoundExce
+ption
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : 找不到路径“C:\Users\wangjian\AppData\Local\Temp\uacme.zip”，因为该路径不存在。
+所在位置 行:3 字符: 1
++ Remove-Item $env:TEMP\uacme.zip -Force}
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\wangji...\Temp\uacme.zip:String) [Remove-Item], ItemNotFoundExce
+ption
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : 找不到路径“C:\Users\wangjian\AppData\Local\Temp\uacme.zip”，因为该路径不存在。
+所在位置 行:3 字符: 1
++ Remove-Item $env:TEMP\uacme.zip -Force}
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\wangji...\Temp\uacme.zip:String) [Remove-Item], ItemNotFoundEx
+   ception
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+
+PS>$global:?
+True
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20230415164848
+**********************

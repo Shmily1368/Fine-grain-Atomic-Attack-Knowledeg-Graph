@@ -1,0 +1,984 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20221126094455
+用户名: DESKTOP-VME8FRS\lab
+RunAs 用户: DESKTOP-VME8FRS\lab
+配置名称: 
+计算机: DESKTOP-VME8FRS (Microsoft Windows NT 10.0.19045.0)
+主机应用程序: C:\Windows\System32\sdiagnhost.exe -Embedding
+进程 ID: 6756
+PSVersion: 5.1.19041.1682
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1682
+BuildVersion: 10.0.19041.1682
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Set-Location):“Set-Location”
+>> ParameterBinding(Set-Location): 名称 =“Path”；值 =“C:\Windows\TEMP\SDIAG_079b727f-3c5a-4c21-b402-4c872f40b6b6”
+PS>
+# Caller validation to ensure we are calling from and actual script, and not from a malicious command line
+function Test-Caller {
+    param(
+        [Parameter(Mandatory=$true)]
+        [System.Management.Automation.CallStackFrame[]]
+        $CallStack
+    )
+    $caller = $CallStack[1]
+    $location = $caller.Location
+    Write-Verbose -Message $('caller: ' + $location) -Verbose
+    if ($location -eq '<No file>') {
+        throw 'Invoke-Expression cannot be used in a script'
+    }
+}
+
+# Generated with
+# $var = New-Object System.Management.Automation.CommandMetadata (Get-Command Invoke-Expression)
+# [System.Management.Automation.ProxyCommand]::Create($var) | Out-File .\Invoke-Expression.ps1
+function Invoke-Expression {
+    [CmdletBinding(HelpUri='https://go.microsoft.com/fwlink/?LinkID=2097030')]
+param(
+    [Parameter(Mandatory=$true, Position=0, ValueFromPipeline=$true)]
+    [string]
+    ${Command})
+
+begin
+{
+    try {
+        Test-Caller -CallStack (Get-PSCallStack)
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer))
+        {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand('Microsoft.PowerShell.Utility\Invoke-Expression', [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters }
+
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($myInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+        throw
+    }
+}
+
+process
+{
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+        throw
+    }
+}
+
+end
+{
+    try {
+        $steppablePipeline.End()
+    } catch {
+        throw
+    }
+}
+<#
+
+.ForwardHelpTargetName Microsoft.PowerShell.Utility\Invoke-Expression
+.ForwardHelpCategory Cmdlet
+
+#>
+}
+
+# Generated with
+# $var = New-Object System.Management.Automation.CommandMetadata (Get-Command Invoke-Command)
+# [System.Management.Automation.ProxyCommand]::Create($var) | Out-File .\Invoke-Command.ps1
+function Invoke-Command {
+    [CmdletBinding(DefaultParameterSetName='InProcess', HelpUri='https://go.microsoft.com/fwlink/?LinkID=2096789', RemotingCapability='OwnedByCommand')]
+    param(
+        [Parameter(ParameterSetName='Session', Position=0)]
+        [Parameter(ParameterSetName='FilePathRunspace', Position=0)]
+        [ValidateNotNullOrEmpty()]
+        [System.Management.Automation.Runspaces.PSSession[]]
+        ${Session},
+
+        [Parameter(ParameterSetName='ComputerName', Position=0)]
+        [Parameter(ParameterSetName='FilePathComputerName', Position=0)]
+        [Alias('Cn')]
+        [ValidateNotNullOrEmpty()]
+        [string[]]
+        ${ComputerName},
+
+        [Parameter(ParameterSetName='ComputerName', ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='Uri', ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='FilePathComputerName', ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='FilePathUri', ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='VMId', Mandatory=$true, ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='VMName', Mandatory=$true, ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='FilePathVMId', Mandatory=$true, ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='FilePathVMName', Mandatory=$true, ValueFromPipelineByPropertyName=$true)]
+        [pscredential]
+        [System.Management.Automation.CredentialAttribute()]
+        ${Credential},
+
+        [Parameter(ParameterSetName='ComputerName')]
+        [Parameter(ParameterSetName='FilePathComputerName')]
+        [Parameter(ParameterSetName='SSHHost')]
+        [ValidateRange(1, 65535)]
+        [int]
+        ${Port},
+
+        [Parameter(ParameterSetName='ComputerName')]
+        [Parameter(ParameterSetName='FilePathComputerName')]
+        [switch]
+        ${UseSSL},
+
+        [Parameter(ParameterSetName='ComputerName', ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='Uri', ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='FilePathComputerName', ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='FilePathUri', ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='ContainerId', ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='VMId', ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='VMName', ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='FilePathContainerId', ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='FilePathVMId', ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='FilePathVMName', ValueFromPipelineByPropertyName=$true)]
+        [string]
+        ${ConfigurationName},
+
+        [Parameter(ParameterSetName='ComputerName', ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='FilePathComputerName', ValueFromPipelineByPropertyName=$true)]
+        [string]
+        ${ApplicationName},
+
+        [Parameter(ParameterSetName='ComputerName')]
+        [Parameter(ParameterSetName='Session')]
+        [Parameter(ParameterSetName='Uri')]
+        [Parameter(ParameterSetName='FilePathComputerName')]
+        [Parameter(ParameterSetName='FilePathRunspace')]
+        [Parameter(ParameterSetName='FilePathUri')]
+        [Parameter(ParameterSetName='VMId')]
+        [Parameter(ParameterSetName='VMName')]
+        [Parameter(ParameterSetName='ContainerId')]
+        [Parameter(ParameterSetName='FilePathVMId')]
+        [Parameter(ParameterSetName='FilePathVMName')]
+        [Parameter(ParameterSetName='FilePathContainerId')]
+        [int]
+        ${ThrottleLimit},
+
+        [Parameter(ParameterSetName='Uri', Position=0)]
+        [Parameter(ParameterSetName='FilePathUri', Position=0)]
+        [Alias('URI','CU')]
+        [ValidateNotNullOrEmpty()]
+        [uri[]]
+        ${ConnectionUri},
+
+        [Parameter(ParameterSetName='ComputerName')]
+        [Parameter(ParameterSetName='Session')]
+        [Parameter(ParameterSetName='Uri')]
+        [Parameter(ParameterSetName='FilePathComputerName')]
+        [Parameter(ParameterSetName='FilePathRunspace')]
+        [Parameter(ParameterSetName='FilePathUri')]
+        [Parameter(ParameterSetName='VMId')]
+        [Parameter(ParameterSetName='VMName')]
+        [Parameter(ParameterSetName='ContainerId')]
+        [Parameter(ParameterSetName='FilePathVMId')]
+        [Parameter(ParameterSetName='FilePathVMName')]
+        [Parameter(ParameterSetName='FilePathContainerId')]
+        [Parameter(ParameterSetName='SSHHost')]
+        [Parameter(ParameterSetName='SSHHostHashParam')]
+        [Parameter(ParameterSetName='FilePathSSHHost')]
+        [Parameter(ParameterSetName='FilePathSSHHostHash')]
+        [switch]
+        ${AsJob},
+
+        [Parameter(ParameterSetName='ComputerName')]
+        [Parameter(ParameterSetName='FilePathComputerName')]
+        [Parameter(ParameterSetName='Uri')]
+        [Parameter(ParameterSetName='FilePathUri')]
+        [Alias('Disconnected')]
+        [switch]
+        ${InDisconnectedSession},
+
+        [Parameter(ParameterSetName='ComputerName')]
+        [Parameter(ParameterSetName='FilePathComputerName')]
+        [ValidateNotNullOrEmpty()]
+        [string[]]
+        ${SessionName},
+
+        [Parameter(ParameterSetName='ComputerName')]
+        [Parameter(ParameterSetName='Session')]
+        [Parameter(ParameterSetName='Uri')]
+        [Parameter(ParameterSetName='FilePathComputerName')]
+        [Parameter(ParameterSetName='FilePathRunspace')]
+        [Parameter(ParameterSetName='FilePathUri')]
+        [Parameter(ParameterSetName='VMId')]
+        [Parameter(ParameterSetName='VMName')]
+        [Parameter(ParameterSetName='ContainerId')]
+        [Parameter(ParameterSetName='FilePathVMId')]
+        [Parameter(ParameterSetName='FilePathVMName')]
+        [Parameter(ParameterSetName='FilePathContainerId')]
+        [Parameter(ParameterSetName='SSHHost')]
+        [Parameter(ParameterSetName='SSHHostHashParam')]
+        [Parameter(ParameterSetName='FilePathSSHHost')]
+        [Parameter(ParameterSetName='FilePathSSHHostHash')]
+        [Alias('HCN')]
+        [switch]
+        ${HideComputerName},
+
+        [Parameter(ParameterSetName='ComputerName')]
+        [Parameter(ParameterSetName='Session')]
+        [Parameter(ParameterSetName='Uri')]
+        [Parameter(ParameterSetName='FilePathComputerName')]
+        [Parameter(ParameterSetName='FilePathRunspace')]
+        [Parameter(ParameterSetName='FilePathUri')]
+        [Parameter(ParameterSetName='ContainerId')]
+        [Parameter(ParameterSetName='FilePathContainerId')]
+        [Parameter(ParameterSetName='SSHHostHashParam')]
+        [Parameter(ParameterSetName='SSHHost')]
+        [string]
+        ${JobName},
+
+        [Parameter(ParameterSetName='ComputerName', Mandatory=$true, Position=1)]
+        [Parameter(ParameterSetName='Session', Mandatory=$true, Position=1)]
+        [Parameter(ParameterSetName='Uri', Mandatory=$true, Position=1)]
+        [Parameter(ParameterSetName='InProcess', Mandatory=$true, Position=0)]
+        [Parameter(ParameterSetName='VMId', Mandatory=$true, Position=1)]
+        [Parameter(ParameterSetName='VMName', Mandatory=$true, Position=1)]
+        [Parameter(ParameterSetName='ContainerId', Mandatory=$true, Position=1)]
+        [Parameter(ParameterSetName='SSHHost', Mandatory=$true, Position=1)]
+        [Parameter(ParameterSetName='SSHHostHashParam', Mandatory=$true, Position=1)]
+        [Alias('Command')]
+        [ValidateNotNull()]
+        [scriptblock]
+        ${ScriptBlock},
+
+        [Parameter(ParameterSetName='InProcess')]
+        [switch]
+        ${NoNewScope},
+
+        [Parameter(ParameterSetName='FilePathComputerName', Mandatory=$true, Position=1)]
+        [Parameter(ParameterSetName='FilePathRunspace', Mandatory=$true, Position=1)]
+        [Parameter(ParameterSetName='FilePathUri', Mandatory=$true, Position=1)]
+        [Parameter(ParameterSetName='FilePathVMId', Mandatory=$true, Position=1)]
+        [Parameter(ParameterSetName='FilePathVMName', Mandatory=$true, Position=1)]
+        [Parameter(ParameterSetName='FilePathContainerId', Mandatory=$true, Position=1)]
+        [Parameter(ParameterSetName='FilePathSSHHost', Mandatory=$true)]
+        [Parameter(ParameterSetName='FilePathSSHHostHash', Mandatory=$true)]
+        [Alias('PSPath')]
+        [ValidateNotNull()]
+        [string]
+        ${FilePath},
+
+        [Parameter(ParameterSetName='Uri')]
+        [Parameter(ParameterSetName='FilePathUri')]
+        [switch]
+        ${AllowRedirection},
+
+        [Parameter(ParameterSetName='ComputerName')]
+        [Parameter(ParameterSetName='Uri')]
+        [Parameter(ParameterSetName='FilePathComputerName')]
+        [Parameter(ParameterSetName='FilePathUri')]
+        [System.Management.Automation.Remoting.PSSessionOption]
+        ${SessionOption},
+
+        [Parameter(ParameterSetName='ComputerName')]
+        [Parameter(ParameterSetName='FilePathComputerName')]
+        [Parameter(ParameterSetName='Uri')]
+        [Parameter(ParameterSetName='FilePathUri')]
+        [System.Management.Automation.Runspaces.AuthenticationMechanism]
+        ${Authentication},
+
+        [Parameter(ParameterSetName='ComputerName')]
+        [Parameter(ParameterSetName='FilePathComputerName')]
+        [Parameter(ParameterSetName='Uri')]
+        [Parameter(ParameterSetName='FilePathUri')]
+        [switch]
+        ${EnableNetworkAccess},
+
+        [Parameter(ParameterSetName='ContainerId')]
+        [Parameter(ParameterSetName='FilePathContainerId')]
+        [switch]
+        ${RunAsAdministrator},
+
+        [Parameter(ParameterSetName='SSHHost', Mandatory=$true)]
+        [Parameter(ParameterSetName='FilePathSSHHost', Mandatory=$true)]
+        [ValidateNotNullOrEmpty()]
+        [string[]]
+        ${HostName},
+
+        [Parameter(ParameterSetName='SSHHost')]
+        [Parameter(ParameterSetName='FilePathSSHHost')]
+        [ValidateNotNullOrEmpty()]
+        [string]
+        ${UserName},
+
+        [Parameter(ParameterSetName='SSHHost')]
+        [Parameter(ParameterSetName='FilePathSSHHost')]
+        [Alias('IdentityFilePath')]
+        [ValidateNotNullOrEmpty()]
+        [string]
+        ${KeyFilePath},
+
+        [Parameter(ParameterSetName='SSHHost')]
+        [Parameter(ParameterSetName='FilePathSSHHost')]
+        [string]
+        ${Subsystem},
+
+        [Parameter(ParameterSetName='SSHHost')]
+        [Parameter(ParameterSetName='FilePathSSHHost')]
+        [int]
+        ${ConnectingTimeout},
+
+        [Parameter(ParameterSetName='SSHHost')]
+        [Parameter(ParameterSetName='FilePathSSHHost')]
+        [ValidateSet('true')]
+        [switch]
+        ${SSHTransport},
+
+        [Parameter(ParameterSetName='SSHHostHashParam', Mandatory=$true)]
+        [Parameter(ParameterSetName='FilePathSSHHostHash', Mandatory=$true)]
+        [ValidateNotNullOrEmpty()]
+        [hashtable[]]
+        ${SSHConnection},
+
+        [Parameter(ParameterSetName='ComputerName')]
+        [Parameter(ParameterSetName='Session')]
+        [Parameter(ParameterSetName='Uri')]
+        [Parameter(ParameterSetName='FilePathComputerName')]
+        [Parameter(ParameterSetName='FilePathRunspace')]
+        [Parameter(ParameterSetName='FilePathUri')]
+        [Parameter(ParameterSetName='VMId')]
+        [Parameter(ParameterSetName='VMName')]
+        [Parameter(ParameterSetName='ContainerId')]
+        [Parameter(ParameterSetName='FilePathVMId')]
+        [Parameter(ParameterSetName='FilePathVMName')]
+        [Parameter(ParameterSetName='FilePathContainerId')]
+        [Parameter(ParameterSetName='SSHHost')]
+        [Parameter(ParameterSetName='SSHHostHashParam')]
+        [Parameter(ParameterSetName='FilePathSSHHost')]
+        [Parameter(ParameterSetName='FilePathSSHHostHash')]
+        [switch]
+        ${RemoteDebug},
+
+        [Parameter(ValueFromPipeline=$true)]
+        [psobject]
+        ${InputObject},
+
+        [Alias('Args')]
+        [System.Object[]]
+        ${ArgumentList},
+
+        [Parameter(ParameterSetName='VMId', Mandatory=$true, Position=0, ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='FilePathVMId', Mandatory=$true, Position=0, ValueFromPipelineByPropertyName=$true)]
+        [Alias('VMGuid')]
+        [ValidateNotNullOrEmpty()]
+        [guid[]]
+        ${VMId},
+
+        [Parameter(ParameterSetName='VMName', Mandatory=$true, ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='FilePathVMName', Mandatory=$true, ValueFromPipelineByPropertyName=$true)]
+        [ValidateNotNullOrEmpty()]
+        [string[]]
+        ${VMName},
+
+        [Parameter(ParameterSetName='ContainerId', Mandatory=$true, ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='FilePathContainerId', Mandatory=$true, ValueFromPipelineByPropertyName=$true)]
+        [ValidateNotNullOrEmpty()]
+        [string[]]
+        ${ContainerId},
+
+        [Parameter(ParameterSetName='ComputerName')]
+        [Parameter(ParameterSetName='Uri')]
+        [string]
+        ${CertificateThumbprint})
+
+    begin
+    {
+        try {
+            Test-Caller -CallStack (Get-PSCallStack)
+            $outBuffer = $null
+            if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer))
+            {
+                $PSBoundParameters['OutBuffer'] = 1
+            }
+
+            $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand('Microsoft.PowerShell.Core\Invoke-Command', [System.Management.Automation.CommandTypes]::Cmdlet)
+            $scriptCmd = {& $wrappedCmd @PSBoundParameters }
+
+            $steppablePipeline = $scriptCmd.GetSteppablePipeline($myInvocation.CommandOrigin)
+            $steppablePipeline.Begin($PSCmdlet)
+        } catch {
+            throw
+        }
+    }
+
+    process
+    {
+        try {
+            $steppablePipeline.Process($_)
+        } catch {
+            throw
+        }
+    }
+
+    end
+    {
+        try {
+            $steppablePipeline.End()
+        } catch {
+            throw
+        }
+    }
+    <#
+
+    .ForwardHelpTargetName Microsoft.PowerShell.Core\Invoke-Command
+    .ForwardHelpCategory Cmdlet
+
+    #>
+
+}
+
+# Exporting function overrides
+Export-ModuleMember -Function @(
+    'Invoke-Expression'
+    'Invoke-Command'
+)
+>> TerminatingError(Export-ModuleMember):“只能从模块内调用 Export-ModuleMember cmdlet。”
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20221126094455
+用户名: DESKTOP-VME8FRS\lab
+RunAs 用户: DESKTOP-VME8FRS\lab
+配置名称: 
+计算机: DESKTOP-VME8FRS (Microsoft Windows NT 10.0.19045.0)
+主机应用程序: C:\Windows\System32\sdiagnhost.exe -Embedding
+进程 ID: 6756
+PSVersion: 5.1.19041.1682
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1682
+BuildVersion: 10.0.19041.1682
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“只能从模块内调用 Export-ModuleMember cmdlet。”
+Export-ModuleMember : 只能从模块内调用 Export-ModuleMember cmdlet。
+所在位置 行:422 字符: 1
++ Export-ModuleMember -Function @(
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (:) [Export-ModuleMember], InvalidOperationException
+    + FullyQualifiedErrorId : Modules_CanOnlyExecuteExportModuleMemberInsideAModule,Microsoft.PowerShell.Commands.Export
+ModuleMemberCommand
+Export-ModuleMember : 只能从模块内调用 Export-ModuleMember cmdlet。
+所在位置 行:422 字符: 1
++ Export-ModuleMember -Function @(
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (:) [Export-ModuleMember], InvalidOperationException
+    + FullyQualifiedErrorId : Modules_CanOnlyExecuteExportModuleMemberInsideAModule,Microsoft.PowerShell.Commands.Export
+ModuleMemberCommand
+PS>& 'C:\Windows\TEMP\SDIAG_079b727f-3c5a-4c21-b402-4c872f40b6b6\TS_WERQueue.ps1'
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20221126094456
+用户名: DESKTOP-VME8FRS\lab
+RunAs 用户: DESKTOP-VME8FRS\lab
+配置名称: 
+计算机: DESKTOP-VME8FRS (Microsoft Windows NT 10.0.19045.0)
+主机应用程序: C:\Windows\System32\sdiagnhost.exe -Embedding
+进程 ID: 6756
+PSVersion: 5.1.19041.1682
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1682
+BuildVersion: 10.0.19041.1682
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“路径 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting 处不存在属性 MaxQueueSizePercentage。”
+Get-ItemProperty : 路径 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting 处不存在属性 MaxQueueSizePercentag
+e。
+所在位置 C:\Windows\TEMP\SDIAG_079b727f-3c5a-4c21-b402-4c872f40b6b6\CL_Utility.ps1:87 字符: 22
++ ... stryEntry = Get-ItemProperty -Path $registryEntryPath -Name $registry ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (MaxQueueSizePercentage:String) [Get-ItemProperty]，PSArgumentException
+    + FullyQualifiedErrorId : System.Management.Automation.PSArgumentException,Microsoft.PowerShell.Commands.GetItemProp
+ertyCommand
+Get-ItemProperty : 路径 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting 处不存在属性 MaxQueueSizePercentag
+e。
+所在位置 C:\Windows\TEMP\SDIAG_079b727f-3c5a-4c21-b402-4c872f40b6b6\CL_Utility.ps1:87 字符: 22
++ ... stryEntry = Get-ItemProperty -Path $registryEntryPath -Name $registry ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (MaxQueueSizePercentage:String) [Get-ItemProperty]，PSArgumentException
+    + FullyQualifiedErrorId : System.Management.Automation.PSArgumentException,Microsoft.PowerShell.Commands.GetItemProp
+ertyCommand
+PS>CommandInvocation(Set-Location):“Set-Location”
+>> ParameterBinding(Set-Location): 名称 =“Path”；值 =“\”
+PS>CommandInvocation(Set-Location):“Set-Location”
+>> ParameterBinding(Set-Location): 名称 =“Path”；值 =“C:\Windows\TEMP\SDIAG_079b727f-3c5a-4c21-b402-4c872f40b6b6”
+PS>
+# Caller validation to ensure we are calling from and actual script, and not from a malicious command line
+function Test-Caller {
+    param(
+        [Parameter(Mandatory=$true)]
+        [System.Management.Automation.CallStackFrame[]]
+        $CallStack
+    )
+    $caller = $CallStack[1]
+    $location = $caller.Location
+    Write-Verbose -Message $('caller: ' + $location) -Verbose
+    if ($location -eq '<No file>') {
+        throw 'Invoke-Expression cannot be used in a script'
+    }
+}
+
+# Generated with
+# $var = New-Object System.Management.Automation.CommandMetadata (Get-Command Invoke-Expression)
+# [System.Management.Automation.ProxyCommand]::Create($var) | Out-File .\Invoke-Expression.ps1
+function Invoke-Expression {
+    [CmdletBinding(HelpUri='https://go.microsoft.com/fwlink/?LinkID=2097030')]
+param(
+    [Parameter(Mandatory=$true, Position=0, ValueFromPipeline=$true)]
+    [string]
+    ${Command})
+
+begin
+{
+    try {
+        Test-Caller -CallStack (Get-PSCallStack)
+        $outBuffer = $null
+        if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer))
+        {
+            $PSBoundParameters['OutBuffer'] = 1
+        }
+
+        $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand('Microsoft.PowerShell.Utility\Invoke-Expression', [System.Management.Automation.CommandTypes]::Cmdlet)
+        $scriptCmd = {& $wrappedCmd @PSBoundParameters }
+
+        $steppablePipeline = $scriptCmd.GetSteppablePipeline($myInvocation.CommandOrigin)
+        $steppablePipeline.Begin($PSCmdlet)
+    } catch {
+        throw
+    }
+}
+
+process
+{
+    try {
+        $steppablePipeline.Process($_)
+    } catch {
+        throw
+    }
+}
+
+end
+{
+    try {
+        $steppablePipeline.End()
+    } catch {
+        throw
+    }
+}
+<#
+
+.ForwardHelpTargetName Microsoft.PowerShell.Utility\Invoke-Expression
+.ForwardHelpCategory Cmdlet
+
+#>
+}
+
+# Generated with
+# $var = New-Object System.Management.Automation.CommandMetadata (Get-Command Invoke-Command)
+# [System.Management.Automation.ProxyCommand]::Create($var) | Out-File .\Invoke-Command.ps1
+function Invoke-Command {
+    [CmdletBinding(DefaultParameterSetName='InProcess', HelpUri='https://go.microsoft.com/fwlink/?LinkID=2096789', RemotingCapability='OwnedByCommand')]
+    param(
+        [Parameter(ParameterSetName='Session', Position=0)]
+        [Parameter(ParameterSetName='FilePathRunspace', Position=0)]
+        [ValidateNotNullOrEmpty()]
+        [System.Management.Automation.Runspaces.PSSession[]]
+        ${Session},
+
+        [Parameter(ParameterSetName='ComputerName', Position=0)]
+        [Parameter(ParameterSetName='FilePathComputerName', Position=0)]
+        [Alias('Cn')]
+        [ValidateNotNullOrEmpty()]
+        [string[]]
+        ${ComputerName},
+
+        [Parameter(ParameterSetName='ComputerName', ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='Uri', ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='FilePathComputerName', ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='FilePathUri', ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='VMId', Mandatory=$true, ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='VMName', Mandatory=$true, ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='FilePathVMId', Mandatory=$true, ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='FilePathVMName', Mandatory=$true, ValueFromPipelineByPropertyName=$true)]
+        [pscredential]
+        [System.Management.Automation.CredentialAttribute()]
+        ${Credential},
+
+        [Parameter(ParameterSetName='ComputerName')]
+        [Parameter(ParameterSetName='FilePathComputerName')]
+        [Parameter(ParameterSetName='SSHHost')]
+        [ValidateRange(1, 65535)]
+        [int]
+        ${Port},
+
+        [Parameter(ParameterSetName='ComputerName')]
+        [Parameter(ParameterSetName='FilePathComputerName')]
+        [switch]
+        ${UseSSL},
+
+        [Parameter(ParameterSetName='ComputerName', ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='Uri', ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='FilePathComputerName', ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='FilePathUri', ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='ContainerId', ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='VMId', ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='VMName', ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='FilePathContainerId', ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='FilePathVMId', ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='FilePathVMName', ValueFromPipelineByPropertyName=$true)]
+        [string]
+        ${ConfigurationName},
+
+        [Parameter(ParameterSetName='ComputerName', ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='FilePathComputerName', ValueFromPipelineByPropertyName=$true)]
+        [string]
+        ${ApplicationName},
+
+        [Parameter(ParameterSetName='ComputerName')]
+        [Parameter(ParameterSetName='Session')]
+        [Parameter(ParameterSetName='Uri')]
+        [Parameter(ParameterSetName='FilePathComputerName')]
+        [Parameter(ParameterSetName='FilePathRunspace')]
+        [Parameter(ParameterSetName='FilePathUri')]
+        [Parameter(ParameterSetName='VMId')]
+        [Parameter(ParameterSetName='VMName')]
+        [Parameter(ParameterSetName='ContainerId')]
+        [Parameter(ParameterSetName='FilePathVMId')]
+        [Parameter(ParameterSetName='FilePathVMName')]
+        [Parameter(ParameterSetName='FilePathContainerId')]
+        [int]
+        ${ThrottleLimit},
+
+        [Parameter(ParameterSetName='Uri', Position=0)]
+        [Parameter(ParameterSetName='FilePathUri', Position=0)]
+        [Alias('URI','CU')]
+        [ValidateNotNullOrEmpty()]
+        [uri[]]
+        ${ConnectionUri},
+
+        [Parameter(ParameterSetName='ComputerName')]
+        [Parameter(ParameterSetName='Session')]
+        [Parameter(ParameterSetName='Uri')]
+        [Parameter(ParameterSetName='FilePathComputerName')]
+        [Parameter(ParameterSetName='FilePathRunspace')]
+        [Parameter(ParameterSetName='FilePathUri')]
+        [Parameter(ParameterSetName='VMId')]
+        [Parameter(ParameterSetName='VMName')]
+        [Parameter(ParameterSetName='ContainerId')]
+        [Parameter(ParameterSetName='FilePathVMId')]
+        [Parameter(ParameterSetName='FilePathVMName')]
+        [Parameter(ParameterSetName='FilePathContainerId')]
+        [Parameter(ParameterSetName='SSHHost')]
+        [Parameter(ParameterSetName='SSHHostHashParam')]
+        [Parameter(ParameterSetName='FilePathSSHHost')]
+        [Parameter(ParameterSetName='FilePathSSHHostHash')]
+        [switch]
+        ${AsJob},
+
+        [Parameter(ParameterSetName='ComputerName')]
+        [Parameter(ParameterSetName='FilePathComputerName')]
+        [Parameter(ParameterSetName='Uri')]
+        [Parameter(ParameterSetName='FilePathUri')]
+        [Alias('Disconnected')]
+        [switch]
+        ${InDisconnectedSession},
+
+        [Parameter(ParameterSetName='ComputerName')]
+        [Parameter(ParameterSetName='FilePathComputerName')]
+        [ValidateNotNullOrEmpty()]
+        [string[]]
+        ${SessionName},
+
+        [Parameter(ParameterSetName='ComputerName')]
+        [Parameter(ParameterSetName='Session')]
+        [Parameter(ParameterSetName='Uri')]
+        [Parameter(ParameterSetName='FilePathComputerName')]
+        [Parameter(ParameterSetName='FilePathRunspace')]
+        [Parameter(ParameterSetName='FilePathUri')]
+        [Parameter(ParameterSetName='VMId')]
+        [Parameter(ParameterSetName='VMName')]
+        [Parameter(ParameterSetName='ContainerId')]
+        [Parameter(ParameterSetName='FilePathVMId')]
+        [Parameter(ParameterSetName='FilePathVMName')]
+        [Parameter(ParameterSetName='FilePathContainerId')]
+        [Parameter(ParameterSetName='SSHHost')]
+        [Parameter(ParameterSetName='SSHHostHashParam')]
+        [Parameter(ParameterSetName='FilePathSSHHost')]
+        [Parameter(ParameterSetName='FilePathSSHHostHash')]
+        [Alias('HCN')]
+        [switch]
+        ${HideComputerName},
+
+        [Parameter(ParameterSetName='ComputerName')]
+        [Parameter(ParameterSetName='Session')]
+        [Parameter(ParameterSetName='Uri')]
+        [Parameter(ParameterSetName='FilePathComputerName')]
+        [Parameter(ParameterSetName='FilePathRunspace')]
+        [Parameter(ParameterSetName='FilePathUri')]
+        [Parameter(ParameterSetName='ContainerId')]
+        [Parameter(ParameterSetName='FilePathContainerId')]
+        [Parameter(ParameterSetName='SSHHostHashParam')]
+        [Parameter(ParameterSetName='SSHHost')]
+        [string]
+        ${JobName},
+
+        [Parameter(ParameterSetName='ComputerName', Mandatory=$true, Position=1)]
+        [Parameter(ParameterSetName='Session', Mandatory=$true, Position=1)]
+        [Parameter(ParameterSetName='Uri', Mandatory=$true, Position=1)]
+        [Parameter(ParameterSetName='InProcess', Mandatory=$true, Position=0)]
+        [Parameter(ParameterSetName='VMId', Mandatory=$true, Position=1)]
+        [Parameter(ParameterSetName='VMName', Mandatory=$true, Position=1)]
+        [Parameter(ParameterSetName='ContainerId', Mandatory=$true, Position=1)]
+        [Parameter(ParameterSetName='SSHHost', Mandatory=$true, Position=1)]
+        [Parameter(ParameterSetName='SSHHostHashParam', Mandatory=$true, Position=1)]
+        [Alias('Command')]
+        [ValidateNotNull()]
+        [scriptblock]
+        ${ScriptBlock},
+
+        [Parameter(ParameterSetName='InProcess')]
+        [switch]
+        ${NoNewScope},
+
+        [Parameter(ParameterSetName='FilePathComputerName', Mandatory=$true, Position=1)]
+        [Parameter(ParameterSetName='FilePathRunspace', Mandatory=$true, Position=1)]
+        [Parameter(ParameterSetName='FilePathUri', Mandatory=$true, Position=1)]
+        [Parameter(ParameterSetName='FilePathVMId', Mandatory=$true, Position=1)]
+        [Parameter(ParameterSetName='FilePathVMName', Mandatory=$true, Position=1)]
+        [Parameter(ParameterSetName='FilePathContainerId', Mandatory=$true, Position=1)]
+        [Parameter(ParameterSetName='FilePathSSHHost', Mandatory=$true)]
+        [Parameter(ParameterSetName='FilePathSSHHostHash', Mandatory=$true)]
+        [Alias('PSPath')]
+        [ValidateNotNull()]
+        [string]
+        ${FilePath},
+
+        [Parameter(ParameterSetName='Uri')]
+        [Parameter(ParameterSetName='FilePathUri')]
+        [switch]
+        ${AllowRedirection},
+
+        [Parameter(ParameterSetName='ComputerName')]
+        [Parameter(ParameterSetName='Uri')]
+        [Parameter(ParameterSetName='FilePathComputerName')]
+        [Parameter(ParameterSetName='FilePathUri')]
+        [System.Management.Automation.Remoting.PSSessionOption]
+        ${SessionOption},
+
+        [Parameter(ParameterSetName='ComputerName')]
+        [Parameter(ParameterSetName='FilePathComputerName')]
+        [Parameter(ParameterSetName='Uri')]
+        [Parameter(ParameterSetName='FilePathUri')]
+        [System.Management.Automation.Runspaces.AuthenticationMechanism]
+        ${Authentication},
+
+        [Parameter(ParameterSetName='ComputerName')]
+        [Parameter(ParameterSetName='FilePathComputerName')]
+        [Parameter(ParameterSetName='Uri')]
+        [Parameter(ParameterSetName='FilePathUri')]
+        [switch]
+        ${EnableNetworkAccess},
+
+        [Parameter(ParameterSetName='ContainerId')]
+        [Parameter(ParameterSetName='FilePathContainerId')]
+        [switch]
+        ${RunAsAdministrator},
+
+        [Parameter(ParameterSetName='SSHHost', Mandatory=$true)]
+        [Parameter(ParameterSetName='FilePathSSHHost', Mandatory=$true)]
+        [ValidateNotNullOrEmpty()]
+        [string[]]
+        ${HostName},
+
+        [Parameter(ParameterSetName='SSHHost')]
+        [Parameter(ParameterSetName='FilePathSSHHost')]
+        [ValidateNotNullOrEmpty()]
+        [string]
+        ${UserName},
+
+        [Parameter(ParameterSetName='SSHHost')]
+        [Parameter(ParameterSetName='FilePathSSHHost')]
+        [Alias('IdentityFilePath')]
+        [ValidateNotNullOrEmpty()]
+        [string]
+        ${KeyFilePath},
+
+        [Parameter(ParameterSetName='SSHHost')]
+        [Parameter(ParameterSetName='FilePathSSHHost')]
+        [string]
+        ${Subsystem},
+
+        [Parameter(ParameterSetName='SSHHost')]
+        [Parameter(ParameterSetName='FilePathSSHHost')]
+        [int]
+        ${ConnectingTimeout},
+
+        [Parameter(ParameterSetName='SSHHost')]
+        [Parameter(ParameterSetName='FilePathSSHHost')]
+        [ValidateSet('true')]
+        [switch]
+        ${SSHTransport},
+
+        [Parameter(ParameterSetName='SSHHostHashParam', Mandatory=$true)]
+        [Parameter(ParameterSetName='FilePathSSHHostHash', Mandatory=$true)]
+        [ValidateNotNullOrEmpty()]
+        [hashtable[]]
+        ${SSHConnection},
+
+        [Parameter(ParameterSetName='ComputerName')]
+        [Parameter(ParameterSetName='Session')]
+        [Parameter(ParameterSetName='Uri')]
+        [Parameter(ParameterSetName='FilePathComputerName')]
+        [Parameter(ParameterSetName='FilePathRunspace')]
+        [Parameter(ParameterSetName='FilePathUri')]
+        [Parameter(ParameterSetName='VMId')]
+        [Parameter(ParameterSetName='VMName')]
+        [Parameter(ParameterSetName='ContainerId')]
+        [Parameter(ParameterSetName='FilePathVMId')]
+        [Parameter(ParameterSetName='FilePathVMName')]
+        [Parameter(ParameterSetName='FilePathContainerId')]
+        [Parameter(ParameterSetName='SSHHost')]
+        [Parameter(ParameterSetName='SSHHostHashParam')]
+        [Parameter(ParameterSetName='FilePathSSHHost')]
+        [Parameter(ParameterSetName='FilePathSSHHostHash')]
+        [switch]
+        ${RemoteDebug},
+
+        [Parameter(ValueFromPipeline=$true)]
+        [psobject]
+        ${InputObject},
+
+        [Alias('Args')]
+        [System.Object[]]
+        ${ArgumentList},
+
+        [Parameter(ParameterSetName='VMId', Mandatory=$true, Position=0, ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='FilePathVMId', Mandatory=$true, Position=0, ValueFromPipelineByPropertyName=$true)]
+        [Alias('VMGuid')]
+        [ValidateNotNullOrEmpty()]
+        [guid[]]
+        ${VMId},
+
+        [Parameter(ParameterSetName='VMName', Mandatory=$true, ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='FilePathVMName', Mandatory=$true, ValueFromPipelineByPropertyName=$true)]
+        [ValidateNotNullOrEmpty()]
+        [string[]]
+        ${VMName},
+
+        [Parameter(ParameterSetName='ContainerId', Mandatory=$true, ValueFromPipelineByPropertyName=$true)]
+        [Parameter(ParameterSetName='FilePathContainerId', Mandatory=$true, ValueFromPipelineByPropertyName=$true)]
+        [ValidateNotNullOrEmpty()]
+        [string[]]
+        ${ContainerId},
+
+        [Parameter(ParameterSetName='ComputerName')]
+        [Parameter(ParameterSetName='Uri')]
+        [string]
+        ${CertificateThumbprint})
+
+    begin
+    {
+        try {
+            Test-Caller -CallStack (Get-PSCallStack)
+            $outBuffer = $null
+            if ($PSBoundParameters.TryGetValue('OutBuffer', [ref]$outBuffer))
+            {
+                $PSBoundParameters['OutBuffer'] = 1
+            }
+
+            $wrappedCmd = $ExecutionContext.InvokeCommand.GetCommand('Microsoft.PowerShell.Core\Invoke-Command', [System.Management.Automation.CommandTypes]::Cmdlet)
+            $scriptCmd = {& $wrappedCmd @PSBoundParameters }
+
+            $steppablePipeline = $scriptCmd.GetSteppablePipeline($myInvocation.CommandOrigin)
+            $steppablePipeline.Begin($PSCmdlet)
+        } catch {
+            throw
+        }
+    }
+
+    process
+    {
+        try {
+            $steppablePipeline.Process($_)
+        } catch {
+            throw
+        }
+    }
+
+    end
+    {
+        try {
+            $steppablePipeline.End()
+        } catch {
+            throw
+        }
+    }
+    <#
+
+    .ForwardHelpTargetName Microsoft.PowerShell.Core\Invoke-Command
+    .ForwardHelpCategory Cmdlet
+
+    #>
+
+}
+
+# Exporting function overrides
+Export-ModuleMember -Function @(
+    'Invoke-Expression'
+    'Invoke-Command'
+)
+>> TerminatingError(Export-ModuleMember):“只能从模块内调用 Export-ModuleMember cmdlet。”
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20221126094457
+用户名: DESKTOP-VME8FRS\lab
+RunAs 用户: DESKTOP-VME8FRS\lab
+配置名称: 
+计算机: DESKTOP-VME8FRS (Microsoft Windows NT 10.0.19045.0)
+主机应用程序: C:\Windows\System32\sdiagnhost.exe -Embedding
+进程 ID: 6756
+PSVersion: 5.1.19041.1682
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1682
+BuildVersion: 10.0.19041.1682
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“只能从模块内调用 Export-ModuleMember cmdlet。”
+Export-ModuleMember : 只能从模块内调用 Export-ModuleMember cmdlet。
+所在位置 行:422 字符: 1
++ Export-ModuleMember -Function @(
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (:) [Export-ModuleMember], InvalidOperationException
+    + FullyQualifiedErrorId : Modules_CanOnlyExecuteExportModuleMemberInsideAModule,Microsoft.PowerShell.Commands.Export
+ModuleMemberCommand
+Export-ModuleMember : 只能从模块内调用 Export-ModuleMember cmdlet。
+所在位置 行:422 字符: 1
++ Export-ModuleMember -Function @(
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (:) [Export-ModuleMember], InvalidOperationException
+    + FullyQualifiedErrorId : Modules_CanOnlyExecuteExportModuleMemberInsideAModule,Microsoft.PowerShell.Commands.Export
+ModuleMemberCommand
+PS>& 'C:\Windows\TEMP\SDIAG_079b727f-3c5a-4c21-b402-4c872f40b6b6\TS_DiagnosticHistory.ps1'
+PS>CommandInvocation(Set-Location):“Set-Location”
+>> ParameterBinding(Set-Location): 名称 =“Path”；值 =“\”

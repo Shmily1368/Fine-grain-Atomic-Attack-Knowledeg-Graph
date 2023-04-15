@@ -1,0 +1,379 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415174343
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {Install-Module -Name AtomicTestHarnesses -Scope CurrentUser -Force}
+进程 ID: 2728
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS>& {Install-Module -Name AtomicTestHarnesses -Scope CurrentUser -Force}
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415174346
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {Install-Module -Name AtomicTestHarnesses -Scope CurrentUser -Force}
+进程 ID: 2728
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Import-Module):“Import-Module”
+>> ParameterBinding(Import-Module): 名称 =“Name”；值 =“C:\Program Files\WindowsPowerShell\Modules\PackageManagement\1.0.0.1\PackageProviderFunctions.psm1”
+>> ParameterBinding(Import-Module): 名称 =“PassThru”；值 =“True”
+
+ModuleType Version    Name                                ExportedCommands
+---------- -------    ----                                ----------------
+Script     0.0        PackageProviderFunctions            {New-Dependency, N...
+
+
+PS>CommandInvocation(Get-Module):“Get-Module”
+>> ParameterBinding(Get-Module): 名称 =“Name”；值 =“PowerShellGet”
+>> ParameterBinding(Get-Module): 名称 =“ListAvailable”；值 =“True”
+
+
+    目录: C:\Program Files\WindowsPowerShell\Modules
+
+
+ModuleType Version    Name                                ExportedCommands
+---------- -------    ----                                ----------------
+Script     1.0.0.1    PowerShellGet                       {Install-Module, F...
+
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415174346
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {Install-Module -Name AtomicTestHarnesses -Scope CurrentUser -Force}
+进程 ID: 2728
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Import-Module):“Import-Module”
+>> ParameterBinding(Import-Module): 名称 =“Name”；值 =“C:\Program Files\WindowsPowerShell\Modules\PackageManagement\1.0.0.1\PackageProviderFunctions.psm1”
+>> ParameterBinding(Import-Module): 名称 =“PassThru”；值 =“True”
+
+ModuleType Version    Name                                ExportedCommands
+---------- -------    ----                                ----------------
+Script     0.0        PackageProviderFunctions            {New-Dependency, N...
+
+
+PS>CommandInvocation(Import-Module):“Import-Module”
+>> ParameterBinding(Import-Module): 名称 =“Name”；值 =“C:\Program Files\WindowsPowerShell\Modules\PowerShellGet\1.0.0.1\PSModule.psm1”
+>> ParameterBinding(Import-Module): 名称 =“PassThru”；值 =“True”
+警告: 模块“PSModule”中的某些导入命令的名称包含未批准的动词，这些动词可能导致这些命令名不易被发现。若要查找具有未批准的动词的命令，请使用 Verbose 参数再次运行 Import-Module 命令。有关批准的动词列表，请键入 Get-Verb。
+
+ModuleType Version    Name                                ExportedCommands
+---------- -------    ----                                ----------------
+Script     0.0        PSModule                            {Add-PackageSource...
+
+
+PS>CommandInvocation(Get-PackageProviderName):“Get-PackageProviderName”
+PowerShellGet
+PS>CommandInvocation(Set-Variable):“Set-Variable”
+>> ParameterBinding(Set-Variable): 名称 =“Name”；值 =“request”
+>> ParameterBinding(Set-Variable): 名称 =“Value”；值 =“PsRequest_proxy_16”
+PS>CommandInvocation(Initialize-Provider):“Initialize-Provider”
+PS>CommandInvocation(Set-Variable):“Set-Variable”
+>> ParameterBinding(Set-Variable): 名称 =“Name”；值 =“request”
+PS>CommandInvocation(Set-Variable):“Set-Variable”
+>> ParameterBinding(Set-Variable): 名称 =“Name”；值 =“request”
+>> ParameterBinding(Set-Variable): 名称 =“Value”；值 =“Microsoft.PackageManagement.Internal.Implementation.DictionaryRequestObject”
+PS>CommandInvocation(Get-Feature):“Get-Feature”
+
+Details
+-------
+{}
+
+
+PS>CommandInvocation(Set-Variable):“Set-Variable”
+>> ParameterBinding(Set-Variable): 名称 =“Name”；值 =“request”
+PS>CommandInvocation(Set-Variable):“Set-Variable”
+>> ParameterBinding(Set-Variable): 名称 =“Name”；值 =“request”
+>> ParameterBinding(Set-Variable): 名称 =“Value”；值 =“Microsoft.PackageManagement.Internal.Implementation.DynamicOptionRequestObject”
+PS>CommandInvocation(Get-DynamicOptions):“Get-DynamicOptions”
+>> ParameterBinding(Get-DynamicOptions): 名称 =“category”；值 =“Provider”
+
+
+Name            : PackageManagementProvider
+ExpectedType    : String
+IsRequired      : False
+PermittedValues :
+Details         : {}
+
+
+
+PS>CommandInvocation(Set-Variable):“Set-Variable”
+>> ParameterBinding(Set-Variable): 名称 =“Name”；值 =“request”
+PS>CommandInvocation(Set-Variable):“Set-Variable”
+>> ParameterBinding(Set-Variable): 名称 =“Name”；值 =“request”
+>> ParameterBinding(Set-Variable): 名称 =“Value”；值 =“Microsoft.PackageManagement.Internal.Implementation.DynamicOptionRequestObject”
+PS>CommandInvocation(Get-DynamicOptions):“Get-DynamicOptions”
+>> ParameterBinding(Get-DynamicOptions): 名称 =“category”；值 =“Source”
+
+
+Name            : PackageManagementProvider
+ExpectedType    : String
+IsRequired      : False
+PermittedValues :
+Details         : {}
+
+Name            : PublishLocation
+ExpectedType    : String
+IsRequired      : False
+PermittedValues :
+Details         : {}
+
+Name            : ScriptSourceLocation
+ExpectedType    : String
+IsRequired      : False
+PermittedValues :
+Details         : {}
+
+Name            : ScriptPublishLocation
+ExpectedType    : String
+IsRequired      : False
+PermittedValues :
+Details         : {}
+
+
+
+PS>CommandInvocation(Set-Variable):“Set-Variable”
+>> ParameterBinding(Set-Variable): 名称 =“Name”；值 =“request”
+PS>CommandInvocation(Set-Variable):“Set-Variable”
+>> ParameterBinding(Set-Variable): 名称 =“Name”；值 =“request”
+>> ParameterBinding(Set-Variable): 名称 =“Value”；值 =“Microsoft.PackageManagement.Internal.Implementation.DynamicOptionRequestObject”
+PS>CommandInvocation(Get-DynamicOptions):“Get-DynamicOptions”
+>> ParameterBinding(Get-DynamicOptions): 名称 =“category”；值 =“Package”
+
+
+Name            : PackageManagementProvider
+ExpectedType    : String
+IsRequired      : False
+PermittedValues :
+Details         : {}
+
+Name            : Type
+ExpectedType    : String
+IsRequired      : False
+PermittedValues : {Module, Script, All}
+Details         : {}
+
+Name            : Filter
+ExpectedType    : String
+IsRequired      : False
+PermittedValues :
+Details         : {}
+
+Name            : Tag
+ExpectedType    : StringArray
+IsRequired      : False
+PermittedValues :
+Details         : {}
+
+Name            : Includes
+ExpectedType    : StringArray
+IsRequired      : False
+PermittedValues : {DscResource, Cmdlet, Function, Workflow...}
+Details         : {}
+
+Name            : DscResource
+ExpectedType    : StringArray
+IsRequired      : False
+PermittedValues :
+Details         : {}
+
+Name            : RoleCapability
+ExpectedType    : StringArray
+IsRequired      : False
+PermittedValues :
+Details         : {}
+
+Name            : Command
+ExpectedType    : StringArray
+IsRequired      : False
+PermittedValues :
+Details         : {}
+
+
+
+PS>CommandInvocation(Set-Variable):“Set-Variable”
+>> ParameterBinding(Set-Variable): 名称 =“Name”；值 =“request”
+PS>CommandInvocation(Set-Variable):“Set-Variable”
+>> ParameterBinding(Set-Variable): 名称 =“Name”；值 =“request”
+>> ParameterBinding(Set-Variable): 名称 =“Value”；值 =“Microsoft.PackageManagement.Internal.Implementation.DynamicOptionRequestObject”
+PS>CommandInvocation(Get-DynamicOptions):“Get-DynamicOptions”
+>> ParameterBinding(Get-DynamicOptions): 名称 =“category”；值 =“Install”
+
+
+Name            : PackageManagementProvider
+ExpectedType    : String
+IsRequired      : False
+PermittedValues :
+Details         : {}
+
+Name            : Type
+ExpectedType    : String
+IsRequired      : False
+PermittedValues : {Module, Script, All}
+Details         : {}
+
+Name            : Scope
+ExpectedType    : String
+IsRequired      : False
+PermittedValues : {CurrentUser, AllUsers}
+Details         : {}
+
+Name            : AllowClobber
+ExpectedType    : Switch
+IsRequired      : False
+PermittedValues :
+Details         : {}
+
+Name            : SkipPublisherCheck
+ExpectedType    : Switch
+IsRequired      : False
+PermittedValues :
+Details         : {}
+
+Name            : InstallUpdate
+ExpectedType    : Switch
+IsRequired      : False
+PermittedValues :
+Details         : {}
+
+Name            : NoPathUpdate
+ExpectedType    : Switch
+IsRequired      : False
+PermittedValues :
+Details         : {}
+
+
+
+PS>CommandInvocation(Set-Variable):“Set-Variable”
+>> ParameterBinding(Set-Variable): 名称 =“Name”；值 =“request”
+PS>CommandInvocation(Set-Variable):“Set-Variable”
+>> ParameterBinding(Set-Variable): 名称 =“Name”；值 =“request”
+>> ParameterBinding(Set-Variable): 名称 =“Value”；值 =“Microsoft.PackageManagement.Internal.Implementation.SoftwareIdentityRequestObject”
+PS>CommandInvocation(Find-Package):“Find-Package”
+>> ParameterBinding(Find-Package): 名称 =“names”；值 =“AtomicTestHarnesses”
+>> ParameterBinding(Find-Package): 名称 =“requiredVersion”；值 =“”
+>> ParameterBinding(Find-Package): 名称 =“minimumVersion”；值 =“”
+>> ParameterBinding(Find-Package): 名称 =“maximumVersion”；值 =“”
+0
+1
+0
+1
+
+
+FastPackageReference : NuGet|AtomicTestHarnesses|1.12.0.0|https://www.powershel
+                       lgallery.com/api/v2|Module
+Name                 : AtomicTestHarnesses
+Version              : 1.12.0.0
+VersionScheme        : MultiPartNumeric
+Source               : PSGallery
+Summary              : A module to facilitate the testing of attack techniques
+                       and their corresponding procedures.
+FullPath             :
+Filename             : AtomicTestHarnesses
+SearchKey            : AtomicTestHarnesses
+FromTrustedSource    : False
+Details              : {releaseNotes, versionDownloadCount, ItemType, copyright
+                       ...}
+
+
+
+PS>CommandInvocation(Set-Variable):“Set-Variable”
+>> ParameterBinding(Set-Variable): 名称 =“Name”；值 =“request”
+PS>CommandInvocation(Set-Variable):“Set-Variable”
+>> ParameterBinding(Set-Variable): 名称 =“Name”；值 =“request”
+>> ParameterBinding(Set-Variable): 名称 =“Value”；值 =“Microsoft.PackageManagement.Internal.Implementation.SoftwareIdentityRequestObject”
+PS>CommandInvocation(Get-InstalledPackage):“Get-InstalledPackage”
+>> ParameterBinding(Get-InstalledPackage): 名称 =“Name”；值 =“AtomicTestHarnesses”
+>> ParameterBinding(Get-InstalledPackage): 名称 =“RequiredVersion”；值 =“1.12.0.0”
+PS>CommandInvocation(Set-Variable):“Set-Variable”
+>> ParameterBinding(Set-Variable): 名称 =“Name”；值 =“request”
+PS>CommandInvocation(Set-Variable):“Set-Variable”
+>> ParameterBinding(Set-Variable): 名称 =“Name”；值 =“request”
+>> ParameterBinding(Set-Variable): 名称 =“Value”；值 =“Microsoft.PackageManagement.Internal.Implementation.SoftwareIdentityRequestObject”
+PS>CommandInvocation(Install-Package):“Install-Package”
+>> ParameterBinding(Install-Package): 名称 =“FastPackageReference”；值 =“NuGet|AtomicTestHarnesses|1.12.0.0|https://www.powershellgallery.com/api/v2|Module”
+0
+1
+0
+1
+
+
+FastPackageReference : NuGet|AtomicTestHarnesses|1.12.0.0|https://www.powershel
+                       lgallery.com/api/v2|Module
+Name                 : AtomicTestHarnesses
+Version              : 1.12.0.0
+VersionScheme        : MultiPartNumeric
+Source               : PSGallery
+Summary              : A module to facilitate the testing of attack techniques
+                       and their corresponding procedures.
+FullPath             :
+Filename             : AtomicTestHarnesses
+SearchKey            : AtomicTestHarnesses
+FromTrustedSource    : False
+Details              : {downloadCount, created, description, copyright...}
+
+
+
+PS>CommandInvocation(Set-Variable):“Set-Variable”
+>> ParameterBinding(Set-Variable): 名称 =“Name”；值 =“request”
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415174358
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {Install-Module -Name AtomicTestHarnesses -Scope CurrentUser -Force}
+进程 ID: 2728
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(New-WinEvent):“New-WinEvent”
+>> ParameterBinding(New-WinEvent): 名称 =“ProviderName”；值 =“Microsoft-Windows-PowerShell”
+>> ParameterBinding(New-WinEvent): 名称 =“Id”；值 =“4101”
+>> ParameterBinding(New-WinEvent): 名称 =“Payload”；值 =“Install, Package=AtomicTestHarnesses, Version=1.12.0.0, Provider=PowerShellGet, Source=PSGallery, Status=Installed, DestinationPath=, PackageManagement: 已安装程序包。”
+PS>$global:?
+True
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20230415174358
+**********************

@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{9C8B0BC8-4F2E-4D7F-8288-D11E24D85B73}</ProjectGuid>
+    <RootNamespace>ETWDataCollectorRedesigned</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Users\apt_etw_dev\source\repos\ETWDataCollectorRedesigned\ETWDataCollectorRedesigned\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\apt_etw_dev\source\repos\ETWDataCollectorRedesigned\ETWDataCollectorRedesigned\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir)\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)\lib\Release x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)macro_detector;$(ProjectDir)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)macro_detector\zlib;$(ProjectDir)lib\Release x64;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)include；$(ProjectDir)macro_detector;$(ProjectDir)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;$(ProjectDir)lib\Release x64;$(ProjectDir)macro_detector\zlib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\Users\apt_etw_dev\source\repos\ETWDataCollectorRedesigned\ETWDataCollectorRedesigned\lib\log4cplusU.lib;C:\Users\apt_etw_dev\source\repos\ETWDataCollectorRedesigned\ETWDataCollectorRedesigned\lib\librdkafka.lib;C:\Users\apt_etw_dev\source\repos\ETWDataCollectorRedesigned\ETWDataCollectorRedesigned\lib\librdkafkacpp.lib;C:\Users\apt_etw_dev\source\repos\ETWDataCollectorRedesigned\ETWDataCollectorRedesigned\lib\gmock.lib;C:\Users\apt_etw_dev\source\repos\ETWDataCollectorRedesigned\ETWDataCollectorRedesigned\lib\gmock_main.lib;C:\Users\apt_etw_dev\source\repos\ETWDataCollectorRedesigned\ETWDataCollectorRedesigned\lib\libprotobuf.lib;C:\Users\apt_etw_dev\source\repos\ETWDataCollectorRedesigned\ETWDataCollectorRedesigned\lib\libprotobuf-lite.lib;C:\Users\apt_etw_dev\source\repos\ETWDataCollectorRedesigned\ETWDataCollectorRedesigned\lib\libsnappy.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;PROTOBUF_USE_DLLS</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Profile>true</Profile>
+      <AdditionalDependencies>zdll.lib;libtcta3cpp_s.lib;libboost_regex-vc140-mt-1_61.lib;libboost_log-vc140-mt-1_61.lib;librdkafka.lib;librdkafkacpp.lib;libprotobuf.lib;log4cplusU.lib;libprotobuf-lite.lib;libsnappy.lib;libprotoc.lib;sigtool.lib;libclamav.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)macro_detector\zlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;PROTOBUF_USE_DLLS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>librdkafka.lib;librdkafkacpp.lib;libprotobuf.lib;libprotobuf-lite.lib;libsnappy.lib;libprotoc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;PROTOBUF_USE_DLLS</PreprocessorDefinitions>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Profile>true</Profile>
+      <AdditionalDependencies>zdll.lib;libtcta3cpp_s.lib;libboost_regex-vc140-mt-1_61.lib;libboost_log-vc140-mt-1_61.lib;librdkafka.lib;librdkafkacpp.lib;libprotobuf.lib;log4cplusU.lib;libprotobuf-lite.lib;libsnappy.lib;libprotoc.lib;sigtool.lib;libclamav.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <AdditionalLibraryDirectories>$(ProjectDir)macro_detector\zlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="assist_macro.h" />
+    <ClInclude Include="auto_lock.h" />
+    <ClInclude Include="btree.h" />
+    <ClInclude Include="callstack_pruning.h" />
+    <ClInclude Include="cal_MD5.h" />
+    <ClInclude Include="certificate_tool.h" />
+    <ClInclude Include="cert_analyzer.h" />
+    <ClInclude Include="cJSON.h" />
+    <ClInclude Include="CJsonObject.hpp" />
+    <ClInclude Include="common.h" />
+    <ClInclude Include="concurrentqueue.h" />
+    <ClInclude Include="concurrent_queue.h" />
+    <ClInclude Include="event.h" />
+    <ClInclude Include="event_record_extra.h" />
+    <ClInclude Include="extra_trace_session.h" />
+    <ClInclude Include="etwdata.pb.h" />
+    <ClInclude Include="etw_configuration.h" />
+    <ClInclude Include="event_identifier.h" />
+    <ClInclude Include="event_parameter.h" />
+    <ClInclude Include="event_record.h" />
+    <ClInclude Include="event_record_callstack.h" />
+    <ClInclude Include="event_record_pruner.h" />
+    <ClInclude Include="event_record_subclass.h" />
+    <ClInclude Include="event_record_manager.h" />
+    <ClInclude Include="feature.h" />
+    <ClInclude Include="filter.h" />
+    <ClInclude Include="get_device_drive_map.h" />
+    <ClInclude Include="get_systemcontext.h" />
+    <ClInclude Include="get_signature_info.h" />
+    <ClInclude Include="global_enum_def.h" />
+    <ClInclude Include="init_collector.h" />
+    <ClInclude Include="init_collector_factory.h" />
+    <ClInclude Include="init_collector_local_collect.h" />
+    <ClInclude Include="init_collector_local_parse.h" />
+    <ClInclude Include="init_collector_online_parse.h" />
+    <ClInclude Include="kafka_producer.h" />
+    <ClInclude Include="lock_base.h" />
+    <ClInclude Include="logger_record.h" />
+    <ClInclude Include="macro_detector.h" />
+    <ClInclude Include="macro_detector\mime2.h" />
+    <ClInclude Include="macro_detector\OleParser.h" />
+    <ClInclude Include="macro_detector\pugixml\pugiconfig.hpp" />
+    <ClInclude Include="macro_detector\pugixml\pugixml.hpp" />
+    <ClInclude Include="macro_detector\tool_functions_macro.h" />
+    <ClInclude Include="macro_detector\vbaParser.h" />
+    <ClInclude Include="macro_detector\zip\unzip.h" />
+    <ClInclude Include="macro_detector\zip\zip.h" />
+    <ClInclude Include="macro_detector\zlib\zconf.h" />
+    <ClInclude Include="macro_detector\zlib\zlib.h" />
+    <ClInclude Include="map_auto_cleanup.h" />
+    <ClInclude Include="mutex.h" />
+    <ClInclude Include="named_pipe_client.h" />
+    <ClInclude Include="ntkernel_provider_guid.h" />
+    <ClInclude Include="object_pool.h" />
+    <ClInclude Include="obtain_entry_address.h" />
+    <ClInclude Include="on_leave_section_callback.h" />
+    <ClInclude Include="output.h" />
+    <ClInclude Include="output_ransom.h" />
+    <ClInclude Include="parameter_index.h" />
+    <ClInclude Include="output_kafka.h" />
+    <ClInclude Include="phf_detector.h" />
+    <ClInclude Include="platform.h" />
+    <ClInclude Include="powershell_detector\cmdExec.h" />
+    <ClInclude Include="powershell_detector\file_deal.h" />
+    <ClInclude Include="powershell_detector\powershellStruct.h" />
+    <ClInclude Include="powershell_detector\powershell_detector.h" />
+    <ClInclude Include="processTree.h" />
+    <ClInclude Include="process_info.h" />
+    <ClInclude Include="publicstruct.h" />
+    <ClInclude Include="public_json_interface.h" />
+    <ClInclude Include="public_xml_interface.h" />
+    <ClInclude Include="RansomDetector.h" />
+    <ClInclude Include="rdkafka.h" />
+    <ClInclude Include="rdkafkacpp.h" />
+    <ClInclude Include="output_json.h" />
+    <ClInclude Include="record_queue.h" />
+    <ClInclude Include="record_queue_per_process.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="rule_matcher.h" />
+    <ClInclude Include="rwlock.h" />
+    <ClInclude Include="security_audit.h" />
+    <ClInclude Include="security_trace_session.h" />
+    <ClInclude Include="semaphore.h" />
+    <ClInclude Include="setting.h" />
+    <ClInclude Include="signature.h" />
+    <ClInclude Include="SignatureDetector.h" />
+    <ClInclude Include="signature_verification.h" />
+    <ClInclude Include="spin_lock.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="string_util.h" />
+    <ClInclude Include="svm.h" />
+    <ClInclude Include="sysmon_pruning.h" />
+    <ClInclude Include="sysmon_trace_session.h" />
+    <ClInclude Include="systemstruct.h" />
+    <ClInclude Include="system_call_detector.h" />
+    <ClInclude Include="task_queue_service.h" />
+    <ClInclude Include="thread_task_base.h" />
+    <ClInclude Include="thread_task_count_timer.h" />
+    <ClInclude Include="thread_task_get_devicearrival.h" />
+    <ClInclude Include="thread_task_get_hash.h" />
+    <ClInclude Include="thread_task_get_ipconfig.h" />
+    <ClInclude Include="thread_task_get_threadend_event.h" />
+    <ClInclude Include="thread_task_get_visiblewindow.h" />
+    <ClInclude Include="thread_task_hook_keyandmouse.h" />
+    <ClInclude Include="thread_task_cerficate_image.h" />
+    <ClInclude Include="thread_task_manager.h" />
+    <ClInclude Include="thread_task_monitor.h" />
+    <ClInclude Include="thread_task_output_record.h" />
+    <ClInclude Include="thread_task_parse_event.h" />
+    <ClInclude Include="thread_task_pipe_read.h" />
+    <ClInclude Include="thread_task_rule_matcher.h" />
+    <ClInclude Include="time_util.h" />
+    <ClInclude Include="tool_functions.h" />
+    <ClInclude Include="unit.h" />
+    <ClInclude Include="uuid_generator.h" />
+    <ClInclude Include="win_getopt.h" />
+    <ClInclude Include="zone_identifier.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="auto_lock.cpp" />
+    <ClCompile Include="btree.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="callstack_pruning.cpp" />
+    <ClCompile Include="cal_MD5.cpp" />
+    <ClCompile Include="certificate_tool.cpp" />
+    <ClCompile Include="cert_analyzer.cpp" />
+    <ClCompile Include="cJSON.cpp" />
+    <ClCompile Include="CJsonObject.cpp" />
+    <ClCompile Include="etwdata.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="event_record_extra.cpp" />
+    <ClCompile Include="extra_trace_session.cpp" />
+    <ClCompile Include="etw_configuration.cpp" />
+    <ClCompile Include="event_identifier.cpp" />
+    <ClCompile Include="event_parameter.cpp" />
+    <ClCompile Include="event_record.cpp" />
+    <ClCompile Include="event_record_callstack.cpp" />
+    <ClCompile Include="event_record_pruner.cpp" />
+    <ClCompile Include="event_record_subclass.cpp" />
+    <ClCompile Include="event_record_manager.cpp" />
+    <ClCompile Include="feature.cpp" />
+    <ClCompile Include="filter.cpp" />
+    <ClCompile Include="get_device_drive_map.cpp" />
+    <ClCompile Include="get_signature_info.cpp" />
+    <ClCompile Include="get_systemcontext.cpp" />
+    <ClCompile Include="init_collector.cpp" />
+    <ClCompile Include="init_collector_factory.cpp" />
+    <ClCompile Include="init_collector_local_collect.cpp" />
+    <ClCompile Include="init_collector_local_parse.cpp" />
+    <ClCompile Include="init_collector_online_parse.cpp" />
+    <ClCompile Include="kafka_producer.cpp" />
+    <ClCompile Include="logger_record.cpp" />
+    <ClCompile Include="macro_detector.cpp" />
+    <ClCompile Include="macro_detector\OleParser.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="macro_detector\pugixml\pugixml.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="macro_detector\tool_functions_macro.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="macro_detector\vbaParser.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="macro_detector\zip\unzip.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="macro_detector\zip\zip.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="mutex.cpp" />
+    <ClCompile Include="object_pool.cpp" />
+    <ClCompile Include="obtain_entry_address.cpp" />
+    <ClCompile Include="on_leave_section_callback.cpp" />
+    <ClCompile Include="output.cpp" />
+    <ClCompile Include="output_ransom.cpp" />
+    <ClCompile Include="parameter_index.cpp" />
+    <ClCompile Include="output_kafka.cpp" />
+    <ClCompile Include="phf_detector.cpp" />
+    <ClCompile Include="powershell_detector\file_deal.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="powershell_detector\powershell_detector.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="process_info.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="public_json_interface.cpp" />
+    <ClCompile Include="public_xml_interface.cpp" />
+    <ClCompile Include="RansomeDetector.cpp" />
+    <ClCompile Include="record_queue_per_process.cpp" />
+    <ClCompile Include="output_json.cpp" />
+    <ClCompile Include="record_queue.cpp" />
+    <ClCompile Include="rule_matcher.cpp" />
+    <ClCompile Include="rwlock.cpp" />
+    <ClCompile Include="security_audit.cpp" />
+    <ClCompile Include="security_trace_session.cpp" />
+    <ClCompile Include="semaphore.cpp" />
+    <ClCompile Include="setting.cpp" />
+    <ClCompile Include="SignatureDetector.cpp" />
+    <ClCompile Include="signature_verification.cpp" />
+    <ClCompile Include="spin_lock.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="string_util.cpp" />
+    <ClCompile Include="svm-predict.cpp" />
+    <ClCompile Include="svm-scale.cpp" />
+    <ClCompile Include="svm-train.cpp" />
+    <ClCompile Include="svm.cpp" />
+    <ClCompile Include="sysmon_pruning.cpp" />
+    <ClCompile Include="sysmon_trace_session.cpp" />
+    <ClCompile Include="system_call_detector.cpp" />
+    <ClCompile Include="task_queue_service.cpp" />
+    <ClCompile Include="thread_task_base.cpp" />
+    <ClCompile Include="thread_task_cerficate_image.cpp" />
+    <ClCompile Include="thread_task_count_timer.cpp" />
+    <ClCompile Include="thread_task_get_devicearrival.cpp" />
+    <ClCompile Include="thread_task_get_hash.cpp" />
+    <ClCompile Include="thread_task_get_ipconfig.cpp" />
+    <ClCompile Include="thread_task_get_threadend_event.cpp" />
+    <ClCompile Include="thread_task_get_visiblewindow.cpp" />
+    <ClCompile Include="thread_task_hook_keyandmouse.cpp" />
+    <ClCompile Include="thread_task_manager.cpp" />
+    <ClCompile Include="thread_task_monitor.cpp" />
+    <ClCompile Include="thread_task_output_record.cpp" />
+    <ClCompile Include="thread_task_parse_event.cpp" />
+    <ClCompile Include="thread_task_pipe_read.cpp" />
+    <ClCompile Include="thread_task_rule_matcher.cpp" />
+    <ClCompile Include="time_util.cpp" />
+    <ClCompile Include="tool_functions.cpp" />
+    <ClCompile Include="unit.cpp" />
+    <ClCompile Include="win_getopt.cpp" />
+    <ClCompile Include="named_pipe_client.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="zone_identifier.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ETWDataCollectorRedesigned.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="svm.def" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,539 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230410122441
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 9428
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS C:\Windows\system32> Invoke-AtomicTest T1547.001-1 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+PS C:\Windows\system32> Invoke-AtomicTest T1547.001-2 -Cleanup
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+Done executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+PS C:\Windows\system32> cd C:\KGraph\AtomicRun
+PS C:\KGraph\AtomicRun> .\AtomicRunALL.ps1
+T1547.001-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-1 Reg Key Run
+
+操作成功完成。
+Done executing test:
+T1547.001-1 Reg Key Run
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+T1547.001-2
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-2 Reg Key RunOnce
+
+操作成功完成。
+Done executing test:
+T1547.001-2 Reg Key RunOnce
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+Done executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+PS C:\KGraph\AtomicRun> .\AtomicRunALL.ps1
+T1547.001-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-1 Reg Key Run
+
+操作成功完成。
+Done executing test:
+T1547.001-1 Reg Key Run
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+T1547.001-2
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-2 Reg Key RunOnce
+
+操作成功完成。
+Done executing test:
+T1547.001-2 Reg Key RunOnce
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+Done executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+PS C:\KGraph\AtomicRun> Get-Process -Name "ETWDataCollectorRedesigned" | Select-Object -Property Id
+
+  Id
+  --
+9804
+
+
+PS C:\KGraph\AtomicRun> $processId = (Get-Process -Name "chrome").Id
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411093622
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 9428
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到名为“chrome”的进程。请验证该进程名称，然后再次调用 cmdlet。”
+Get-Process : 找不到名为“chrome”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 行:1 字符: 15
++ $processId = (Get-Process -Name "chrome").Id
++               ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (chrome:String) [Get-Process], ProcessCommandException
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+Get-Process : 找不到名为“chrome”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 行:1 字符: 15
++ $processId = (Get-Process -Name "chrome").Id
++               ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (chrome:String) [Get-Process], ProcessCommandException
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+Get-Process : 找不到名为“chrome”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 行:1 字符: 15
++ $processId = (Get-Process -Name "chrome").Id
++               ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (chrome:String) [Get-Process], ProcessCommandException
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+
+PS C:\KGraph\AtomicRun> $processId = (Get-Process -Name "edge").Id
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411093626
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 9428
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到名为“edge”的进程。请验证该进程名称，然后再次调用 cmdlet。”
+Get-Process : 找不到名为“edge”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 行:1 字符: 15
++ $processId = (Get-Process -Name "edge").Id
++               ~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (edge:String) [Get-Process], ProcessCommandException
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+Get-Process : 找不到名为“edge”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 行:1 字符: 15
++ $processId = (Get-Process -Name "edge").Id
++               ~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (edge:String) [Get-Process], ProcessCommandException
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+Get-Process : 找不到名为“edge”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 行:1 字符: 15
++ $processId = (Get-Process -Name "edge").Id
++               ~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (edge:String) [Get-Process], ProcessCommandException
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+
+PS C:\KGraph\AtomicRun> $processId = (Get-Process -Name "system").Id
+PS C:\KGraph\AtomicRun> $processId
+4
+PS C:\KGraph\AtomicRun> .\AtomicRunALL.ps1
+T1547.001-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-1 Reg Key Run
+
+操作成功完成。
+Done executing test:
+T1547.001-1 Reg Key Run
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+T1547.001-2
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-2 Reg Key RunOnce
+
+操作成功完成。
+Done executing test:
+T1547.001-2 Reg Key RunOnce
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+Done executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+PS C:\KGraph\AtomicRun> .\AtomicRunALL.ps1
+T1547.001-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-1 Reg Key Run
+
+操作成功完成。
+Done executing test:
+T1547.001-1 Reg Key Run
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+T1547.001-2
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-2 Reg Key RunOnce
+
+操作成功完成。
+Done executing test:
+T1547.001-2 Reg Key RunOnce
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+Done executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411094141
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 9428
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到名为“ETWDataCollectorRedesigned”的进程。请验证该进程名称，然后再次调用 cmdlet。”
+Get-Process : 找不到名为“ETWDataCollectorRedesigned”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:29 字符: 20
++      $processId = (Get-Process -Name "ETWDataCollectorRedesigned").Id
++                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ETWDataCollectorRedesigned:String) [Get-Process], ProcessCommandException
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+Get-Process : 找不到名为“ETWDataCollectorRedesigned”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:29 字符: 20
++      $processId = (Get-Process -Name "ETWDataCollectorRedesigned").Id
++                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ETWDataCollectorRedesigned:String) [Get-Process], ProcessCommandException
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+Get-Process : 找不到名为“ETWDataCollectorRedesigned”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:29 字符: 20
++      $processId = (Get-Process -Name "ETWDataCollectorRedesigned").Id
++                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ETWDataCollectorRedesigned:String) [Get-Process], ProcessCommandExcepti
+   on
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411094141
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 9428
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到名为“ETWDataCollectorRedesigned”的进程。请验证该进程名称，然后再次调用 cmdlet。”
+Get-Process : 找不到名为“ETWDataCollectorRedesigned”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:30 字符: 6
++      Get-Process -Name "ETWDataCollectorRedesigned" | Stop-Process
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ETWDataCollectorRedesigned:String) [Get-Process], ProcessCommandException
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+Get-Process : 找不到名为“ETWDataCollectorRedesigned”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:30 字符: 6
++      Get-Process -Name "ETWDataCollectorRedesigned" | Stop-Process
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ETWDataCollectorRedesigned:String) [Get-Process], ProcessCommandException
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+Get-Process : 找不到名为“ETWDataCollectorRedesigned”的进程。请验证该进程名称，然后再次调用 cmdlet。
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:30 字符: 6
++      Get-Process -Name "ETWDataCollectorRedesigned" | Stop-Process
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ETWDataCollectorRedesigned:String) [Get-Process], ProcessCommandExcepti
+   on
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+
+PS C:\KGraph\AtomicRun> .\AtomicRunALL.ps1
+T1547.001-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-1 Reg Key Run
+
+操作成功完成。
+Done executing test:
+T1547.001-1 Reg Key Run
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+Done executing cleanup for test:
+T1547.001-1 Reg Key Run
+
+T1547.001-2
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing test:
+T1547.001-2 Reg Key RunOnce
+
+操作成功完成。
+Done executing test:
+T1547.001-2 Reg Key RunOnce
+
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+Done executing cleanup for test:
+T1547.001-2 Reg Key RunOnce
+
+PS C:\KGraph\AtomicRun> .\AtomicRunALL.ps1
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411094402
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 9428
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到路径“C:\KGraph\AtomicRun\TEW.csv”，因为该路径不存在。”
+Get-Content : 找不到路径“C:\KGraph\AtomicRun\TEW.csv”，因为该路径不存在。
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:21 字符: 1
++ Get-Content -Path "C:\KGraph\AtomicRun\TEW.csv" | ForEach-Object {
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\KGraph\AtomicRun\TEW.csv:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : 找不到路径“C:\KGraph\AtomicRun\TEW.csv”，因为该路径不存在。
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:21 字符: 1
++ Get-Content -Path "C:\KGraph\AtomicRun\TEW.csv" | ForEach-Object {
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\KGraph\AtomicRun\TEW.csv:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : 找不到路径“C:\KGraph\AtomicRun\TEW.csv”，因为该路径不存在。
+所在位置 C:\KGraph\AtomicRun\AtomicRunALL.ps1:21 字符: 1
++ Get-Content -Path "C:\KGraph\AtomicRun\TEW.csv" | ForEach-Object {
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\KGraph\AtomicRun\TEW.csv:String) [Get-Content], ItemNotFoundExceptio
+   n
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+
+PS C:\KGraph\AtomicRun> .\AtomicRunALL.ps1
+  T1218.011-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1218.011\  T1218.011.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1218.011\  T1218.011.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+  T1218.011-2
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1218.011\  T1218.011.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1218.011\  T1218.011.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+  T1218.011-3
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1218.011\  T1218.011.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1218.011\  T1218.011.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+  T1218.011-4
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1218.011\  T1218.011.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1218.011\  T1218.011.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+  T1218.011-5
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1218.011\  T1218.011.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1218.011\  T1218.011.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+  T1218.011-6
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1218.011\  T1218.011.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1218.011\  T1218.011.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+  T1218.011-7
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1218.011\  T1218.011.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1218.011\  T1218.011.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+  T1218.011-8
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1218.011\  T1218.011.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1218.011\  T1218.011.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+  T1218.011-9
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1218.011\  T1218.011.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1218.011\  T1218.011.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+  T1218.011-10
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1218.011\  T1218.011.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1218.011\  T1218.011.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+  T1218.011-11
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1218.011\  T1218.011.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1218.011\  T1218.011.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+  T1218.011-12
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1218.011\  T1218.011.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1218.011\  T1218.011.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+  T1218.011-13
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1218.011\  T1218.011.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1218.011\  T1218.011.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+  T1216.001-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1216.001\  T1216.001.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1216.001\  T1216.001.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+  T1006-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1006\  T1006.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1006\  T1006.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+  T1548.002-1
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1548.002\  T1548.002.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1548.002\  T1548.002.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+  T1548.002-2
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1548.002\  T1548.002.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1548.002\  T1548.002.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+  T1548.002-3
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1548.002\  T1548.002.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+ERROR: C:\AtomicRedTeam\atomics\  T1548.002\  T1548.002.yaml does not exist
+Check your Atomic Number and your PathToAtomicsFolder parameter

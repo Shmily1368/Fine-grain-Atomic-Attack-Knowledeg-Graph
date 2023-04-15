@@ -1,0 +1,135 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411155721
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {Expand-Archive -Path $env:userprofile\Downloads\T1036.zip -DestinationPath $env:userprofile\Downloads\T1036 -Force
+cd $env:userprofile\Downloads\T1036
+cmd /c $env:userprofile\Downloads\T1036\README.cmd >$null 2>$null}
+进程 ID: 6552
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS>& {Expand-Archive -Path $env:userprofile\Downloads\T1036.zip -DestinationPath $env:userprofile\Downloads\T1036 -Force
+cd $env:userprofile\Downloads\T1036
+cmd /c $env:userprofile\Downloads\T1036\README.cmd >$null 2>$null}
+PS>TerminatingError(Resolve-Path):“已停止该运行的命令，因为首选项变量“ErrorActionPreference”或通用参数设置为 Stop: 找不到路径“C:\Users\wangjian\Downloads\T1036.zip”，因为该路径不存在。”
+PS>TerminatingError():“管道已被停止。”
+>> TerminatingError(Expand-Archive):“路径“C:\Users\wangjian\Downloads\T1036.zip”不存在，或者不是有效的文件系统路径。”
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411155722
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {Expand-Archive -Path $env:userprofile\Downloads\T1036.zip -DestinationPath $env:userprofile\Downloads\T1036 -Force
+cd $env:userprofile\Downloads\T1036
+cmd /c $env:userprofile\Downloads\T1036\README.cmd >$null 2>$null}
+进程 ID: 6552
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“路径“C:\Users\wangjian\Downloads\T1036.zip”不存在，或者不是有效的文件系统路径。”
+Expand-Archive : 路径“C:\Users\wangjian\Downloads\T1036.zip”不存在，或者不是有效的文件系统路径。
+所在位置 行:1 字符: 4
++ & {Expand-Archive -Path $env:userprofile\Downloads\T1036.zip -Destina ...
++    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (C:\Users\wangjian\Downloads\T1036.zip:String) [Expand-Archive]，InvalidOp
+erationException
+    + FullyQualifiedErrorId : ArchiveCmdletPathNotFound,Expand-Archive
+Expand-Archive : 路径“C:\Users\wangjian\Downloads\T1036.zip”不存在，或者不是有效的文件系统路径。
+所在位置 行:1 字符: 4
++ & {Expand-Archive -Path $env:userprofile\Downloads\T1036.zip -Destina ...
++    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (C:\Users\wangjian\Downloads\T1036.zip:String) [Expand-Archive]，InvalidOp
+erationException
+    + FullyQualifiedErrorId : ArchiveCmdletPathNotFound,Expand-Archive
+Expand-Archive : 路径“C:\Users\wangjian\Downloads\T1036.zip”不存在，或者不是有效的文件系统路径。
+所在位置 行:1 字符: 4
++ & {Expand-Archive -Path $env:userprofile\Downloads\T1036.zip -Destina ...
++    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (C:\Users\wangjian\Downloads\T1036.zip:String) [Expand-Archive]，Invalid
+    OperationException
+    + FullyQualifiedErrorId : ArchiveCmdletPathNotFound,Expand-Archive
+
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411155722
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {Expand-Archive -Path $env:userprofile\Downloads\T1036.zip -DestinationPath $env:userprofile\Downloads\T1036 -Force
+cd $env:userprofile\Downloads\T1036
+cmd /c $env:userprofile\Downloads\T1036\README.cmd >$null 2>$null}
+进程 ID: 6552
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“'C:\Users\wangjian\Downloads\T1036\README.cmd' 不是内部或外部命令，也不是可运行的程序”
+cmd : 'C:\Users\wangjian\Downloads\T1036\README.cmd' 不是内部或外部命令，也不是可运行的程序
+所在位置 行:3 字符: 1
++ cmd /c $env:userprofile\Downloads\T1036\README.cmd >$null 2>$null}
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ('C:\Users\wangj...或外部命令，也不是可运行的程序:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+cmd : 'C:\Users\wangjian\Downloads\T1036\README.cmd' 不是内部或外部命令，也不是可运行的程序
+所在位置 行:3 字符: 1
++ cmd /c $env:userprofile\Downloads\T1036\README.cmd >$null 2>$null}
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ('C:\Users\wangj...或外部命令，也不是可运行的程序:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230411155722
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {Expand-Archive -Path $env:userprofile\Downloads\T1036.zip -DestinationPath $env:userprofile\Downloads\T1036 -Force
+cd $env:userprofile\Downloads\T1036
+cmd /c $env:userprofile\Downloads\T1036\README.cmd >$null 2>$null}
+进程 ID: 6552
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“或批处理文件。”
+或批处理文件。
+或批处理文件。
+PS>$global:?
+True
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20230411155722
+**********************

@@ -1,0 +1,33 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230415170133
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe & {try {
+ New-Object -COMObject "Word.Application" | Out-Null
+ Stop-Process -Name "winword"
+ exit 0
+} catch { exit 1 }}
+进程 ID: 12880
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS>& {try {
+ New-Object -COMObject "Word.Application" | Out-Null
+ Stop-Process -Name "winword"
+ exit 0
+} catch { exit 1 }}
+>> TerminatingError(New-Object):“检索 COM 类工厂中 CLSID 为 {00000000-0000-0000-0000-000000000000} 的组件失败，原因是出现以下错误: 80040154 没有注册类 (异常来自 HRESULT:0x80040154 (REGDB_E_CLASSNOTREG))。”
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20230415170135
+**********************

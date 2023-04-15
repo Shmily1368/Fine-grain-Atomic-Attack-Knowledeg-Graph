@@ -1,0 +1,69 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230221221334
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {Remove-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run" -Name "atomictest"}
+进程 ID: 12732
+PSVersion: 5.1.19041.2364
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2364
+BuildVersion: 10.0.19041.2364
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS>& {Remove-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run" -Name "atomictest"}
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230221221335
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: powershell.exe & {Remove-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run" -Name "atomictest"}
+进程 ID: 12732
+PSVersion: 5.1.19041.2364
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2364
+BuildVersion: 10.0.19041.2364
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“找不到路径“HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run”，因为该路径不存在。”
+Remove-ItemProperty : 找不到路径“HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run”，因为该路径不存在。
+所在位置 行:1 字符: 4
++ & {Remove-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\Curren ...
++    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (HKLM:\Software\...es\Explorer\Run:String) [Remove-ItemProperty], ItemNotF
+oundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemPropertyCommand
+Remove-ItemProperty : 找不到路径“HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run”，因为该路径不存在。
+所在位置 行:1 字符: 4
++ & {Remove-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\Curren ...
++    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (HKLM:\Software\...es\Explorer\Run:String) [Remove-ItemProperty], ItemNotF
+oundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemPropertyCommand
+Remove-ItemProperty : 找不到路径“HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run”，因为该路径不存
+在。
+所在位置 行:1 字符: 4
++ & {Remove-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\Curren ...
++    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (HKLM:\Software\...es\Explorer\Run:String) [Remove-ItemProperty], ItemNo
+   tFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemPropertyCommand
+
+PS>$global:?
+True
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20230221221335
+**********************

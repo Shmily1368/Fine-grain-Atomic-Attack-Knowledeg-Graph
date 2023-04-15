@@ -1,0 +1,21 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20210827162228
+用户名: PC-20200612JNVI\Administrator
+RunAs 用户: PC-20200612JNVI\Administrator
+配置名称: 
+计算机: PC-20200612JNVI (Microsoft Windows NT 10.0.19041.0)
+主机应用程序: C:\WINDOWS\System32\sdiagnhost.exe -Embedding
+进程 ID: 15900
+PSVersion: 5.1.19041.610
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.610
+BuildVersion: 10.0.19041.610
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Set-Location):“Set-Location”
+>> ParameterBinding(Set-Location): 名称 =“Path”；值 =“C:\Users\Administrator\AppData\Local\Temp\SDIAG_9301ecbb-5d56-4b57-906b-a5f9cf9f1c93”
+PS>& "C:\Users\ADMINI~1\AppData\Local\Temp\SDIAG_9301ecbb-5d56-4b57-906b-a5f9cf9f1c93\NetworkDiagnosticsTroubleshoot.ps1"
