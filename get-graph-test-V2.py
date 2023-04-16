@@ -6,6 +6,7 @@ import matplotlib.pylab as plt
 import pylab
 import json
 import sys
+import matplotlib as mpl
 
 sys.path.append("../")
 
@@ -458,6 +459,38 @@ if __name__=="__main__":
             # print(fname)
             # with open(fname) as f:
             #     print(f.read())
+            # test
+            # seed = 13648  # Seed random number generators for reproducibility
+            # pos = nx.spring_layout(G, seed=seed)
+            #
+            # node_sizes = [3 + 10 * i for i in range(len(G))]
+            # M = G.number_of_edges()
+            # edge_colors = range(2, M + 2)
+            # edge_alphas = [(5 + i) / (M + 4) for i in range(M)]
+            # cmap = plt.cm.plasma
+            #
+            # nodes = nx.draw_networkx_nodes(G, pos, node_size=node_sizes, node_color="indigo")
+            # edges = nx.draw_networkx_edges(
+            #     G,
+            #     pos,
+            #     node_size=node_sizes,
+            #     arrowstyle="->",
+            #     arrowsize=10,
+            #     edge_color=edge_colors,
+            #     edge_cmap=cmap,
+            #     width=2,
+            # )
+            # # set alpha value for each edge
+            # for i in range(M):
+            #     edges[i].set_alpha(edge_alphas[i])
+            #
+            # pc = mpl.collections.PatchCollection(edges, cmap=cmap)
+            # pc.set_array(edge_colors)
+            # plt.colorbar(pc)
+            #
+            # ax = plt.gca()
+            # ax.set_axis_off()
+            # plt.show()
 
 
             # print(r'E:\MyData\AttackGraph\fine-grain\ARTDate\\TechniqueRawDateGraph\\'+fileinfo[0]+'.png')
