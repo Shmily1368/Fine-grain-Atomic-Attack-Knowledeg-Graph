@@ -36,6 +36,9 @@ ResigtryFilter = [r"Environment\Software\Microsoft\Windows\CurrentVersion\WinTru
                   "Internet Settings",
                     "Schannel",
                   ]
+FileFilter = [
+                "C:\Windows\servicing\LCU\Package_for_RollupFix",
+]
 
 
 sepPID= "11760"
@@ -106,7 +109,7 @@ def ThreadEvent(processID,processID_tem,EventName,temarguments):
             # print(processID_tem, thispid)
             G.add_edges_from([(processID, thispid)])
             edge_labels[(processID, thispid)] = EventName
-            red_edges.append((processID, thispid))
+            # red_edges.append((processID, thispid))
 
 def ImageEvent(processID,processID_tem,EventName,temarguments):
     if ("Image" in EventName):
@@ -143,11 +146,14 @@ def FileEvent(processID,processID_tem,EventName,temarguments):
             # print("File Event error")
         if (("FileIoCreate" in EventName or "IoRead" in EventName or "FileIoRename" in EventName or "FileIo#Delete" in EventName) and "startup" not in ThisEventFilename):return
         if(ThisEventFilename!="" and blackflag):blackrule2.write(ThisEventFilename+"\n")
+        for temfile in FileFilter:
+            if(temfile in ThisEventFilename):return
 
         if(not blackflag and ThisEventFilename+"\n" in FileBlack):return
 
 
-        if((("wangjian" in ThisEventFilename and "Start Menu" not in ThisEventFilename) or "Collector" in ThisEventFilename or ThisEventFilename=="") and "Atomic".lower() not in ThisEventFilename.lower()):return
+        # if((("wangjian" in ThisEventFilename and "Start Menu" not in ThisEventFilename) or "Collector" in ThisEventFilename or ThisEventFilename=="") and "Atomic".lower() not in ThisEventFilename.lower()):return
+        if((("wangjian" in ThisEventFilename and "Start Menu" not in ThisEventFilename) or ("26248" in ThisEventFilename and "Start Menu" not in ThisEventFilename) or "Collector" in ThisEventFilename or ThisEventFilename=="") and "Atomic".lower() not in ThisEventFilename.lower()):return
         # if ( "Collector" in ThisEventFilename): return
         # print(ThisEventFilename)
         G.add_edges_from([(processID, ThisEventFilename)])
@@ -161,7 +167,7 @@ def FileEvent(processID,processID_tem,EventName,temarguments):
         # if ("FileIoFile" in EventName or ".vbs" in ThisEventFilename.lower()):
         #     print(EventName)
             # red_edges.append((processID, ThisEventFilename))
-
+        # print(ThisEventFilename)
 def InternetEvent(processID,processID_tem,EventName,temarguments):
     if ("IPV4" in EventName):
         if "Recv" in EventName:
@@ -209,6 +215,7 @@ def get_graph(filemame):
         # print(lines)
         # lines = lines[:1500]
         for line in lines:
+            # print(line)
             line = json.loads(line)
             processID = line["processID"]
             processID_tem = processID
@@ -420,7 +427,8 @@ if __name__=="__main__":
     print(spePIDs)
     # folder_path = r'E:\MyData\AttackGraph\fine-grain\ARTDate\\TechniqueRawDate'
     # folder_path = r'E:\MyData\AttackGraph\fine-grain\ARTDate\\GraphFile0411'
-    folder_path = r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\GraphFile2'
+    folder_path = r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\Graph-Vmware-All'
+    # folder_path = r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\test'
     files = os.listdir(folder_path)
     for file in files:
         if os.path.isfile(os.path.join(folder_path, file)):
@@ -431,7 +439,7 @@ if __name__=="__main__":
             ProcessID2NameID = {}
             num = 0
             red_edges = []
-            ProcessFlag = False
+            ProcessFlag = True
             fileinfo = file.replace(".txt","").split("_")
             spePIDs = [str(fileinfo[1])]
             get_graph(file_path)
@@ -445,11 +453,13 @@ if __name__=="__main__":
                     edge_color=edge_colors)
             # pylab.show()
             # plt.savefig(r'E:\MyData\AttackGraph\fine-grain\ARTDate\\TechniqueRawDateGraph\\'+fileinfo[0]+'.png',dpi = 300)
-            plt.savefig(r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\GraphFile2Graph\\'+fileinfo[0]+'.png',dpi = 300)
+            # plt.savefig(r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\Graph-Vmware-All-Graph\\'+fileinfo[0]+'.png',dpi = 300)
+            plt.savefig(r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\Graph-Vmware-All-Graph\\'+file+'.png',dpi = 300)
             plt.close()
 
 
-            fname = r'E:\MyData\AttackGraph\fine-grain\ARTDate\TechniqueRawDateGraph_ml' +"\\" + fileinfo[0]+'.txt'
+            # fname = r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\TechniqueRawDateGraph_ml' +"\\" + fileinfo[0]+'.txt'
+            fname = r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\TechniqueRawDateGraph_ml' +"\\" + file+'.txt'
             print(fname)
             networkx.write_graphml(G,fname)
             # parser = GraphMLParser()

@@ -35,14 +35,17 @@ from pygraphml import Graph
 # print(fname)
 # with open(fname) as f:
 #     print(f.read())
+import gmatch4py as gm
 fname = r"E:\MyData\AttackGraph\fine-grain\ARTDate\TechniqueRawDateGraph_ml\T1112-7.txt"
-# parser = GraphMLParser()
+parser = GraphMLParser()
+g = parser.parse(fname)
+
+g.show()
 # g = parser.parse(fname)
-# g = parser.parse(fname)
-G=nx.read_gml(fname,label='id')
-# G = nx.Graph(fname)
-nx.draw_networkx(G)
-print(G.edges())
+# G=nx.read_gml(fname,label='id')
+# # G = nx.Graph(fname)
+# nx.draw_networkx(G)
+# print(G.edges())
 
 # G = nx.parse_gml(fname)
 # print(G)
