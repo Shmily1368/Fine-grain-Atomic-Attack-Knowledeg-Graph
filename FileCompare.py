@@ -23,10 +23,10 @@ for i in range(len(folder2_names)):
 # print(len(folder1_names))
 # print(len(folder2_names))
 #
-# 找到不同的文件名
-# different_names = set(folder1_names).symmetric_difference(set(folder2_names))
-#
-# print(different_names)
+找到不同的文件名
+different_names = set(folder1_names).symmetric_difference(set(folder2_names))
+
+print(different_names)
 
 # 打印不同的文件名
 for name in different_names:
