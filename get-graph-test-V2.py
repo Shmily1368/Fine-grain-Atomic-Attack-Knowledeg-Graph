@@ -91,7 +91,8 @@ def PorcessEvent(processID,processID_tem,EventName,temarguments):
             # ProcessID2NameID[temarguments["ProcessId"]] = processID
             G.add_edges_from([(processID, ProcessID2NameID[temarguments["ProcessId"]])])
             edge_labels[(processID, ProcessID2NameID[temarguments["ProcessId"]])] = EventName
-
+            # 2023/4/20 add
+            G.edges[processID, ProcessID2NameID[temarguments["ProcessId"]]]["edge_label"] = EventName
 
 def ThreadEvent(processID,processID_tem,EventName,temarguments):
     if ("ThreadStart" in EventName):
@@ -427,8 +428,9 @@ if __name__=="__main__":
     print(spePIDs)
     # folder_path = r'E:\MyData\AttackGraph\fine-grain\ARTDate\\TechniqueRawDate'
     # folder_path = r'E:\MyData\AttackGraph\fine-grain\ARTDate\\GraphFile0411'
-    folder_path = r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\Graph-Vmware-All'
+    # folder_path = r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\Graph-Vmware-All'
     # folder_path = r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\test'
+    folder_path = r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\GraphFileAll1015'
     files = os.listdir(folder_path)
     for file in files:
         if os.path.isfile(os.path.join(folder_path, file)):
@@ -454,14 +456,22 @@ if __name__=="__main__":
             # pylab.show()
             # plt.savefig(r'E:\MyData\AttackGraph\fine-grain\ARTDate\\TechniqueRawDateGraph\\'+fileinfo[0]+'.png',dpi = 300)
             # plt.savefig(r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\Graph-Vmware-All-Graph\\'+fileinfo[0]+'.png',dpi = 300)
-            plt.savefig(r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\Graph-Vmware-All-Graph\\'+file+'.png',dpi = 300)
+            # plt.savefig(r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\Graph-Vmware-All-Graph\\'+file.replace(".txt","")+'.png',dpi = 300)
             plt.close()
 
 
             # fname = r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\TechniqueRawDateGraph_ml' +"\\" + fileinfo[0]+'.txt'
-            fname = r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\TechniqueRawDateGraph_ml' +"\\" + file+'.txt'
+            fname = r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\test' +"\\" + file.replace(".txt","")+'.test'
             print(fname)
             networkx.write_graphml(G,fname)
+            # networkx.write_gml(G,fname)
+            # with open(fname, 'wb') as f:
+            #     nx.write_edgelist(G, f, data=[edge_labels.values()], delimiter=',', encoding='utf-8')
+
+            # with open(fname, 'wb') as f:
+            #     nx.write_edgelist(G, f, data=True, delimiter=',', encoding='utf-8')
+
+            # networkx.write_gml(G,fname)
             # parser = GraphMLParser()
             # parser.write(G, fname)
             #
