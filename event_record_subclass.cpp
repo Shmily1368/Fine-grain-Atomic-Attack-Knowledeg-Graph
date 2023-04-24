@@ -530,7 +530,7 @@ bool EventRecordRegistry::Output()
     if (keyname.length() > 12 && keyname.substr(0, 12) == L"\\REGISTRY\\A\\")
     {      
         return false;
-    }   
+    } 
 
     bool flag = true;
     int event_opcode = event_identifier_.opcode();
@@ -539,7 +539,7 @@ bool EventRecordRegistry::Output()
     case EM_RegistryEventOPC::RegistryCreate:
     {
         // prun
-        if (keyname.length() > 0 && EventRecordPruner::GetInstance().PrunRegistryEvent(this)) {
+        if (keyname.length() > 0 && Setting::GetInstance().enable_pruner_output() && EventRecordPruner::GetInstance().PrunRegistryEvent(this)) {
             //LoggerRecord::WriteLog(L"EventRecordRegistry::ParseRegistryCreate KeyName: " + keyname, DEBUG);
             return false;
         }

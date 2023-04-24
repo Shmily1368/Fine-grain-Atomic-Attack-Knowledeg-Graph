@@ -795,7 +795,6 @@ bool EventRecordPruner::PrunUdpIpEvent(EventRecordUdpip * rec)
 bool EventRecordPruner::PrunRegistryEvent(EventRecordRegistry * rec) 
 {
     if (!rec)	return true;
-
     auto event_opcode = rec->get_event_identifier_().opcode();
     auto event_keyname = ToolFunctions::WStringToString(rec->GetStringParameter(parameter_index_enum::KeyName));
     transform(event_keyname.begin(), event_keyname.end(), event_keyname.begin(), ::tolower);
