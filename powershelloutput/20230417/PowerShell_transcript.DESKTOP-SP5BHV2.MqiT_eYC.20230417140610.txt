@@ -1,0 +1,96 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20230417140610
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 9892
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>. 'C:\Users\wangjian\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+PS C:\Windows\system32> slmgr.vbs /upk 
+PS C:\Windows\system32> slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
+PS C:\Windows\system32> slmgr /skms zh.us.to 
+PS C:\Windows\system32> slmgr /ato
+PS C:\Windows\system32> slmgr /ato
+PS C:\Windows\system32> slmgr /ipk VK7JG-NPHTM-C97JM-9MPGT-3V66T
+PS C:\Windows\system32> slmgr /ato
+PS C:\Windows\system32> slmgr /ipk BXW2K-N7JJT-TK3PJ-QYY3Y-FGDGY
+PS C:\Windows\system32> slmgr /ato
+PS C:\Windows\system32> slmgr /ipk 28YMN-RMKKW-4PKDK-MHVB2-XTPKG
+PS C:\Windows\system32> slmgr /ato
+PS C:\Windows\system32> slmgr /ipk 
+PS C:\Windows\system32> slmgr /ipk N2XRH-GCH84-MV34M-V9QT9-QV4X3
+PS C:\Windows\system32> slmgr /ipk N2XRH-GCH84-MV34M-V9QT9-QV4X3
+PS C:\Windows\system32> slmgr /ipk RNP9C-WY3PM-8WG94-WT8Q9-7XMPF
+PS C:\Windows\system32> slmgr /ato
+PS C:\Windows\system32> slmgr /ipk GC42Q-XHW4P-6HKVD-D3839-P6W8B
+PS C:\Windows\system32> slmgr /ato
+PS C:\Windows\system32> slmgr /ipk KH2J9-PC326-T44D4-39H6V-TVPBY
+
+
+PS C:\Windows\system32> slmgr /ipk KH2J9-PC326-T44D4-39H6V-TVPBY
+PS C:\Windows\system32> slmgr /ato
+PS C:\Windows\system32> slmgr /ipk 
+PS C:\Windows\system32> slmgr /ipk FWN7H-PF93Q-4GGP8-M8RF3-MDWWW
+PS C:\Windows\system32> slmgr /ato
+PS C:\Windows\system32> slmgr /ipk 2B87N-8KFHP-DKV6R-Y2C8J-PKCKT
+PS C:\Windows\system32> slmgr /ipk VK7JG-NPHTM-C97JM-9MPGT-3V66T
+
+
+PS C:\Windows\system32> VK7JG-NPHTM-C97JM-9MPGT-3V66T
+**********************
+Windows PowerShell 脚本开始
+开始时间: 20230417141434
+用户名: DESKTOP-SP5BHV2\wangjian
+RunAs 用户: DESKTOP-SP5BHV2\wangjian
+配置名称: 
+计算机: DESKTOP-SP5BHV2 (Microsoft Windows NT 10.0.19044.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 9892
+PSVersion: 5.1.19041.2673
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2673
+BuildVersion: 10.0.19041.2673
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>CommandInvocation(Out-String):“Out-String”
+>> ParameterBinding(Out-String): 名称 =“InputObject”；值 =“无法将“VK7JG-NPHTM-C97JM-9MPGT-3V66T”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。”
+VK7JG-NPHTM-C97JM-9MPGT-3V66T : 无法将“VK7JG-NPHTM-C97JM-9MPGT-3V66T”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然
+后再试一次。
+所在位置 行:1 字符: 1
++ VK7JG-NPHTM-C97JM-9MPGT-3V66T
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (VK7JG-NPHTM-C97JM-9MPGT-3V66T:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+VK7JG-NPHTM-C97JM-9MPGT-3V66T : 无法将“VK7JG-NPHTM-C97JM-9MPGT-3V66T”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然
+后再试一次。
+所在位置 行:1 字符: 1
++ VK7JG-NPHTM-C97JM-9MPGT-3V66T
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (VK7JG-NPHTM-C97JM-9MPGT-3V66T:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+VK7JG-NPHTM-C97JM-9MPGT-3V66T : 无法将“VK7JG-NPHTM-C97JM-9MPGT-3V66T”项识别为 cmdlet、函数、脚本文件或可运行程序的名
+称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。
+所在位置 行:1 字符: 1
++ VK7JG-NPHTM-C97JM-9MPGT-3V66T
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (VK7JG-NPHTM-C97JM-9MPGT-3V66T:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Windows\system32> slmgr /ato
+PS C:\Windows\system32> slmgr /ipk NPPR9-FWDCX-D2C8J-H872K-2YT43
+PS C:\Windows\system32> slmgr /skms kms.03k.org
+PS C:\Windows\system32> slmgr /ato
