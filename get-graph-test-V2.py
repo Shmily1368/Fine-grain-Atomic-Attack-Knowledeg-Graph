@@ -80,12 +80,12 @@ def PorcessEvent(processID,processID_tem,EventName,temarguments):
     if ("Process" in EventName):
         if "Start" in EventName:
             # ProcessID2NameID[processID] = temarguments["ImageFileName"]+"("+str(processID)+")"
-            if(temarguments["ImageFileName"]+"\n" in ProcessBlack):return
+            if(temarguments["ImageFileName"]+"\n" in ProcessBlack):return # process 黑名单
             # if(len(spePIDs)==1 and temarguments["ImageFileName"]=="powershell.exe"):
-            if (len(spePIDs) == 1 and ProcessFlag):
-                spePIDs[0]=str(temarguments["ProcessId"])
-                ProcessFlag = False
-                return
+            # if (len(spePIDs) == 1 and ProcessFlag):
+            #     spePIDs[0]=str(temarguments["ProcessId"])
+            #     ProcessFlag = False
+            #     return
             spePIDs.append(str(temarguments["ProcessId"]))
             ProcessID2NameID[temarguments["ProcessId"]] = temarguments["ImageFileName"] + "(" + str(temarguments["ProcessId"]) + ")"
             # ProcessID2NameID[temarguments["ProcessId"]] = processID
@@ -230,10 +230,10 @@ def get_graph(filemame):
             if (processID in ProcessID2NameID.keys()):
                 processID = ProcessID2NameID[processID]
             PorcessEvent(processID, processID_tem, EventName, temarguments)
-            if ProcessFlag:
-                continue
+            # if ProcessFlag:
+            #     continue
             ThreadEvent(processID, processID_tem, EventName, temarguments)
-            #ImageEvent(processID, processID_tem, EventName, temarguments)
+            ImageEvent(processID, processID_tem, EventName, temarguments)
             FileEvent(processID, processID_tem, EventName, temarguments)
             InternetEvent(processID, processID_tem, EventName, temarguments)
             RegistrytEvent(processID, processID_tem, EventName, temarguments)
@@ -425,12 +425,13 @@ if __name__=="__main__":
     # get_graph(".\\ARTDate\\T1547.001-4_2.out")
 
     # get_graph(".\\ARTDate\\T1547.001-1.out")
-    print(spePIDs)
+    # print(spePIDs)
     # folder_path = r'E:\MyData\AttackGraph\fine-grain\ARTDate\\TechniqueRawDate'
     # folder_path = r'E:\MyData\AttackGraph\fine-grain\ARTDate\\GraphFile0411'
     # folder_path = r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\Graph-Vmware-All'
     # folder_path = r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\test'
     folder_path = r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\GraphFileAll1015'
+    # folder_path = r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\test'
     files = os.listdir(folder_path)
     for file in files:
         if os.path.isfile(os.path.join(folder_path, file)):
@@ -444,6 +445,7 @@ if __name__=="__main__":
             ProcessFlag = True
             fileinfo = file.replace(".txt","").split("_")
             spePIDs = [str(fileinfo[1])]
+            print(spePIDs)
             get_graph(file_path)
             # print(file_path)
             flg, ax = plt.subplots()
@@ -456,14 +458,14 @@ if __name__=="__main__":
             # pylab.show()
             # plt.savefig(r'E:\MyData\AttackGraph\fine-grain\ARTDate\\TechniqueRawDateGraph\\'+fileinfo[0]+'.png',dpi = 300)
             # plt.savefig(r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\Graph-Vmware-All-Graph\\'+fileinfo[0]+'.png',dpi = 300)
-            # plt.savefig(r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\Graph-Vmware-All-Graph\\'+file.replace(".txt","")+'.png',dpi = 300)
+            plt.savefig(r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\Graph-Vmware-All-Graph2\\'+file.replace(".txt","")+'.png',dpi = 300)
             plt.close()
 
 
-            # fname = r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\TechniqueRawDateGraph_ml' +"\\" + fileinfo[0]+'.txt'
-            fname = r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\test' +"\\" + file.replace(".txt","")+'.test'
+            fname = r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\TechniqueRawDateGraph_ml2' +"\\" + file.replace(".txt","")+'.gml'
+            # fname = r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\test' +"\\" + file.replace(".txt","")+'.test'
             print(fname)
-            networkx.write_graphml(G,fname)
+            networkx.write_gml(G,fname)
             # networkx.write_gml(G,fname)
             # with open(fname, 'wb') as f:
             #     nx.write_edgelist(G, f, data=[edge_labels.values()], delimiter=',', encoding='utf-8')
