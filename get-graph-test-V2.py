@@ -81,11 +81,11 @@ def PorcessEvent(processID,processID_tem,EventName,temarguments):
         if "Start" in EventName:
             # ProcessID2NameID[processID] = temarguments["ImageFileName"]+"("+str(processID)+")"
             if(temarguments["ImageFileName"]+"\n" in ProcessBlack):return # process 黑名单
-            # if(len(spePIDs)==1 and temarguments["ImageFileName"]=="powershell.exe"):
+            if(ProcessFlag and len(spePIDs)==1 and temarguments["ImageFileName"]=="powershell.exe"):
             # if (len(spePIDs) == 1 and ProcessFlag):
-            #     spePIDs[0]=str(temarguments["ProcessId"])
-            #     ProcessFlag = False
-            #     return
+                spePIDs[0]=str(temarguments["ProcessId"])
+                ProcessFlag = False
+                return
             spePIDs.append(str(temarguments["ProcessId"]))
             ProcessID2NameID[temarguments["ProcessId"]] = temarguments["ImageFileName"] + "(" + str(temarguments["ProcessId"]) + ")"
             # ProcessID2NameID[temarguments["ProcessId"]] = processID
@@ -230,8 +230,8 @@ def get_graph(filemame):
             if (processID in ProcessID2NameID.keys()):
                 processID = ProcessID2NameID[processID]
             PorcessEvent(processID, processID_tem, EventName, temarguments)
-            # if ProcessFlag:
-            #     continue
+            if ProcessFlag and len(spePIDs)==1:
+                continue
             ThreadEvent(processID, processID_tem, EventName, temarguments)
             ImageEvent(processID, processID_tem, EventName, temarguments)
             FileEvent(processID, processID_tem, EventName, temarguments)
@@ -403,6 +403,10 @@ if __name__=="__main__":
     else:
         blackrule = open(".\\ARTDate\\Rule\\RegistryBlack.txt","a+")
         blackrule2 = open(".\\ARTDate\\Rule\\FileBlack.txt","a+")
+
+    for i in range(len(FileBlack)):
+        FileBlack[i] = FileBlack[i].replace("wangjian","26248")
+    print(FileBlack)
     #### get black
     # print(FileBlack)
     # spePIDs[0] = "5232"

@@ -25,7 +25,7 @@ from pygraphml import Graph
 # G = networkx.read_graphml(r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\test\T1012-2_8564.test',edge_key_type=str) #good
 # G = networkx.read_gml(r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\TechniqueRawDateGraph_ml\T1547.001-6_2128.gml') #good
 G = networkx.read_gml(r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\TechniqueRawDateGraph_ml\T1218-3_9484.gml') # paper example
-G = networkx.read_gml(r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\TechniqueRawDateGraph_ml2\T1018-18_1648.gml')
+G = networkx.read_gml(r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\TechniqueRawDateGraph_ml2\T1547.001-1_5816.gml')
 
 
 
