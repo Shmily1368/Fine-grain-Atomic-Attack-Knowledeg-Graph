@@ -71,16 +71,11 @@ def get_special_PID(line):
 
 
 def PorcessEvent(processID,processID_tem,EventName,temarguments):
-    # if(len(spePIDs)==1):
-    #     try:
-    #         print(temarguments["CommandLine"])
-    #     except:
-    #         pass
     global ProcessFlag
     if ("Process" in EventName):
         if "Start" in EventName:
             # ProcessID2NameID[processID] = temarguments["ImageFileName"]+"("+str(processID)+")"
-            if(temarguments["ImageFileName"]+"\n" in ProcessBlack):return # process 黑名单
+            if(not blackflag and temarguments["ImageFileName"]+"\n" in ProcessBlack):return # process 黑名单
             if(ProcessFlag and len(spePIDs)==1 and temarguments["ImageFileName"]=="powershell.exe"):
             # if (len(spePIDs) == 1 and ProcessFlag):
                 spePIDs[0]=str(temarguments["ProcessId"])
@@ -100,8 +95,9 @@ def ThreadEvent(processID,processID_tem,EventName,temarguments):
         if (processID_tem != temarguments["ProcessId"]):
             if (temarguments["ProcessId"] in ProcessID2NameID.keys()):
                 # return
-                print(ProcessBlack)
-                if (ProcessID2NameID[temarguments["ProcessId"]].split("(")[0]+"\n" in ProcessBlack):return
+                if (not blackflag):
+                    print(ProcessBlack)
+                if (not blackflag and ProcessID2NameID[temarguments["ProcessId"]].split("(")[0]+"\n" in ProcessBlack):return
                 thispid = ProcessID2NameID[temarguments["ProcessId"]]
             else:
                 return
@@ -153,7 +149,7 @@ def FileEvent(processID,processID_tem,EventName,temarguments):
         if(not blackflag and ThisEventFilename+"\n" in FileBlack):return
 
 
-        # if((("wangjian" in ThisEventFilename and "Start Menu" not in ThisEventFilename) or "Collector" in ThisEventFilename or ThisEventFilename=="") and "Atomic".lower() not in ThisEventFilename.lower()):return
+
         if((("wangjian" in ThisEventFilename and "Start Menu" not in ThisEventFilename) or ("26248" in ThisEventFilename and "Start Menu" not in ThisEventFilename) or "Collector" in ThisEventFilename or ThisEventFilename=="") and "Atomic".lower() not in ThisEventFilename.lower()):return
         # if ( "Collector" in ThisEventFilename): return
         # print(ThisEventFilename)
@@ -164,7 +160,7 @@ def FileEvent(processID,processID_tem,EventName,temarguments):
                 edge_labels[(processID, ThisEventFilename)] = edge_labels[(processID, ThisEventFilename)] + "\\" + EventName
         else:
             edge_labels[(processID, ThisEventFilename)] = EventName
-        red_edges.append((processID, ThisEventFilename))
+        red_edges.append((processID, ThisEventFilename)) # edge_labels
         # if ("FileIoFile" in EventName or ".vbs" in ThisEventFilename.lower()):
         #     print(EventName)
             # red_edges.append((processID, ThisEventFilename))
@@ -184,17 +180,21 @@ def RegistrytEvent(processID, processID_tem, EventName, temarguments):
     if ("Query" in EventName or "Open" in EventName or "Close"in EventName or "Create" in EventName or("KCB" in EventName)):# and "RunOnce" not in temarguments["KeyName"]
         return
     if ("Registry" in EventName):
-        if (temarguments["KeyName"] == "" or "\Windows" not in temarguments["KeyName"]):
-            return
+        # if (temarguments["KeyName"] == "" or "\Windows" not in temarguments["KeyName"]):
+        #     return
         # if( "wangjian" in temarguments["KeyName"] or "Collector" in temarguments["KeyName"]):return
         if(not blackflag and temarguments["KeyName"]+"\n" in RegistryFile):return
 
-        if(blackflag):blackrule.write(temarguments["KeyName"].replace("\r","")+"\n")
+        # if(blackflag and temarguments["KeyName"]!=""):blackrule.write(temarguments["KeyName"].replace("\r","")+"\n")
+        if(blackflag):
+            # blackrule.write(temarguments["KeyName"]+"\n")
+            blackrule.write(temarguments["KeyName"]+"\n")
+            return
         for temregistry in ResigtryFilter:
             if(temregistry in temarguments["KeyName"]):return
 
 
-        print(temarguments["KeyName"])
+        print(temarguments["KeyName"],"test0517")
         # print(temarguments["KeyName"])
         # if ("\Software\Microsoft\Windows\CurrentVersion\RunOnce".lower() not in temarguments["KeyName"].lower()):
         #     # if("\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" not in temarguments["KeyName"]):
@@ -237,148 +237,6 @@ def get_graph(filemame):
             FileEvent(processID, processID_tem, EventName, temarguments)
             InternetEvent(processID, processID_tem, EventName, temarguments)
             RegistrytEvent(processID, processID_tem, EventName, temarguments)
-            # if("svchost" in str(processID)):#主要路线
-            #     continue
-            # if("services" in str(processID)):#主要路线
-            #     continue
-            # if "6488" in str(processID):
-            #     continue
-            # 进程
-            # 添加CommandLine
-            # if("CommandLine" in temarguments.keys() and "ProcessId" in temarguments.keys()):
-            #     if(temarguments["ProcessId"] in CommandLine.keys()):
-            #         pass
-            #         #CommandLine[temarguments["ProcessId"]] = str(CommandLine[temarguments["ProcessId"]]) + temarguments["CommandLine"]
-            #     else:
-            #         CommandLine[temarguments["ProcessId"]] = temarguments["CommandLine"]
-            # print(CommandLine)
-            # 添加CommandLine
-            # if("Process" in EventName):
-            #     if "Start" in EventName:
-            #         #ProcessID2NameID[processID] = temarguments["ImageFileName"]+"("+str(processID)+")"
-            #         spePIDs.append(str(temarguments["ProcessId"]))
-            #         ProcessID2NameID[temarguments["ProcessId"]] = temarguments["ImageFileName"]+"("+str(temarguments["ProcessId"])+")"
-            #         #ProcessID2NameID[temarguments["ProcessId"]] = processID
-            #         G.add_edges_from([(processID,ProcessID2NameID[temarguments["ProcessId"]] )])
-            #         edge_labels[(processID,ProcessID2NameID[temarguments["ProcessId"]] )] = EventName
-                # if "End" in EventName:
-                #     try:
-                #         del ProcessID2NameID[line["processID"]]
-                #     except:
-                #         print("Process Delete error")
-                #         continue
-            # 线程
-            # if("ThreadStart" in EventName):
-            #     thispid = ""
-            #     if(processID_tem != temarguments["ProcessId"]):
-            #         if (temarguments["ProcessId"] in ProcessID2NameID.keys()):
-            #             continue
-            #             thispid = ProcessID2NameID[temarguments["ProcessId"]]
-            #         else:
-            #             thispid = temarguments["ProcessId"]
-            #             spePIDs.append(str(temarguments["ProcessId"]))
-            #         print(processID_tem,thispid)
-            #         G.add_edges_from([(processID,thispid)])
-            #         edge_labels[(processID,thispid)] = EventName
-            #         red_edges.append((processID, thispid))
-            # 镜像
-            # if ("Image" in EventName):
-            #     # if "ImageDCStart" in EventName:
-            #     G.add_edges_from([(processID, temarguments["FileName"])])
-            #     edge_labels[(processID, temarguments["FileName"])] = EventName
-            #文件
-            # if ("File" in EventName):
-            #     # print(EventName)
-            #     if("FileName" in temarguments.keys() ):
-            #         ThisEventFilename = temarguments["FileName"]
-            #         if (("T1547.001" not in temarguments["FileName"]) and (r"Microsoft\Windows\Start Menu\Programs\Startup".lower() not in temarguments["FileName"].lower())):
-            #             print(temarguments)
-            #             print(temarguments["FileName"])
-            #             print((r"Microsoft\Windows\Start Menu\Programs\Startup" not in temarguments["FileName"]))
-            #             continue
-            #         # if len(temarguments["FileName"]) >= 30:
-            #         #     temarguments["FileName"] = temarguments["FileName"][:15] + "......" + temarguments["FileName"][-15:]
-            #         # G.add_edges_from([(processID, temarguments["FileName"])])
-            #         # edge_labels[(processID, temarguments["FileName"])] = EventName
-            #     elif("OpenPath" in temarguments.keys()):
-            #         ThisEventFilename = temarguments["OpenPath"]
-            #         if ("T1547.001" not in temarguments["OpenPath"] and "Microsoft\\Windows\\Start Menu\\Programs\\Startup".lower() not in temarguments["OpenPath"].lower()):
-            #             continue
-            #         # if len(temarguments["OpenPath"]) >= 30:
-            #         #     temarguments["OpenPath"] = temarguments["OpenPath"][:15] + "......" + temarguments["OpenPath"][-15:]
-            #     else:
-            #         # pass
-            #         # print(EventName)
-            #         continue
-            #         # print("File Event error")
-            #     G.add_edges_from([(processID, ThisEventFilename)])
-            #     # edge_labels[(processID, ThisEventFilename)] = EventName
-            #     if((processID, ThisEventFilename) in edge_labels.keys()):
-            #         if(EventName not in edge_labels[(processID, ThisEventFilename)]):
-            #             edge_labels[(processID, ThisEventFilename)] = edge_labels[(processID, ThisEventFilename)]+"\\"+EventName
-            #     else:
-            #         edge_labels[(processID, ThisEventFilename)] = EventName
-            #     if("FileIoFile" in EventName):
-            #         print(EventName)
-            #         print(line)
-            #         red_edges.append((processID, ThisEventFilename))
-            #网络
-            # if ("IPV4" in EventName):
-            #     if "Recv" in EventName:
-            #         IP = int2ip(temarguments["saddr"])+":"+str(temarguments["saddr"])
-            #         G.add_edges_from([(IP,processID)])
-            #         edge_labels[(IP,processID)] = EventName
-            #     else:
-            #         IP = int2ip(temarguments["daddr"])+":"+str(temarguments["dport"])
-            #         G.add_edges_from([(processID,IP)])
-            #         red_edges.append((processID,IP))
-            #         edge_labels[(processID,IP)] = EventName
-            # print(spePIDs)
-            # continue
-            #注册表
-            # if("Registry" in EventName):
-            #     if("\Software\Microsoft\Windows\CurrentVersion\RunOnce" not in temarguments["KeyName"]):
-            #     # if("\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" not in temarguments["KeyName"]):
-            #         continue
-            #     # if("\\" not in temarguments["KeyName"]):
-            #     #     continue
-            #     # if("Close" in EventName):
-            #     #     continue
-            #     # if (processID_tem not in CommandLine.keys()):
-            #     #     continue
-            #     # if(temarguments["KeyName"] not in CommandLine[processID_tem]):
-            #     #     continue
-            #     # if("3444" not in str(processID)):
-            #     #     continue
-            #     #print(temarguments["KeyName"])
-            #     if len(temarguments["KeyName"])>=30:
-            #         temarguments["KeyName"] = temarguments["KeyName"][:15]+"......"+temarguments["KeyName"][-15:]
-            #     G.add_edges_from([(processID, temarguments["KeyName"])])
-            #     edge_labels[(processID, temarguments["KeyName"])] = EventName
-
-
-
-            # if("ImageFileName" in temarguments.keys()):
-            #     # temarguments = temarguments["ImageFileName"]
-            #     if "ProcessId" in temarguments.keys():
-            #         temarguments = temarguments["ProcessId"]
-            # elif("FileName" in temarguments.keys()):
-            #     temarguments = temarguments["FileName"]
-            #     temarguments = temarguments.split("\\")[-1]
-            #
-            # elif("KeyName" in temarguments.keys()):
-            #     temarguments = temarguments["KeyName"]
-            #     temarguments = temarguments.split("\\")[-1]
-            # else:
-            #     continue
-            # print(temarguments)
-            # G.add_edges_from([(processID,temarguments)])
-            # edge_labels[(processID,temarguments)] = EventName
-            # print(line["processID"])
-
-
-# get_graph(".\\test.txt")
-
 
 
 
@@ -394,19 +252,22 @@ if __name__=="__main__":
     #####
     blackflag = False
     if not blackflag:
-        blackrule = open(".\\ARTDate\\Rule\\RegistryBlack.txt", "r")
-        blackrule2 = open(".\\ARTDate\\Rule\\FileBlack.txt", "r")
+        blackrule = open(".\\ARTDate\\Rule\\RegistryBlack-vmware.txt", "r")
+        blackrule2 = open(".\\ARTDate\\Rule\\FileBlack-vmware.txt", "r")
         blackrule3 = open(".\\ARTDate\\Rule\\ProcessBlack.txt", "r")
         RegistryFile = blackrule.readlines()
         FileBlack = blackrule2.readlines()
         ProcessBlack = blackrule3.readlines()
     else:
-        blackrule = open(".\\ARTDate\\Rule\\RegistryBlack.txt","a+")
-        blackrule2 = open(".\\ARTDate\\Rule\\FileBlack.txt","a+")
-
-    for i in range(len(FileBlack)):
-        FileBlack[i] = FileBlack[i].replace("wangjian","26248")
-    print(FileBlack)
+        blackrule = open(".\\ARTDate\\Rule\\RegistryBlack-vmware.txt","a+")
+        blackrule2 = open(".\\ARTDate\\Rule\\FileBlack-vmware.txt","a+")
+    if not blackflag:
+        for i in range(len(FileBlack)):
+            FileBlack[i] = FileBlack[i].replace("wangjian","26248")
+        print(FileBlack)
+        for i in range(len(ProcessBlack)):
+            ProcessBlack[i] = ProcessBlack[i].replace("wangjian","26248")
+        print(ProcessBlack)
     #### get black
     # print(FileBlack)
     # spePIDs[0] = "5232"
@@ -435,7 +296,8 @@ if __name__=="__main__":
     # folder_path = r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\Graph-Vmware-All'
     # folder_path = r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\test'
     folder_path = r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\GraphFileAll1015'
-    # folder_path = r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\test'
+    # folder_path = r'E:\MyData\AttackGraph\fine-grain\ARTDate\Benign\vmware-benign'
+    # folder_path = r'E:\MyData\AttackGraph\fine-grain\ARTDate\Benign\test'
     files = os.listdir(folder_path)
     for file in files:
         if os.path.isfile(os.path.join(folder_path, file)):
@@ -446,7 +308,7 @@ if __name__=="__main__":
             ProcessID2NameID = {}
             num = 0
             red_edges = []
-            ProcessFlag = True
+            ProcessFlag = True # 需要做黑名单过滤时记得设置为否
             fileinfo = file.replace(".txt","").split("_")
             spePIDs = [str(fileinfo[1])]
             print(spePIDs)
@@ -462,9 +324,12 @@ if __name__=="__main__":
             # pylab.show()
             # plt.savefig(r'E:\MyData\AttackGraph\fine-grain\ARTDate\\TechniqueRawDateGraph\\'+fileinfo[0]+'.png',dpi = 300)
             # plt.savefig(r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\Graph-Vmware-All-Graph\\'+fileinfo[0]+'.png',dpi = 300)
-            plt.savefig(r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\Graph-Vmware-All-Graph2\\'+file.replace(".txt","")+'.png',dpi = 300)
+            plt.savefig(r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\Graph-Vmware-All-Graph3\\'+file.replace(".txt","")+'.png',dpi = 300)
             plt.close()
-
+            if blackflag:
+                blackrule.close()
+                blackrule2.close()
+            continue
 
             fname = r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\TechniqueRawDateGraph_ml2' +"\\" + file.replace(".txt","")+'.gml'
             # fname = r'E:\MyData\AttackGraph\fine-grain\ARTDate\RawGraphDate\test' +"\\" + file.replace(".txt","")+'.test'
@@ -504,6 +369,7 @@ if __name__=="__main__":
             #     arrowsize=10,
             #     edge_color=edge_colors,
             #     edge_cmap=cmap,
+            #     width=2,
             #     width=2,
             # )
             # # set alpha value for each edge

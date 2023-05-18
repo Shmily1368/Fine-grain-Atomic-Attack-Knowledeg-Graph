@@ -21,9 +21,15 @@
 
 
 import networkx as nx
-import gmatch4py as gm
-ged = gm.GraphEditDistance(1,1,1,1)
-result = ged.set_attr_graph_used("theme","color") # Edge colors and node themes attributes will be used.
-print(result)
+# import gmatch4py as gm
+# ged = gm.GraphEditDistance(1,1,1,1)
+# result = ged.set_attr_graph_used("theme","color") # Edge colors and node themes attributes will be used.
+# print(result)
+#
+# gm.VertexRanking(ged)
 
-gm.VertexRanking(ged)
+
+
+blackrule = open(".\\ARTDate\\Rule\\RegistryBlack-vmware.txt","a+")
+
+blackrule.write("418A073AA3BC3475"+"\n")
